@@ -2750,9 +2750,9 @@ dvg_zhourao.719 = {
 			text = dvg_the_end_tt
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_presidential_republic }
+					NOT = { has_law = law_type:law_republic }
 				}
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 			ruler = {kill_character = yes}
 			

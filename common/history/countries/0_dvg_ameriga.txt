@@ -112,7 +112,7 @@
 
 		effect_starting_politics_liberal = yes
 		
-		activate_law = law_type:law_presidential_republic
+		activate_law = law_type:law_republic
 		activate_law = law_type:law_census_voting
 		activate_law = law_type:law_cultural_exclusion
 		activate_law = law_type:law_freedom_of_conscience

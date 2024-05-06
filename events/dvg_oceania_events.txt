@@ -1704,9 +1704,9 @@ dvg_oceania.46 = {
 				}
 				if = {
 					limit = {
-						NOT = { has_law = law_type:law_presidential_republic }
+						NOT = { has_law = law_type:law_republic }
 					}
-					activate_law = law_type:law_presidential_republic
+					activate_law = law_type:law_republic
 				}
 			}
 		}
@@ -1775,9 +1775,9 @@ dvg_oceania.46 = {
 				}
 				if = {
 					limit = {
-						NOT = { has_law = law_type:law_presidential_republic }
+						NOT = { has_law = law_type:law_republic }
 					}
-					activate_law = law_type:law_presidential_republic
+					activate_law = law_type:law_republic
 				}
 			}
 		}
@@ -2062,9 +2062,9 @@ dvg_oceania.48 = {
 		c:VRG = {
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_presidential_republic }
+					NOT = { has_law = law_type:law_republic }
 				}
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_republic
 			}
 			if = {
 				limit = {

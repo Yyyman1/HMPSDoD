@@ -138,7 +138,7 @@ WDY = { #Wadiya
 		NOT = { has_game_rule = plausible_formable_nations }
 
 		AND = {
-		has_law = law_type:law_presidential_republic
+		has_law = law_type:law_republic
 		has_law = law_type:law_hereditary_bureaucrats
 		has_law = law_type:law_autocracy
 		

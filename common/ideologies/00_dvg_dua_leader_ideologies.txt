@@ -5,7 +5,7 @@
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_presidential_republic = disapprove
+		law_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_theocracy = disapprove
 		law_council_republic = strongly_disapprove
@@ -169,7 +169,7 @@ ideology_french = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_presidential_republic = approve
+		law_republic = approve
 		law_parliamentary_republic = approve
 		law_theocracy = disapprove
 		law_council_republic = strongly_disapprove
@@ -323,7 +323,7 @@ ideology_english = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_presidential_republic = approve
+		law_republic = approve
 		law_parliamentary_republic = approve
 		law_theocracy = disapprove
 		law_council_republic = strongly_disapprove

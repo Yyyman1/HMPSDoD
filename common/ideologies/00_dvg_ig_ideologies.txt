@@ -4,7 +4,7 @@
 	lawgroup_governance_principles = {
 		law_monarchy = approve
 		law_theocracy = approve			
-		law_presidential_republic = neutral
+		law_republic = neutral
 		law_parliamentary_republic = neutral
 		law_council_republic = neutral
 	}
@@ -47,7 +47,7 @@ ideology_britannian_paternalistic = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = approve			
-		law_presidential_republic = disapprove
+		law_republic = disapprove
 		law_parliamentary_republic = disapprove
 		law_council_republic = strongly_disapprove
 	}
@@ -115,7 +115,7 @@ ideology_inka_paternalistic = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = approve			
-		law_presidential_republic = strongly_disapprove
+		law_republic = strongly_disapprove
 		law_parliamentary_republic = strongly_disapprove
 		law_council_republic = strongly_disapprove
 	}
@@ -183,7 +183,7 @@ ideology_venician_patrician = {
 	icon = "gfx/interface/icons/ideology_icons/venetianpatrician.dds"
 	
 	lawgroup_governance_principles = {
-		law_presidential_republic = strongly_approve
+		law_republic = strongly_approve
 		law_parliamentary_republic = approve
 		law_monarchy = strongly_disapprove
 		law_council_republic = strongly_disapprove
@@ -213,7 +213,7 @@ ideology_venician_nuovo_patrician = {
 	icon = "gfx/interface/icons/ideology_icons/venetianpatrician.dds"
 	
 	lawgroup_governance_principles = {
-		law_presidential_republic = strongly_approve
+		law_republic = strongly_approve
 		law_parliamentary_republic = approve
 		law_monarchy = strongly_disapprove
 		law_council_republic = strongly_disapprove
@@ -246,7 +246,7 @@ ideology_kaiserist = {
 
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
-		law_presidential_republic = strongly_disapprove
+		law_republic = strongly_disapprove
 		law_parliamentary_republic = strongly_disapprove
 		law_theocracy = neutral
 		law_council_republic = strongly_disapprove
@@ -319,7 +319,7 @@ ideology_magnatherie = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = approve			
-		law_presidential_republic = neutral
+		law_republic = neutral
 		law_parliamentary_republic = neutral
 		law_council_republic = strongly_disapprove
 	}
@@ -436,7 +436,7 @@ ideology_enlightened_despotism = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = neutral	
-		law_presidential_republic = neutral
+		law_republic = neutral
 		law_parliamentary_republic = disapprove
 		law_council_republic = strongly_disapprove
 	}
@@ -509,7 +509,7 @@ ideology_boyar_paternalistic = {
 	lawgroup_governance_principles = {
 		law_monarchy = strongly_approve
 		law_theocracy = neutral			
-		law_presidential_republic = neutral
+		law_republic = neutral
 		law_parliamentary_republic = neutral
 		law_council_republic = strongly_disapprove
 	}
@@ -604,7 +604,7 @@ ideology_landsburger = {
 	lawgroup_governance_principles = {
 		law_monarchy = approve
 		law_theocracy = neutral			
-		law_presidential_republic = approve
+		law_republic = approve
 		law_parliamentary_republic = neutral
 		law_council_republic = strongly_disapprove
 	}

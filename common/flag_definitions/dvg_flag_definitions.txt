@@ -1454,7 +1454,7 @@ NOV = { #Novgorod
 		trigger = { 
 			exists = scope:actor
 			scope:actor = { 
-				has_law = law_type:law_presidential_republic 
+				has_law = law_type:law_republic 
 			}
 		}
 	}
@@ -3574,7 +3574,7 @@ ITC = { #Italian Confederation
 		trigger = {
 			exists = scope:actor
 			scope:actor = {
-				has_law = law_type:law_presidential_republic
+				has_law = law_type:law_republic
 			}
 		}
 	}
