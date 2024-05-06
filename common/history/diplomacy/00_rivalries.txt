@@ -41,10 +41,10 @@
 	}
 	
 	c:FRS = {
-		create_diplomatic_pact = {
-			country = c:TPG
-			type = rivalry
-		}
+		# create_diplomatic_pact = {
+		# 	country = c:TPG
+		# 	type = rivalry
+		# }
 		create_diplomatic_pact = {
 			country = c:NAN
 			type = rivalry
@@ -54,25 +54,25 @@
 			type = rivalry
 		}
 	}
-	c:TPG = {
-		create_diplomatic_pact = {
-			country = c:FRS
-			type = rivalry
-		}
-		create_diplomatic_pact = {
-			country = c:NAN
-			type = rivalry
-		}
-		create_diplomatic_pact = {
-			country = c:MCH
-			type = rivalry
-		}
+	# c:TPG = {
+	# 	create_diplomatic_pact = {
+	# 		country = c:FRS
+	# 		type = rivalry
+	# 	}
+	# 	# create_diplomatic_pact = {
+	# 	# 	country = c:NAN
+	# 	# 	type = rivalry
+	# 	# }
+	# 	# create_diplomatic_pact = {
+	# 	# 	country = c:MCH
+	# 	# 	type = rivalry
+	# 	# }
 	}
 	c:NAN = {
-		create_diplomatic_pact = {
-			country = c:TPG
-			type = rivalry
-		}
+		# create_diplomatic_pact = {
+		# 	country = c:TPG
+		# 	type = rivalry
+		# }
 		create_diplomatic_pact = {
 			country = c:FRS
 			type = rivalry
@@ -83,10 +83,10 @@
 		}
 	}
 	c:MCH = {
-		create_diplomatic_pact = {
-			country = c:TPG
-			type = rivalry
-		}
+		# create_diplomatic_pact = {
+		# 	country = c:TPG
+		# 	type = rivalry
+		# }
 		create_diplomatic_pact = {
 			country = c:NAN
 			type = rivalry
