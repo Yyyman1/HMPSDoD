@@ -62,7 +62,7 @@ enactment_phase_0 = {
         localization_key = enactment_phase_0_demrep
         trigger = {
             OR = {
-                has_law = law_type:law_parliamentary_republic
+                has_law = law_type:law_republic
                 has_law = law_type:law_republic
             }
             OR = {
@@ -137,7 +137,7 @@ enactment_phase_1 = {
         localization_key = enactment_phase_1_demrep
         trigger = {
             OR = {
-                has_law = law_type:law_parliamentary_republic
+                has_law = law_type:law_republic
                 has_law = law_type:law_republic
             }
             OR = {
@@ -212,7 +212,7 @@ enactment_phase_2 = {
         localization_key = enactment_phase_2_demrep
         trigger = {
             OR = {
-                has_law = law_type:law_parliamentary_republic
+                has_law = law_type:law_republic
                 has_law = law_type:law_republic
             }
             OR = {

@@ -717,7 +717,7 @@ dvg_caladero.12 = {
 			}
 			if = {
 				limit = {
-					NOT = { has_law = law_type:law_parliamentary_republic }
+					NOT = { has_law = law_type:law_republic }
 				}
 				 activate_law = law_type:law_republic
 			}

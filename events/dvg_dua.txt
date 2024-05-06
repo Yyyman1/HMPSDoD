@@ -2630,9 +2630,9 @@ dvg_dua.500 = { #Total Revolution
 
 					if = {
 						limit = {
-							NOT = { has_law = law_type:law_parliamentary_republic }
+							NOT = { has_law = law_type:law_republic }
 						}
-						activate_law = law_type:law_parliamentary_republic
+						activate_law = law_type:law_republic
 						activate_law = law_type:law_national_supremacy
 					}
 					add_loyalists = {
@@ -3080,7 +3080,7 @@ dvg_dua.511 = { #Midi Revolution - Occitan choices
 
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_parliamentary_republic }
+				NOT = { has_law = law_type:law_republic }
 			}
 			 activate_law = law_type:law_republic
 		}
@@ -3498,7 +3498,7 @@ dvg_dua.521 = { #Glorious Revolution - English choices
 
 		if = {
 			limit = {
-				NOT = { has_law = law_type:law_parliamentary_republic }
+				NOT = { has_law = law_type:law_republic }
 			}
 			 activate_law = law_type:law_republic
 		}
