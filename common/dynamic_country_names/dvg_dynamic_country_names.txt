@@ -30,16 +30,16 @@ DUA = { #Dual Monarchy
 			coa_def_fascist_flag_trigger = yes
 		}
 	}
-	dynamic_country_name = {
-		name = dyn_c_united_archbishopric
+	# dynamic_country_name = {
+	# 	name = dyn_c_united_archbishopric
 		
-		is_main_tag_only = yes
-		priority = 0
+	# 	is_main_tag_only = yes
+	# 	priority = 0
 		
-		trigger = {
-			coa_def_theocracy_flag_trigger = yes
-		}
-	}
+	# 	trigger = {
+	# 		coa_def_theocracy_flag_trigger = yes
+	# 	}
+	# }
 	dynamic_country_name = {
 		name = dyn_c_france
 		adjective = dyn_c_anglois_adj
