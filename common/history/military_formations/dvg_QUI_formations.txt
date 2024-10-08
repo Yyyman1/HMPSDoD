@@ -14,26 +14,26 @@
 				state_region = s:STATE_ECUADOR
 				count = 5
 			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CAJAMARCA
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_LIMA
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cuirassiers
-				state_region = s:STATE_ECUADOR
-				count = 5
-			}
-			combat_unit = {
-				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_ECUADOR
-				count = 5
-			}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_line_infantry
+			#	state_region = s:STATE_CAJAMARCA
+			#	count = 5
+			#}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_line_infantry
+			#	state_region = s:STATE_LIMA
+			#	count = 5
+			#}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cuirassiers
+			#	state_region = s:STATE_ECUADOR
+			#	count = 5
+			#}
+			#combat_unit = {
+			#	type = unit_type:combat_unit_type_cannon_artillery
+			#	state_region = s:STATE_ECUADOR
+			#	count = 5
+			#}
 		}
 		create_character = {
 			is_general = yes
