@@ -300,6 +300,7 @@
 			ig:ig_devout = {
 				set_interest_group_name = ig_sikh_priesthood
 				remove_ideology = ideology_moralist
+				add_ideology = ideology_sihk_moralist
 				set_ig_trait = ig_trait:ig_trait_kar_seva
 				set_ig_trait = ig_trait:ig_trait_khalsa
 			}
