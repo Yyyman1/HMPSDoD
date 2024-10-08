@@ -247,11 +247,8 @@
 	}
 	
 	c:SPA = { #Spain
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_conservative = yes
-
-		add_technology_researched = empiricism
-
 
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_peasant_levies
@@ -290,10 +287,8 @@
 	}
 	
 	c:ARN = { #Aragon
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_conservative = yes
-
-		add_technology_researched = empiricism
 
 		activate_law = law_type:law_landed_voting
 		activate_law = law_type:law_peasant_levies
@@ -337,7 +332,7 @@
 	}
 	
 	c:NAV = { #Navarra
-		effect_starting_technology_tier_3_tech = yes
+		effect_starting_technology_tier_2_tech = yes
 		effect_starting_politics_conservative = yes
 
 		activate_law = law_type:law_wealth_voting
