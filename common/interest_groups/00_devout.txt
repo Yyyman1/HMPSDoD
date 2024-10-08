@@ -34,7 +34,7 @@
 		if = {
 			limit = {
 				country_has_state_religion = rel:mahayana
-				country_has_primary_culture = cu:japanese
+				# country_has_primary_culture = cu:japanese
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_buddhist_monks
@@ -46,12 +46,15 @@
 		else_if = {
 			limit = {
 				country_has_state_religion = rel:shinto
-				country_has_primary_culture = cu:japanese
+				# country_has_primary_culture = cu:japanese
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_shinto_monks
 				remove_ideology = ideology_moralist
 				add_ideology = ideology_shinto_moralist
+				set_ig_trait = ig_trait:ig_trait_haibutsu_kishaku
+				set_ig_trait = ig_trait:ig_trait_secular_shrine_theory
+				set_ig_trait = ig_trait:ig_trait_heavenly_sovereign
 			}
 		}
 		# Christian Missionaries (Hawaii)
@@ -63,6 +66,7 @@
 			ig:ig_devout = {
 				set_interest_group_name = ig_christian_missionaries
 				add_ideology = ideology_laissez_faire
+				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 		# Anglicans
@@ -98,6 +102,7 @@
 				set_interest_group_name = ig_orthodox_church
 				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_russian_patriarch
+				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
 			}
 		}
 		# Church of Denmark
@@ -109,6 +114,7 @@
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_church_of_denmark
+				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 		# Church of Norway
@@ -119,6 +125,7 @@
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_church_of_norway
+				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 		# Church of Sweden
@@ -129,6 +136,7 @@
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_church_of_sweden
+				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 		# Confucian Scholars
@@ -166,6 +174,7 @@
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_roman_curia
+				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
 			}
 		}
 		# Dutch Reformed Church
@@ -179,6 +188,7 @@
 			}
 			ig:ig_devout = {
 				set_interest_group_name = ig_dutch_reformed_church
+				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 
@@ -189,7 +199,8 @@
 		else_if = {
 			limit = { country_has_state_religion = rel:catholic }
 			ig:ig_devout = { 
-				set_interest_group_name = ig_catholic_church 
+				set_interest_group_name = ig_catholic_church
+				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply 
 			}
 		}
 		# Evangelical Church
@@ -205,6 +216,8 @@
 			limit = { country_has_state_religion = rel:sunni }
 			ig:ig_devout = { 
 				set_interest_group_name = ig_sunni_madrasahs
+				set_ig_trait = ig_trait:ig_trait_sharia
+				set_ig_trait = ig_trait:ig_trait_da_wat
 			}
 		}
 		# Shi'a Ulema
@@ -212,6 +225,8 @@
 			limit = { country_has_state_religion = rel:shiite }
 			ig:ig_devout = { 
 				set_interest_group_name = ig_shia_madrasahs
+				set_ig_trait = ig_trait:ig_trait_sharia
+				set_ig_trait = ig_trait:ig_trait_da_wat
 			}
 		}
 		# Oriental Orthodox Church
@@ -221,6 +236,7 @@
 				set_interest_group_name = ig_oriental_orthodox_church
 				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_oriental_orthodox_patriarch
+				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
 			}
 		}
 		# Orthodox Church
@@ -238,6 +254,7 @@
 				set_interest_group_name = ig_orthodox_church
 				remove_ideology = ideology_patriarchal
 				add_ideology = ideology_orthodox_patriarch
+				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
 			}
 		}
 		# Hindu Priesthood
@@ -283,7 +300,26 @@
 			ig:ig_devout = {
 				set_interest_group_name = ig_sikh_priesthood
 				remove_ideology = ideology_moralist
-				add_ideology = ideology_sikh_moralist
+				add_ideology = ideology_sihk_moralist
+				set_ig_trait = ig_trait:ig_trait_kar_seva
+				set_ig_trait = ig_trait:ig_trait_khalsa
+			}
+		}
+		# Inti
+		else_if = {
+			limit = { country_has_state_religion = rel:inti }
+			ig:ig_devout = {
+				set_ig_trait = ig_trait:ig_trait_be_fruitful_and_multiply
+			}
+		}
+		# Taiping
+		else_if = { 
+			limit = { country_has_state_religion = rel:taiping }
+			ig:ig_devout = {
+				set_interest_group_name = ig_god_worshippers
+				remove_ideology = ideology_moralist
+				add_ideology = ideology_heavenly_kingdom_theocratic
+				set_ig_trait = ig_trait:ig_trait_work_ethic
 			}
 		}
 	}
