@@ -280,7 +280,7 @@ STATE_FLANDRE_SUPERIEURE = {
     }
     resource = {
         type = bg_oil_extraction
-        undiscovered_amount = 15
+        undiscovered_amount = 70
     }
 }
 STATE_NOUVELLE_LORRAINE = {
@@ -558,7 +558,7 @@ STATE_ERIESLAND = {
     }
     resource = {
         type = bg_oil_extraction
-        undiscovered_amount = 10
+        undiscovered_amount = 50
     }
 }
 STATE_COSKAQUIAS = {
@@ -944,7 +944,7 @@ STATE_SANBAO = {
     }
     resource = {
         type = bg_oil_extraction
-        undiscovered_amount = 15
+        undiscovered_amount = 80
     }
     resource = {
         type = bg_gold_fields
@@ -1192,7 +1192,7 @@ STATE_BAHIA = {
     }
     resource = {
         type = bg_oil_extraction
-        undiscovered_amount = 30
+        undiscovered_amount = 100
     }
     naval_exit_id = 3060
 }
