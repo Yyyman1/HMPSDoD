@@ -365,9 +365,9 @@ dvg_spain.6 = {
 		add_loyalists = {
 			value = 0.4
 		}
-		add_journal_entry = {
-			type = je_reconquer_new_spain
-		}
+		#add_journal_entry = {
+		#	type = je_reconquer_new_spain
+		#}
 		add_journal_entry = {
 			type = je_army_reform_spain
 		}
@@ -413,21 +413,21 @@ dvg_spain.7 = {
 		add_radicals = {
 			value = 0.1
 		}
-		add_journal_entry = {
-			type = je_rebuild_spain
-		}
+		#add_journal_entry = {
+		#	type = je_rebuild_spain
+		#}
 		add_journal_entry = {
 			type = je_army_reform_spain
 		}
-		c:SPA = {
-			remove_diplomatic_pact = {
-				country = c:VIJ
-				type = protectorate
-			}
-		}
-		add_modifier = {
-			name = dvg_fallen_kingdom
-		}
+		#c:SPA = {
+		#	remove_diplomatic_pact = {
+		#		country = c:VIJ
+		#		type = protectorate
+		#	}
+		#}
+		#add_modifier = {
+		#	name = dvg_fallen_kingdom
+		#}
 		ai_chance = {
 			base = 1
 		}
