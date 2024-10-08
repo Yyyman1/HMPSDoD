@@ -466,7 +466,6 @@
 		effect_starting_politics_traditional = yes
 		activate_law = law_type:law_debt_slavery
 		activate_law = law_type:law_total_separation
-		activate_law = law_type:law_homesteading
 		#activate_law = law_type:law_professional_army
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	

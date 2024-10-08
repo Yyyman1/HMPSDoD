@@ -13,7 +13,36 @@
 #	}
 #
 
-### Try to keep this updated wiht vanilla
+relations_hit_with_power_bloc_leaders = {
+	if = {
+		limit = {
+			has_game_started = yes
+		}
+		
+		every_power_bloc = {
+			limit = { 
+				NOT = { scope:power_bloc ?= this }			
+			}
+			power_bloc_leader = {
+				root = {
+					change_relations = { 
+						country = prev
+						value = {
+							add = -5
+							if = {
+								limit = {
+									is_country_type = unrecognized
+									prev = { is_country_type = recognized }
+								}
+								add = -5
+							}
+						}
+					}
+				}
+			}
+		}		
+	}
+}
 
 save_neighbor_with_state = {
 	random_neighbouring_state = {
@@ -153,19 +182,53 @@ save_industrialized_pm_building_and_state = {
 }
 
 warlord_setup_effect = {
-	activate_law = law_type:law_autocracy 
 	activate_law = law_type:law_republic
-	activate_law = law_type:law_peasant_levies
+	activate_law = law_type:law_autocracy
+	
+	add_primary_culture = cu:han
+	
+	ig:ig_armed_forces = {
+		add_ruling_interest_group = yes
+		leader = {
+			set_character_as_ruler = yes
+		}
+	}
+	
+	ig:ig_landowners = {
+		remove_ruling_interest_group = yes
+	}
 		
 	every_scope_character = {
 		random_list = {
 			80 =  {
 			}
-
 			20 = {
 				add_trait = bandit
 			}
 		}			
+	}
+}
+#HMPS
+mahdist_setup_effect = {
+	set_country_type = unrecognized
+	add_primary_culture = cu:nuba
+	set_state_religion = rel:sunni
+	activate_law = law_type:law_theocracy
+	activate_law = law_type:law_autocracy
+	activate_law = law_type:law_state_religion
+	activate_law = law_type:law_national_militia
+	activate_law = law_type:law_religious_schools
+	activate_law = law_type:law_no_colonial_affairs
+	ig:ig_devout = { 
+		set_interest_group_name = ig_sunni_madrasahs
+	}
+	change_institution_investment_level = {
+		institution = institution_army_model
+		investment = 1
+	}
+	add_modifier = {
+		name = mahdist_happy_igs
+		months = 240
 	}
 }
 
@@ -333,8 +396,6 @@ save_agitator_law_scopes = {
 		}
 	}
 }
-
-
 clean_up_exile_character_roles = { # scope: character
 	if = {
 		limit = {
@@ -346,7 +407,6 @@ clean_up_exile_character_roles = { # scope: character
 		limit = {
 			has_role = politician
 		}
-		set_as_interest_group_leader = no
 		remove_character_role = politician
 	}
 	if = {
