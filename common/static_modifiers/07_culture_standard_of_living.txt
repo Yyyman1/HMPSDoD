@@ -78,16 +78,6 @@ assyrian_standard_of_living_modifier_negative = {
 	state_assyrian_standard_of_living_add = 1
 }
 
-circassian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_circassian_standard_of_living_add = 1
-}
-
-circassian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_circassian_standard_of_living_add = 1
-}
-
 francoprovencal_standard_of_living_modifier_positive = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	state_francoprovencal_standard_of_living_add = 1
@@ -96,26 +86,6 @@ francoprovencal_standard_of_living_modifier_positive = {
 francoprovencal_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_francoprovencal_standard_of_living_add = 1
-}
-
-chechen_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_chechen_standard_of_living_add = 1
-}
-
-chechen_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_chechen_standard_of_living_add = 1
-}
-
-karelian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_karelian_standard_of_living_add = 1
-}
-
-karelian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_karelian_standard_of_living_add = 1
 }
 
 bashkir_standard_of_living_modifier_positive = {
@@ -128,56 +98,6 @@ bashkir_standard_of_living_modifier_negative = {
 	state_bashkir_standard_of_living_add = 1
 }
 
-buryat_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_buryat_standard_of_living_add = 1
-}
-
-buryat_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_buryat_standard_of_living_add = 1
-}
-
-mordvin_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_mordvin_standard_of_living_add = 1
-}
-
-mordvin_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_mordvin_standard_of_living_add = 1
-}
-
-chuvash_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_chuvash_standard_of_living_add = 1
-}
-
-chuvash_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_chuvash_standard_of_living_add = 1
-}
-
-mari_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_mari_standard_of_living_add = 1
-}
-
-mari_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_mari_standard_of_living_add = 1
-}
-
-udmurt_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_udmurt_standard_of_living_add = 1
-}
-
-udmurt_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_udmurt_standard_of_living_add = 1
-}
-
 mazanderani_standard_of_living_modifier_positive = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	state_mazanderani_standard_of_living_add = 1
@@ -186,26 +106,6 @@ mazanderani_standard_of_living_modifier_positive = {
 mazanderani_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_mazanderani_standard_of_living_add = 1
-}
-
-luri_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_luri_standard_of_living_add = 1
-}
-
-luri_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_luri_standard_of_living_add = 1
-}
-
-kho_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_kho_standard_of_living_add = 1
-}
-
-kho_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_kho_standard_of_living_add = 1
 }
 
 south_german_standard_of_living_modifier_positive = {
@@ -236,26 +136,6 @@ dutch_standard_of_living_modifier_positive = {
 dutch_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_dutch_standard_of_living_add = 1
-}
-
-flemish_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_flemish_standard_of_living_add = 1
-}
-
-flemish_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_flemish_standard_of_living_add = 1
-}
-
-wallonian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_wallonian_standard_of_living_add = 1
-}
-
-wallonian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_wallonian_standard_of_living_add = 1
 }
 
 boer_standard_of_living_modifier_positive = {
@@ -356,16 +236,6 @@ irish_standard_of_living_modifier_positive = {
 irish_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_irish_standard_of_living_add = 1
-}
-
-australian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_australian_standard_of_living_add = 1
-}
-
-australian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_australian_standard_of_living_add = 1
 }
 
 north_italian_standard_of_living_modifier_positive = {
@@ -606,16 +476,6 @@ byelorussian_standard_of_living_modifier_positive = {
 byelorussian_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_byelorussian_standard_of_living_add = 1
-}
-
-ukrainian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_ukrainian_standard_of_living_add = 1
-}
-
-ukrainian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_ukrainian_standard_of_living_add = 1
 }
 
 ugrian_standard_of_living_modifier_positive = {
@@ -876,16 +736,6 @@ kurdish_standard_of_living_modifier_positive = {
 kurdish_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_kurdish_standard_of_living_add = 1
-}
-
-tatar_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_tatar_standard_of_living_add = 1
-}
-
-tatar_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_tatar_standard_of_living_add = 1
 }
 
 mongol_standard_of_living_modifier_positive = {
@@ -1588,16 +1438,6 @@ tupinamba_standard_of_living_modifier_negative = {
 	state_tupinamba_standard_of_living_add = 1
 }
 
-metis_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_metis_standard_of_living_add = 1
-}
-
-metis_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_metis_standard_of_living_add = 1
-}
-
 dakota_standard_of_living_modifier_positive = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	state_dakota_standard_of_living_add = 1
@@ -1616,16 +1456,6 @@ cherokee_standard_of_living_modifier_positive = {
 cherokee_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_cherokee_standard_of_living_add = 1
-}
-
-muskogean_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_muskogean_standard_of_living_add = 1
-}
-
-muskogean_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_muskogean_standard_of_living_add = 1
 }
 
 pueblo_standard_of_living_modifier_positive = {
@@ -1828,26 +1658,6 @@ cariban_standard_of_living_modifier_negative = {
 	state_cariban_standard_of_living_add = 1
 }
 
-yankee_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_yankee_standard_of_living_add = 1
-}
-
-yankee_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_yankee_standard_of_living_add = 1
-}
-
-dixie_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_dixie_standard_of_living_add = 1
-}
-
-dixie_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_dixie_standard_of_living_add = 1
-}
-
 mexican_standard_of_living_modifier_positive = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	state_mexican_standard_of_living_add = 1
@@ -1898,86 +1708,6 @@ south_andean_standard_of_living_modifier_negative = {
 	state_south_andean_standard_of_living_add = 1
 }
 
-peruvian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_peruvian_standard_of_living_add = 1
-}
-
-peruvian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_peruvian_standard_of_living_add = 1
-}
-
-bolivian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_bolivian_standard_of_living_add = 1
-}
-
-bolivian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_bolivian_standard_of_living_add = 1
-}
-
-ecuadorian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_ecuadorian_standard_of_living_add = 1
-}
-
-ecuadorian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_ecuadorian_standard_of_living_add = 1
-}
-
-chilean_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_chilean_standard_of_living_add = 1
-}
-
-chilean_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_chilean_standard_of_living_add = 1
-}
-
-venezuelan_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_venezuelan_standard_of_living_add = 1
-}
-
-venezuelan_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_venezuelan_standard_of_living_add = 1
-}
-
-argentine_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_argentine_standard_of_living_add = 1
-}
-
-argentine_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_argentine_standard_of_living_add = 1
-}
-
-uruguayan_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_uruguayan_standard_of_living_add = 1
-}
-
-uruguayan_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_uruguayan_standard_of_living_add = 1
-}
-
-paraguayan_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_paraguayan_standard_of_living_add = 1
-}
-
-paraguayan_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_paraguayan_standard_of_living_add = 1
-}
-
 colombian_standard_of_living_modifier_positive = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
 	state_colombian_standard_of_living_add = 1
@@ -1986,81 +1716,6 @@ colombian_standard_of_living_modifier_positive = {
 colombian_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_colombian_standard_of_living_add = 1
-}
-
-platinean_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_platinean_standard_of_living_add = 1
-}
-
-platinean_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_platinean_standard_of_living_add = 1
-}
-
-brazilian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_brazilian_standard_of_living_add = 1
-}
-
-brazilian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_brazilian_standard_of_living_add = 1
-}
-
-sulista_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_sulista_standard_of_living_add = 1
-}
-
-sulista_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_sulista_standard_of_living_add = 1
-}
-
-nordestino_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_nordestino_standard_of_living_add = 1
-}
-
-nordestino_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_nordestino_standard_of_living_add = 1
-}
-
-amazonic_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_amazonic_standard_of_living_add = 1
-}
-
-amazonic_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_amazonic_standard_of_living_add = 1
-}
-
-paulista_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_paulista_standard_of_living_add = 1
-}
-
-paulista_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_paulista_standard_of_living_add = 1
-}
-
-afro_american_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_afro_american_standard_of_living_add = 1
-}
-
-afro_american_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_afro_american_standard_of_living_add = 1
-}
-
-afro_caribbean_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_afro_caribbean_standard_of_living_add = 1
 }
 
 afro_caribbean_standard_of_living_modifier_negative = {
@@ -2076,16 +1731,6 @@ afro_caribeno_standard_of_living_modifier_positive = {
 afro_caribeno_standard_of_living_modifier_negative = {
 	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
 	state_afro_caribeno_standard_of_living_add = 1
-}
-
-afro_brazilian_standard_of_living_modifier_positive = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds"
-	state_afro_brazilian_standard_of_living_add = 1
-}
-
-afro_brazilian_standard_of_living_modifier_negative = {
-	icon = "gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds"
-	state_afro_brazilian_standard_of_living_add = 1
 }
 
 afro_antillean_standard_of_living_modifier_positive = {
