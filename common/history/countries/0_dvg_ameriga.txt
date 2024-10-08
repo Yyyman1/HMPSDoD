@@ -443,8 +443,6 @@
 	c:QUI = { #Quito Caladero AKA New Toledo
 		effect_starting_technology_tier_3_tech = yes
 		
-		add_technology_researched = napoleonic_warfare
-		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_oligarchy
@@ -487,8 +485,6 @@
 	
 	c:GRA = { #Granada
 		effect_starting_technology_tier_3_tech = yes
-		
-		add_technology_researched = napoleonic_warfare
 		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_monarchy
