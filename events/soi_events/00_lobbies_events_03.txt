@@ -1,192 +1,192 @@
 ﻿namespace = lobby_events
 
-# Impressive Tax Reform
-lobby_events.40 = {
-	type = country_event
-	placement = root
-	title = lobby_events.40.t
-	desc = lobby_events.40.d
-	flavor = lobby_events.40.f
-
-	event_image = {
-		video = "unspecific_signed_contract"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_default.dds"
-
-	dlc = dlc010
-
-	duration = 3
-
-	cooldown = { months = normal_modifier_time }
-
-	trigger = {
-		has_dlc_feature = lobbies
-		is_revolutionary = no
-		OR = {
-			AND = {
-				is_enacting_law = law_type:law_graduated_taxation
-				any_interest_group = {
-					is_member_of_any_lobby = no
-					law_stance = {
-						law = law_type:law_graduated_taxation
-						value > neutral
-					}
-				}
-				any_political_lobby = {
-					is_political_lobby_type = lobby_pro_country
-					target = { 
-						has_law = law_type:law_graduated_taxation
-					}
-				} 
-			}
-			AND = {
-				is_enacting_law = law_type:law_proportional_taxation
-				any_interest_group = {
-					is_member_of_any_lobby = no
-					law_stance = {
-						law = law_type:law_proportional_taxation
-						value > neutral
-					}
-				}
-				any_political_lobby = {
-					is_political_lobby_type = lobby_pro_country
-					target = { 
-						has_law = law_type:law_proportional_taxation
-					}
-				}
-			}
-		}	
-	}
-
-	immediate = {
-		if = {
-			limit = {
-				is_enacting_law = law_type:law_graduated_taxation
-				any_interest_group = {
-					is_member_of_any_lobby = no
-					law_stance = {
-						law = law_type:law_graduated_taxation
-						value > neutral
-					}
-				}
-				any_political_lobby = {
-					is_political_lobby_type = lobby_pro_country
-					target = { 
-						has_law = law_type:law_graduated_taxation
-					}
-				}				
-			}
-			random_interest_group = {
-				limit = {
-					is_member_of_any_lobby = no
-					law_stance = {
-						law = law_type:law_graduated_taxation
-						value > neutral
-					}
-				}
-				save_scope_as = relevant_ig
-			}
-			random_political_lobby = {
-				limit = {
-					is_political_lobby_type = lobby_pro_country
-					target = { 
-						has_law = law_type:law_graduated_taxation
-					}
-				}
-				target = {
-					save_scope_as = relevant_lobby_country
-				}
-				save_scope_as = relevant_lobby	
-			}
-		}
-		else = {
-			limit = {
-				is_enacting_law = law_type:law_proportional_taxation
-				any_interest_group = {
-					is_member_of_any_lobby = no
-					law_stance = {
-						law = law_type:law_proportional_taxation
-						value > neutral
-					}
-				}
-				any_political_lobby = {
-					is_political_lobby_type = lobby_pro_country
-					target = { 
-						has_law = law_type:law_proportional_taxation
-					}
-				}				
-			}
-			random_interest_group = {
-				limit = {
-					is_member_of_any_lobby = no
-					law_stance = {
-						law = law_type:law_proportional_taxation
-						value > neutral
-					}
-				}
-				save_scope_as = relevant_ig
-			}
-			random_political_lobby = {
-				limit = {
-					is_political_lobby_type = lobby_pro_country
-					target = { 
-						has_law = law_type:law_proportional_taxation
-					}
-				}
-				target = {
-					save_scope_as = relevant_lobby_country
-				}
-				save_scope_as = relevant_lobby	
-			}
-		}
-		currently_enacting_law = {
-    		save_scope_as = relevant_law_scope
-    	}
-	}
-
-	cancellation_trigger = {
-		OR = {
-			NOT = { currently_enacting_law = scope:relevant_law_scope }
-			NOT = { exists = scope:relevant_lobby }
-			NOT = { exists = scope:relevant_lobby_country }
-		}		
-	}
-
-	option = {
-		name = lobby_events.40.a
-		default_option = yes
-		scope:relevant_lobby = {
-			add_lobby_member = scope:relevant_ig
-			change_appeasement = {
-			   amount = 1
-			   factor = appeasement_lobby_pleased
-			}
-		}
-		add_enactment_modifier = {
-			name = ig_happy_with_law_enactment
-		}
-	}
-	option = {
-		name = lobby_events.40.b
-		scope:relevant_lobby = {
-			add_lobby_member = scope:relevant_ig
-		}
-		scope:relevant_ig = {
-			add_modifier = {
-				name = ig_join_pol_str_positive
-				months = short_modifier_time
-				is_decaying = yes
-			}
-		}
-		add_loyalists = {
-			value = small_radicals
-			interest_group = scope:relevant_ig
-		}
-	}
-}
+## Impressive Tax Reform
+#lobby_events.40 = {
+#	type = country_event
+#	placement = root
+#	title = lobby_events.40.t
+#	desc = lobby_events.40.d
+#	flavor = lobby_events.40.f
+#
+#	event_image = {
+#		video = "unspecific_signed_contract"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#
+#	icon = "gfx/interface/icons/event_icons/event_default.dds"
+#
+#	dlc = dlc010
+#
+#	duration = 3
+#
+#	cooldown = { months = normal_modifier_time }
+#
+#	trigger = {
+#		has_dlc_feature = lobbies
+#		is_revolutionary = no
+#		OR = {
+#			AND = {
+#				is_enacting_law = law_type:law_graduated_taxation
+#				any_interest_group = {
+#					is_member_of_any_lobby = no
+#					law_stance = {
+#						law = law_type:law_graduated_taxation
+#						value > neutral
+#					}
+#				}
+#				any_political_lobby = {
+#					is_political_lobby_type = lobby_pro_country
+#					target = { 
+#						has_law = law_type:law_graduated_taxation
+#					}
+#				} 
+#			}
+#			AND = {
+#				is_enacting_law = law_type:law_proportional_taxation
+#				any_interest_group = {
+#					is_member_of_any_lobby = no
+#					law_stance = {
+#						law = law_type:law_proportional_taxation
+#						value > neutral
+#					}
+#				}
+#				any_political_lobby = {
+#					is_political_lobby_type = lobby_pro_country
+#					target = { 
+#						has_law = law_type:law_proportional_taxation
+#					}
+#				}
+#			}
+#		}	
+#	}
+#
+#	immediate = {
+#		if = {
+#			limit = {
+#				is_enacting_law = law_type:law_graduated_taxation
+#				any_interest_group = {
+#					is_member_of_any_lobby = no
+#					law_stance = {
+#						law = law_type:law_graduated_taxation
+#						value > neutral
+#					}
+#				}
+#				any_political_lobby = {
+#					is_political_lobby_type = lobby_pro_country
+#					target = { 
+#						has_law = law_type:law_graduated_taxation
+#					}
+#				}				
+#			}
+#			random_interest_group = {
+#				limit = {
+#					is_member_of_any_lobby = no
+#					law_stance = {
+#						law = law_type:law_graduated_taxation
+#						value > neutral
+#					}
+#				}
+#				save_scope_as = relevant_ig
+#			}
+#			random_political_lobby = {
+#				limit = {
+#					is_political_lobby_type = lobby_pro_country
+#					target = { 
+#						has_law = law_type:law_graduated_taxation
+#					}
+#				}
+#				target = {
+#					save_scope_as = relevant_lobby_country
+#				}
+#				save_scope_as = relevant_lobby	
+#			}
+#		}
+#		else = {
+#			limit = {
+#				is_enacting_law = law_type:law_proportional_taxation
+#				any_interest_group = {
+#					is_member_of_any_lobby = no
+#					law_stance = {
+#						law = law_type:law_proportional_taxation
+#						value > neutral
+#					}
+#				}
+#				any_political_lobby = {
+#					is_political_lobby_type = lobby_pro_country
+#					target = { 
+#						has_law = law_type:law_proportional_taxation
+#					}
+#				}				
+#			}
+#			random_interest_group = {
+#				limit = {
+#					is_member_of_any_lobby = no
+#					law_stance = {
+#						law = law_type:law_proportional_taxation
+#						value > neutral
+#					}
+#				}
+#				save_scope_as = relevant_ig
+#			}
+#			random_political_lobby = {
+#				limit = {
+#					is_political_lobby_type = lobby_pro_country
+#					target = { 
+#						has_law = law_type:law_proportional_taxation
+#					}
+#				}
+#				target = {
+#					save_scope_as = relevant_lobby_country
+#				}
+#				save_scope_as = relevant_lobby	
+#			}
+#		}
+#		currently_enacting_law = {
+#    		save_scope_as = relevant_law_scope
+#    	}
+#	}
+#
+#	cancellation_trigger = {
+#		OR = {
+#			NOT = { currently_enacting_law = scope:relevant_law_scope }
+#			NOT = { exists = scope:relevant_lobby }
+#			NOT = { exists = scope:relevant_lobby_country }
+#		}		
+#	}
+#
+#	option = {
+#		name = lobby_events.40.a
+#		default_option = yes
+#		scope:relevant_lobby = {
+#			add_lobby_member = scope:relevant_ig
+#			change_appeasement = {
+#			   amount = 1
+#			   factor = appeasement_lobby_pleased
+#			}
+#		}
+#		add_enactment_modifier = {
+#			name = ig_happy_with_law_enactment
+#		}
+#	}
+#	option = {
+#		name = lobby_events.40.b
+#		scope:relevant_lobby = {
+#			add_lobby_member = scope:relevant_ig
+#		}
+#		scope:relevant_ig = {
+#			add_modifier = {
+#				name = ig_join_pol_str_positive
+#				months = short_modifier_time
+#				is_decaying = yes
+#			}
+#		}
+#		add_loyalists = {
+#			value = small_radicals
+#			interest_group = scope:relevant_ig
+#		}
+#	}
+#}
 
 # Differences Aside
 lobby_events.31 = {
