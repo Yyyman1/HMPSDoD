@@ -33,6 +33,8 @@
 		add_declared_interest = region_brazil
 		add_declared_interest = region_poland
 		add_declared_interest = region_senegal
+		add_declared_interest = region_new_england
+		add_declared_interest = region_la_plata
 	}
 	c:SCA = {
 		add_declared_interest = region_poland
@@ -42,6 +44,7 @@
 		add_declared_interest = region_france
 		add_declared_interest = region_south_china
 		add_declared_interest = region_zanj
+		add_declared_interest = region_canada
 	}
 	c:DUA = {
 		add_declared_interest = region_iberia

@@ -12,13 +12,17 @@
 			direction = import
 			target = c:BRG.market
 		}
-	}
-	C:VEN = {
 		create_trade_route = {
-			goods = fertilizer
-			level = 8
+			goods = dye
+			level = 1
 			direction = export
-			target = c:PLA.market
+			target = c:ARA.market
+		}
+		create_trade_route = {
+			goods = silk
+			level = 5
+			direction = import
+			target = c:ARA.market
 		}
 	}
 	C:SPA = {
@@ -27,6 +31,12 @@
 			level = 6
 			direction = export
 			target = c:DUA.market
+		}
+		create_trade_route = {
+			goods = silk
+			level = 3
+			direction = export
+			target = c:BOH.market
 		}
 		create_trade_route = {
 			goods = dye
@@ -46,20 +56,14 @@
 			direction = export
 			target = c:DUA.market
 		}
+		create_trade_route = {
+			goods = sugar
+			level = 10
+			target = c:BOH.market
+			direction = export
+		}
 	}
 	c:DUA = {
-		create_trade_route = {
-			goods = fertilizer
-			level = 10
-			direction = import
-			target = c:SPA.market
-		}
-		create_trade_route = {
-			goods = fertilizer
-			level = 6
-			direction = import
-			target = c:BOH.market
-		}
 		create_trade_route = {
 			goods = tools
 			level = 8
@@ -74,7 +78,7 @@
 		}
 		create_trade_route = {
 			goods = luxury_furniture
-			level = 4
+			level = 5
 			direction = export
 			target = c:SPA.market
 		}
@@ -83,6 +87,18 @@
 			level = 4
 			direction = export
 			target = c:SPA.market
+		}
+		create_trade_route = {
+			goods = sugar
+			level = 10
+			target = c:BOH.market
+			direction = export
+		}
+		create_trade_route = {
+			goods = silk
+			level = 1
+			direction = export
+			target = c:BOH.market
 		}
 	}
 	c:PLA = {
@@ -102,58 +118,58 @@
 	c:VIN = {
 		create_trade_route = {
 			goods = fertilizer
-			level = 3
+			level = 4
 			direction = import
 			target = c:SCA.market
-		}
-		create_trade_route = {
-			goods = fertilizer
-			level = 2
-			direction = import
-			target = c:PLO.market
 		}
 	}
 	c:CNF = {
 		create_trade_route = {
 			goods = sugar
-			level = 12
+			level = 11
 			target = c:SPA.market
 			direction = import
 		}
 		create_trade_route = {
 			goods = fertilizer
-			level = 4
+			level = 6
 			target = c:SPA.market
 			direction = import
 		}
 		create_trade_route = {
-			goods = fertilizer
+			goods = small_arms
+			level = 2
+			target = c:LOT.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = small_arms
 			level = 1
-			target = c:DUA.market
+			target = c:BRG.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = lead
+			level = 2
+			target = c:BRG.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = explosives
+			level = 2
+			target = c:BRG.market
 			direction = import
 		}
 	}
 	c:ARN = {
 		create_trade_route = {
-			goods = dye
+			goods = paper
 			level = 3
 			target = c:SCA.market
 			direction = import
 		}
 	}
 	c:BOH = {
-		create_trade_route = {
-			goods = sugar
-			level = 10
-			target = c:BUR.market
-			direction = import
-		}
-		create_trade_route = {
-			goods = sugar
-			level = 10
-			target = c:SCA.market
-			direction = import
-		}
 		create_trade_route = {
 			goods = dye		
 			level = 6
@@ -163,22 +179,16 @@
 	}
 	c:POL = {
 		create_trade_route = {
-			goods = fertilizer
-			level = 6
-			target = c:BRG.market
-			direction = import
-		}
-		create_trade_route = {
-			goods = fertilizer
-			level = 4
+			goods = small_arms
+			level = 5
 			target = c:BOH.market
 			direction = import
 		}
 	}
 	c:HUN = {
 		create_trade_route = {
-			goods = sulfur
-			level = 5
+			goods = small_arms
+			level = 2
 			target = c:BOH.market
 			direction = import
 		}
@@ -231,6 +241,18 @@
 			level = 1
 			direction = import
 			target = c:CNF.market
+		}
+		create_trade_route = {
+			goods = lead
+			level = 2
+			target = c:BRG.market
+			direction = import
+		}
+		create_trade_route = {
+			goods = explosives
+			level = 2
+			target = c:BRG.market
+			direction = import
 		}
 	}
 	c:BRG = {
