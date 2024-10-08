@@ -123,6 +123,7 @@
 		create_state = {
 			country=c:BRG
 			owned_provinces = { "xAE9278" "x835810" }
+			state_type = unincorporated
 		}
 		
 		add_homeland = cu:aborigine
@@ -135,6 +136,8 @@
 			owned_provinces = {
 				"xA9C0EB" "x22DF3C" "x01BF32"
 			}
+			state_type = unincorporated
+
 		}
 		create_state = {
 			country = c:MKS
@@ -248,6 +251,7 @@
 		create_state = {
 			country = c:SCA
 			owned_provinces = { "xC5AD14" }
+			state_type = unincorporated
 		}
 		
 		add_homeland = cu:maori
