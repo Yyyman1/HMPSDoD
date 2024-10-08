@@ -8,6 +8,7 @@
 		ideology_plutocratic
 		ideology_laissez_faire
 		ideology_individualist
+		ideology_cultural_chauvinism
 	}
 
 	enable = {
