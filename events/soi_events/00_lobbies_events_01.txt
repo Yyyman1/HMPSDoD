@@ -500,6 +500,10 @@ lobby_events.23 = {
 						law = law_type:law_republic
 						value > neutral
 					}
+					law_stance = {
+						law = law_type:law_independent_executive
+						value > neutral
+					}
 					OR = {
 						law_stance = {
 							law = law_type:law_autocracy
@@ -515,6 +519,7 @@ lobby_events.23 = {
 					is_political_lobby_type = lobby_pro_country
 					target = {
 						has_law = law_type:law_republic
+						has_law = law_type:law_independent_executive
 						OR = {
 							has_law = law_type:law_autocracy
 							has_law = law_type:law_technocracy
@@ -610,6 +615,10 @@ lobby_events.23 = {
 						law = law_type:law_republic
 						value > neutral
 					}
+					law_stance = {
+						law = law_type:law_independent_executive
+						value > neutral
+					}
 					OR = {
 						law_stance = {
 							law = law_type:law_autocracy
@@ -628,6 +637,7 @@ lobby_events.23 = {
 					is_political_lobby_type = lobby_pro_country
 					target = {
 						has_law = law_type:law_republic
+						has_law = law_type:law_independent_executive
 						OR = {
 							has_law = law_type:law_autocracy
 							has_law = law_type:law_technocracy
