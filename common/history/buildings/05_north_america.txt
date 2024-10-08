@@ -2148,19 +2148,6 @@
 				activate_production_methods={ "pm_handsewn_clothes" "pm_no_luxury_clothes" "pm_traditional_looms" }
 			}
 			create_building={
-				building="building_maize_farm"
-				add_ownership={
-					building={
-						type="building_manor_house"
-						country="c:PLA"
-						levels=6
-						region="STATE_CHARLESIE"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
-			}
-			create_building={
 				building="building_military_shipyards"
 				add_ownership={
 					country={
@@ -2196,37 +2183,9 @@
 		}
 	}
 	s:STATE_MESSISIPI={
-		region_state:PLA={
-			create_building={
-				building="building_maize_farm"
-				add_ownership={
-					building={
-						type="building_maize_farm"
-						country="c:PLA"
-						levels=2
-						region="STATE_MESSISIPI"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
-			}
-		}
 	}
 	s:STATE_CHAOUENONS={	
 		region_state:PLA={
-			create_building={
-				building="building_maize_farm"
-				add_ownership={
-					building={
-						type="building_maize_farm"
-						country="c:PLA"
-						levels=3
-						region="STATE_CHAOUENONS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
-			}
 		}
 	}
 	s:STATE_NOUVELLE_ANGLETERRE={	
@@ -2259,19 +2218,6 @@
 	}
 	s:STATE_MONT_AUX_ARCS={	
 		region_state:PLA={
-			create_building={
-				building="building_maize_farm"
-				add_ownership={
-					building={
-						type="building_maize_farm"
-						country="c:PLA"
-						levels=2
-						region="STATE_MONT_AUX_ARCS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" }
-			}
 		}
 	}
 	s:STATE_BERMUDA={
