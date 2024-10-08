@@ -1,7 +1,7 @@
 ﻿dvg_integrate_east_qq = {
 
 	is_shown = {
-		root = c:QIN
+		# root = c:QIN
 		exists = c:QIN
 		root = {
 			OR = {
@@ -142,7 +142,7 @@
 dvg_integrate_north_qq = {
 
 	is_shown = {
-		root = c:QIN
+		# root = c:QIN
 		exists = c:QIN
 		root = {
 			OR = {
