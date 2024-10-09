@@ -1286,7 +1286,12 @@
 		region_state:KOR = {
 			create_pop = {
 				culture = korean
-				size = 1274480
+				size = 1053067
+			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 567035
 			}
 		}
 	}
@@ -1294,7 +1299,12 @@
 		region_state:KOR = {
 			create_pop = {
 				culture = korean
-				size = 2190200
+				size = 2528980
+			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 1083848
 			}
 		}
 	}
@@ -1302,7 +1312,12 @@
 		region_state:KOR = {
 			create_pop = {
 				culture = korean
-				size = 2565040
+				size = 1832336
+			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 986642
 			}
 			create_pop = {
 				culture = japanese
@@ -1319,7 +1334,12 @@
 		region_state:KOR = {
 			create_pop = {
 				culture = korean
-				size = 1376964
+				size = 2685968
+			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 1866519
 			}
 			create_pop = {
 				culture = japanese
@@ -1347,7 +1367,12 @@
 		region_state:JAP = {
 			create_pop = {
 				culture = korean
-				size = 1763840
+				size = 2409741
+			}
+			create_pop = {
+				culture = korean
+				religion = mahayana
+				size = 1186886
 			}
 			create_pop = {
 				culture = japanese
