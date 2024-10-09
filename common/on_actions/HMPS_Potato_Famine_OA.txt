@@ -12,6 +12,7 @@
 					region = sr:region_north_germany
 					region = sr:region_england
 					region = sr:region_north_sea_coast
+					region = sr:region_baltic
 				}
 				OR = {
 					has_modifier = modifier_agri_HARF_neg_40
@@ -89,6 +90,20 @@
 					id = potato_blight.1
 					popup = yes
 					days = 1
+				}
+			}
+			if = {
+				limit = {
+					OR = {
+						state_region = s:STATE_MUNSTER
+						state_region = s:STATE_LEINSTER
+						state_region = s:STATE_ULSTER
+						state_region = s:STATE_CONNAUGHT
+					}
+				}
+				add_modifier = {
+					name = modifier_irish_emigration
+					years = 30
 				}
 			}
 			every_country = {
@@ -182,6 +197,22 @@
 				limit = {
 					global_var:potato_blight_magn_global = 2
 				}
+				every_country = {
+					limit = {
+						OR = {
+							capital = {
+								country_is_in_europe = yes
+							}
+							any_scope_state = {
+								has_modifier = potato_blight_modifier
+							}
+						}
+					}
+					trigger_event = {
+						id = potato_blight.4
+						days = 1
+					}
+				}
 				remove_global_variable = potato_blight_magn_global
 			}
 			random_list = {
@@ -257,6 +288,20 @@
 							}
 						}
 					}
+					if = {
+						limit = {
+							OR = {
+								state_region = s:STATE_MUNSTER
+								state_region = s:STATE_LEINSTER
+								state_region = s:STATE_ULSTER
+								state_region = s:STATE_CONNAUGHT
+							}
+						}
+						add_modifier = {
+							name = modifier_irish_emigration
+							years = 30
+						}
+					}
 				}
 			}
 		}
@@ -272,6 +317,15 @@
 					NOT = { has_global_variable = potato_blight_over }
 				}
 				set_global_variable = potato_blight_over
+				if = {
+					limit = {
+						has_global_variable = global_1848_progress
+					}
+					change_global_variable = {
+						name = global_1848_progress
+						add = 10
+					}
+				}
 				every_country = {
 					limit = {
 						any_scope_state = {

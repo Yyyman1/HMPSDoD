@@ -77,3 +77,6 @@
  remove_FAQ_desc:0 "Permanently remove the FAQ."
  read_FAQ:0 "Open FAQ"
  read_FAQ_desc:0 "FAQ stands for "Frequently Asked Questions."
+
+ increase_conscription_laws:0 "Expand Conscription"
+ increase_conscription_laws_desc:0 "We can increase our conscription requirements, moving us up an army tier law at a price"

@@ -5,7 +5,7 @@
  colonial_institution_exploitation:0 "Colonial Exploitation Office"
  distraught_liberals:0 "Distraught Liberals"
  divine_monarchy:0 "Representative of God"
- rejected_gutter_crown:0 "Rejected Frankfurt's Crown"
+ rejected_gutter_crown:0 "Rejected Crown from Frankfurt"
  chastened_liberals:0 "Chastened Liberals"
  happy_junkers:0 "Satisfied Junkers"
  mad_junkers:0 "Furious Junkers"
@@ -31,7 +31,6 @@
  china_ai_help:0 "AI China Aid"
  chinese_economic_stagnation:0 "Ineffectual Mining"
  chinese_treaty_port:0 "Treaty Port State"
- subject_political_penalty:0 "Protectorate Political Penalty"
  usa_isolationism:0 "American Isolationism"
  usa_imperialism:0 "American Imperialism"
  usa_notoriety:0 "Isolationist Protests"
@@ -57,7 +56,6 @@
  shinto_syncretism:0 "Shinto Syncretism"
  decentralized_sol:0 "Decentralized Nation Pop Growth Fix"
  viable_african_country:0 "Viable African Country"
- small_nation_inno_modifier:0 "Small Nation Innovation Fix"
  game_master:0 "Game Master"
  ai_rebellion_buff:0 "AI Rebellion Buff"
  mass_migration_debuff:0 "Recent Mass Migration"
@@ -121,7 +119,7 @@
  ### HARF and Mining
  modifier_agri_HARF_pos_40:0 "Bountiful Harvest"
  modifier_agri_HARF_pos_30:0 "Excellent Harvest"
- modifier_agri_HARF_pos_20:0 "Great Harvest"
+ modifier_agri_HARF_pos_20:0 "Bumper Harvest"
  modifier_agri_HARF_pos_10:0 "Good Harvest"
  modifier_agri_HARF_neg_10:0 "Disappointing Harvest"
  modifier_agri_HARF_neg_20:0 "Poor Harvest"
@@ -160,3 +158,8 @@
  
  weekly_devastation_add: "Weekly $concept_devastation$"
  weekly_devastation_add_desc: "How much [concept_devastation] is added or removed per week"
+
+ tariff_import_outside_power_bloc_mult: "multiplier on Import [concept_tariffs] outside $concept_power_bloc$"
+ tariff_import_outside_power_bloc_mult_desc: "A further multiplicative increase or decrease to the [concept_tariffs] paid by [Concept('concept_trade_route', '$concept_trade_routes$')] by [Concept('concept_country','$concept_countries$')] outside our [concept_power_bloc] that import [Concept('concept_good', '$concept_goods$')] to our [concept_market]."
+ tariff_export_outside_power_bloc_mult: "multiplier on Export [concept_tariffs] outside $concept_power_bloc$"
+ tariff_export_outside_power_bloc_mult_desc: "A further multiplicative increase or decrease to the [concept_tariffs] paid by [Concept('concept_trade_route', '$concept_trade_routes$')] by [Concept('concept_country','$concept_countries$')] outside our [concept_power_bloc] that import [Concept('concept_good', '$concept_goods$')] from our [concept_market]."

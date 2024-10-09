@@ -2,6 +2,15 @@
 
 # Root = Country
 on_monthly_pulse_country = {
+	on_actions = {
+		HMPS_Check_for_GM
+		HMPS_ai_modifiers
+		HMPS_Coastal_Capital
+		HMPS_Institution_Modifier
+		HMPS_rev_handling
+		HMPS_undo_sp
+		HMPS_pb_cleanup
+	}
 	events = {
 		communism.8 # Red Army
 		peoples_springtime.1
@@ -19,7 +28,11 @@ on_monthly_pulse_country = {
 		#amazonas.1 # Taming Amazonia
 		#paraguay.11 # Paraguay War
 		#acw_events.9 # CSA victory event
-
+		wine_blight_evt.4
+		chem_weapons_infamy.1
+		dp_modifiers.1
+		grants.3
+		potato_blight.5
 		# Exile Agitators Events
 		yeet_agitator_events.1
 		yeet_agitator_events.2
@@ -2010,6 +2023,23 @@ on_revolution_start = {
 					has_law = law_type:law_single_party_state
 				}
 				handle_revolutionary_sps = yes
+			}
+		}
+		if = {
+			limit = {
+				has_modifier = declared_bankruptcy
+				scope:target ?= {
+					NOT = {
+						has_modifier = declared_bankruptcy
+					}
+				}
+			}
+			scope:target ?= {
+				add_modifier = {
+					name = declared_bankruptcy
+					years = 10
+					is_decaying = yes			
+				}	
 			}
 		}
 		scope:target = {
