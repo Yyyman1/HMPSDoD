@@ -453,7 +453,7 @@ is_afghan_nation = {
 		#c:KAN ?= this
 		#c:HER ?= this
 		#c:KUN ?= this
-		c:MAI ?= this
+		#c:MAI ?= this
 	}
 }
 

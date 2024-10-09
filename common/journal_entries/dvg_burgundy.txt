@@ -365,7 +365,7 @@ je_anism = {
 			}
 			if = {
 				limit = {
-					exists = c:HRE
+					exists = c:HRL
 					NOT = {
 						has_variable = hre_exists
 					}

@@ -226,7 +226,7 @@
 #								}
 #							}
 							AND = {
-								c:DEI ?= this
+								c:BEI ?= this
 								scope:first_state = {
 									region = sr:region_indonesia
 								}

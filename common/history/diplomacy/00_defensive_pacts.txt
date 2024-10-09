@@ -17,12 +17,6 @@
 			type = defensive_pact
 		}	
 	}
-	c:POL = {
-		create_diplomatic_pact = {
-			country = c:MOL
-			type = defensive_pact
-		}	
-	}
 	c:AUS = {
 		create_diplomatic_pact = {
 			country = c:BAV

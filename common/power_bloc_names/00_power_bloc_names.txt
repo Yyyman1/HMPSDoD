@@ -79,24 +79,24 @@ iran-e_bozorg = {
 	}
 }
 
-golden_circle = {
-	trigger = {
-		scope:selected_identity = identity:identity_sovereign_empire
-		OR = {
-			c:CSA ?= this
-			AND = {
-				c:USA ?= this
-				NOT = { 
-					has_law = law_type:law_slavery_banned 
-				}
-				NOR = {
-					has_journal_entry = je_acw_countdown
-					has_journal_entry = je_acw_war
-				}
-			}
-		}
-	}
-}
+#golden_circle = {
+#	trigger = {
+#		scope:selected_identity = identity:identity_sovereign_empire
+#		OR = {
+#			c:CSA ?= this
+#			AND = {
+#				c:USA ?= this
+#				NOT = { 
+#					has_law = law_type:law_slavery_banned 
+#				}
+#				NOR = {
+#					has_journal_entry = je_acw_countdown
+#					has_journal_entry = je_acw_war
+#				}
+#			}
+#		}
+#	}
+#}
 
 da_zhongguo = { # greater china
 	trigger = {
@@ -110,23 +110,23 @@ da_zhongguo = { # greater china
 	}
 }
 
-international_association = {
-	trigger = {
-		scope:selected_identity = identity:identity_sovereign_empire
-		OR = {
-			c:BEL ?= this
-			any_scope_state = {
-				OR = {
-					state_region = s:STATE_CONGO_ORIENTALE
-					state_region = s:STATE_KATANGA
-					state_region = s:STATE_BAS_CONGO
-					state_region = s:STATE_EQUATEUR
-					state_region = s:STATE_KASAI
-				}
-			}
-		}
-	}
-}
+#international_association = {
+#	trigger = {
+#		scope:selected_identity = identity:identity_sovereign_empire
+#		OR = {
+#			c:BEL ?= this
+#			any_scope_state = {
+#				OR = {
+#					state_region = s:STATE_CONGO_ORIENTALE
+#					state_region = s:STATE_KATANGA
+#					state_region = s:STATE_BAS_CONGO
+#					state_region = s:STATE_EQUATEUR
+#					state_region = s:STATE_KASAI
+#				}
+#			}
+#		}
+#	}
+#}
 
 ### religious ###
 
@@ -451,7 +451,7 @@ entente = {
 		    	c:GBR ?= this
 		    	c:RUS ?= this
 		    	c:ITA ?= this
-		    	c:USA ?= this
+#		    	c:USA ?= this
 		    	c:JAP ?= this
 	    	}
 	    }
@@ -493,23 +493,23 @@ pact_of_pearl_harbor = {
 	}
 }
 
-waterloo_pact = {
-	trigger = {
-		scope:selected_identity = identity:identity_military_treaty_organization
-	    OR = {
-	    	c:BEL ?= this
-	    	any_scope_ally = {
-	    		c:BEL ?= this
-	    	}
-	    	any_scope_ally = {
-	    		any_scope_state = { state_region = s:STATE_WALLONIA }
-	    	}
-	    }
-		any_rival_country = {
-			c:FRA ?= this
-		}
-	}
-}
+#waterloo_pact = {
+#	trigger = {
+#		scope:selected_identity = identity:identity_military_treaty_organization
+#	    OR = {
+#	    	c:BEL ?= this
+#	    	any_scope_ally = {
+#	    		c:BEL ?= this
+#	    	}
+#	    	any_scope_ally = {
+#	    		any_scope_state = { state_region = s:STATE_WALLONIA }
+#	    	}
+#	    }
+#		any_rival_country = {
+#			c:FRA ?= this
+#		}
+#	}
+#}
 
 ### trade league ###
 
@@ -551,18 +551,18 @@ handelsverein = {
 	}
 }
 
-ouchy_convention = {
-	trigger = {
-		scope:selected_identity = identity:identity_trade_league
-		OR = {
-			c:NET ?= this
-			c:BEL ?= this
-			c:LUX ?= this
-			c:WAL ?= this
-			c:FLA ?= this
-		}
-	}
-}
+#ouchy_convention = {
+#	trigger = {
+#		scope:selected_identity = identity:identity_trade_league
+#		OR = {
+#			c:NET ?= this
+#			c:BEL ?= this
+#			c:LUX ?= this
+#			c:WAL ?= this
+#			c:FLA ?= this
+#		}
+#	}
+#}
 
 imperial_preference = {
 	trigger = {
@@ -572,38 +572,38 @@ imperial_preference = {
 	}
 }
 
-bolivarian_group = {
-	trigger = {
-		scope:selected_identity = identity:identity_trade_league
-		any_primary_culture = {
-			OR = {
-				this = cu:north_andean
-				this = cu:south_andean
-				this = cu:peruvian
-				this = cu:ecuadorian
-				this = cu:bolivian
-				this = cu:venezuelan
-				this = cu:colombian
-			}
-		}
-	}
-}
+#bolivarian_group = {
+#	trigger = {
+#		scope:selected_identity = identity:identity_trade_league
+#		any_primary_culture = {
+#			OR = {
+#				this = cu:north_andean
+#				this = cu:south_andean
+#				this = cu:peruvian
+#				this = cu:ecuadorian
+#				this = cu:bolivian
+#				this = cu:venezuelan
+#				this = cu:colombian
+#			}
+#		}
+#	}
+#}
 
-hanseatic_league = {
-	trigger = {
-		scope:selected_identity = identity:identity_trade_league
-		OR = {
-			c:HAM ?= this
-			was_formed_from = HAM
-			c:LUB ?= this
-			was_formed_from = LUB
-			c:BRE ?= this
-			was_formed_from = BRE
-			c:DZG ?= this
-			was_formed_from = DZG
-		}
-	}
-}
+#hanseatic_league = {
+#	trigger = {
+#		scope:selected_identity = identity:identity_trade_league
+#		OR = {
+#			c:HAM ?= this
+#			was_formed_from = HAM
+#			c:LUB ?= this
+#			was_formed_from = LUB
+#			c:BRE ?= this
+#			was_formed_from = BRE
+#			c:DZG ?= this
+#			was_formed_from = DZG
+#		}
+#	}
+#}
 
 stato_da_mar = {
 	trigger = {
@@ -626,23 +626,23 @@ league_of_trieste = {
 	}
 }
 
-new_orleans_league = {
-	trigger = {
-		scope:selected_identity = identity:identity_trade_league
-		c:USA != this
-	    OR = {
-	    	any_scope_state = { state_region = s:STATE_LOUISIANA }
-	    	c:LOU ?= this
-	    }
-	}
-}
+#new_orleans_league = {
+#	trigger = {
+#		scope:selected_identity = identity:identity_trade_league
+#		c:USA != this
+#	    OR = {
+#	    	any_scope_state = { state_region = s:STATE_LOUISIANA }
+#	    	c:LOU ?= this
+#	    }
+#	}
+#}
 
-galveston_league = {
-	trigger = {
-		scope:selected_identity = identity:identity_trade_league
-		c:TEX ?= this
-	}
-}
+#galveston_league = {
+#	trigger = {
+#		scope:selected_identity = identity:identity_trade_league
+#		c:TEX ?= this
+#	}
+#}
 
 threadneedle_league = {
 	trigger = {
@@ -871,11 +871,11 @@ contintental_system = {
 	}
 }
 
-lone_star_league = {
-	trigger = {
-		c:TEX ?= this
-	}
-}
+#lone_star_league = {
+#	trigger = {
+#		c:TEX ?= this
+#	}
+#}
 
 pan_african_union = {
 	trigger = {
@@ -999,16 +999,16 @@ sons_of_saint_stephen = {
 	}
 }
 
-sol_de_mayo_league = {
-	trigger = {
-		OR = {
-			c:ARG ?= this
-			was_formed_from = ARG
-			c:URU ?= this
-			was_formed_from = URU
-		}
-	}
-}
+#sol_de_mayo_league = {
+#	trigger = {
+#		OR = {
+#			c:ARG ?= this
+#			was_formed_from = ARG
+#			c:URU ?= this
+#			was_formed_from = URU
+#		}
+#	}
+#}
 
 sublime_alliance = {
 	trigger = {

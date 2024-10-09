@@ -430,24 +430,24 @@ dvg_opstalia.7 = {
 		}
     }
 
-    option = { #puppet them
-	name = dvg_opstalia.7.b
-		s:STATE_NOORDLAND.region_state:OPS = { #try adding vryland as releasable, syntax works for set state owner
-			set_state_owner = c:VRY
-        }
-        s:STATE_BOTSWANA.region_state:OPS = {
-			set_state_owner = c:VRY
-        }
-        create_diplomatic_pact = {
-        	target_country = c:VRY
-        	type = puppet
-        }
-        ai_chance = {
-			base = 2
-		}
-		default_option = yes
-    }
-}
+#    option = { #puppet them
+#	name = dvg_opstalia.7.b
+#		s:STATE_NOORDLAND.region_state:OPS = { #try adding vryland as releasable, syntax works for set state owner
+#			set_state_owner = c:VRY
+#        }
+#        s:STATE_BOTSWANA.region_state:OPS = {
+#			set_state_owner = c:VRY
+#        }
+#        create_diplomatic_pact = {
+#        	target_country = c:VRY
+#        	type = puppet
+#        }
+#        ai_chance = {
+#			base = 2
+#		}
+#		default_option = yes
+#    }
+#}
 
 #noordveld war
 dvg_opstalia.8 = {
@@ -474,32 +474,32 @@ dvg_opstalia.8 = {
 		}
 	}
 
-	option = { #go get it
-	default_option = yes
-	name = dvg_opstalia.8.a
-		create_diplomatic_play = {
-			name = noordveld_war
-			
-			escalation = 50
-
-			target_country = c:NFL
-			war = no
-			type = dp_annex_war
-			#add_war_goal = {
-			#	holder = c:OPS
-			#	type = annex_country
-			#	target_country = c:NFL
-			#}
-			add_war_goal = {
-				holder = c:NFL
-				type = annex
-				target_country = c:OPS
-			}
-		}
-		ai_chance = {
-			base = 10
-		}
-    }
+#	option = { #go get it
+#	default_option = yes
+#	name = dvg_opstalia.8.a
+#		create_diplomatic_play = {
+#			name = noordveld_war
+#			
+#			escalation = 50
+#
+#			target_country = c:NFL
+#			war = no
+#			type = dp_annex_war
+#			#add_war_goal = {
+#			#	holder = c:OPS
+#			#	type = annex_country
+#			#	target_country = c:NFL
+#			#}
+#			add_war_goal = {
+#				holder = c:NFL
+#				type = annex
+#				target_country = c:OPS
+#			}
+#		}
+#		ai_chance = {
+#			base = 10
+#		}
+#    }
     option = { #pussy
 	name = dvg_opstalia.8.b
 	    ai_chance = {
@@ -734,22 +734,22 @@ immediate = {
 			base = 2
 		}
     }
-    option = { #back to where they came from 
-	name = dvg_opstalia.11.c
-		add_modifier = { 
-			name = dvg_grondraad_arrested
-			days = 3650
-			is_decaying = yes
-		}
-		set_relations = {
-			target_country = c:NFL
-			value = 20
-		}
-        ai_chance = {
-			base = 4
-		}
-    }
-}
+#    option = { #back to where they came from 
+#	name = dvg_opstalia.11.c
+#		add_modifier = { 
+#			name = dvg_grondraad_arrested
+#			days = 3650
+#			is_decaying = yes
+#		}
+#		set_relations = {
+#			target_country = c:NFL
+#			value = 20
+#		}
+#        ai_chance = {
+#			base = 4
+#		}
+#    }
+#}
 
 #hendrik returns
 #dvg_opstalia.12 = {

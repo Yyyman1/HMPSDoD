@@ -82,12 +82,6 @@
 	        type = rivalry
         }
 	}
-	c:VEN = {
-		create_diplomatic_pact = {
-			country = c:GEN
-			type = rivalry
-		}
-	}
 	c:GEN = {
 		create_diplomatic_pact = {
 			country = c:SAV

@@ -22,16 +22,16 @@
 #			type = puppet
 #		}
 #	}
-	c:AMA = {
-		create_diplomatic_pact = {
-			country = c:TUP
-			type = colonization_rights
-		}
-		create_diplomatic_pact = {
-			country = c:TUP
-			type = colonization_rights
-		}
-	}
+#	c:AMA = {
+#		create_diplomatic_pact = {
+#			country = c:TUP
+#			type = colonization_rights
+#		}
+#		create_diplomatic_pact = {
+#			country = c:TUP
+#			type = colonization_rights
+#		}
+#	}
 	c:SPA = {
 		create_diplomatic_pact = {
 			country = c:CUB

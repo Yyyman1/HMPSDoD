@@ -1,51 +1,51 @@
 ﻿# United Company of Merchants of England Trading to the East Indies
-company_east_india_company = {
-	icon = "gfx/interface/icons/company_icons/historical_company_icons/gb_eic.dds"
-	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
-	
-	flavored_company = yes
-	
-	building_types = {  
-		building_tea_plantation
-		building_tobacco_plantation
-		building_opium_plantation
-	}
-	
-	potential = {
-		c:BIC ?= this
-	}
-	
-	possible = {
-		c:BIC ?= this
-		any_scope_state = {
-			OR = {
-				region = sr:region_north_india
-				region = sr:region_south_india
-			}
-			any_scope_building = {
-				OR = {
-					is_building_type = building_tea_plantation
-					is_building_type = building_tobacco_plantation
-					is_building_type = building_opium_plantation
-				}
-				level >= 3
-			}
-			count >= 4
-		}
-		OR = {
-			has_law = law_type:law_mercantilism
-			has_law = law_type:law_protectionism
-		}
-	}
-	
-	prosperity_modifier = {
-		country_convoys_capacity_mult = 0.2
-	}	
-	
-	ai_weight = {
-		value = 3 # Higher base value for flavored companies
-	}
-}
+#company_east_india_company = {
+#	icon = "gfx/interface/icons/company_icons/historical_company_icons/gb_eic.dds"
+#	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+#	
+#	flavored_company = yes
+#	
+#	building_types = {  
+#		building_tea_plantation
+#		building_tobacco_plantation
+#		building_opium_plantation
+#	}
+#	
+#	potential = {
+#		c:BIC ?= this
+#	}
+#	
+#	possible = {
+#		c:BIC ?= this
+#		any_scope_state = {
+#			OR = {
+#				region = sr:region_north_india
+#				region = sr:region_south_india
+#			}
+#			any_scope_building = {
+#				OR = {
+#					is_building_type = building_tea_plantation
+#					is_building_type = building_tobacco_plantation
+#					is_building_type = building_opium_plantation
+#				}
+#				level >= 3
+#			}
+#			count >= 4
+#		}
+#		OR = {
+#			has_law = law_type:law_mercantilism
+#			has_law = law_type:law_protectionism
+#		}
+#	}
+#	
+#	prosperity_modifier = {
+#		country_convoys_capacity_mult = 0.2
+#	}	
+#	
+#	ai_weight = {
+#		value = 3 # Higher base value for flavored companies
+#	}
+#}
 
 # Imperial Arsenal
 company_imperial_arsenal = {

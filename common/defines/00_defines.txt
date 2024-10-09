@@ -259,7 +259,7 @@ NEconomy = {
 	COUNTRY_GDP_MODIFIER_DIVISOR = 1000					# Scale the country_gdp static modifier by this divisor
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 200000		# The country_gdp modifier multiplier cannot be higher than this
 	
-	ECONOMY_OF_SCALE_START_LEVEL = 5					# Level at which buildings start getting economy of scale bonuses. Levels lower than this value provide no bonus [>=1]
+	ECONOMY_OF_SCALE_START_LEVEL = 20					# Level at which buildings start getting economy of scale bonuses. Levels lower than this value provide no bonus [>=1]
 	ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT = 0.5	# Non-government building economy of scale modifier if multiplied by (1 - the fraction of nationalized levels * this)
 	
 	IN_DEFAULT_MINIMUM_PENALTY_SCALE = 0.1				# This amount of the 'in default' throughput penalty is applied right away
@@ -592,7 +592,7 @@ NMilitary = {
 	MILITARY_FORMATION_ORGANIZATION_MIN = 25				# The minimum amount of Organization a Military Formation will always retain despite exceeding their Command Limit 
 	MILITARY_FORMATION_DAILY_ORGANIZATION_GAIN_MIN = 0.1	# The minimum amount of Organization a Military Formation can gain in a day
 	MOBILIZATION_OPTION_DIFFERENCE_ORGANIZATION_IMPACT = 20 # The penalty to Organization gained for each difference by merging units between Formations with different Mobilization Options
-	FLEET_PRESENCE_GAIN_PER_DAY = 0.02						# The amount of Presence a Fleet gains per day while stationary in a Sea Node
+	FLEET_PRESENCE_GAIN_PER_DAY = 1						# The amount of Presence a Fleet gains per day while stationary in a Sea Node
 	
 	MILITARY_FORMATION_WEEKLY_MAX_UNIT_UPGRADES_ARMY = 0.1		# Each week a mobilized army can upgrade this (0.0-1.0) fraction of its total number of units.
 	MILITARY_FORMATION_WEEKLY_MAX_UNIT_UPGRADES_FLEET = 0.05	# Each week a mobilized fleet can upgrade this (0.0-1.0) fraction of its total number of units.
@@ -964,7 +964,7 @@ NPowerBlocs = {
 	COHESION_WEEKLY_DRIFT_MAX = 1		# At most, Cohesion will drift by +/- this value each week
 	COHESION_TARGET_MAX = 100			# The highest value Cohesion can reach
 	POWER_BLOC_INFLUENCE_COST = 500		# Cost in Influence to form / be the leader of a Power Bloc
-	MAX_LEVERAGE = 1000					# How much "raw" Leverage can be split between parties (the country itself + each Power Bloc)
+	MAX_LEVERAGE = 1200					# How much "raw" Leverage can be split between parties (the country itself + each Power Bloc)
 	LEVERAGE_WEEKLY_DRIFT_FACTOR = 0.02	# The delta between current Leverage and Target Leverage will be multiplied by this to determine the weekly Leverage drift
 	LEVERAGE_WEEKLY_DRIFT_MIN = 1		# At minimum, Leverage will drift by +/- this value each week, up/down to the target
 	LEVERAGE_INIT_STARTING_POWER_BLOC_UNCLAIMED_LEVERAGE_FACTOR = 0.5	# During initialization, a Power Bloc claims this fraction of a member's unclaimed leverage resulting from Leverage Resistance and 'lost leverage' in other Power Blocs' multipliers below 
@@ -1180,7 +1180,7 @@ NPops = {
 ### Pop Growth Constants
 ## Base Values per month
 @min_birthrate = 0.00055			# Minimum base birthrate per month (at POP_GROWTH_STABLE_SOL)
-@max_birthrate = 0.00450			# Maximum base birthrate per month (at SOL = 0 if not modified by malnourishment)
+@max_birthrate = 0.00350			# Maximum base birthrate per month (at SOL = 0 if not modified by malnourishment)
 @min_mortality = 0.00045			# Minimum base mortality per month (at POP_GROWTH_STABLE_SOL)
 @max_mortality = 0.00600			# Maximum base mortality per month (at SOL = 0 if not modified by malnourishment)
 

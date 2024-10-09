@@ -386,10 +386,10 @@ ai_strategy_unify_russia = {
 						OR = { 
 							is_supporting_unification_candidate = { who = root country_formation = RUS }
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}							
 						}
 					}
 				}
@@ -1376,12 +1376,12 @@ ai_strategy_unify_ari = {
 							country_has_primary_culture = cu:venetian
 							country_has_primary_culture = cu:maltese
 						}
-						OR = { 
+						OR = {
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}							
 						}
 					}
 				}
@@ -1403,10 +1403,10 @@ ai_strategy_unify_ari = {
 						}
 						NOR = {
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}					
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}					
 						}	
 					}
 				}
@@ -1634,10 +1634,10 @@ ai_strategy_unify_north_germany = {
 						NOT = { is_unification_candidate = GER }
 						OR = { 
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}							
 						}
 					}
 				}
@@ -1655,10 +1655,10 @@ ai_strategy_unify_north_germany = {
 						NOT = { is_unification_candidate = GER }
 						NOR = { 
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}
 						}
 					}
 				}
@@ -1901,10 +1901,10 @@ ai_strategy_unify_britain = {
 						OR = { 
 							is_supporting_unification_candidate = { who = root country_formation = GBR }
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}							
 						}
 					}
 				}
@@ -1926,10 +1926,10 @@ ai_strategy_unify_britain = {
 						NOR = { 
 							is_supporting_unification_candidate = { who = root country_formation = GBR }
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}
 						}
 					}
 				}
@@ -2396,12 +2396,12 @@ ai_strategy_unify_north_italy = {
 							}
 						}
 						owner = {
-							NOR = { 
+							NOR = {
 								is_subject_of = root
-								has_diplomatic_pact = {
-									who = scope:target_country
-									type = customs_union
-								}							
+#								has_diplomatic_pact = {
+#									who = scope:target_country
+#									type = customs_union
+#								}							
 							}						
 						}				
 					}	
@@ -2440,10 +2440,10 @@ ai_strategy_unify_north_italy = {
 						NOT = { has_journal_entry = je_italian_confederation }
 						OR = { 
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}							
 						}
 					}
 				}
@@ -2461,10 +2461,10 @@ ai_strategy_unify_north_italy = {
 						NOR = { 
 							has_journal_entry = je_italian_confederation
 							is_subject_of = root
-							has_diplomatic_pact = {
-								who = scope:target_country
-								type = customs_union
-							}							
+#							has_diplomatic_pact = {
+#								who = scope:target_country
+#								type = customs_union
+#							}							
 						}	
 					}
 				}

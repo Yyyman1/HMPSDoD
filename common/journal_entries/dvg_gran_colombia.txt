@@ -613,7 +613,7 @@ je_building_the_colombian_identity = {
 
 	on_complete = {
 		trigger_event = { id = dvg_colombia.2 }
-		set_global_variable = colombian_culture
+#		set_global_variable = colombian_culture
 		add_loyalists = {
 			value = 0.20
 		}

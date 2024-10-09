@@ -177,21 +177,21 @@ agitator_john_stuart_mill = {
 	# }
 }
 
-agitator_henry_ford = {
-	first_name = Henry
-	last_name = Ford
-	historical = yes
-	culture = cu:yankee
-	religion = rel:protestant
-	female = no
-	interest_group = ig_industrialists
-	ideology = ideology_ethno_nationalist
-	birth_date = 1863.7.30
-	traits = {
-		bigoted
-		ambitious
-		direct
-	}
+#agitator_henry_ford = {
+#	first_name = Henry
+#	last_name = Ford
+#	historical = yes
+#	culture = cu:yankee
+#	religion = rel:protestant
+#	female = no
+#	interest_group = ig_industrialists
+#	ideology = ideology_ethno_nationalist
+#	birth_date = 1863.7.30
+#	traits = {
+#		bigoted
+#		ambitious
+#		direct
+#	}
 	# agitator_usage = {
 	# 	country_trigger = {
 	# 		has_dlc_feature = voice_of_the_people_content
@@ -318,22 +318,22 @@ agitator_ernst_rohm = {
 	# }
 }
 
-agitator_frederick_douglass = {
-	first_name = Frederick
-	last_name = Douglass
-	historical = yes
-	culture = cu:afro_american
-	religion = rel:protestant
-	female = no
-	interest_group = ig_intelligentsia
-	ideology = ideology_abolitionist
-	birth_date = 1817.2.14 # He was not entirely sure of his birthday or year, but remembered his mom called him "Little Valentine" so he settled for Valentine's Day
-	dna = dna_douglass
-	traits = {
-		firebrand
-		imposing
-		persistent
-	}
+#agitator_frederick_douglass = {
+#	first_name = Frederick
+#	last_name = Douglass
+#	historical = yes
+#	culture = cu:afro_american
+#	religion = rel:protestant
+#	female = no
+#	interest_group = ig_intelligentsia
+#	ideology = ideology_abolitionist
+#	birth_date = 1817.2.14 # He was not entirely sure of his birthday or year, but remembered his mom called him "Little Valentine" so he settled for Valentine's Day
+#	dna = dna_douglass
+#	traits = {
+#		firebrand
+#		imposing
+#		persistent
+#	}
 	# agitator_usage = {
 	# 	country_trigger = {
 	# 		has_dlc_feature = voice_of_the_people_content
@@ -388,22 +388,22 @@ agitator_ahmed_urabi = {
 	# }
 }
 
-agitator_eugene_debs = {
-	first_name = Eugene
-	last_name = Debs
-	historical = yes
-	culture = cu:yankee
-	religion = rel:protestant
-	female = no
-	interest_group = ig_trade_unions
-	ideology = ideology_social_democrat
-	birth_date = 1855.11.5
-	dna = dna_debs_eugene
-	traits = {
-		demagogue
-		charismatic
-		honorable
-	}
+#agitator_eugene_debs = {
+#	first_name = Eugene
+#	last_name = Debs
+#	historical = yes
+#	culture = cu:yankee
+#	religion = rel:protestant
+#	female = no
+#	interest_group = ig_trade_unions
+#	ideology = ideology_social_democrat
+#	birth_date = 1855.11.5
+#	dna = dna_debs_eugene
+#	traits = {
+#		demagogue
+#		charismatic
+#		honorable
+#	}
 	# agitator_usage = {
 	# 	country_trigger = {
 	# 		has_dlc_feature = voice_of_the_people_content
@@ -557,22 +557,22 @@ agitator_alfred_hugenberg = {
 	# }
 }
 
-agitator_susan_b_anthony = {
-	first_name = Susan
-	last_name = Anthony
-	historical = yes
-	culture = cu:yankee
-	religion = rel:protestant
-	female = yes
-	interest_group = ig_intelligentsia
-	ideology = ideology_feminist
-	birth_date = 1820.2.15
-	dna = dna_susan_b_anthony
-	traits = {
-		persistent
-		demagogue
-		honorable
-	}
+#agitator_susan_b_anthony = {
+#	first_name = Susan
+#	last_name = Anthony
+#	historical = yes
+#	culture = cu:yankee
+#	religion = rel:protestant
+#	female = yes
+#	interest_group = ig_intelligentsia
+#	ideology = ideology_feminist
+#	birth_date = 1820.2.15
+#	dna = dna_susan_b_anthony
+#	traits = {
+#		persistent
+#		demagogue
+#		honorable
+#	}
 	# agitator_usage = {
 	# 	country_trigger = {
 	# 		has_dlc_feature = voice_of_the_people_content
@@ -1147,21 +1147,21 @@ agitator_alexis_de_tocqueville = { # Alexis de Tocqueville
 	# }
 }
 
-agitator_jose_do_patrocinio = { # José do Patrocínio
-	first_name = Jose
-	last_name = do_PatrocI_nio
-	historical = yes
-	culture = cu:afro_american
-	religion = rel:catholic
-	female = no
-	interest_group = ig_intelligentsia
-	ideology = ideology_abolitionist
-	birth_date = 1853.10.9
-	traits = {
-		literary
-		persistent
-		demagogue
-	}
+#agitator_jose_do_patrocinio = { # José do Patrocínio
+#	first_name = Jose
+#	last_name = do_PatrocI_nio
+#	historical = yes
+#	culture = cu:afro_american
+#	religion = rel:catholic
+#	female = no
+#	interest_group = ig_intelligentsia
+#	ideology = ideology_abolitionist
+#	birth_date = 1853.10.9
+#	traits = {
+#		literary
+#		persistent
+#		demagogue
+#	}
 	# agitator_usage = {
 	# 	country_trigger = {
 	# 		has_dlc_feature = voice_of_the_people_content
@@ -1425,21 +1425,21 @@ agitator_sandor_petofi = { # Sándor Petőfi
 	# }
 }
 
-agitator_harriet_tubman = {
-	first_name = Harriet
-	last_name = Tubman
-	historical = yes
-	culture = cu:afro_american
-	religion = rel:protestant
-	female = yes
-	interest_group = ig_devout
-	ideology = ideology_abolitionist
-	birth_date = 1822.3.1 # exact birthdate unknown
-	traits = {
-		brave
-		charismatic
-		direct
-	}
+#agitator_harriet_tubman = {
+#	first_name = Harriet
+#	last_name = Tubman
+#	historical = yes
+#	culture = cu:afro_american
+#	religion = rel:protestant
+#	female = yes
+#	interest_group = ig_devout
+#	ideology = ideology_abolitionist
+#	birth_date = 1822.3.1 # exact birthdate unknown
+#	traits = {
+#		brave
+#		charismatic
+#		direct
+#	}
 	# agitator_usage = {
 	# 	country_trigger = {
 	# 		has_dlc_feature = voice_of_the_people_content
@@ -1463,21 +1463,21 @@ agitator_harriet_tubman = {
 	# }
 }
 
-agitator_web_du_bois = { # W.E.B. Du Bois
-	first_name = William
-	last_name = Du_Bois
-	historical = yes
-	culture = cu:afro_american
-	religion = rel:protestant
-	female = no
-	interest_group = ig_intelligentsia
-	ideology = ideology_social_democrat
-	birth_date = 1868.2.23
-	traits = {
-		erudite
-		literary
-		charismatic
-	}
+#agitator_web_du_bois = { # W.E.B. Du Bois
+#	first_name = William
+#	last_name = Du_Bois
+#	historical = yes
+#	culture = cu:afro_american
+#	religion = rel:protestant
+#	female = no
+#	interest_group = ig_intelligentsia
+#	ideology = ideology_social_democrat
+#	birth_date = 1868.2.23
+#	traits = {
+#		erudite
+#		literary
+#		charismatic
+#	}
 	# agitator_usage = {
 	# 	country_trigger = {
 	# 		has_dlc_feature = voice_of_the_people_content
@@ -1688,23 +1688,23 @@ gbr_pankhurst_character_template = {
     }  
 }
 
-usa_john_brown_character_template = {
-    first_name = John
-    last_name = Brown
-    historical = yes
-    birth_date = 1800.5.9
-    culture = cu:yankee
-    is_agitator = yes
-    female = no
-    interest_group = ig_devout
-    ideology = ideology_abolitionist
-    dna = dna_john_brown
-    traits = {
-        reserved
-        firebrand
-        reckless
-    } 
-}
+#usa_john_brown_character_template = {
+#    first_name = John
+#    last_name = Brown
+#    historical = yes
+#    birth_date = 1800.5.9
+#    culture = cu:yankee
+#    is_agitator = yes
+#    female = no
+#    interest_group = ig_devout
+#    ideology = ideology_abolitionist
+#    dna = dna_john_brown
+#    traits = {
+#        reserved
+#        firebrand
+#        reckless
+#    } 
+#}
 
 fra_maurras_character_template = {
    first_name = Charles
@@ -1918,22 +1918,22 @@ pru_ferdinand_lassalle_character_template = {
         ambitious
 	}
 }
-brz_luis_gama_character_template = {
-    first_name = Luis_2
-	last_name = Gama
-	historical = yes
-	culture = cu:afro_brazilian
-	female = no
-    is_agitator = yes
-	interest_group = ig_intelligentsia
-	ideology = ideology_abolitionist
-	birth_date = 1830.6.21
-	dna = dna_luis_gama
-	traits = {
-		erudite
-        meticulous
-	}
-}
+#brz_luis_gama_character_template = {
+#    first_name = Luis_2
+#	last_name = Gama
+#	historical = yes
+#	culture = cu:afro_brazilian
+#	female = no
+#    is_agitator = yes
+#	interest_group = ig_intelligentsia
+#	ideology = ideology_abolitionist
+#	birth_date = 1830.6.21
+#	dna = dna_luis_gama
+#	traits = {
+#		erudite
+#        meticulous
+#	}
+#}
 fra_victor_hugo_character_template = {
     first_name = Victor
 	last_name = Hugo
