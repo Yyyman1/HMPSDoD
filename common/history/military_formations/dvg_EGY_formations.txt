@@ -65,11 +65,6 @@
 				bandit
 			}
 			hq_region = region_nile_basin
-			save_scope_as = Mehmet_Farid_scope
-		}
-
-		scope:Mehmet_Farid_scope = {
-			transfer_to_formation = scope:EGY_main_army
 		}
 	}
 }
