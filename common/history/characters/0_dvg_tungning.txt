@@ -21,7 +21,6 @@
 			}
 		}
 		create_character = {
-
 			historical = yes
 			first_name = Hsia
 			last_name = Zhu
@@ -32,7 +31,7 @@
 			ideology = ideology_jingoist_leader
 			traits = {
 				basic_naval_commander
-				convoy_raider
+				convoy_raider_commander
 			}
 		}
 		

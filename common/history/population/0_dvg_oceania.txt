@@ -12,21 +12,21 @@
 	# effect_starting_pop_literacy_very_low
 	# effect_starting_pop_literacy_baseline
 	
-	c:MJN = { #Mianjin
-		effect_starting_pop_wealth_medium = yes
-		effect_starting_pop_literacy_middling = yes
-	}
-	
-	c:YLO = { #Yulao
-		effect_starting_pop_wealth_medium = yes
-		effect_starting_pop_literacy_middling = yes
-	}
-	
-	c:ZSA = { #Zhushan
-		effect_starting_pop_wealth_medium = yes
-		effect_starting_pop_literacy_middling = yes
-	}
-	
+#	c:MJN = { #Mianjin
+#		effect_starting_pop_wealth_medium = yes
+#		effect_starting_pop_literacy_middling = yes
+#	}
+#	
+#	c:YLO = { #Yulao
+#		effect_starting_pop_wealth_medium = yes
+#		effect_starting_pop_literacy_middling = yes
+#	}
+#	
+#	c:ZSA = { #Zhushan
+#		effect_starting_pop_wealth_medium = yes
+#		effect_starting_pop_literacy_middling = yes
+#	}
+#	
 	c:AOT = { #Aotearoa
 		effect_starting_pop_wealth_low = yes
 		effect_starting_pop_literacy_baseline = yes

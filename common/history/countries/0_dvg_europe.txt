@@ -446,27 +446,27 @@
 		}
 	}
 	
-	c:BRE = { #Bremen
-		effect_starting_technology_tier_2_tech = yes
-		effect_starting_politics_conservative = yes
-
-		activate_law = law_type:law_republic
-		activate_law = law_type:law_wealth_voting
-		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_ethnostate
-		activate_law = law_type:law_censorship
-		activate_law = law_type:law_low_income_tax	
-		activate_law = law_type:law_moderate_consumption_tax
-
-		
-		set_ruling_interest_groups = {
-			ig_petty_bourgeoisie
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_evangelical_church
-		}
-	}
-	
+#	c:BRE = { #Bremen
+#		effect_starting_technology_tier_2_tech = yes
+#		effect_starting_politics_conservative = yes
+#
+#		activate_law = law_type:law_republic
+#		activate_law = law_type:law_wealth_voting
+#		activate_law = law_type:law_state_religion
+#		activate_law = law_type:law_ethnostate
+#		activate_law = law_type:law_censorship
+#		activate_law = law_type:law_low_income_tax	
+#		activate_law = law_type:law_moderate_consumption_tax
+#
+#		
+#		set_ruling_interest_groups = {
+#			ig_petty_bourgeoisie
+#		}
+#		ig:ig_devout = {
+#			set_interest_group_name = ig_evangelical_church
+#		}
+#	}
+#	
 	c:HAN = { #Hannover
 		effect_starting_technology_tier_2_tech = yes
 		
@@ -490,24 +490,24 @@
 		}
 	}
 	
-	c:BRA = { #Brunswick
-		effect_starting_technology_tier_2_tech = yes
-
-		effect_starting_politics_reactionary = yes
-		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_low_income_tax	
-		activate_law = law_type:law_moderate_consumption_tax
-		activate_law = law_type:law_ethnostate
-
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_catholic_church
-		}
-	}
-	
+#	c:BRA = { #Brunswick
+#		effect_starting_technology_tier_2_tech = yes
+#
+#		effect_starting_politics_reactionary = yes
+#		activate_law = law_type:law_freedom_of_conscience
+#		activate_law = law_type:law_state_religion
+#		activate_law = law_type:law_low_income_tax	
+#		activate_law = law_type:law_moderate_consumption_tax
+#		activate_law = law_type:law_ethnostate
+#
+#		set_ruling_interest_groups = {
+#			ig_landowners
+#		}
+#		ig:ig_devout = {
+#			set_interest_group_name = ig_catholic_church
+#		}
+#	}
+#	
 	c:MUN = { #Munster
 		effect_starting_technology_tier_2_tech = yes
 		
@@ -1171,7 +1171,7 @@
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_national_militia
-		#activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_religious_schools
 
 
 		set_institution_investment_level = {
@@ -1205,7 +1205,7 @@
 		activate_law = law_type:law_colonial_exploitation
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
-		#activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1243,7 +1243,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
-		#activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_religious_schools
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1318,7 +1318,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
-		#activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1344,7 +1344,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
-		#activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 		institution = institution_schools
@@ -1371,7 +1371,7 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
-		#activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_religious_schools
 
 		set_institution_investment_level = {
 		institution = institution_schools

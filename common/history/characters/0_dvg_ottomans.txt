@@ -8,10 +8,11 @@
 			birth_date = 1770.4.21
 			dna = dna_mahmud_02
 			interest_group = ig_devout
-			ideology = ideology_reactionary
+			ideology = ideology_traditionalist
 			traits = {
 				ambitious
 				psychological_affliction
 			}
 		}   
+	}
 }

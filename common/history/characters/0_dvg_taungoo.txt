@@ -22,7 +22,7 @@
 			last_name = Myo
 			birth_date = 1796.02.10
 			interest_group = ig_armed_forces
-			ideology = ideology_jingoist
+			ideology = ideology_jingoist_leader
 			traits = {
 				opium_addiction
 				

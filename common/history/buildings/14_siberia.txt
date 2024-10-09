@@ -94,7 +94,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled" }
 			# }
 		}
 	}
@@ -135,7 +135,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled"  }
 			# }
 		}
 	}
@@ -187,7 +187,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled"  }
 			# }
 		}
 		region_state:SIB={

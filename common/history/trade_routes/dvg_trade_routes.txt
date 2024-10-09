@@ -16,13 +16,13 @@
 			goods = dye
 			level = 1
 			direction = export
-			target = c:ARA.market
+			target = c:ARN.market
 		}
 		create_trade_route = {
 			goods = silk
 			level = 5
 			direction = import
-			target = c:ARA.market
+			target = c:ARN.market
 		}
 	}
 	C:SPA = {

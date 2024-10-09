@@ -481,17 +481,6 @@
 				activate_production_methods={ "pm_simple_ranch" "pm_open_air_stockyards" "pm_standard_fences" "pm_unrefrigerated" }
 			}
 			create_building={
-				building="building_barracks"
-				add_ownership={
-					country={
-						country="c:GEN"
-						levels=5
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
-			create_building={
 				building="building_shipyards"
 				add_ownership={
 					building={
@@ -659,7 +648,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" }
+				activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3470,7 +3459,7 @@
 				}
 				reserves=1
 				activate_production_methods={ "default_building_vineyard_plantation" }
-			}	
+			}
 			create_building={
 				building="building_textile_mills"
 				add_ownership={
@@ -3482,7 +3471,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_craftsman_sewing" "pm_no_luxury_clothes" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_no_luxury_clothes" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -4034,7 +4023,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_luxury_clothes" }
+				activate_production_methods={ "pm_handsewn_clothes" "pm_traditional_looms" "pm_craftsman_sewing" }
 			}			
 			create_building={
 				building="building_university"

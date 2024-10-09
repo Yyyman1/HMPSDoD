@@ -115,10 +115,10 @@ company_ottoman_tobacco_regie = {
 			}
 			count >= 4
 		}
-		NOR = {
-			has_modifier = sick_man_of_europe
-			is_country_type = unrecognized
-		}
+#		NOR = {
+#			has_modifier = sick_man_of_europe
+#			is_country_type = unrecognized
+#		}
 	}
 	
 	prosperity_modifier = {

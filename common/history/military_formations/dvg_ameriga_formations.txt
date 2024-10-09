@@ -31,28 +31,28 @@
 		}
 	}
 
-	c:EQX = {
-		create_military_formation = {
-			type = army
-			hq_region = sr:region_brazil
-			name = "Home Army"
-
-			
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_CAPPADOCE
-				count = 5
-			}
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VAURA
-				count = 5
-			}
-		}
-	}
-
-
+#	c:EQX = {
+#		create_military_formation = {
+#			type = army
+#			hq_region = sr:region_brazil
+#			name = "Home Army"
+#
+#			
+#			combat_unit = {
+#				type = unit_type:combat_unit_type_line_infantry
+#				state_region = s:STATE_CAPPADOCE
+#				count = 5
+#			}
+#
+#			combat_unit = {
+#				type = unit_type:combat_unit_type_line_infantry
+#				state_region = s:STATE_VAURA
+#				count = 5
+#			}
+#		}
+#	}
+#
+#
 	c:LOT = {
 
 		create_military_formation = {

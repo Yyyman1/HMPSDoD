@@ -120,12 +120,12 @@
 			type = rivalry
 		}
 	}
-	c:YLO = {
-		create_diplomatic_pact = {
-			country = c:MJN
-			type = rivalry
-		}
-	}
+#	c:YLO = {
+#		create_diplomatic_pact = {
+#			country = c:MJN
+#			type = rivalry
+#		}
+#	}
 
 	c:CAP = {
 		create_diplomatic_pact = {

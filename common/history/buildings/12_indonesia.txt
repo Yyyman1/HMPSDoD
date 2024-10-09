@@ -12,7 +12,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled" }
 			# }
 			create_building={
 				building="building_banana_plantation"
@@ -220,7 +220,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm"  "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_dye_plantation"
@@ -283,7 +283,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" }
 			# }
 			create_building={
 				building="building_barracks"
@@ -309,7 +309,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
 			# }	
 			create_building={
 				building="building_port"
@@ -335,7 +335,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm"   "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_banana_plantation"
@@ -417,7 +417,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
 			# }			
 			create_building={
 				building="building_tobacco_plantation"
@@ -569,7 +569,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
 			# }			
 			create_building={
 				building="building_tobacco_plantation"
@@ -705,7 +705,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
 			# }
 			create_building={
 				building="building_tobacco_plantation"
@@ -759,7 +759,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
 			# }
 			create_building={
 				building="building_sugar_plantation"
@@ -824,7 +824,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
 			# }
 			create_building={
 				building="building_tobacco_plantation"
@@ -887,7 +887,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_barracks"
@@ -990,7 +990,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
 			# }			
 			create_building={
 				building="building_tobacco_plantation"
@@ -1016,7 +1016,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_picks_and_shovels_building_sulphur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods={ "pm_picks_and_shovels_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_coffee_plantation"
@@ -1068,7 +1068,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm"   "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_dye_plantation"
@@ -1157,7 +1157,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
 			# }			
 			create_building={
 				building="building_tobacco_plantation"
@@ -1183,7 +1183,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_sulfur_mine" }
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_coffee_plantation"
@@ -1235,7 +1235,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
 			# }
 			create_building={
 				building="building_fishing_wharf"
@@ -1475,7 +1475,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
 			# }
 			create_building={
 				building="building_logging_camp"
@@ -1501,7 +1501,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_iron_mine" }
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 		}
 		region_state:MKS={
@@ -1516,7 +1516,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_tools_disabled" "pm_no_secondary" }
 			# }
 			create_building={
 				building="building_barracks"
@@ -1555,7 +1555,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm"   "pm_tools_disabled" "pm_no_secondary" }
 			# }
 			create_building={
 				building="building_fishing_wharf"
@@ -1694,7 +1694,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
 			# }
 			create_building={
 				building="building_logging_camp"
@@ -1720,7 +1720,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" "pm_privately_owned_building_iron_mine" }
+				activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			create_building={
 				building="building_tobacco_plantation"
@@ -1831,7 +1831,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
 			# }
 			create_building={
 				building="building_sugar_plantation"
@@ -1907,7 +1907,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
 			# }
 			create_building={
 				building="building_port"
@@ -1935,7 +1935,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm" "pm_no_secondary" "pm_tools_disabled"   }
 			# }
 			create_building={
 				building="building_tobacco_plantation"
@@ -2045,9 +2045,6 @@
 	}
 	s:STATE_TAHITI={
 		region_state:PLY={
-			create_building={
-				building= "building_easter_island_heads"
-			}
 		}
 	}
 	s:STATE_TONGA={

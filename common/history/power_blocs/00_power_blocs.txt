@@ -37,7 +37,7 @@
 				has_dlc_feature = power_bloc_features
 			}
 			power_bloc = {
-				add_principle = principle_group_food_standardization 
+				add_principle = principle_defensive_cooperation_1
 			}
 		}
 	}
@@ -74,8 +74,8 @@
 			map_color = { 77 15 51 }
 
 			founding_date = 1802.8.2
-			identity = identity_trade_league
-			principle = principle_internal_trade_1
+			identity = identity_military_treaty_organization
+			principle = principle_aggressive_coordination_1
 
 			member = c:WUR
 			member = c:SWI
@@ -96,7 +96,7 @@
 				has_dlc_feature = power_bloc_features
 			}
 			power_bloc = {
-				add_principle = principle_group_food_standardization 
+				add_principle = principle_colonial_offices_1
 			}
 		}
 	}

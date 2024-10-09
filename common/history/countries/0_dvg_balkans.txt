@@ -165,27 +165,27 @@
 	#}
 
 	### Serbia
-	c:SER = { 
-		effect_starting_technology_tier_3_tech = yes
-
-		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_national_supremacy
-		activate_law = law_type:law_freedom_of_conscience
-		activate_law = law_type:law_low_income_tax	
-		activate_law = law_type:law_moderate_consumption_tax
-
-		add_taxed_goods = g:tobacco
-		add_taxed_goods = g:liquor
-
-		set_ruling_interest_groups = {
-			ig_landowners
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_orthodox_church
-			remove_ideology = ideology_patriarchal
-			add_ideology = ideology_orthodox_patriarch
-		}	
-	}
+#	c:SER = {
+#		effect_starting_technology_tier_3_tech = yes
+#
+#		effect_starting_politics_conservative = yes
+#		activate_law = law_type:law_national_supremacy
+#		activate_law = law_type:law_freedom_of_conscience
+#		activate_law = law_type:law_low_income_tax	
+#		activate_law = law_type:law_moderate_consumption_tax
+#
+#		add_taxed_goods = g:tobacco
+#		add_taxed_goods = g:liquor
+#
+#		set_ruling_interest_groups = {
+#			ig_landowners
+#		}
+#		ig:ig_devout = {
+#			set_interest_group_name = ig_orthodox_church
+#			remove_ideology = ideology_patriarchal
+#			add_ideology = ideology_orthodox_patriarch
+#		}	
+#	}
 
 	#### Begluk Bačka
 	#c:BSG = { 

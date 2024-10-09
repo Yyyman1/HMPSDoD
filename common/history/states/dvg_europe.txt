@@ -312,8 +312,7 @@
 		}
 		
 		add_homeland = cu:burgundian
-		add_homeland = cu:french
-		add_homeland = cu:wallonian
+		add_homeland = cu:dutch
 	}
 	s:STATE_NORTH_RHINE = {
 		create_state = {

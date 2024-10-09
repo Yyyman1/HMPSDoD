@@ -8,7 +8,7 @@
 			noble = yes
 			birth_date = 1790.2.25
 			interest_group = ig_landowners
-			ideology = ideology_jingoist
+			ideology = ideology_jingoist_leader
 			traits = {
 				imperious
 				popular_commander

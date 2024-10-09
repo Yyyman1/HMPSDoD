@@ -5,10 +5,10 @@
 			country = c:ALB
 			months = 24
 		}
-        	create_bidirectional_truce = {
-			country = c:SER
-			months = 24
-		}
+#        create_bidirectional_truce = {
+#			country = c:SER
+#			months = 24
+#		}
 		create_bidirectional_truce = {
 			country = c:VEN
 			months = 24
@@ -123,12 +123,12 @@
 		}
 		
 	}
-	c:MJN = {
-		create_bidirectional_truce = {
-			country = c:YLO
-			months = 60
-		}
-		
-	}
+#	c:MJN = {
+#		create_bidirectional_truce = {
+#			country = c:YLO
+#			months = 60
+#		}
+#	
+#	}
 	
 }

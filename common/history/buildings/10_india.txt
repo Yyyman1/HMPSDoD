@@ -106,7 +106,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"   }
+			# 	activate_production_methods={ "pm_soil_enriching_farming" "pm_no_secondary" "pm_tools_disabled"   }
 			# }
 			create_building={
 				building="building_livestock_ranch"
@@ -162,7 +162,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming"   "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming"   "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_tobacco_plantation"
@@ -288,7 +288,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming"   "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming"   "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_vineyard_plantation"
@@ -481,27 +481,7 @@
 				activate_production_methods={ "pm_no_organization" }
 			}
 		}
-		region_state:MEW={ #Mewar
-			create_building={
-				building="building_barracks"
-				country={
-						country="c:MEW"
-						levels=15
-					}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
-		}
 		region_state:JOD={ #Jodhpur
-			create_building={
-				building="building_barracks"
-				country={
-						country="c:JOD"
-						levels=15
-					}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
-			}
 		}
 		region_state:JAI={ #Jaipur
 			create_building={
@@ -516,15 +496,6 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_handsewn_clothes"  "pm_traditional_looms" "pm_craftsman_sewing" }
-			}
-			create_building={
-				building="building_barracks"
-				country={
-						country="c:JAI"
-						levels=20
-					}
-				reserves=1
-				activate_production_methods={ "pm_no_organization" }
 			}
 			create_building={
 				building="building_taj_mahal"
@@ -1929,7 +1900,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_dye_plantation" "pm_road_carts"   }
+				activate_production_methods={ "default_building_silk_plantation" "pm_road_carts"   }
 			}
 		}
 		region_state:BGL={

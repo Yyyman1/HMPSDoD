@@ -144,10 +144,10 @@ napoleonic_warfare = {
 	ai_weight = {
 		value = 1.5 # Important tech in general
 		
-		if = {
-			limit = { has_journal_entry = je_sick_man_army }
-			add = 5
-		}
+#		if = {
+#			limit = { has_journal_entry = je_sick_man_army }
+#			add = 5
+#		}
 	}
 }
 

@@ -5,7 +5,7 @@
 			last_name = "Nguyen_Phuoc"
 			ruler = yes
 			birth_date = 1805.5.25
-			dna = dna_emperor_thai
+#			dna = dna_emperor_thai
 			interest_group = ig_intelligentsia
 			ideology = ideology_reformer
 			hq = region_indochina
@@ -21,7 +21,7 @@
 			first_name = "Ton_That"
 			last_name = "Vuong"
 			birth_date = 1805.5.25
-			dna = dna_emperor_thai
+#			dna = dna_emperor_thai
 			interest_group = ig_landowners
 			ideology = ideology_jingoist_leader
 			ig_leader = yes

@@ -20,63 +20,63 @@
 
 	}
 
-	c:HAN = {
-		### Armies
-		create_military_formation = { ### Home Army 
-			type = army
-			hq_region = sr:region_north_germany
-			name = "Home Army"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HANNOVER
-				count = 6
-			}
-
-			
-
-		}
-
-	}
-
-	c:BRE = {
-		### Armies
-		create_military_formation = { ### Home Army 
-			type = army
-			hq_region = sr:region_north_germany
-			name = "Home Army"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HANNOVER
-				count = 1
-			}
-
-			
-
-		}
-
-	}
-
-	c:BRA = {
-		### Armies
-		create_military_formation = { ### Home Army 
-			type = army
-			hq_region = sr:region_north_germany
-			name = "Home Army"
-
-			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_HANNOVER
-				count = 2
-			}
-
-			
-
-		}
-
-	}
-
+#	c:HAN = {
+#		### Armies
+#		create_military_formation = { ### Home Army 
+#			type = army
+#			hq_region = sr:region_north_germany
+#			name = "Home Army"
+#
+#			combat_unit = {
+#				type = unit_type:combat_unit_type_line_infantry
+#				state_region = s:STATE_HANNOVER
+#				count = 6
+#			}
+#
+#			
+#
+#		}
+#
+#	}
+#
+#	c:BRE = {
+#		### Armies
+#		create_military_formation = { ### Home Army 
+#			type = army
+#			hq_region = sr:region_north_germany
+#			name = "Home Army"
+#
+#			combat_unit = {
+#				type = unit_type:combat_unit_type_line_infantry
+#				state_region = s:STATE_HANNOVER
+#				count = 1
+#			}
+#
+#			
+#
+#		}
+#
+#	}
+#
+#	c:BRA = {
+#		### Armies
+#		create_military_formation = { ### Home Army 
+#			type = army
+#			hq_region = sr:region_north_germany
+#			name = "Home Army"
+#
+#			combat_unit = {
+#				type = unit_type:combat_unit_type_line_infantry
+#				state_region = s:STATE_HANNOVER
+#				count = 2
+#			}
+#
+#			
+#
+#		}
+#
+#	}
+#
 	c:THU = {
 		### Armies
 		create_military_formation = { ### Home Army 

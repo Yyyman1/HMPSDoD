@@ -98,7 +98,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools" "pm_potatoes" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -239,7 +239,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -354,7 +354,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools" "pm_potatoes" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -527,7 +527,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -738,7 +738,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1081,7 +1081,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools" "pm_potatoes" }
 			}
 			create_building={
 				building="building_fishing_wharf"
@@ -1228,7 +1228,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1282,7 +1282,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_logging_camp"
@@ -1336,7 +1336,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 		}
 	}
@@ -1403,7 +1403,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1470,7 +1470,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1539,7 +1539,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools" "pm_potatoes" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -6602,7 +6602,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_tools_disabled" "pm_potatoes" }
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_tools_disabled" "pm_potatoes" }
 			}
 			create_building={
 				building="building_livestock_ranch"

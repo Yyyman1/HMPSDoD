@@ -399,7 +399,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming_building_rice_farm"  "pm_tools_disabled" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming_building_rice_farm"  "pm_tools_disabled" }
 			# }
 			create_building={
 				building="building_logging_camp"
@@ -646,7 +646,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming" "pm_potatoes" "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming" "pm_potatoes" "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_livestock_ranch"
@@ -849,7 +849,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_livestock_ranch"
@@ -957,7 +957,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming" "pm_no_secondary" "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_livestock_ranch"
@@ -1067,7 +1067,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
 			# }
 			create_building={
 				building="building_opium_plantation"
@@ -1132,7 +1132,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
 			# }
 			create_building={
 				building="building_opium_plantation"
@@ -1225,7 +1225,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming" "pm_citrus_orchards" "pm_tools_disabled"  }
+			# 	activate_production_methods={ "pm_soil_enriching_farming" "pm_citrus_orchards" "pm_tools_disabled"  }
 			# }
 			create_building={
 				building="building_tea_plantation"
@@ -1305,7 +1305,7 @@
 			# 		}
 			# 	}
 			# 	reserves=1
-			# 	activate_production_methods={ "pm_simple_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
+			# 	activate_production_methods={ "pm_soil_enriching_farming"  "pm_tools_disabled" "pm_citrus_orchards" }
 			# }
 			create_building={
 				building="building_livestock_ranch"

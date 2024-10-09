@@ -724,10 +724,10 @@
 			ig_landowners
 		}
 		
-		add_journal_entry = {
-			type = je_korean_peninsula
-		}
-	}
+#		add_journal_entry = {
+#			type = je_korean_peninsula
+#		}
+#	}
 	
 	c:JAP = { #Japan
 		effect_starting_technology_tier_4_tech = yes

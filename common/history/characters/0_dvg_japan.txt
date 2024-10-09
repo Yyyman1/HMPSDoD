@@ -104,7 +104,7 @@
 			ig_leader = yes
 			interest_group = ig_intelligentsia
 			religion = rel:protestant
-			ideology = ideology_kirishitan	
+			ideology = ideology_moderate
 			traits = {
 				tactful
 				erudite

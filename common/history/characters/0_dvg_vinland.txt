@@ -2,7 +2,7 @@
 	c:VIN = {
 		create_character = {
 			is_general = yes
-			hq = region_vinland
+			hq = region_canada
 			historical = yes
 			first_name = Lars 
 			last_name = Dubenson
