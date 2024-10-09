@@ -564,7 +564,6 @@
 				building="building_artillery_foundries"
 				add_ownership={
 					country={
-					type="building_artillery_foundries"
 						country="c:MSO"
 						levels=2
 						region="STATE_DVG_MOSCOW"

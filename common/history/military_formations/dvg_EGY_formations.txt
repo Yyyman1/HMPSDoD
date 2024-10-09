@@ -64,7 +64,10 @@
 			traits = {
 				bandit
 			}
-			hq_region = region_nile_basin
+			save_scope_as = mehmet_farid_scope
+		}
+		scope:mehmet_farid_scope = {
+			transfer_to_formation = scope:EGY_main_army
 		}
 	}
 }
