@@ -2080,7 +2080,7 @@ dvg_bavaria.56 = {
 		name = dvg_bavaria.56.a
 		default_option = yes
 		
-		set_global_variable = dvg_promised_crn_puppet
+#		set_global_variable = dvg_promised_crn_puppet
 
 		trigger_event = { id = dvg_bavaria.57 days = 50 }
 	}
@@ -2108,7 +2108,7 @@ dvg_bavaria.57 = {
 		
 		trigger_event = { id = dvg_bavaria.60 days = 20 }
 
-		set_global_variable = dvg_sgf_munich_capital
+#		set_global_variable = dvg_sgf_munich_capital
 
 		ai_chance = {
 			base = 20

@@ -60,9 +60,9 @@
 			}
 			trigger_event = { id = dvg_expedition.200 popup = yes }
 			set_variable = {
-				name = north_asia_expedition
-				value = yes
-			}
+#				name = north_asia_expedition
+#				value = yes
+#			}
 		}
 		set_variable = on_expedition
 		else = {

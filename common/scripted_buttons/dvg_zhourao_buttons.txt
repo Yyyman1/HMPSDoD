@@ -200,7 +200,7 @@ dvg_pillger_prince_button = {
 		
 	}
 	effect = {
-		set_variable = pillager_prince_expeller
+#		set_variable = pillager_prince_expeller
 		if = {
 			limit = {
 				any_scope_character = {

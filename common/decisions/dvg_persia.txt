@@ -185,7 +185,7 @@ demand_qeshm = {
 		c:SHZ = {
 			trigger_event = { id = dvg_persia.7 days = 10 }
 		}
-		set_variable = qeshm_demander
+#		set_variable = qeshm_demander
 		set_global_variable = qeshm_demanded
     }
 

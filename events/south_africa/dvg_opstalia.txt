@@ -752,49 +752,49 @@ immediate = {
 }
 
 #hendrik returns
-dvg_opstalia.12 = {
-	type = country_event
-	placement = ROOT
-
-	title = dvg_opstalia.12.t
-	desc = dvg_opstalia.12.d
-	flavor = dvg_opstalia.12.f
-
-	event_image = {
-		video = "southamerica_war_civilians"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
-
-	duration = 1
-
-	trigger = {
-	}
-
-immediate = {
-		c:LEW = { save_scope_as = scope_LEW }
-		c:BRG = { save_scope_as = scope_BRG }
-		c:OPS = { save_scope_as = scope_OPS }
-		c:NFL = { save_scope_as = scope_NFL }
-		c:VRY = { save_scope_as = scope_VRY }
-		c:XHO = { save_scope_as = scope_XHO }
-		c:ZUL = { save_scope_as = scope_ZUL }
-		c:BST = { save_scope_as = scope_BST }
-		c:SUA = { save_scope_as = scope_SUA }
-	}
-
-
-
-	immediate = {
-		set_variable = hendrik_won
-	}
-
-	option = {
-	name = dvg_opstalia.12.a
-        ai_chance = {
-			base = 1
-		}
-    }
-}
+#dvg_opstalia.12 = {
+#	type = country_event
+#	placement = ROOT
+#
+#	title = dvg_opstalia.12.t
+#	desc = dvg_opstalia.12.d
+#	flavor = dvg_opstalia.12.f
+#
+#	event_image = {
+#		video = "southamerica_war_civilians"
+#	}
+#
+#	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+#	on_opened_soundeffect = "event:/SFX/Events/southamerica/war_civilians"
+#	icon = "gfx/interface/icons/event_icons/event_map.dds"
+#
+#	duration = 1
+#
+#	trigger = {
+#	}
+#
+#immediate = {
+#		c:LEW = { save_scope_as = scope_LEW }
+#		c:BRG = { save_scope_as = scope_BRG }
+#		c:OPS = { save_scope_as = scope_OPS }
+#		c:NFL = { save_scope_as = scope_NFL }
+#		c:VRY = { save_scope_as = scope_VRY }
+#		c:XHO = { save_scope_as = scope_XHO }
+#		c:ZUL = { save_scope_as = scope_ZUL }
+#		c:BST = { save_scope_as = scope_BST }
+#		c:SUA = { save_scope_as = scope_SUA }
+#	}
+#
+#
+#
+#	immediate = {
+#		set_variable = hendrik_won
+#	}
+#
+#	option = {
+#	name = dvg_opstalia.12.a
+#        ai_chance = {
+#			base = 1
+#		}
+#    }
+#}

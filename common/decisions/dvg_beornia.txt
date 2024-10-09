@@ -807,49 +807,49 @@ dvg_annex_mapuche = {
 	
 }
 
-dvg_cavendish_yorkshire = {
-	is_shown = {
-		exists = c:BEO
-		this = c:BEO
-		exists = c:ENG
-		
-		NOT = { owns_entire_state_region = STATE_YORKSHIRE }
-		c:ENG = { owns_entire_state_region = STATE_YORKSHIRE }
-
-	}
-
-    possible = {
-
-		c:ENG = {owes_obligation_to = c:BEO
-
-				}
-
-
-
-		
-		NOT = {is_diplomatic_play_enemy_of = c:ENG}
-
-		c:BEO = {is_at_war = no}
-
-		c:ENG = {is_at_war = no}
-		
-	
-	}
-
-    when_taken = {
-		c:ENG = {trigger_event = { id = dvg_england.2 }
-		post_proposal = proposal_diplomatic_action_call_in_obligation
-				}
-		set_global_variable = {
-			name = cavendish_yorkshire
-			value = 0
-		}
-    }
-
-	ai_chance = {
-		base = 100
-	}
-}
+#dvg_cavendish_yorkshire = {
+#	is_shown = {
+#		exists = c:BEO
+#		this = c:BEO
+#		exists = c:ENG
+#		
+#		NOT = { owns_entire_state_region = STATE_YORKSHIRE }
+#		c:ENG = { owns_entire_state_region = STATE_YORKSHIRE }
+#
+#	}
+#
+#    possible = {
+#
+#		c:ENG = {owes_obligation_to = c:BEO
+#
+#				}
+#
+#
+#
+#		
+#		NOT = {is_diplomatic_play_enemy_of = c:ENG}
+#
+#		c:BEO = {is_at_war = no}
+#
+#		c:ENG = {is_at_war = no}
+#		
+#	
+#	}
+#
+#    when_taken = {
+#		c:ENG = {trigger_event = { id = dvg_england.2 }
+#		post_proposal = proposal_diplomatic_action_call_in_obligation
+#				}
+#		set_global_variable = {
+#			name = cavendish_yorkshire
+#			value = 0
+#		}
+#    }
+#
+#	ai_chance = {
+#		base = 100
+#	}
+#}
 
 dvg_beornia_aid = {
 	is_shown = {
