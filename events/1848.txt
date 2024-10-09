@@ -62,7 +62,8 @@
 			}
 			add_modifier = {
 				name = regicide
-				months = short_modifier_time
+				years = 20
+				is_decaying = yes
 			}
 		}
 		ruler = {
@@ -148,278 +149,6 @@
 	}
 }
 
-# Theocracy Stamped Out
-1848.8 = {
-	type = country_event
-	placement = root
-	title = 1848.2.ta
-	desc = 1848.2.da
-	flavor = 1848.2.fa
-	duration = 3
-	event_image = {
-		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
-	}
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-	trigger = {
-		# triggered by je_abolish_theocracy
-	}
-	option = {
-		name = 1848.2.a
-		default_option = yes
-		ig:ig_landowners = {
-			remove_ideology = ideology_paternalistic
-			remove_ideology = ideology_scholar_paternalistic
-			remove_ideology = ideology_junker_paternalistic
-			remove_ideology = ideology_papal_paternalistic
-			add_ideology = ideology_republican_paternalistic
-		}
-		ig:ig_rural_folk = {
-			remove_ideology = ideology_monarchist
-		}
-		ig:ig_armed_forces = {
-			remove_ideology = ideology_monarchist
-		}
-		custom_tooltip = {
-			text = no_more_theocrats
-			set_variable = monarchy_stamped_out_var
-		}
-		every_interest_group = {
-			limit = {
-				leader = {
-					has_ideology = ideology:ideology_theocrat	
-				}
-			}
-			leader = {
-				set_ideology = ideology:ideology_moderate
-			}
-		}
-	}
-	option = {
-		name = 1848.2.b
-		# don't do that, just make landowners lose power
-		ig:ig_landowners = {
-			add_modifier = {
-				name = monarchist_nostalgia
-				months = normal_modifier_time
-			}
-		}
-		ig:ig_devout = {
-			add_modifier = {
-				name = monarchist_nostalgia
-				months = normal_modifier_time
-			}
-		}
-	}
-}
-# Slavery Stamped Out
-1848.7 = {
-	type = country_event
-	placement = root
-	title = 1848.2.tb
-	desc = 1848.2.db
-	flavor = 1848.2.fb
-	duration = 3
-	event_image = {
-		#video = "gfx/event_pictures/southamerica_slaves_night.bk2"
-		video = "gfx/event_pictures/southamerica_slave_chains.bk2"
-	}
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/slaves_breaking_their_chains"
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-	trigger = {
-		# triggered by je_abolish_slavery
-	}
-	option = {
-		name = 1848.2.a
-		default_option = yes
-		ig:ig_landowners = {
-			remove_ideology = ideology_pro_slavery
-			remove_ideology = ideology_southern_economy
-		}
-		ig:ig_rural_folk = {
-			remove_ideology = ideology_american_particularism
-			add_ideology = ideology_particularist
-		}
-		custom_tooltip = {
-			text = no_more_slavers
-		}
-		every_interest_group = {
-			limit = {
-				leader = {
-					OR = {
-						has_ideology = ideology:ideology_slaver
-						has_ideology = ideology:ideology_jacksonian_democrat
-					}
-				}
-			}
-			leader = {
-				set_ideology = ideology:ideology_moderate
-			}
-		}
-	}
-	option = {
-		name = 1848.2.b
-		# don't do that, just make landowners lose power
-		ig:ig_landowners = {
-			add_modifier = {
-				name = monarchist_nostalgia
-				months = normal_modifier_time
-			}
-		}
-	}
-}
-
-# New Constitution
-# Triggered from enactment pulse
-1848.3 = {
-	type = country_event
-	placement = root
-	title = 1848.3.t
-	desc = 1848.3.d
-	flavor = 1848.3.f
-
-	duration = 3
-
-	event_image = {
-		video = "europenorthamerica_political_extremism"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
-
-	trigger = {
-		OR = {
-			is_enacting_law = law_type:law_census_voting
-			is_enacting_law = law_type:law_universal_suffrage
-		}
-		OR = {
-			has_law = law_type:law_autocracy
-			has_law = law_type:law_oligarchy
-			has_law = law_type:law_landed_voting
-			has_law = law_type:law_wealth_voting
-		}
-		any_interest_group = {
-			is_in_government = yes
-			leader = {
-				has_ideology = ideology:ideology_radical
-			}
-		}
-		NOT = {
-			has_modifier = no_new_constitution
-		}
-	}
-
-	immediate = {
-		currently_enacting_law = {
-			save_scope_as = current_law_scope
-		}
-		random_interest_group = {
-			limit = {
-				is_in_government = yes
-				leader = {
-					has_ideology = ideology:ideology_radical
-				}
-			}
-			leader = {
-				save_scope_as = radical_leader_scope
-			}
-		}
-		if = {
-			limit = {
-				has_law = law_type:law_autocracy
-			}
-			law_type:law_autocracy = {
-				save_scope_as = current_voting_law_scope
-			}
-		}
-		if = {
-			limit = {
-				has_law = law_type:law_oligarchy
-			}
-			law_type:law_oligarchy = {
-				save_scope_as = current_voting_law_scope
-			}
-		}
-		if = {
-			limit = {
-				has_law = law_type:law_landed_voting
-			}
-			law_type:law_landed_voting = {
-				save_scope_as = current_voting_law_scope
-			}
-		}
-		if = {
-			limit = {
-				has_law = law_type:law_wealth_voting
-			}
-			law_type:law_wealth_voting = {
-				save_scope_as = current_voting_law_scope
-			}
-		}
-	}
-
-	option = {
-		name = 1848.3.a
-		if = {
-			limit = {
-				is_enacting_law = law_type:law_census_voting
-			}
-			activate_law = law_type:law_census_voting
-		}
-		if = {
-			limit = {
-				is_enacting_law = law_type:law_universal_suffrage
-			}
-			activate_law = law_type:law_universal_suffrage
-		}
-		# reactionaries get VERY angry
-		every_interest_group = {
-			limit = {
-				is_marginal = no
-				law_stance = {
-					law = scope:current_voting_law_scope
-					value > neutral
-				}
-			}
-			add_modifier = {
-				name = radical_constitution
-				months = short_modifier_time
-			}
-		}
-		ai_chance = {
-			base = 25
-			modifier = {
-				trigger = {
-					NOT = {
-						any_interest_group = {
-							law_stance = {
-								law = scope:current_voting_law_scope
-								value > neutral
-							}
-							is_powerful = yes
-						}
-					}
-				}
-				add = -15
-			}
-		}
-	}
-	option = {
-		name = 1848.3.b
-		default_option = yes
-		# gain success chance, lose enactment time
-		add_enactment_modifier = {
-			name = no_new_constitution
-		}
-		ai_chance = {
-			base = 75
-		}
-	}
-}
-
 # Rise of Radicalism
 1848.4 = {
 	type = country_event
@@ -443,16 +172,13 @@
 	}
 
 	immediate = {
-		random_interest_group = {
+		ordered_interest_group = {
 			limit = {
-				OR = {
-					is_powerful = yes
-					is_insurrectionary = yes
-				}
 				leader = {
 					has_ideology = ideology:ideology_radical
 				}
 			}
+			order_by = ig_clout
 			leader = {
 				save_scope_as = radical_leader_scope
 			}
@@ -465,18 +191,15 @@
 		scope:radical_leader_scope = {
 			add_modifier = {
 				name = 1848_popular_radical
+				is_decaying = yes
 			}
 		}
 		add_modifier = {
 			name = suppressing_radicals
 			months = short_modifier_time
 		}
-		add_loyalists = {
-			strata = rich
-			value = very_large_radicals
-		}
 		add_radicals = {
-			value = medium_radicals
+			value = large_radicals
 			strata = middle
 		}
 		add_radicals = {
@@ -484,14 +207,17 @@
 			strata = poor
 		}
 		ai_chance = {
-			base = 66
+			base = 33
 		}
 	}
+	
 	option = { # radical option
 		name = 1848.4.b
 		scope:radical_leader_scope = {
 			add_modifier = {
 				name = 1848_popular_radical
+				months = normal_modifier_time
+				is_decaying = yes
 			}
 		}
 		if = {
@@ -505,20 +231,22 @@
 				limit = {
 					is_marginal = no
 					can_have_radical_leader = yes
+					leader = {
+						NOT = { has_modifier = 1848_popular_radical }
+					}
 				}
 				leader = {
 					set_ideology = ideology:ideology_radical
 					add_modifier = {
 						name = 1848_popular_radical
+						months = normal_modifier_time
+						is_decaying = yes
 					}
 				}
 			}
 		}
-		add_radicals = {
-			value = medium_radicals
-		}
 		ai_chance = {
-			base = 33
+			base = 66
 		}
 	}
 }
@@ -737,6 +465,279 @@
 		}
 	}
 }
+
+# Theocracy Stamped Out
+1848.8 = {
+	type = country_event
+	placement = root
+	title = 1848.2.ta
+	desc = 1848.2.da
+	flavor = 1848.2.fa
+	duration = 3
+	event_image = {
+		video = "gfx/event_pictures/europenorthamerica_london_center.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/london_center"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+		# triggered by je_abolish_theocracy
+	}
+	option = {
+		name = 1848.2.a
+		default_option = yes
+		ig:ig_landowners = {
+			remove_ideology = ideology_paternalistic
+			remove_ideology = ideology_scholar_paternalistic
+			remove_ideology = ideology_junker_paternalistic
+			remove_ideology = ideology_papal_paternalistic
+			add_ideology = ideology_republican_paternalistic
+		}
+		ig:ig_rural_folk = {
+			remove_ideology = ideology_monarchist
+		}
+		ig:ig_armed_forces = {
+			remove_ideology = ideology_monarchist
+		}
+		custom_tooltip = {
+			text = no_more_theocrats
+			set_variable = monarchy_stamped_out_var
+		}
+		every_interest_group = {
+			limit = {
+				leader = {
+					has_ideology = ideology:ideology_theocrat	
+				}
+			}
+			leader = {
+				set_ideology = ideology:ideology_moderate
+			}
+		}
+	}
+	option = {
+		name = 1848.2.b
+		# don't do that, just make landowners lose power
+		ig:ig_landowners = {
+			add_modifier = {
+				name = monarchist_nostalgia
+				months = normal_modifier_time
+			}
+		}
+		ig:ig_devout = {
+			add_modifier = {
+				name = monarchist_nostalgia
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+# Slavery Stamped Out
+1848.7 = {
+	type = country_event
+	placement = root
+	title = 1848.2.tb
+	desc = 1848.2.db
+	flavor = 1848.2.fb
+	duration = 3
+	event_image = {
+		#video = "gfx/event_pictures/southamerica_slaves_night.bk2"
+		video = "gfx/event_pictures/southamerica_slave_chains.bk2"
+	}
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/europenorthamerica/slaves_breaking_their_chains"
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+	trigger = {
+		# triggered by je_abolish_slavery
+	}
+	option = {
+		name = 1848.2.a
+		default_option = yes
+		ig:ig_landowners = {
+			remove_ideology = ideology_pro_slavery
+			remove_ideology = ideology_southern_economy
+		}
+		ig:ig_rural_folk = {
+			remove_ideology = ideology_american_particularism
+			add_ideology = ideology_particularist
+		}
+		custom_tooltip = {
+			text = no_more_slavers
+		}
+		every_interest_group = {
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology:ideology_slaver
+						has_ideology = ideology:ideology_jacksonian_democrat
+					}
+				}
+			}
+			leader = {
+				set_ideology = ideology:ideology_moderate
+			}
+		}
+	}
+	option = {
+		name = 1848.2.b
+		# don't do that, just make landowners lose power
+		ig:ig_landowners = {
+			add_modifier = {
+				name = monarchist_nostalgia
+				months = normal_modifier_time
+			}
+		}
+	}
+}
+
+# New Constitution
+# Triggered from enactment pulse
+1848.3 = {
+	type = country_event
+	placement = root
+	title = 1848.3.t
+	desc = 1848.3.d
+	flavor = 1848.3.f
+
+	duration = 3
+
+	event_image = {
+		video = "europenorthamerica_political_extremism"
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	trigger = {
+		OR = {
+			is_enacting_law = law_type:law_census_voting
+			is_enacting_law = law_type:law_universal_suffrage
+		}
+		OR = {
+			has_law = law_type:law_autocracy
+			has_law = law_type:law_oligarchy
+			has_law = law_type:law_landed_voting
+			has_law = law_type:law_wealth_voting
+		}
+		any_interest_group = {
+			is_in_government = yes
+			leader = {
+				has_ideology = ideology:ideology_radical
+			}
+		}
+		NOT = {
+			has_modifier = no_new_constitution
+		}
+	}
+
+	immediate = {
+		currently_enacting_law = {
+			save_scope_as = current_law_scope
+		}
+		random_interest_group = {
+			limit = {
+				is_in_government = yes
+				leader = {
+					has_ideology = ideology:ideology_radical
+				}
+			}
+			leader = {
+				save_scope_as = radical_leader_scope
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_autocracy
+			}
+			law_type:law_autocracy = {
+				save_scope_as = current_voting_law_scope
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_oligarchy
+			}
+			law_type:law_oligarchy = {
+				save_scope_as = current_voting_law_scope
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_landed_voting
+			}
+			law_type:law_landed_voting = {
+				save_scope_as = current_voting_law_scope
+			}
+		}
+		if = {
+			limit = {
+				has_law = law_type:law_wealth_voting
+			}
+			law_type:law_wealth_voting = {
+				save_scope_as = current_voting_law_scope
+			}
+		}
+	}
+
+	#option = {
+	#	name = 1848.3.a
+	#	if = {
+	#		limit = {
+	#			is_enacting_law = law_type:law_census_voting
+	#		}
+	#		activate_law = law_type:law_census_voting
+	#	}
+	#	if = {
+	#		limit = {
+	#			is_enacting_law = law_type:law_universal_suffrage
+	#		}
+	#		activate_law = law_type:law_universal_suffrage
+	#	}
+	#	# reactionaries get VERY angry
+	#	every_interest_group = {
+	#		limit = {
+	#			is_marginal = no
+	#			law_stance = {
+	#				law = scope:current_voting_law_scope
+	#				value > neutral
+	#			}
+	#		}
+	#		add_modifier = {
+	#			name = radical_constitution
+	#			months = short_modifier_time
+	#		}
+	#	}
+	#	ai_chance = {
+	#		base = 25
+	#		modifier = {
+	#			trigger = {
+	#				NOT = {
+	#					any_interest_group = {
+	#						law_stance = {
+	#							law = scope:current_voting_law_scope
+	#							value > neutral
+	#						}
+	#						is_powerful = yes
+	#					}
+	#				}
+	#			}
+	#			add = -15
+	#		}
+	#	}
+	#}
+	option = {
+		name = 1848.3.b
+		default_option = yes
+		# gain success chance, lose enactment time
+		add_enactment_modifier = {
+			name = no_new_constitution
+		}
+		ai_chance = {
+			base = 75
+		}
+	}
+}
+
 
 #########
 # Pre-Revolution Buildup
