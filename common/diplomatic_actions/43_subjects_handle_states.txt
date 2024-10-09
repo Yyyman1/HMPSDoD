@@ -102,8 +102,8 @@
 				limit = {
 					any_subject_or_below = {
 						OR = {
-							c:BIC ?= this
-							c:DEI ?= this
+#							c:BIC ?= this
+							c:BEI ?= this
 							is_african_subject = yes
 						}
 					}					
@@ -212,19 +212,19 @@
 				limit = {
 					scope:target_country = {
 						OR = {
-							AND = {
-								c:BIC ?= this
-								scope:first_state = {
-									OR = {
-										region = sr:region_north_india
-										region = sr:region_south_india
-										region = sr:region_himalayas
-									}
-									NOT = {
-										state_region = s:STATE_CEYLON
-									}
-								}
-							}
+#							AND = {
+#								c:BIC ?= this
+#								scope:first_state = {
+#									OR = {
+#										region = sr:region_north_india
+#										region = sr:region_south_india
+#										region = sr:region_himalayas
+#									}
+#									NOT = {
+#										state_region = s:STATE_CEYLON
+#									}
+#								}
+#							}
 							AND = {
 								c:DEI ?= this
 								scope:first_state = {
@@ -474,8 +474,8 @@ demand_state = {
 			if = {
 				limit = {
 					OR = {
-						c:BIC ?= this
-						c:DEI ?= this
+#						c:BIC ?= this
+						c:BEI ?= this
 						is_african_subject = yes
 					}
 				}

@@ -1990,7 +1990,7 @@
                     scope:character ?= {
 						exists = home_country
                         home_country = {
-                            c:CSA ?= this
+#                            c:CSA ?= this
                             is_subject = no
                         }
                     }

@@ -174,11 +174,11 @@ gfx_has_british_trains_trigger = {
 				country_has_primary_culture = cu:breton
 				country_has_primary_culture = cu:russian
 				#country_has_primary_culture = cu:ukrainian
-				country_has_primary_culture = cu:yankee
-				country_has_primary_culture = cu:dixie
+				#country_has_primary_culture = cu:yankee
+				#country_has_primary_culture = cu:dixie
 				country_has_primary_culture = cu:anglo_canadian
 				country_has_primary_culture = cu:franco_canadian
-				country_has_primary_culture = cu:afro_american
+				#country_has_primary_culture = cu:afro_american
 				AND = {
 					is_subject = yes
 					any_overlord_or_above = {
@@ -188,13 +188,13 @@ gfx_has_british_trains_trigger = {
 							country_has_primary_culture = cu:french
 							country_has_primary_culture = cu:occitan
 							country_has_primary_culture = cu:breton
-							country_has_primary_culture = cu:russian
+							#country_has_primary_culture = cu:russian
 							#country_has_primary_culture = cu:ukrainian
-							country_has_primary_culture = cu:yankee
-							country_has_primary_culture = cu:dixie
+							#country_has_primary_culture = cu:yankee
+							#country_has_primary_culture = cu:dixie
 							country_has_primary_culture = cu:anglo_canadian
 							country_has_primary_culture = cu:franco_canadian
-							country_has_primary_culture = cu:afro_american
+							#country_has_primary_culture = cu:afro_american
 						}
 					}
 				}
@@ -212,11 +212,11 @@ gfx_has_british_trains_trigger = {
 			country_has_primary_culture = cu:breton
 			country_has_primary_culture = cu:russian
 			#country_has_primary_culture = cu:ukrainian
-			country_has_primary_culture = cu:yankee
-			country_has_primary_culture = cu:dixie
+			#country_has_primary_culture = cu:yankee
+			#country_has_primary_culture = cu:dixie
 			country_has_primary_culture = cu:anglo_canadian
 			country_has_primary_culture = cu:franco_canadian
-			country_has_primary_culture = cu:afro_american
+			#country_has_primary_culture = cu:afro_american
 			AND = {
 				is_subject = yes
 				any_overlord_or_above = {
@@ -231,11 +231,11 @@ gfx_has_british_trains_trigger = {
 						country_has_primary_culture = cu:breton
 						country_has_primary_culture = cu:russian
 						#country_has_primary_culture = cu:ukrainian
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
+						#country_has_primary_culture = cu:yankee
+						#country_has_primary_culture = cu:dixie
 						country_has_primary_culture = cu:anglo_canadian
 						country_has_primary_culture = cu:franco_canadian
-						country_has_primary_culture = cu:afro_american
+						#country_has_primary_culture = cu:afro_american
 					}
 				}
 			}
@@ -253,11 +253,11 @@ gfx_has_british_trains_trigger = {
 						country_has_primary_culture = cu:breton
 						country_has_primary_culture = cu:russian
 						#country_has_primary_culture = cu:ukrainian
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
+						#country_has_primary_culture = cu:yankee
+						#country_has_primary_culture = cu:dixie
 						country_has_primary_culture = cu:anglo_canadian
 						country_has_primary_culture = cu:franco_canadian
-						country_has_primary_culture = cu:afro_american
+						#country_has_primary_culture = cu:afro_american
 					}
 				}
 			}
@@ -303,11 +303,11 @@ gfx_has_german_trains_trigger = {
 			country_has_primary_culture = cu:breton
 			country_has_primary_culture = cu:russian
 			#country_has_primary_culture = cu:ukrainian
-			country_has_primary_culture = cu:yankee
-			country_has_primary_culture = cu:dixie
+			#country_has_primary_culture = cu:yankee
+			#country_has_primary_culture = cu:dixie
 			country_has_primary_culture = cu:anglo_canadian
 			country_has_primary_culture = cu:franco_canadian
-			country_has_primary_culture = cu:afro_american
+			#country_has_primary_culture = cu:afro_american
 		}
 	}
 }
@@ -353,11 +353,11 @@ gfx_has_french_trains_trigger = {
 			country_has_primary_culture = cu:south_german
 			country_has_primary_culture = cu:russian
 			#country_has_primary_culture = cu:ukrainian
-			country_has_primary_culture = cu:yankee
-			country_has_primary_culture = cu:dixie
+			#country_has_primary_culture = cu:yankee
+			#country_has_primary_culture = cu:dixie
 			country_has_primary_culture = cu:anglo_canadian
 			country_has_primary_culture = cu:franco_canadian
-			country_has_primary_culture = cu:afro_american
+			#country_has_primary_culture = cu:afro_american
 		}
 	}	
 }
@@ -400,11 +400,11 @@ gfx_has_russian_trains_trigger = {
 			country_has_primary_culture = cu:french
 			country_has_primary_culture = cu:occitan
 			country_has_primary_culture = cu:breton
-			country_has_primary_culture = cu:yankee
-			country_has_primary_culture = cu:dixie
+			#country_has_primary_culture = cu:yankee
+			#country_has_primary_culture = cu:dixie
 			country_has_primary_culture = cu:anglo_canadian
 			country_has_primary_culture = cu:franco_canadian
-			country_has_primary_culture = cu:afro_american
+			#country_has_primary_culture = cu:afro_american
 		}
 	}	
 }
@@ -415,20 +415,20 @@ gfx_has_american_trains_trigger = {
 	
 	AND = {
 		OR = {
-			country_has_primary_culture = cu:yankee
-			country_has_primary_culture = cu:dixie
+			#country_has_primary_culture = cu:yankee
+			#country_has_primary_culture = cu:dixie
 			country_has_primary_culture = cu:anglo_canadian
 			country_has_primary_culture = cu:franco_canadian
-			country_has_primary_culture = cu:afro_american
+			#country_has_primary_culture = cu:afro_american
 			AND = {
 				is_subject = yes
 				any_overlord_or_above = {
 					OR = {
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
+						#country_has_primary_culture = cu:yankee
+						#country_has_primary_culture = cu:dixie
 						country_has_primary_culture = cu:anglo_canadian
 						country_has_primary_culture = cu:franco_canadian
-						country_has_primary_culture = cu:afro_american
+						#country_has_primary_culture = cu:afro_american
 					}
 				}
 			}
@@ -436,11 +436,11 @@ gfx_has_american_trains_trigger = {
 				goods = g:engines
 				exporter.owner = {
 					OR = {
-						country_has_primary_culture = cu:yankee
-						country_has_primary_culture = cu:dixie
+						#country_has_primary_culture = cu:yankee
+						#country_has_primary_culture = cu:dixie
 						country_has_primary_culture = cu:anglo_canadian
 						country_has_primary_culture = cu:franco_canadian
-						country_has_primary_culture = cu:afro_american
+						#country_has_primary_culture = cu:afro_american
 					}
 				}
 			}
@@ -478,11 +478,11 @@ gfx_has_no_culture_trains_trigger = {
 		country_has_primary_culture = cu:breton
 		country_has_primary_culture = cu:russian
 		#country_has_primary_culture = cu:ukrainian
-		country_has_primary_culture = cu:yankee
-		country_has_primary_culture = cu:dixie
+		#country_has_primary_culture = cu:yankee
+		#country_has_primary_culture = cu:dixie
 		country_has_primary_culture = cu:anglo_canadian
 		country_has_primary_culture = cu:franco_canadian
-		country_has_primary_culture = cu:afro_american
+		#country_has_primary_culture = cu:afro_american
 		AND = {
 			is_subject = yes
 			any_overlord_or_above = {
@@ -497,11 +497,11 @@ gfx_has_no_culture_trains_trigger = {
 					country_has_primary_culture = cu:breton
 					country_has_primary_culture = cu:russian
 					#country_has_primary_culture = cu:ukrainian
-					country_has_primary_culture = cu:yankee
-					country_has_primary_culture = cu:dixie
+					#country_has_primary_culture = cu:yankee
+					#country_has_primary_culture = cu:dixie
 					country_has_primary_culture = cu:anglo_canadian
 					country_has_primary_culture = cu:franco_canadian
-					country_has_primary_culture = cu:afro_american
+					#country_has_primary_culture = cu:afro_american
 				}
 			}
 		}
@@ -519,11 +519,11 @@ gfx_has_no_culture_trains_trigger = {
 					country_has_primary_culture = cu:breton
 					country_has_primary_culture = cu:russian
 					#country_has_primary_culture = cu:ukrainian
-					country_has_primary_culture = cu:yankee
-					country_has_primary_culture = cu:dixie
+					#country_has_primary_culture = cu:yankee
+					#country_has_primary_culture = cu:dixie
 					country_has_primary_culture = cu:anglo_canadian
 					country_has_primary_culture = cu:franco_canadian
-					country_has_primary_culture = cu:afro_american
+					#country_has_primary_culture = cu:afro_american
 				}
 			}
 		}

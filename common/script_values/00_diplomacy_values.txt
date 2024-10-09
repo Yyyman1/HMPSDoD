@@ -20,17 +20,17 @@ liberty_desire_weekly_change = {
 	}
 
 	# Special - DEI collapses if independent
-	if = {
-		limit = { 
-			root.first_country = { c:NET ?= this } 
-			root.second_country = { c:DEI ?= this } 
-		}
-		add = {
-			value = -0.2
-			desc = "DEI"
-		}	
-	}		
-	
+#	if = {
+#		limit = { 
+#			root.first_country = { c:NET ?= this } 
+#			root.second_country = { c:DEI ?= this } 
+#		}
+#		add = {
+#			value = -0.2
+#			desc = "DEI"
+#		}	
+#	}		
+#	
 	# Special - Pacify the Steppes
 	if = {
 		limit = { 

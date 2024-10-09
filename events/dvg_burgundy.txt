@@ -1402,7 +1402,7 @@ dvg_burgundy.21 = {
 	}
 }
 
-dvg_burgundy.22 = {
+dvg_burgundy.22 = {	
 	type = country_event
 	placement = ROOT
 
@@ -1452,7 +1452,7 @@ dvg_burgundy.22 = {
 			value = 0.30
 		}
 		change_relations = {
-			country = c:BIC
+			country = c:BEI
 			value = -30
 		}
 		if = {
