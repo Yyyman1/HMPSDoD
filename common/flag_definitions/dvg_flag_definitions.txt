@@ -3457,13 +3457,13 @@ XIB = { #Xibei
 		priority = 50
 		trigger = { 
 		OR = {
-			c:SHU = {
-				has_diplomatic_pact = {
-					who = c:XIB
-					type = puppet
-					is_initiator = yes
-				}
-			}
+			# c:SHU = {
+			# 	has_diplomatic_pact = {
+			# 		who = c:XIB
+			# 		type = puppet
+			# 		is_initiator = yes
+			# 	}
+			# }
 			c:SHU = {
 				has_diplomatic_pact = {
 					who = c:XIB
@@ -3496,20 +3496,20 @@ SHN = { #Shanxi
 		priority = 50
 		trigger = { 
 			OR = {
-				c:SHU = {
-					has_diplomatic_pact = {
-						who = c:HNA
-						type = puppet
-						is_initiator = yes
-					}
-				}
-				c:SHU = {
-					has_diplomatic_pact = {
-						who = c:HNA
-						type = vassal
-						is_initiator = yes
-					}
-				}
+				# c:SHU = {
+				# 	has_diplomatic_pact = {
+				# 		who = c:HNA
+				# 		type = puppet
+				# 		is_initiator = yes
+				# 	}
+				# }
+				# c:SHU = {
+				# 	has_diplomatic_pact = {
+				# 		who = c:HNA
+				# 		type = vassal
+				# 		is_initiator = yes
+				# 	}
+				# }
 			}
 			}
 	}
