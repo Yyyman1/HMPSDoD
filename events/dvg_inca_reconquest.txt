@@ -313,10 +313,10 @@ dvg_inca_reconquest.5 = {
 				ig:ig_armed_forces = {
 					set_ig_bolstering = yes
 				}
-				set_ruling_interest_groups = {
-					ig:ig_landowners
-					ig:ig_armed_forces
-				}
+				#set_ruling_interest_groups = {
+					#ig:ig_landowners
+					#ig:ig_armed_forces
+				#}
 			}
 		}
 
