@@ -785,3 +785,68 @@ dvg_china.11 = {
 		
 	}
 }
+
+dvg_china.12 = { #billions must die
+	type = country_event
+	placement = ROOT
+
+	title = dvg_china.12.t
+	desc = dvg_china.12.d
+	flavor = dvg_china.12.f
+
+	event_image = {
+		video = "gfx/event_pictures/asia_confucianism_shinto.bk2"
+
+	}
+
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+
+	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+
+	duration = 3
+
+	trigger = {
+
+	}
+	immediate = {
+		
+	}
+
+	option = { 
+		name = dvg_china.12.a
+		
+		kill_population_percent = {
+			percent = 0.5
+			culture = cu:han 
+		}
+		kill_population_percent = {
+			percent = 0.5
+			culture = cu:yue 
+		}
+		kill_population_percent = {
+			percent = 0.5
+			culture = cu:hakka 
+		}
+		kill_population_percent = {
+			percent = 0.5
+			culture = cu:manchu 
+		}
+		kill_population_percent = {
+			percent = 0.5
+			culture = cu:min 
+		}
+		kill_population_percent = {
+			percent = 0.5
+			culture = cu:zhuang 
+		}
+		kill_population_percent = {
+			percent = 0.5
+			culture = cu:yi 
+		}
+		kill_population_percent = {
+			percent = 0.5
+			culture = cu:miao 
+		}
+	}
+}
