@@ -830,10 +830,6 @@ dvg_china.12 = { #billions must die
 		}
 		kill_population_percent = {
 			percent = 0.5
-			culture = cu:manchu 
-		}
-		kill_population_percent = {
-			percent = 0.5
 			culture = cu:min 
 		}
 		kill_population_percent = {
