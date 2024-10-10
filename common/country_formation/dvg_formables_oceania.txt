@@ -88,10 +88,7 @@ TMC = { #Timor-Chougie
 		has_technology_researched = pan-nationalism
 	}
 
-	required_states_fraction = .60
+	required_states_fraction = 0.6
 	
 	ai_will_do = { always = yes }
-
-	possible = {
-	}
 }

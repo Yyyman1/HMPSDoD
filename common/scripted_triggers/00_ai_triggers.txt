@@ -218,12 +218,12 @@ has_je_conquest_reason = {
 			}
 		}
 		
-		AND = {
-			wants_to_solve_schleswig_holstein = yes
-			$TARGET$ = {
-				is_oppressor_of_schleswig_holstein = yes
-			}
-		}
+#		AND = {
+#			wants_to_solve_schleswig_holstein = yes
+#			$TARGET$ = {
+#				is_oppressor_of_schleswig_holstein = yes
+#			}
+#		}
 
 		AND = {
 			has_journal_entry = je_conquest_of_algeria

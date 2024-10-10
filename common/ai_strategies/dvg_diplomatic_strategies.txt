@@ -71,11 +71,9 @@
 	aggression = {
 		value = 0.5
 		
-		if = {
-			limit = { 
+		if = { 
 			limit = { 
 				scope:target_country = { can_form_nation = MUS	 }
-			}
 			}
 			add = 2.75
 		}

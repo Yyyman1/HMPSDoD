@@ -447,25 +447,19 @@ dvg_china.9 = {
 			
 			limit = {
 				state_region = {
-					is_homeland = cu:han
-					
+					is_homeland = cu:han	
 				}
 				OR = {
 				has_variable = cult_center
 			
-				
 				turmoil >= .33
 				}
 				owner = ROOT
 				is_capital = no
-				
-				
-			
 			}
 		save_scope_as = KMT_capital
 		set_state_owner = c:KMT
 
-		
 		}
 		create_country = {
 			origin = THIS

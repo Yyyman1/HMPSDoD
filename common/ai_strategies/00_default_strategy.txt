@@ -2475,15 +2475,15 @@ ai_strategy_default = {
 		}			
 		
 		# Schleswig-Holstein question
-		if = {
-			limit = { 
-				wants_to_solve_schleswig_holstein = yes	
-				scope:target_country = { 
-					is_oppressor_of_schleswig_holstein = yes
-				}
-			}
-			add = 10
-		}		
+#		if = {
+#			limit = { 
+#				wants_to_solve_schleswig_holstein = yes	
+#				scope:target_country = { 
+#					is_oppressor_of_schleswig_holstein = yes
+#				}
+#			}
+#			add = 10
+#		}		
 
 		if = { #Carving up China
 			limit = {
@@ -3934,14 +3934,14 @@ ai_strategy_default = {
 				add = 100
 			}
 		}
-		region_baltic = {
-			if = {
-				limit = { 
-					wants_to_solve_schleswig_holstein = yes			
-				}			
-				add = 100
-			}
-		}
+#		region_baltic = {
+#			if = {
+#				limit = { 
+#					wants_to_solve_schleswig_holstein = yes			
+#				}			
+#				add = 100
+#			}
+#		}
 		region_balkans = {
 			if = {
 				limit = { # Certain Great Powers care about Egyptian-Ottoman conflict in the early game
@@ -6254,15 +6254,15 @@ ai_strategy_default = {
 				}				
 			}
 			
-			if = {
-				limit = { 
-					wants_to_solve_schleswig_holstein = yes
-					exists = c:HOL
-					scope:target_country = { this = c:HOL }
-					can_reach_target_country = no
-				}
-				add = 100
-			}
+#			if = {
+#				limit = { 
+#					wants_to_solve_schleswig_holstein = yes
+#					exists = c:HOL
+#					scope:target_country = { this = c:HOL }
+#					can_reach_target_country = no
+#				}
+#				add = 100
+#			}
 			
 			# Relations with target
 			multiply = {

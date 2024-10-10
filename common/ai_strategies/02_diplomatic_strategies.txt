@@ -1806,7 +1806,7 @@ ai_strategy_unify_china = {
 				}
 				add = 200
 			}
-			if_else = {
+			else_if = {
 				limit = {
 					can_reach_target_country = yes
 				}
