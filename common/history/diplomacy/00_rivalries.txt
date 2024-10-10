@@ -87,10 +87,10 @@
 			country = c:SAV
 			type = rivalry
 		}
-		create_diplomatic_pact = {
-			country = c:VEN
-			type = rivalry
-		}
+		#create_diplomatic_pact = {
+		#	country = c:VEN
+		#	type = rivalry
+		#}
 	}
 	c:SAV = {
 		create_diplomatic_pact = {
