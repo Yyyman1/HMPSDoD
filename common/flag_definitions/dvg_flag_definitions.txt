@@ -28,6 +28,7 @@ DZU = { #Dzungar
 		priority = 100
 		trigger = { 	
 			coa_def_republic_flag_trigger = yes
+		}
 	}
 	flag_definition = {	
 		coa = DZU_theocracy_muslim

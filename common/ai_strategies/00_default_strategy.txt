@@ -1350,37 +1350,37 @@ ai_strategy_default = {
 				add = 25
 			}
 			
-			if = {
-				limit = { 
-					wants_to_solve_schleswig_holstein = yes
-					scope:target_country = {
-						is_oppressor_of_schleswig_holstein = yes
-					}
-				}
-				
-				if = {
-					limit = {
-						scope:target_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }				
-					}				
-					add = 50
-				}
-				else = {
-					multiply = 0.0
-				}
-			}	
-		
-	
-			if = {
-				limit = {
-					has_journal_entry = je_the_krakow_uprising
-					country_rank >= rank_value:major_power
-					exists = c:KRA
-					scope:target_state = {
-						owner = { this = c:KRA }
-					}
-				}
-				add = 50
-			}
+#			if = {
+#				limit = { 
+#					wants_to_solve_schleswig_holstein = yes
+#					scope:target_country = {
+#						is_oppressor_of_schleswig_holstein = yes
+#					}
+#				}
+#				
+#				if = {
+#					limit = {
+#						scope:target_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }				
+#					}				
+#					add = 50
+#				}
+#				else = {
+#					multiply = 0.0
+#				}
+#			}	
+#		
+#	
+#			if = {
+#				limit = {
+#					has_journal_entry = je_the_krakow_uprising
+#					country_rank >= rank_value:major_power
+#					exists = c:KRA
+#					scope:target_state = {
+#						owner = { this = c:KRA }
+#					}
+#				}
+#				add = 50
+#			}
 			
 			if = {
 				limit = {
@@ -1575,19 +1575,19 @@ ai_strategy_default = {
 			add = 100
 		}
 
-		if = { #Carving up China
-			limit = {
-				should_carve_up_china = yes
-				scope:target_state = {
-					OR = {
-						region = sr:region_north_china
-						region = sr:region_south_china
-						region = sr:region_manchuria
-					}
-				}
-			}
-			add = 100
-		}
+#		if = { #Carving up China
+#			limit = {
+#				should_carve_up_china = yes
+#				scope:target_state = {
+#					OR = {
+#						region = sr:region_north_china
+#						region = sr:region_south_china
+#						region = sr:region_manchuria
+#					}
+#				}
+#			}
+#			add = 100
+#		}
 		
 		# Not worth doing against very small markets
 		if = {
@@ -5635,15 +5635,15 @@ ai_strategy_default = {
 				add = scope:target_country.ai_subject_value:root
 			}					
 		
-			if = {
-				limit = { 
-					wants_to_solve_schleswig_holstein = yes
-					exists = c:HOL
-					scope:target_country = { this = c:HOL }
-					can_reach_target_country = yes
-				}
-				add = 100
-			}			
+#			if = {
+#				limit = { 
+#					wants_to_solve_schleswig_holstein = yes
+#					exists = c:HOL
+#					scope:target_country = { this = c:HOL }
+#					can_reach_target_country = yes
+#				}
+#				add = 100
+#			}			
 
 			min = 0
 			max = 100			

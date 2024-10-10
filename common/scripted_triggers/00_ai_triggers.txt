@@ -364,7 +364,7 @@ has_je_befriend_reason = {
 	country_rank <= $TARGET$.country_rank
 	
 	OR = {
-		AND = {
+#		AND = {
 #			exists = c:RSM
 #			THIS = {
 #				has_journal_entry = je_risorgimento

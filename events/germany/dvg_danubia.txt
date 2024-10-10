@@ -1,4 +1,4 @@
-namespace = dvg_danubia
+﻿namespace = dvg_danubia
 
 dvg_danubia.1 = {
 	type = country_event

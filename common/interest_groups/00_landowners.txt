@@ -39,7 +39,7 @@
 		# 	}
 		# }
 		# Local Governors
-		else_if = {
+		if = {
 			limit = {
 				c:TUR ?= this
 			}
