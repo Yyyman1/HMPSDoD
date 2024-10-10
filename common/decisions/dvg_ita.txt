@@ -1,4 +1,4 @@
-dvg_ita_acceptgreeks = {
+﻿dvg_ita_acceptgreeks = {
 	is_shown = {
 		exists = c:ITA
 		root = c:ITA

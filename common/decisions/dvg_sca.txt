@@ -1,4 +1,4 @@
-dvg_sca_acceptestonians = {
+﻿dvg_sca_acceptestonians = {
 	is_shown = {
 		exists = c:SCA
 		root = c:SCA

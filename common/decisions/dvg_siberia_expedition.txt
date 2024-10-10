@@ -59,7 +59,7 @@
 				is_player = yes
 			}
 			trigger_event = { id = dvg_expedition.200 popup = yes }
-			set_variable = {
+#			set_variable = {
 #				name = north_asia_expedition
 #				value = yes
 #			}

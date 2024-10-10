@@ -1,4 +1,4 @@
-dvg_picardy_reclaimed = {
+﻿dvg_picardy_reclaimed = {
 	is_shown = {
 		exists = c:DUA
 		root = c:DUA

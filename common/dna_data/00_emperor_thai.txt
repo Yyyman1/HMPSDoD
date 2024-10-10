@@ -1,8 +1,10 @@
 ﻿dna_emperor_thai={
+	portrait_info = {
 	type=male
 	id=205086058
 	age=0.250000
-	genes={ 		hair_color={ 34 237 34 237 }
+	genes={ 		
+		hair_color={ 34 237 34 237 }
  		skin_color={ 131 96 131 96 }
  		eye_color={ 134 165 134 165 }
  		gene_cheek_fat={ "cheek_fat" 116 "cheek_fat" 116 }
@@ -109,6 +111,7 @@
  		eye_accessory={ "normal_eyes" 0 "normal_eyes" 0 }
  		eye_lashes_accessory={ "normal_eyelashes" 0 "normal_eyelashes" 0 }
  		teeth_accessory={ "normal_teeth" 0 "normal_teeth" 0 }
+ }
  }
 	entity={ 0 0 }
 }

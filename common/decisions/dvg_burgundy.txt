@@ -1,4 +1,4 @@
-dvg_brg_dutchrhine = {
+﻿dvg_brg_dutchrhine = {
 	is_shown = {
 		exists = c:BRG
 		root = c:BRG
