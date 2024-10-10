@@ -72,7 +72,7 @@
 		}
 
 	}
-	c:JIA = {
+	c:TPG = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_china
@@ -98,7 +98,7 @@
 
 	}
 
-	c:HBI = {
+	c:TPG = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_china
@@ -124,7 +124,7 @@
 
 	}
 
-	c:HNA = {
+	c:TPG = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_china
@@ -150,7 +150,7 @@
 
 	}
 
-	c:GNG = {
+	c:TPG = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_china
@@ -176,7 +176,7 @@
 
 	}
 
-	c:YUE = {
+	c:TPG = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_china
@@ -202,7 +202,7 @@
 
 	}
 
-	c:GUI = {
+	c:TPG = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_china
@@ -228,7 +228,7 @@
 
 	}
 
-	c:SIH = {
+	c:TPG = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_china
@@ -254,7 +254,7 @@
 
 	}
 
-	c:YUN = {
+	c:TPG = {
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_south_china
@@ -303,6 +303,92 @@
 			}
 			save_scope_as = dvg_mch_main_army
 		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Plain Green Banner"  
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_BEIJING
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SHANXI
+				count = 8
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_BEIJING
+				count = 5
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ZHILI
+				count = 15
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_ZHILI
+				count = 5
+			}
+			
+			save_scope_as = dvg_shu_main_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Plain Red Banner"  
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_SHANDONG
+				count = 6
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_SHANDONG
+				count = 4
+			}
+			
+			
+			save_scope_as = dvg_shu_2_army
+		}
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_north_china
+			name = "Plain Bruce Banner"  
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_JIANGSU
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_irregular_infantry
+				state_region = s:STATE_NORTHERN_ANHUI
+				count = 12
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_NORTHERN_ANHUI
+				count = 4
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_cannon_artillery
+				state_region = s:STATE_JIANGSU
+				count = 3
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_JIANGSU
+				count = 4
+			}
+			
+			
+			save_scope_as = dvg_shu_2_army
+		}
 	}
 	c:KOR = {
 		create_military_formation = {
@@ -345,94 +431,7 @@
 #		
 #	}
 #
-#	c:SHU = {
-#		create_military_formation = {
-#			type = army
-#			hq_region = sr:region_north_china
-#			name = "Beiyang Clique"  
-#
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_line_infantry
-#				state_region = s:STATE_BEIJING
-#				count = 10
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_line_infantry
-#				state_region = s:STATE_SHANXI
-#				count = 8
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_cannon_artillery
-#				state_region = s:STATE_BEIJING
-#				count = 5
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_line_infantry
-#				state_region = s:STATE_ZHILI
-#				count = 15
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_ZHILI
-#				count = 5
-#			}
-#			
-#			save_scope_as = dvg_shu_main_army
-#		}
-#		create_military_formation = {
-#			type = army
-#			hq_region = sr:region_north_china
-#			name = "Shandong Clique"  
-#
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_line_infantry
-#				state_region = s:STATE_SHANDONG
-#				count = 6
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_cannon_artillery
-#				state_region = s:STATE_SHANDONG
-#				count = 4
-#			}
-#			
-#			
-#			save_scope_as = dvg_shu_2_army
-#		}
-#		create_military_formation = {
-#			type = army
-#			hq_region = sr:region_north_china
-#			name = "Jiangsu Clique"  
-#
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_line_infantry
-#				state_region = s:STATE_JIANGSU
-#				count = 12
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_irregular_infantry
-#				state_region = s:STATE_NORTHERN_ANHUI
-#				count = 12
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_NORTHERN_ANHUI
-#				count = 4
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_cannon_artillery
-#				state_region = s:STATE_JIANGSU
-#				count = 3
-#			}
-#			combat_unit = {
-#				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_JIANGSU
-#				count = 4
-#			}
-#			
-#			
-#			save_scope_as = dvg_shu_2_army
-#		}
-#	}
+	
 	c:DZU = {
 		create_military_formation = {
 			type = army

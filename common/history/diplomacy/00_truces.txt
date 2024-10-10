@@ -112,7 +112,7 @@
 	}
 	c:NAN = {
 		create_bidirectional_truce = {
-			country = c:JIA
+			country = c:TPG
 			months = 30
 		}
 	}

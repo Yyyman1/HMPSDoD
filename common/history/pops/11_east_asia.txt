@@ -611,7 +611,7 @@
 				size = 140510
 			}
 		}
-		region_state:JIA = {
+		region_state:TPG = {
 			create_pop = {
 				culture = hakka
 				size = 526320
@@ -701,7 +701,7 @@
 				size = 450248
 			}
 		}
-		region_state:GNG = {
+		region_state:TPG = {
 			create_pop = {
 				culture = hakka
 				size = 206710
@@ -875,7 +875,7 @@
 	
 	#Taiping
 	s:STATE_GUANGDONG = {
-		region_state:YUE = {
+		region_state:TPG = {
 			create_pop = {
 				culture = hakka
 				size = 9476
@@ -991,7 +991,7 @@
 		}
 	}
 	s:STATE_JIANGXI = {
-		region_state:JIA = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 3879617
@@ -1037,7 +1037,7 @@
 		}
 	}
 	s:STATE_EASTERN_HUBEI = {
-		region_state:HBI = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 14104641
@@ -1050,7 +1050,7 @@
 		}
 	}
 	s:STATE_WESTERN_HUBEI = {
-		region_state:HBI = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 16014
@@ -1068,7 +1068,7 @@
 		}
 	}
 	s:STATE_CHONGQING = {
-		region_state:SIH = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 16204426
@@ -1082,7 +1082,7 @@
 		}
 	}
 	s:STATE_SICHUAN = {
-		region_state:YUN = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 5030406
@@ -1095,8 +1095,6 @@
 				culture = yi
 				size = 1442489
 			}
-		}
-		region_state:SIH = {
 			create_pop = {
 				culture = han
 				size = 5030406
@@ -1112,7 +1110,7 @@
 		}
 	}
 	s:STATE_HUNAN = {
-		region_state:HNA = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 3267
@@ -1138,7 +1136,7 @@
 		}
 	}
 	s:STATE_GUANGXI = {
-		region_state:GNG = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 1017413
@@ -1192,7 +1190,7 @@
 		}
 	}
 	s:STATE_GUIZHOU = {
-		region_state:GUI = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 99742
@@ -1217,7 +1215,7 @@
 		}
 	}
 	s:STATE_YUNNAN = {
-		region_state:YUN = {
+		region_state:TPG = {
 			create_pop = {
 				culture = han
 				size = 21288

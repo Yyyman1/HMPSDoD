@@ -259,7 +259,7 @@
 		create_trade_route = {
 			goods = silk
 			level = 12
-			target = c:GNG.market
+			target = c:TPG.market
 			direction = import
 		}
 	}
