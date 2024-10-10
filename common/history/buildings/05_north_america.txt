@@ -2763,7 +2763,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:GCO"
-						levels=1
+						levels=2
 						region="STATE_BAJA_CALIFORNIA"
 					}
 				}
@@ -2817,7 +2817,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:GCO"
-						levels=1
+						levels=2
 						region="STATE_SANTA_CATARINA"
 					}
 				}
@@ -2877,7 +2877,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:GCO"
-						levels=1
+						levels=2
 						region="STATE_RIO_GRANDE"
 					}
 				}
@@ -3166,7 +3166,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:GCO"
-						levels=1
+						levels=2
 						region="STATE_VERACRUZ"
 					}
 				}
@@ -3411,7 +3411,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:GCO"
-						levels=2
+						levels=3
 						region="STATE_GUERRERO"
 					}
 				}
@@ -3440,7 +3440,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:GCO"
-						levels=1
+						levels=2
 						region="STATE_OAXACA"
 					}
 				}

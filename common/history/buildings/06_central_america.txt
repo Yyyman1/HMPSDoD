@@ -578,7 +578,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:GCO"
-						levels=1
+						levels=2
 						region="STATE_SAN_SALVADOR"
 					}
 				}
