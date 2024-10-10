@@ -567,7 +567,7 @@ tibet_expedition_events.5 = { # The Great Trigonometrical Survey Goes North (Mou
 #			}
 #		}
 #	}
-#}
+}
 
 tibet_expedition_events.6 = { # Leeches!
 	type = country_event
