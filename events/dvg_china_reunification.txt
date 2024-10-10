@@ -27,7 +27,7 @@ china_reunification.1 = {
 		name = china_reunification.1.a
 		default_option = yes
 		add_loyalists = {
-			value = 0.1
+			value = 0.15
 			culture = cu:han
 		}
 		every_state_region = {
@@ -144,8 +144,8 @@ china_reunification.4 = {
 
 	option = {
 		name = china_reunification.4.a
-		add_radicals = {
-			value = 0.2
+		add_loyalists = {
+			value = 0.1
 			culture = cu:han
 		}
 		change_infamy = -1000

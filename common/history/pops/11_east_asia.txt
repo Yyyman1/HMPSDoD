@@ -402,7 +402,7 @@
 		region_state:MCH = {
 			create_pop = {
 				culture = han
-				size = 3170107
+				size = 13170107
 			}
 			create_pop = {
 				culture = han

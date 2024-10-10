@@ -61,7 +61,7 @@
 		#activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_tenant_farmers
 		#activate_law = law_type:law_professional_army
-		activate_law = law_type:law_language_discrimination
+		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -516,9 +516,9 @@
 			remove_ideology = ideology_anti_clerical
 			add_ideology = ideology_mengzi
 		}
-		trigger_event = {
-			id = dvg_qing.1
-		}
+		#trigger_event = {
+		#	id = dvg_qing.1
+		#}
 		set_variable = warlord_state
 
 		
@@ -577,7 +577,7 @@
 	}
 	
 	c:FRS = { #Tungning
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_3_tech = yes
 		effect_starting_politics_traditional = yes
 		
 		activate_law = law_type:law_landed_voting

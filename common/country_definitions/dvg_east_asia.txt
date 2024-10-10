@@ -111,7 +111,7 @@ TPG = { #Taiping
 	
 	cultures = { han }
 	religion = taiping
-	capital = STATE_HUNAN
+	capital = STATE_JIANGXI
 }
 
 SHU = { #Shun

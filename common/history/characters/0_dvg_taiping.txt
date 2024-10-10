@@ -1,5 +1,5 @@
 ﻿CHARACTERS = {
-	c:JIA = {
+	c:TPG = {
 		create_character = {
 			ruler = yes
 			historical = yes

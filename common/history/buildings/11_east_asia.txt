@@ -1658,7 +1658,7 @@
 					building={
 						type="building_paper_mills"
 						country="c:TPG"
-						levels=5
+						levels=2
 						region="STATE_FUJIAN"
 					}
 				}
@@ -1671,7 +1671,7 @@
 					building={
 						type="building_glassworks"
 						country="c:TPG"
-						levels=5
+						levels=2
 						region="STATE_FUJIAN"
 					}
 				}
@@ -1697,7 +1697,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:TPG"
-						levels=7
+						levels=3
 						region="STATE_FUJIAN"
 					}
 				}
@@ -1709,7 +1709,7 @@
 				add_ownership={
 					country={
 						country="c:TPG"
-						levels=10
+						levels=8
 					}
 				}
 				reserves=1
@@ -1939,7 +1939,7 @@
 				add_ownership={
 					building={
 						type="building_arms_industry"
-						country="c:FRS"
+						country="c:TPG"
 						levels=1
 						region="STATE_SHAOZHOU"
 					}
@@ -1997,7 +1997,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=10
+						levels=8
 						region="STATE_JIANGXI"
 					}
 				}
@@ -2010,7 +2010,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=7
+						levels=6
 						region="STATE_JIANGXI"
 					}
 				}
@@ -2047,7 +2047,7 @@
 					building={
 						type="building_paper_mills"
 						country="c:TPG"
-						levels=7
+						levels=4
 						region="STATE_JIANGXI"
 					}
 				}
@@ -2101,7 +2101,7 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:TPG"
-						levels=5
+						levels=2
 						region="STATE_EASTERN_HUBEI"
 					}
 				}
@@ -2127,7 +2127,7 @@
 					building={
 						type="building_paper_mills"
 						country="c:TPG"
-						levels=4
+						levels=2
 						region="STATE_EASTERN_HUBEI"
 					}
 				}
@@ -2140,7 +2140,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=6
+						levels=5
 						region="STATE_EASTERN_HUBEI"
 					}
 				}
@@ -2153,7 +2153,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=10
+						levels=8
 						region="STATE_EASTERN_HUBEI"
 					}
 				}
@@ -2183,7 +2183,7 @@
 					building={
 						type="building_paper_mills"
 						country="c:TPG"
-						levels=5
+						levels=4
 						region="STATE_WESTERN_HUBEI"
 					}
 				}
@@ -2196,7 +2196,7 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:TPG"
-						levels=5
+						levels=3
 						region="STATE_EASTERN_HUBEI"
 					}
 				}
@@ -2222,7 +2222,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=10
+						levels=8
 						region="STATE_WESTERN_HUBEI"
 					}
 				}
@@ -2250,7 +2250,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:TPG"
-						levels=4
+						levels=2
 						region="STATE_HUNAN"
 					}
 				}
@@ -2276,7 +2276,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=8
+						levels=7
 						region="STATE_HUNAN"
 					}
 				}
@@ -2304,7 +2304,7 @@
 					building={
 						type="building_furniture_manufacturies"
 						country="c:TPG"
-						levels=3
+						levels=2
 						region="STATE_HUNAN"
 					}
 				}
@@ -2317,7 +2317,7 @@
 					building={
 						type="building_glassworks"
 						country="c:TPG"
-						levels=3
+						levels=2
 						region="STATE_HUNAN"
 					}
 				}
@@ -2330,7 +2330,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:TPG"
-						levels=10
+						levels=8
 						region="STATE_HUNAN"
 					}
 				}
@@ -2343,7 +2343,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=5
+						levels=4
 						region="STATE_HUNAN"
 					}
 				}
@@ -2356,7 +2356,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=5
+						levels=4
 						region="STATE_HUNAN"
 					}
 				}
@@ -2369,7 +2369,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=5
+						levels=4
 						region="STATE_HUNAN"
 					}
 				}
@@ -2397,7 +2397,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=4
+						levels=2
 						region="STATE_CHONGQING"
 					}
 				}
@@ -2410,7 +2410,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=10
+						levels=8
 						region="STATE_CHONGQING"
 					}
 				}
@@ -2423,7 +2423,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=10
+						levels=8
 						region="STATE_CHONGQING"
 					}
 				}
@@ -2451,7 +2451,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:TPG"
-						levels=8
+						levels=6
 						region="STATE_SICHUAN"
 					}
 				}
@@ -2464,7 +2464,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=6
+						levels=5
 						region="STATE_SICHUAN"
 					}
 				}
@@ -2518,7 +2518,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=7
+						levels=6
 						region="STATE_YUNNAN"
 					}
 				}
@@ -2531,7 +2531,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=7
+						levels=5
 						region="STATE_YUNNAN"
 					}
 				}
@@ -2544,7 +2544,7 @@
 				building="building_government_administration"
 				add_ownership={
 					country={
-						country="c:TPG"
+						country="c:DAI"
 						levels=1
 					}
 				}
@@ -2556,7 +2556,7 @@
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:TPG"
+						country="c:DAI"
 						levels=1
 						region="STATE_YUNNAN"
 					}
@@ -2569,7 +2569,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:TPG"
+						country="c:DAI"
 						levels=3
 						region="STATE_YUNNAN"
 					}
@@ -2582,7 +2582,7 @@
 				add_ownership={
 					building={
 						type="building_manor_house"
-						country="c:TPG"
+						country="c:DAI"
 						levels=3
 						region="STATE_YUNNAN"
 					}
@@ -2611,7 +2611,7 @@
 					building={
 						type="building_paper_mills"
 						country="c:TPG"
-						levels=5
+						levels=4
 						region="STATE_GUANGXI"
 					}
 				}
@@ -2637,7 +2637,7 @@
 					building={
 						type="building_logging_camp"
 						country="c:TPG"
-						levels=5
+						levels=4
 						region="STATE_GUANGXI"
 					}
 				}
@@ -2676,7 +2676,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=7
+						levels=5
 						region="STATE_GUANGXI"
 					}
 				}
@@ -2689,7 +2689,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=9
+						levels=5
 						region="STATE_GUANGXI"
 					}
 				}
@@ -2702,7 +2702,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=14
+						levels=10
 						region="STATE_GUANGXI"
 					}
 				}
@@ -2834,7 +2834,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=15
+						levels=10
 						region="STATE_GUANGDONG"
 					}
 				}
@@ -2847,7 +2847,7 @@
 					building={
 						type="building_manor_house"
 						country="c:TPG"
-						levels=11
+						levels=8
 						region="STATE_GUANGDONG"
 					}
 				}
