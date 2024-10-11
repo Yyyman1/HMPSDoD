@@ -209,6 +209,26 @@ HMPS_revolution_boost = {
 	}
 }
 
+HMPS_Inca_Pop_Growth = {
+	effect = {
+		if = {
+			limit = {
+				NOT = { has_global_variable = inca_pop_buff }
+			}
+			c:TWT = {	
+				every_scope_state = {
+					add_modifier = {
+						name = france_early_game_birth_fix			
+						is_decaying = yes
+	1					years = 30
+					}
+					set_global_variable = inca_pop_buff
+				}
+			}
+		}
+	}
+}
+
 #China dominion creation
 #One should be for if you don't have any other china states, the other should be to add china states to a dominion, the other should be for if you have a chinese puppet
 

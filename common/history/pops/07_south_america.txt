@@ -261,11 +261,11 @@
 		region_state:TWT = {
 			create_pop = {
 				culture = quechua
-				size = 432988
+				size = 649482
 			}
 			create_pop = {
 				culture = amazonian
-				size = 25601
+				size = 38601
 			}
 			# create_pop = {
 				# culture = quechua
