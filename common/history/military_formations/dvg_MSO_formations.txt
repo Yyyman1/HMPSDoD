@@ -21,19 +21,31 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BRYANSK
-				count = 10
+				count = 20
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_DVG_MOSCOW
-				count = 5
+				count = 15
 			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_DVG_MOSCOW
-				count = 5
+				count = 15
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_OKA
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_OKA
+				count = 10
 			}
 
 			save_scope_as = dvg_mso_main_army
