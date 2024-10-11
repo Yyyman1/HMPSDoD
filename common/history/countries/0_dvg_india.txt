@@ -66,6 +66,9 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	
 	c:BLH = { #Baluchistan
@@ -102,6 +105,9 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	
 	c:BER = { #Beroda
@@ -121,6 +127,9 @@
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	
@@ -142,6 +151,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	
 	c:JAI = { #Jaipur
@@ -161,6 +173,9 @@
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	
@@ -182,6 +197,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	
 	c:JOD = { #Jodhpur
@@ -201,6 +219,9 @@
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	
@@ -222,6 +243,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	
 	c:HYD = { #Hyderabad
@@ -240,6 +264,9 @@
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_sunni_madrasahs
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	
@@ -261,6 +288,9 @@
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	
@@ -298,6 +328,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	c:CLC = { #Calicut
 		effect_starting_technology_tier_4_tech = yes
@@ -317,6 +350,9 @@
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	
@@ -339,6 +375,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	
 	c:TNJ = { #Tanjore
@@ -360,6 +399,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	c:BUN = { #Bundelkhand
 		effect_starting_technology_tier_4_tech = yes
@@ -379,6 +421,9 @@
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	c:BAS = { #Karnada
@@ -400,6 +445,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	c:SRY = { #Jharkhand
 		effect_starting_technology_tier_4_tech = yes
@@ -419,6 +467,9 @@
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	c:ORI = { #ORI
@@ -440,8 +491,11 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
-	c:MYS = { #Bundelkhand
+	c:MYS = { #KARANADU
 		effect_starting_technology_tier_3_tech = yes
 		
 		effect_starting_politics_traditional = yes
@@ -458,6 +512,9 @@
 			set_interest_group_name = ig_hindu_priesthood
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	c:ASM = { #Assam
@@ -479,6 +536,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	c:KZD = { #Berar
 		effect_starting_technology_tier_4_tech = yes
@@ -496,6 +556,9 @@
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_sunni_madrasahs
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	c:MLW = { #Malwa
@@ -517,6 +580,9 @@
 #			remove_ideology = ideology_moralist
 #			add_ideology = ideology_sunni_moralist		}
 #		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	c:BAG = { #Baghelkhand
 		effect_starting_technology_tier_4_tech = yes
@@ -537,6 +603,9 @@
 			remove_ideology = ideology_moralist
 			add_ideology = ideology_hindu_moralist
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 	
 	c:BGL = { #Bengal
@@ -554,6 +623,9 @@
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_sunni_madrasahs
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	
@@ -635,6 +707,9 @@
 		}
 		ig:ig_devout = {
 			set_interest_group_name = ig_sunni_madrasahs
+		}
+		trigger_event = {
+			id = dvg_china.13
 		}
 	}
 	

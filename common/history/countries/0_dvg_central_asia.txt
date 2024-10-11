@@ -277,5 +277,8 @@
 		trigger_event = {
 			id = dvg_afghanistan.1
 		}
+		trigger_event = {
+			id = dvg_china.13
+		}
 	}
 }
