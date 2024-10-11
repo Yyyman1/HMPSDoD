@@ -365,6 +365,10 @@ dvg_spain.6 = {
 		add_loyalists = {
 			value = 0.4
 		}
+		change_relations = {
+			country = c:GCO
+			value = 85
+		}
 		#add_journal_entry = {
 		#	type = je_reconquer_new_spain
 		#}
