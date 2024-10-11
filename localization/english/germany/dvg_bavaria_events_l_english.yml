@@ -326,5 +326,5 @@ dvg_bavaria.6.t: "The Ducal Pamphlet of 1840"
   dvg_danubia.1.f: "'The future of south germany cannot be decided by imperialists in smoke filled rooms miles away, we must carve our own path away from the powers of the empire'"
   dvg_danubia.1.a: "Glory to Danubia!"
 
-  sgf_formation.t: "Form the Danubian Federation"
-  sgf_formation.d: "Bring the Rheinish into the fold"
+  sgf_formation: "Form the Danubian Federation"
+  sgf_formation_desc: "Bring the Rheinish into the fold"

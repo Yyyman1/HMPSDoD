@@ -37,19 +37,89 @@ sgf_formation = {
 
 	possible = {
 		has_technology_researched = nationalism
-		country_rank >= rank_value:major_power
 		has_law = law_type:law_monarchy
+		OR = {
+			country_rank >= rank_value:major_power
+			AND = {
+				country_or_subject_owns_entire_state_region = STATE_AUSTRIA
+				country_or_subject_owns_entire_state_region = STATE_BAVARIA
+			}
+		}
 	}
 
 	when_taken = {
-		annex_with_incorporation = c:TYR
-		annex_with_incorporation = c:BAD
-		annex_with_incorporation = c:WUR
-		annex_with_incorporation = c:ULM
-		annex_with_incorporation = c:AGR
-		annex_with_incorporation = c:SLZ
+		if = {
+			limit = {
+				c:TYR = {
+					is_subject = no
+					#country_is_in_different_power_bloc = no
+				}
+			}
+			annex_with_incorporation = c:TYR
+		}
+		if = {
+			limit = {
+				c:BAD = {
+					is_subject = no
+					#country_is_in_different_power_bloc = no
+				}
+			}
+			annex_with_incorporation = c:BAD
+		}
+		if = {
+			limit = {
+				c:WUR = {
+					is_subject = no
+					#country_is_in_different_power_bloc = no
+				}
+			}
+			annex_with_incorporation = c:WUR
+		}
+		if = {
+			limit = {
+				c:ULM = {
+					is_subject = no
+					#country_is_in_different_power_bloc = no
+				}
+			}
+			annex_with_incorporation = c:ULM
+		}
+		if = {
+			limit = {
+				c:AGR = {
+					is_subject = no
+					#country_is_in_different_power_bloc = no
+				}
+			}
+			annex_with_incorporation = c:AGR
+		}
+		else_if = {
+			limit = {
+				c:AGR = {
+					is_subject_of = c:BAV
+				}
+			}
+			annex_with_incorporation = c:AGR
+		}
+		if = {
+			limit = {
+				c:SLZ = {
+					is_subject = no
+					#country_is_in_different_power_bloc = no
+				}
+			}
+			annex_with_incorporation = c:SLZ
+		}
+		else_if = {
+			limit = {
+				c:SLZ = {
+					is_subject_of = c:BAV
+				}
+			}
+			annex_with_incorporation = c:SLZ
+		}
+		
 
-		add_primary_culture = cu:rheinish
 
 		if = {
 			limit = {
@@ -70,6 +140,9 @@ sgf_formation = {
 			annex_with_incorporation = c:BAV
 			c:AUS = { change_tag = SGF }
 		}
+
+		add_primary_culture = cu:rheinish
+
 	}
 
 	ai_chance = {

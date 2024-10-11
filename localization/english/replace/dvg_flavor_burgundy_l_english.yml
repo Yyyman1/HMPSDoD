@@ -337,7 +337,12 @@ dvg_burgundy.44.b: "We do not care about this state."
  dvg_brg_reject_militarist_tt: "The moderate Pierlot remains the Governor of the Cape"
  burgundy_united_tt: "Burgundy has been United."
 
-BRG_BLOC: "Anvers Entente"
+ #HMPS
+
+
+ dvg_brg_dutchrhine: "The People of the Rhine"
+ dvg_brg_dutchrhine_desc: "For a long time the peoples of the Rhine have been central to the Burgundian state, we must give them equality under the law"
+ BRG_BLOC: "Anvers Entente"
 
 
 
