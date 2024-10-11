@@ -517,10 +517,10 @@ dvg_hongshan_mistreatment_still_bad = {
 	state_aborigine_standard_of_living_add = -4
 }
 
-dvg_spanish_independence = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
-	country_prestige_mult = -0.5
-}
+#dvg_spanish_independence = {
+#	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+#	country_prestige_mult = -0.5
+#}
 
 dvg_lessons_from_musket_wars = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
