@@ -708,6 +708,12 @@
 			type = je_china_reunification
 		}
 
+		add_modifier = {
+			name = taiping_conversion_malus
+			months = 1200
+			is_decaying = no
+		}
+
 		trigger_event = {
 			id = dvg_china.12
 		}

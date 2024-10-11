@@ -816,3 +816,10 @@ lore_accurate_tonga = {
 	state_standard_of_living_add = 25
 	state_construction_mult = 10
 }
+
+#HMPSDOD
+
+taiping_conversion_malus = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	state_conversion_mult = -0.7
+}
