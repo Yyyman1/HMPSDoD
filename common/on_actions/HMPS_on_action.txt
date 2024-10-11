@@ -532,7 +532,21 @@ HMPS_Slave_State_Migration = {
 	effect = {
 		if = {
 			limit = {
-					is_slave_state = yes
+				is_slave_state = yes
+				owner = {
+					OR = {
+						c:GCO ?= this
+						c:AMA ?= this
+						c:LOT ?= this
+						c:PLA ?= this
+						c:BLC ?= this
+						c:VIN ?= this
+						c:BEO ?= this
+					}
+				}
+				NOT = {	
+					has_modifier = slave_state_migration_debuff
+				}
 			}
 			add_modifier = {
 				name = slave_state_migration_debuff
