@@ -26,12 +26,12 @@ dvg_kipchak.1 = {
 		c:KHK = {
 			save_scope_as = khk_scope
 		}
-		c:RYA = {
-			save_scope_as = rya_scope
-		}
-		c:VOR = {
-			save_scope_as = vor_scope
-		}
+#		c:RYA = {
+#			save_scope_as = rya_scope
+#		}
+#		c:VOR = {
+#			save_scope_as = vor_scope
+#		}
 		c:POL = {
 			save_scope_as = polish_scope
 		}

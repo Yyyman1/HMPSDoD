@@ -518,14 +518,14 @@ c:ATL = {
 		}
 		set_strategy = ai_strategy_conservative_agenda
 	}
-	c:YUN = {
-		random_list = {
-			50 = { set_strategy = ai_strategy_placate_population }
-			50 = { set_strategy = ai_strategy_plantation_economy }
-		}
-		set_strategy = ai_strategy_unify_china
-		set_strategy = ai_strategy_nationalist_agenda
-	}
+#	c:YUN = {
+#		random_list = {
+#			50 = { set_strategy = ai_strategy_placate_population }
+#			50 = { set_strategy = ai_strategy_plantation_economy }
+#		}
+#		set_strategy = ai_strategy_unify_china
+#		set_strategy = ai_strategy_nationalist_agenda
+#	}
 	c:DAI = {
 		random_list = {
 			50 = { set_strategy = ai_strategy_placate_population }
