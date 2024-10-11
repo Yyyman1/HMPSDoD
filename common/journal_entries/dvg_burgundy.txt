@@ -67,459 +67,459 @@
 #
 #}
 
-je_anism = {
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-	should_be_pinned_by_default = yes
-
-	group = je_group_internal_affairs
-
-	is_shown_when_inactive = {
-		exists = c:BRG
-		c:BRG = ROOT
-		any_scope_character = {
-			has_variable = jean_var
-		}
-	}
-
-	possible = {
-		OR = {
-			has_global_variable = jean_time
-			AND = {
-				year > 1843
-				ruler = {
-					has_variable = jean_var
-				}
-			}
-		}
-	}
-
-
-	immediate = {
-		if = {
-			limit = {
-				NOT = {
-					has_global_variable = jean_time
-				}
-			}
-			trigger_event = dvg_burgundy.6
-		}
-		if = {
-			limit = {
-				NOT = {
-					has_variable = dvg_je_an_var
-				}
-			
-			}
-			set_variable = dvg_je_an_var
-		}
-	}
-
-	complete = {
-		OR = {
-			scope:journal_entry = { is_goal_complete = yes }
-			var:dvg_je_an_var = {
-				value >= 10
-			}
-		}
-		has_global_variable = jean_coup
-
-	}
-
-	on_complete = {
-		#Jeanist Victory
-		trigger_event = {
-			id = dvg_burgundy.34
-		}
-		if = {
-			limit = {
-				any_scope_character = {
-					has_trait = immortal
-				}
-			}
-			every_scope_character = {
-				remove_trait = immortal
-
-			}			
-		}
-	}
-	fail = {
-		OR = {
-			NOT = {
-				has_law = law_type:law_monarchy
-			}
-			AND = {
-				var:dvg_je_an_var = {
-					value <= 2
-				}
-				has_global_variable = jean_coup
-
-			}
-			
-
-		}
-		
-	}
-	on_fail = {
-		#Palriamentary Victory
-		trigger_event = {
-			id = dvg_burgundy.32
-		}
-		if = {
-			limit = {
-				any_scope_character = {
-					has_trait = immortal
-				}
-			}
-			every_scope_character = {
-				remove_trait = immortal
-
-			}			
-		}
-	}
-	current_value = {
-		value = var:dvg_je_an_var
-	}
-	on_monthly_pulse = {
-		effect = {
-			if = {
-				limit = {
-					ig:ig_landowners = {
-						is_powerful = yes
-						is_in_government = yes
-						ig_approval >= 0 
-					}
-				NOT = {
-					has_variable = happy_landowners
-				}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 2
-				}
-				set_variable = happy_landowners
-			}
-			if = {
-				NOT = {
-					
-				}
-				limit = {
-					ig:ig_landowners = {
-							is_powerful = no
-							is_in_government = no
-							ig_approval >= 0 
-						}
-					
-				
-					has_variable = happy_landowners
-				
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					subtract = 2
-				}
-				remove_variable = happy_landowners
-			}
-			if = {
-				limit = {
-					ig:ig_petty_bourgeoisie = {
-						is_marginal = no
-						is_in_government = yes
-						ig_approval >= 0 
-					}
-				NOT = {
-					has_variable = happy_bougie
-				}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 1
-				}
-				set_variable = happy_bougie
-			}
-			if = {
-				NOT = {
-					
-				}
-				limit = {
-					ig:ig_petty_bourgeoisie = {
-							is_marginal = yes
-							is_in_government = no
-							ig_approval >= 0 
-						}
-					
-				
-					has_variable = happy_bougie
-				
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					subtract = 1
-				}
-				remove_variable = happy_bougie
-			}
-			if = {
-				limit = {
-					ig:ig_landowners = {
-						is_powerful = yes
-						ig_approval <= 0 
-					}
-				NOT = {
-					has_variable = angry_industrialists
-				}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					subtract = 2
-				}
-				set_variable = angry_industrialists
-			}
-			if = {
-				
-				limit = {
-					OR = {
-						ig:ig_industrialists = {
-							is_powerful = no
-						}
-						ig:ig_industrialists = {
-							ig_approval >= 0 
-						}
-					}
-					
-					
-				
-					has_variable = angry_industrialists
-				
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 2
-				}
-				remove_variable = angry_industrialists
-			}
-			
-			if = {
-				limit = {
-					NOT = {
-						has_global_variable = jean_coup
-					}
-					year >= 1853
-					OR = {
-						var:dvg_je_an_var = {
-							value >= 10
-						}
-						var:dvg_je_an_var = {
-							value <= 0
-						}
-						any_interest_group = {
-							is_marginal = no
-							is_insurrectionary = yes
-						}
-					}
-
-				}
-				trigger_event = {
-					id = dvg_burgundy.31
-				}
-				
-			}
-			if = {
-				limit = {
-					ig:ig_intelligentsia = {
-						is_marginal = no
-						ig_approval <= -10
-					}
-				NOT = {
-					has_variable = angry_intelligentsia
-				}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 1
-				}
-				set_variable = angry_intelligentsia
-			}
-			if = {
-				NOT = {
-					
-				}
-				limit = {
-					OR = {
-						ig:ig_intelligentsia = {
-							is_marginal = yes
-						}
-						ig:ig_intelligentsia = {
-							ig_approval >=10
-						}
-					}
-					
-					
-				
-					has_variable = angry_intelligentsia
-				
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					subtract = 1
-				}
-				remove_variable = angry_intelligentsia
-			}
-			if = {
-				limit = {
-					exists = c:HLR
-					NOT = {
-						has_variable = hre_exists
-					}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 1
-				}
-				set_variable = hre_exists
-			}
-			if = {
-				limit = {
-					has_law = law_type:law_autocracy
-					NOT = {
-					has_variable = brg_autocracy
-					any_interest_group = {
-						is_insurrectionary = yes
-					}
-					}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 4
-				}
-				set_variable = brg_autocracy
-			}
-			if = {
-				limit = {
-					has_law = law_type:law_national_supremacy
-					NOT = {
-					has_variable = brg_nationality
-
-					}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 2
-				}
-				set_variable = brg_nationality
-			}
-			if = {
-				limit = {
-					has_law = law_type:law_ethnostate
-					NOT = {
-					has_variable = brg_nationality
-
-					}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 2
-				}
-				set_variable = brg_nationality
-			}
-			
-		}
-
-
-	}
-	on_yearly_pulse = {
-		effect = {
-			if = {
-				limit = {
-					is_player = yes
-					any_interest_group = {
-						leader = {
-							has_ideology = ideology:ideology_republican_leader
-						}
-						is_powerful = yes
-					}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					subtract = 1
-				}
-				set_variable = brg_republican
-			}
-			if = {
-				limit = {
-					is_player = yes
-					any_interest_group = {
-						leader = {
-							has_ideology = ideology:ideology_royalist
-						}
-						is_powerful = yes
-					}
-				}
-				change_variable = {
-					name = dvg_je_an_var
-					add = 1
-				}
-				set_variable = brg_monarchist
-			}
-			if = {
-				limit = {
-					NOT = {
-						has_global_variable = pinto_affair
-						has_global_variable = jean_time
-						exists = c:RHI
-					}
-				}
-				trigger_event = {
-					id = dvg_burgundy.24
-				}
-			}
-		}
-	}
-	invalid = {
-		NOT = {
-			any_scope_character = {
-				has_ideology = ideology:ideology_jeanist_leader
-			}
-		}
-	}
-	
-	on_invalid = {
-		trigger_event = {
-			id = dvg_burgundy.36
-		}
-		if = {
-			limit = {
-				any_scope_character = {
-					has_trait = immortal
-				}
-			}
-			every_scope_character = {
-				remove_trait = immortal
-
-			}			
-		}
-	}
-	goal_add_value = {
-		add = 10
-	}
-	timeout = 3850
-	on_timeout = {
-		trigger_event = {
-			id = dvg_burgundy.31
-		}
-		if = {
-			limit = {
-				any_scope_character = {
-					has_trait = immortal
-				}
-			}
-			every_scope_character = {
-				remove_trait = immortal
-
-			}			
-		}
-	}
-	progressbar = yes
-
-}
+#je_anism = {
+#	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+#	should_be_pinned_by_default = yes
+#
+#	group = je_group_internal_affairs
+#
+#	is_shown_when_inactive = {
+#		exists = c:BRG
+#		c:BRG = ROOT
+#		any_scope_character = {
+#			has_variable = jean_var
+#		}
+#	}
+#
+#	possible = {
+#		OR = {
+#			has_global_variable = jean_time
+#			AND = {
+#				year > 1843
+#				ruler = {
+#					has_variable = jean_var
+#				}
+#			}
+#		}
+#	}
+#
+#
+#	immediate = {
+#		if = {
+#			limit = {
+#				NOT = {
+#					has_global_variable = jean_time
+#				}
+#			}
+#			trigger_event = dvg_burgundy.6
+#		}
+#		if = {
+#			limit = {
+#				NOT = {
+#					has_variable = dvg_je_an_var
+#				}
+#			
+#			}
+#			set_variable = dvg_je_an_var
+#		}
+#	}
+#
+#	complete = {
+#		OR = {
+#			scope:journal_entry = { is_goal_complete = yes }
+#			var:dvg_je_an_var = {
+#				value >= 10
+#			}
+#		}
+#		has_global_variable = jean_coup
+#
+#	}
+#
+#	on_complete = {
+#		#Jeanist Victory
+#		trigger_event = {
+#			id = dvg_burgundy.34
+#		}
+#		if = {
+#			limit = {
+#				any_scope_character = {
+#					has_trait = immortal
+#				}
+#			}
+#			every_scope_character = {
+#				remove_trait = immortal
+#
+#			}			
+#		}
+#	}
+#	fail = {
+#		OR = {
+#			NOT = {
+#				has_law = law_type:law_monarchy
+#			}
+#			AND = {
+#				var:dvg_je_an_var = {
+#					value <= 2
+#				}
+#				has_global_variable = jean_coup
+#
+#			}
+#			
+#
+#		}
+#		
+#	}
+#	on_fail = {
+#		#Palriamentary Victory
+#		trigger_event = {
+#			id = dvg_burgundy.32
+#		}
+#		if = {
+#			limit = {
+#				any_scope_character = {
+#					has_trait = immortal
+#				}
+#			}
+#			every_scope_character = {
+#				remove_trait = immortal
+#
+#			}			
+#		}
+#	}
+#	current_value = {
+#		value = var:dvg_je_an_var
+#	}
+#	on_monthly_pulse = {
+#		effect = {
+#			if = {
+#				limit = {
+#					ig:ig_landowners = {
+#						is_powerful = yes
+#						is_in_government = yes
+#						ig_approval >= 0 
+#					}
+#				NOT = {
+#					has_variable = happy_landowners
+#				}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 2
+#				}
+#				set_variable = happy_landowners
+#			}
+#			if = {
+#				NOT = {
+#					
+#				}
+#				limit = {
+#					ig:ig_landowners = {
+#							is_powerful = no
+#							is_in_government = no
+#							ig_approval >= 0 
+#						}
+#					
+#				
+#					has_variable = happy_landowners
+#				
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					subtract = 2
+#				}
+#				remove_variable = happy_landowners
+#			}
+#			if = {
+#				limit = {
+#					ig:ig_petty_bourgeoisie = {
+#						is_marginal = no
+#						is_in_government = yes
+#						ig_approval >= 0 
+#					}
+#				NOT = {
+#					has_variable = happy_bougie
+#				}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 1
+#				}
+#				set_variable = happy_bougie
+#			}
+#			if = {
+#				NOT = {
+#					
+#				}
+#				limit = {
+#					ig:ig_petty_bourgeoisie = {
+#							is_marginal = yes
+#							is_in_government = no
+#							ig_approval >= 0 
+#						}
+#					
+#				
+#					has_variable = happy_bougie
+#				
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					subtract = 1
+#				}
+#				remove_variable = happy_bougie
+#			}
+#			if = {
+#				limit = {
+#					ig:ig_landowners = {
+#						is_powerful = yes
+#						ig_approval <= 0 
+#					}
+#				NOT = {
+#					has_variable = angry_industrialists
+#				}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					subtract = 2
+#				}
+#				set_variable = angry_industrialists
+#			}
+#			if = {
+#				
+#				limit = {
+#					OR = {
+#						ig:ig_industrialists = {
+#							is_powerful = no
+#						}
+#						ig:ig_industrialists = {
+#							ig_approval >= 0 
+#						}
+#					}
+#					
+#					
+#				
+#					has_variable = angry_industrialists
+#				
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 2
+#				}
+#				remove_variable = angry_industrialists
+#			}
+#			
+#			if = {
+#				limit = {
+#					NOT = {
+#						has_global_variable = jean_coup
+#					}
+#					year >= 1853
+#					OR = {
+#						var:dvg_je_an_var = {
+#							value >= 10
+#						}
+#						var:dvg_je_an_var = {
+#							value <= 0
+#						}
+#						any_interest_group = {
+#							is_marginal = no
+#							is_insurrectionary = yes
+#						}
+#					}
+#
+#				}
+#				trigger_event = {
+#					id = dvg_burgundy.31
+#				}
+#				
+#			}
+#			if = {
+#				limit = {
+#					ig:ig_intelligentsia = {
+#						is_marginal = no
+#						ig_approval <= -10
+#					}
+#				NOT = {
+#					has_variable = angry_intelligentsia
+#				}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 1
+#				}
+#				set_variable = angry_intelligentsia
+#			}
+#			if = {
+#				NOT = {
+#					
+#				}
+#				limit = {
+#					OR = {
+#						ig:ig_intelligentsia = {
+#							is_marginal = yes
+#						}
+#						ig:ig_intelligentsia = {
+#							ig_approval >=10
+#						}
+#					}
+#					
+#					
+#				
+#					has_variable = angry_intelligentsia
+#				
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					subtract = 1
+#				}
+#				remove_variable = angry_intelligentsia
+#			}
+#			if = {
+#				limit = {
+#					exists = c:HLR
+#					NOT = {
+#						has_variable = hre_exists
+#					}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 1
+#				}
+#				set_variable = hre_exists
+#			}
+#			if = {
+#				limit = {
+#					has_law = law_type:law_autocracy
+#					NOT = {
+#					has_variable = brg_autocracy
+#					any_interest_group = {
+#						is_insurrectionary = yes
+#					}
+#					}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 4
+#				}
+#				set_variable = brg_autocracy
+#			}
+#			if = {
+#				limit = {
+#					has_law = law_type:law_national_supremacy
+#					NOT = {
+#					has_variable = brg_nationality
+#
+#					}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 2
+#				}
+#				set_variable = brg_nationality
+#			}
+#			if = {
+#				limit = {
+#					has_law = law_type:law_ethnostate
+#					NOT = {
+#					has_variable = brg_nationality
+#
+#					}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 2
+#				}
+#				set_variable = brg_nationality
+#			}
+#			
+#		}
+#
+#
+#	}
+#	on_yearly_pulse = {
+#		effect = {
+#			if = {
+#				limit = {
+#					is_player = yes
+#					any_interest_group = {
+#						leader = {
+#							has_ideology = ideology:ideology_republican_leader
+#						}
+#						is_powerful = yes
+#					}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					subtract = 1
+#				}
+#				set_variable = brg_republican
+#			}
+#			if = {
+#				limit = {
+#					is_player = yes
+#					any_interest_group = {
+#						leader = {
+#							has_ideology = ideology:ideology_royalist
+#						}
+#						is_powerful = yes
+#					}
+#				}
+#				change_variable = {
+#					name = dvg_je_an_var
+#					add = 1
+#				}
+#				set_variable = brg_monarchist
+#			}
+#			if = {
+#				limit = {
+#					NOT = {
+#						has_global_variable = pinto_affair
+#						has_global_variable = jean_time
+#						exists = c:RHI
+#					}
+#				}
+#				trigger_event = {
+#					id = dvg_burgundy.24
+#				}
+#			}
+#		}
+#	}
+#	invalid = {
+#		NOT = {
+#			any_scope_character = {
+#				has_ideology = ideology:ideology_jeanist_leader
+#			}
+#		}
+#	}
+#	
+#	on_invalid = {
+#		trigger_event = {
+#			id = dvg_burgundy.36
+#		}
+#		if = {
+#			limit = {
+#				any_scope_character = {
+#					has_trait = immortal
+#				}
+#			}
+#			every_scope_character = {
+#				remove_trait = immortal
+#
+#			}			
+#		}
+#	}
+#	goal_add_value = {
+#		add = 10
+#	}
+#	timeout = 3850
+#	on_timeout = {
+#		trigger_event = {
+#			id = dvg_burgundy.31
+#		}
+#		if = {
+#			limit = {
+#				any_scope_character = {
+#					has_trait = immortal
+#				}
+#			}
+#			every_scope_character = {
+#				remove_trait = immortal
+#
+#			}			
+#		}
+#	}
+#	progressbar = yes
+#
+#}
 
 #rhine needs update
 

@@ -14,9 +14,9 @@
 			is_at_war = no
 		}
 		has_technology_researched = pan-nationalism
-		ruler = {
-			has_variable = jean_var
-		}
+		#ruler = {
+		#	has_variable = jean_var
+		#}
 	}
 	
     when_taken = {
