@@ -35,7 +35,7 @@ CHI = { #China
 }
 
 MCH = { #Qing
-	color = { 255  254  124 }
+	color = {9 21 87}
 
 	country_type = unrecognized
 	
@@ -56,7 +56,7 @@ JNZ = { #Jianzhou
 }
 
 NAN = { #Nanjing
-	color = { 189 113 42 }
+	color = { 255 219 89 }
 	
 	country_type = unrecognized
 	
@@ -103,7 +103,7 @@ YUZ = { #Yuanzhumin
 }
 
 TPG = { #Taiping
-	color = { 0  56  168 }
+	color = { 161 59 0 }
 
 	country_type = unrecognized
 	

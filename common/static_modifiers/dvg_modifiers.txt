@@ -821,5 +821,5 @@ lore_accurate_tonga = {
 
 taiping_conversion_malus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
-	state_conversion_mult = -0.7
+	state_conversion_mult = -0.9
 }
