@@ -224,11 +224,11 @@ dvg_embrace_afro_arcadian = {
 		has_technology_researched = human_rights
 		has_technology_researched = pan-nationalism
 		has_law = law_type:law_slavery_banned
-		#cu:afro_arcadian = {
-		#	NOT = {
-		#		culture_is_discriminated_in = ROOT
-		#	}
-		#}
+		cu:afro_arcadian = {
+			NOT = {
+				culture_is_discriminated_in = ROOT
+			}
+		}
 		#any_interest_group = {
 		#	is_powerful = yes
 		#	is_in_government = yes

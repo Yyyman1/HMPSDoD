@@ -584,19 +584,19 @@ dvg_england.17 = {  #Dealing with Frenchies
 			base = 70
 		}
 	}
-	option = {
-		name = dvg_england.17.b
-		
-		activate_law = law_type:law_racial_segregation
-		
-		c:BEO = { trigger_event = { id = dvg_england.18 popup = yes } }
-		
-		default_option = yes
-		
-		ai_chance = {
-			base = 30
-		}
-	}
+	#option = {
+	#	name = dvg_england.17.b
+	#	
+	#	activate_law = law_type:law_racial_segregation
+	#	
+	#	c:BEO = { trigger_event = { id = dvg_england.18 popup = yes } }
+	#	
+	#	default_option = yes
+	#	
+	#	ai_chance = {
+	#		base = 30
+	#	}
+	#}
 }
 
 
