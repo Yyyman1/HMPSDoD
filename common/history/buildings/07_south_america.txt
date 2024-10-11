@@ -2128,7 +2128,7 @@
 				add_ownership={
 					country={
 						country="c:ATL"
-						levels=4
+						levels=1
 					}
 				}
 				reserves=1
@@ -2229,7 +2229,7 @@
 				add_ownership={
 					country={
 						country="c:ATL"
-						levels=2
+						levels=5
 					}
 				}
 				reserves=1

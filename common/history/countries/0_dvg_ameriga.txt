@@ -158,7 +158,7 @@
 		activate_law = law_type:law_homesteading
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
-		activate_law = law_type:law_private_schools
+		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_legacy_slavery
