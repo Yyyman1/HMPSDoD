@@ -44,6 +44,7 @@ dvg_rheinish_unification.10 = {
 			if = {
 				limit = {
 					NOT = { this = ROOT }
+					NOT = { is_subject_of = c:BOH }
 					OR = {
 						country_has_primary_culture = cu:rheinish
 						AND = {
