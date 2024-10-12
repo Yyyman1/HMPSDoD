@@ -13,7 +13,7 @@
 
 
 
-		create_military_formation = { ### Home Army 25/5/10
+		create_military_formation = { ### Home Army 30/10/10
 			type = army
 			hq_region = sr:region_iberia
 			name = "Aragonese Home Army"
@@ -21,12 +21,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_CATALONIA
-				count = 25
+				count = 30
 			}
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_hussars
-				state_region = s:STATE_VALENCIA
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ARAGON
 				count = 5
 			}
 
@@ -35,10 +35,16 @@
 				state_region = s:STATE_VALENCIA
 				count = 10
 			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ARAGON
+				count = 5
+			}
 
 			save_scope_as = arn_home_army
 		}
-		create_military_formation = { ### Italy Army 20/0/5
+		create_military_formation = { ### Italy Army 20/10/5
 			type = army
 			hq_region = sr:region_italy
 			name = "Aragonese Italy Army"
@@ -53,6 +59,12 @@
 				type = unit_type:combat_unit_type_hussars
 				state_region = s:STATE_CAMPANIA
 				count = 5
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_ABRUZZO
+				count = 10
 			}
 
 			save_scope_as = arn_italy_army
