@@ -14,7 +14,7 @@
 		
 
 		### Armies
-		create_military_formation = { ### Armée Royale de Bourgogne 80/20/15
+		create_military_formation = { ### Armée Royale de Bourgogne 90/60/15
 			type = army
 			hq_region = sr:region_rhine
 			name = "Armée Royale de Bourgogne"
@@ -30,11 +30,29 @@
 				state_region = s:STATE_FLANDERS
 				count = 40
 			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_skirmish_infantry
+				state_region = s:STATE_PICARDY
+				count = 10
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_RHINELAND
+				count = 20
+			}
 
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_BURGUNDY
-				count = 20
+				count = 30
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_WALLONIA
+				count = 10
 			}
 
 			combat_unit = {
