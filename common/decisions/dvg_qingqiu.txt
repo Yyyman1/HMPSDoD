@@ -251,42 +251,42 @@ dvg_integrate_north_qq = {
     }
 }
 
-dvg_embrace_rhonnst = {
-
-	is_shown = {
-		NOT = {
-			exists = c:RHN
-		}
-		any_scope_state = {
-			state_region = {
-				is_homeland = cu:rohnnst
-			}
-		}
-	}
-	
-	possible = {
-	
-		country_is_in_north_america = yes
-		has_law = law_type:law_cultural_exclusion
-		any_scope_state = {
-			state_region = {
-				is_homeland = cu:rohnnst
-			}
-			is_incorporated = yes
-		}
-	
-	}
-	
-	
-	
-	
-	
-	when_taken = {
-		add_primary_culture = cu:rohnnst
-    }
-	ai_chance = {
-		base = 100
-	}
-
-}
+#dvg_embrace_rhonnst = {
+#
+#	is_shown = {
+#		exists = c:QIN
+#		this = c:QIN
+#		#NOT = {
+#		#	exists = c:RHN
+#		#}
+#		#any_scope_state = {
+#		#	state_region = {
+#		#		is_homeland = cu:rohnnst
+#		#	}
+#		#}
+#	}
+#	
+#	possible = {
+#		OR = {
+#			has_law = law_type:law_universal_suffrage
+#			has_law = law_type:law_census_voting
+#		}
+#		has_technology_researched = political_agitation
+#		has_technology_researched = pan-nationalism
+#	
+#	}
+#	
+#	
+#	
+#	
+#	
+#	when_taken = {
+#		activate_law = law_type:law_cultural_exclusion
+#		#add_primary_culture = cu:rohnnst
+#    }
+#	ai_chance = {
+#		base = 100
+#	}
+#
+#}
 

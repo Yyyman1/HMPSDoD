@@ -1555,12 +1555,15 @@ dvg_gco_afro_latinos_citizens = {
 	possible = {
 		has_law = law_type:law_slavery_banned
 		OR = {
-			has_law = law_type:law_cultural_exclusion
-			has_law = law_type:law_multicultural
+			has_law = law_type:law_universal_suffrage
+			has_law = law_type:law_census_voting
 		}
+		has_technology_researched = political_agitation
+		has_technology_researched = pan-nationalism
 	}
+	
 	when_taken = {
-		add_primary_culture = cu:afro_latino
+		active_law = law_type:law_cultural_exclusion
 	}
 }
 dvg_gco_accept_caribeno = {

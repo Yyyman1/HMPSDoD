@@ -283,12 +283,12 @@ dvg_italian_confederation.4 = {
 			}
 			activate_law = law_type:law_oligarchy
 		}
-		if = {
-			limit = {
-				NOT = { has_law = law_type:law_cultural_exclusion }
-			}
-			activate_law = law_type:law_cultural_exclusion
-		}
+		#if = {
+		#	limit = {
+		#		NOT = { has_law = law_type:law_cultural_exclusion }
+		#	}
+		#	activate_law = law_type:law_cultural_exclusion
+		#}
 		if = {
 			limit = {
 				NOT = { has_law = law_type:law_religious_schools }

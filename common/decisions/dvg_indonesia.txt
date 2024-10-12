@@ -9,7 +9,7 @@ dvg_embrace_melanesians = {
 	}
 
     possible = {
-	has_law = law_type:law_cultural_exclusion
+	#has_law = law_type:law_cultural_exclusion
 
 	OR = {
 		owns_entire_state_region = STATE_WESTERN_NEW_GUINEA
