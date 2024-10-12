@@ -2389,11 +2389,22 @@
 				activate_production_methods={ "pm_basic_shipbuilding" }
 			}
 			create_building={
-				building="building_paper_mills"
+				building="building_university"
 				add_ownership={
 					country={
 						country="c:AMA"
 						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_secular_academia" }
+			}
+			create_building={
+				building="building_paper_mills"
+				add_ownership={
+					country={
+						country="c:AMA"
+						levels=2
 					}
 				}
 				reserves=1
@@ -2582,17 +2593,6 @@
 				activate_production_methods={ "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}
 			create_building={
-				building="building_university"
-				add_ownership={
-					country={
-						country="c:AMA"
-						levels=1
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_secular_academia" }
-			}
-			create_building={
 				building="building_livestock_ranch"
 				add_ownership={
 					building={
@@ -2625,7 +2625,7 @@
 				add_ownership={
 					country={
 						country="c:AMA"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
