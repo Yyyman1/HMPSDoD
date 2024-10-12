@@ -521,6 +521,12 @@
 		#}
 		set_variable = warlord_state
 
+		add_modifier = {
+			name = china_radicalism
+			months = -1
+			is_decaying = no
+		}
+
 		trigger_event = {
 			id = dvg_china.12
 		}
@@ -580,6 +586,12 @@
 		trigger_event = {
 			id = dvg_china.12
 		}
+
+		add_modifier = {
+			name = china_radicalism
+			months = -1
+			is_decaying = no
+		}
 	}
 	
 	c:FRS = { #Tungning
@@ -620,6 +632,12 @@
 		}
 		trigger_event = {
 			id = dvg_china.12
+		}
+
+		add_modifier = {
+			name = china_radicalism
+			months = -1
+			is_decaying = no
 		}
 		
 	}
@@ -711,6 +729,11 @@
 		add_modifier = {
 			name = taiping_conversion_malus
 			months = 1200
+			is_decaying = no
+		}
+		add_modifier = {
+			name = china_radicalism
+			months = -1
 			is_decaying = no
 		}
 

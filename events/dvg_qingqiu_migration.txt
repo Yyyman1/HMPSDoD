@@ -157,14 +157,14 @@ qingqiu_migration.2 = {
 			base = 1
 		}
 	}
-	option = {
-		name = qingqiu_migration.2.b
-		custom_tooltip = qingqiu_migration_cancel_tt
-		set_variable = cancel_qingqiu_migration_var
-		ai_chance = {
-			base = 0
-		}
-	}
+	#option = {
+	#	name = qingqiu_migration.2.b
+	#	custom_tooltip = qingqiu_migration_cancel_tt
+	#	set_variable = cancel_qingqiu_migration_var
+	#	ai_chance = {
+	#		base = 0
+	#	}
+	#}
 }
 
 # Completion event

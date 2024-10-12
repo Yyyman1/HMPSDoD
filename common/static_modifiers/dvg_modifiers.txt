@@ -823,3 +823,10 @@ taiping_conversion_malus = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	state_conversion_mult = -0.9
 }
+
+china_radicalism = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	state_radicals_from_discrimination_mult = 0.33
+	country_radicals_from_conquest_mult = 0.33
+	state_radicals_from_sol_change_mult = 0.15
+}
