@@ -17,7 +17,7 @@
 
 	
 		### Armies
-		create_military_formation = { ### Première Armée du Continent 50/20/15
+		create_military_formation = { ### Première Armée du Continent 60/20/15
 			type = army
 			hq_region = sr:region_france
 			name = "Première Armée du Continent"
@@ -35,6 +35,11 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_ORLEANS
+				count = 10
+			}
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LOIRE
 				count = 10
 			}
 			combat_unit = {

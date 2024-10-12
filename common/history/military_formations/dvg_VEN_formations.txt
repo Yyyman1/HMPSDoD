@@ -9,19 +9,13 @@
 
 	c:VEN = { 
 		### Armies
-		create_military_formation = { ### Home Army 25/5/0
+		create_military_formation = { ### Home Army 25/0/0
 			type = army
 			hq_region = sr:region_italy
 			name = "Venetia City Guard"
 			
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_VENETIA
-				count = 5
-			}
-			
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_VENETIA
 				count = 5
 			}

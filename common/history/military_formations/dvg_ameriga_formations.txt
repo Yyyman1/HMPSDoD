@@ -28,12 +28,6 @@
 				state_region = s:STATE_COTE_DU_CAFE
 				count = 10
 			}
-			
-			combat_unit = {
-				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_COTE_DU_CAFE
-				count = 5
-			}
 		}
 	}
 
