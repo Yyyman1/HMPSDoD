@@ -151,7 +151,7 @@ dvg_annex_siberia = {
     possible = {
 
 		OR = {
-			is_player = yes
+			#is_player = yes
 			year >= 1900
 			is_country_type = recognized
 			has_technology_researched = pan-nationalism
@@ -228,7 +228,7 @@ dvg_annex_yakutia = {
     possible = {
 
 		OR = {
-			is_player = yes
+			#is_player = yes
 			year >= 1900
 			is_country_type = recognized
 			has_technology_researched = pan-nationalism

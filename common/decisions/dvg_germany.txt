@@ -45,6 +45,30 @@ sgf_formation = {
 				country_or_subject_owns_entire_state_region = STATE_BAVARIA
 			}
 		}
+		OR = {
+			AND = {
+				this = c:BAV
+				c:AUS = {
+					is_ai = yes
+				}
+			}
+			AND = {
+				this = c:AUS
+				c:BAV = {
+					is_ai = yes
+				}
+			}
+			AND = {
+				c:BAV = {
+					is_ai = yes
+				}
+				c:AUS = {
+					is_ai = yes
+				}
+			}
+			
+
+		}
 	}
 
 	when_taken = {
