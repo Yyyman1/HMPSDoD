@@ -1,8 +1,8 @@
 ﻿MILITARY_FORMATIONS = {
 
-	# 115 Brigades
-	## 80 Infantry
-	## 20 Arty
+	# 165 Brigades
+	## 90 Infantry
+	## 60 Arty
 	## 15 Cav
 
 	# 65 Ships
