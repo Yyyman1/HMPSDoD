@@ -2481,7 +2481,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:AMA"
-						levels=3
+						levels=4
 						region="STATE_COTE_DU_SUCRE"
 					}
 				}
@@ -2493,7 +2493,7 @@
 				add_ownership={
 					country={
 						country="c:AMA"
-						levels=2
+						levels=3
 					}
 				}
 				reserves=1
