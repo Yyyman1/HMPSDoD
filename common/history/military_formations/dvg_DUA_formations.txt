@@ -1,8 +1,8 @@
 ﻿MILITARY_FORMATIONS = {
 
-	# 180 Brigades
-	## 130 Infantry
-	## 35 Arty
+	# 155 Brigades
+	## 105 Infantry
+	## 30 Arty
 	## 20 Cav
 
 	# 90 Ships
@@ -17,7 +17,7 @@
 
 	
 		### Armies
-		create_military_formation = { ### Première Armée du Continent 60/25/15
+		create_military_formation = { ### Première Armée du Continent 60/20/15
 			type = army
 			hq_region = sr:region_france
 			name = "Première Armée du Continent"
@@ -61,7 +61,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_mobile_artillery
 				state_region = s:STATE_ORLEANS
-				count = 10
+				count = 5
 			}
 			
 						
@@ -86,7 +86,7 @@
 			save_scope_as = dvg_dua_france_army
 		
 		}		
-		create_military_formation = { ### Armée Royale d'Angleterre 50/10/5
+		create_military_formation = { ### Armée Royale d'Angleterre 30/10/5
 			type = army
 			hq_region = sr:region_england
 			name = "Armée Royale d'Angleterre" 
@@ -94,12 +94,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_HOME_COUNTIES
-				count = 20
+				count = 10
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_MIDLANDS
-				count = 20
+				count = 10
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
