@@ -24,7 +24,7 @@ urbanization = {
 		state_infrastructure_from_population_max_add = 40	
 		state_building_construction_sector_max_level_add = 10
 		country_max_weekly_construction_progress_add = 10
-		market_land_trade_capacity_add = 300
+		market_land_trade_capacity_add = 150
 	}
 	
 	ai_weight = {
@@ -160,7 +160,7 @@ international_trade = {
 	}
 	
 	modifier = {
-		market_land_trade_capacity_add = 100
+		market_land_trade_capacity_add = 50
 	}
 	
 	ai_weight = {
@@ -1273,7 +1273,7 @@ malaria_prevention = {
 	modifier = {
 		country_institution_colonial_affairs_max_investment_add = 1
 		country_institution_health_system_max_investment_add = 1
-		country_infamy_decay_mult = 0.20
+		country_infamy_decay_mult = 0.40
 	}
 	
 	unlocking_technologies = {
@@ -1429,7 +1429,7 @@ multilateral_alliances = {
 		country_diplomatic_play_maneuvers_add = 40
 		country_allow_multiple_alliances_bool = yes
 		country_infamy_generation_mult = -0.30
-		country_infamy_decay_mult = 0.40
+		country_infamy_decay_mult = 0.80
 	}
 	
 	unlocking_technologies = {	
@@ -1513,6 +1513,8 @@ mass_propaganda = {
 		country_authority_mult = 0.1
 		state_expected_sol_from_literacy = 1
 		country_agitator_slots_add = 1
+		country_infamy_generation_mult = -0.15
+		country_infamy_decay_mult = 1.40
 	}
 	
 	unlocking_technologies = {
@@ -1590,7 +1592,7 @@ paved_roads = {
 	
 	modifier = {
 		state_infrastructure_from_automobiles_consumption_add = 0.25
-		market_land_trade_capacity_add = 600
+		market_land_trade_capacity_add = 300
 	}
 	
 	unlocking_technologies = {	
