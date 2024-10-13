@@ -63,6 +63,259 @@ elbian_confederation.1 = {
 				set_interest_group_name = ig_landowners
 			}
 		}
+		if = {
+			limit = {
+				c:OLD ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:OLD
+			set_state_type = incorporated
+		}
+		if = {
+			limit = {
+				c:CFR ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:CFR
+		}
+		if = {
+			limit = {
+				c:OSN ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:OSN
+		}
+		if = {
+			limit = {
+				c:HEK ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:HEK
+		}
+		if = {
+			limit = {
+				c:HAN ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:HAN
+		}
+		if = {
+			limit = {
+				c:THU ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:THU
+		}
+		if = {
+			limit = {
+				c:DAR ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:DAR
+		}
+		if = {
+			limit = {
+				c:SME ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:SME
+		}
+		if = {
+			limit = {
+				c:FRW ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:FRW
+		}
+		if = {
+			limit = {
+				c:FRE ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:FRE
+		}
+		if = {
+			limit = {
+				c:ASB ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:ASB
+		}
+		if = {
+			limit = {
+				c:AUS ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:AUS
+		}
+		if = {
+			limit = {
+				c:SLZ ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:SLZ
+		}
+		if = {
+			limit = {
+				c:BAV ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:BAV
+		}
+		if = {
+			limit = {
+				c:AGR ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:AGR
+		}
+		if = {
+			limit = {
+				c:ULM ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:ULM
+		}
+		if = {
+			limit = {
+				c:WUR ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:WUR
+		}
+		if = {
+			limit = {
+				c:BAD ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:BAD
+		}
+		if = {
+			limit = {
+				c:TYR ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:TYR
+		}
+		if = {
+			limit = {
+				c:TRT ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:TRT
+		}
+		if = {
+			limit = {
+				c:GRB ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:GRB
+		}
+		if = {
+			limit = {
+				c:SWI ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:SWI
+		}
+		if = {
+			limit = {
+				c:BAE ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:BAE
+		}
+		if = {
+			limit = {
+				c:FIO ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:FIO
+		}
+		if = {
+			limit = {
+				c:PRU ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:PRU
+		}
+		if = {
+			limit = {
+				c:MSZ ?= {
+					is_player = no
+					is_subject_of = c:BOH
+				}
+			}
+			annex = c:MSZ
+		}
+		every_scope_state = {
+			limit = {
+				state_region = {
+					OR = {
+						is_homeland = cu:south_german
+						is_homeland = cu:north_german
+						is_homeland = cu:balters
+						is_homeland = cu:rheinish 
+					}
+				}
+				OR = {
+					region = sr:region_rhine
+					region = sr:region_north_germany
+					region = sr:region_south_germany
+				}
+			}
+			set_state_type = incorporated
+		}
 	}
 	#option = { # accept compromise
 	#	name = elbian_confederation.1.b

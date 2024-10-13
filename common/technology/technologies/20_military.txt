@@ -5,10 +5,6 @@ standing_army = {
 	era = era_1
 	texture = "gfx/interface/icons/invention_icons/standing_army.dds"
 	category = military
-    
-    modifier = {
-		state_fae_building_forts_max_level_add = 1
-	}
 	
 	ai_weight = {
 		value = 3 # Very important tech in general
@@ -64,7 +60,7 @@ mandatory_service = {
 	category = military
 	
 	modifier = {
-		state_conscription_rate_mult = 0.2
+		state_conscription_rate_mult = 0.1
 	}
 	
 	unlocking_technologies = {
@@ -137,10 +133,6 @@ napoleonic_warfare = {
 		artillery
 	}
 	
-	modifier = {
-		state_fae_building_forts_max_level_add = 1
-	}
-	
 	ai_weight = {
 		value = 1.5 # Important tech in general
 		
@@ -176,7 +168,7 @@ army_reserves = {
 	category = military
 	
 	modifier = {
-		state_conscription_rate_mult = 0.2
+		state_conscription_rate_mult = 0.1
 	}
 	
 	unlocking_technologies = {	
@@ -242,7 +234,6 @@ field_works = {
 		# Lower kill rate?
 		unit_army_defense_mult = 0.1
 		
-		state_fae_building_forts_max_level_add = 1
 	}
 	
 	unlocking_technologies = {
@@ -261,7 +252,7 @@ logistics = {
 	category = military
 	
 	modifier = {
-		state_conscription_rate_mult = 0.2
+		state_conscription_rate_mult = 0.1
 	}
 	
 	unlocking_technologies = {	
@@ -444,7 +435,13 @@ enlistment_offices = {
 	category = military
 	
 	modifier = {
-		state_conscription_rate_mult = 0.2
+		state_conscription_rate_mult = 0.1
+	}
+	
+	on_researched = {
+		custom_tooltip = {
+			text = expand_conscription_button
+		}
 	}
 	
 	unlocking_technologies = {	
@@ -505,10 +502,6 @@ breech_loading_artillery = {
 	unlocking_technologies = {	
 		percussion_cap
 		shell_gun
-	}
-	
-	modifier = {
-		state_fae_building_forts_max_level_add = 2
 	}
 	
 	ai_weight = {
@@ -698,7 +691,7 @@ war_propaganda = {
 
 	modifier = {
 		unit_morale_loss_mult = -0.05
-		state_conscription_rate_mult = 0.2
+		state_conscription_rate_mult = 0.1
 	}
 	
 	on_researched = {
@@ -750,7 +743,6 @@ defense_in_depth = {
 		# defensive bonus, either to the army or ideally to fortifications
 		unit_army_defense_mult = 0.1
 		
-		state_fae_building_forts_max_level_add = 2
 	}
 	
 	unlocking_technologies = {	
@@ -981,7 +973,6 @@ concrete_fortifications = {
 		# bonus to general defensiveness or specifically to forts if they become a thing
 		unit_army_defense_mult = 0.1
 		
-		state_fae_building_forts_max_level_add = 3
 	}
 	
 	unlocking_technologies = {	
