@@ -33,10 +33,6 @@ company_mitsui = {
 			}
 		}
 		has_technology_researched = cotton_gin
-		custom_tooltip = {
-			text = is_meiji_japan
-			has_variable = meiji_restoration_complete
-		}
 	}
 	
 	prosperity_modifier = {
@@ -76,10 +72,6 @@ company_mantetsu = {
 			}
 			has_building = building_railway
 			count >= 4
-		}
-		custom_tooltip = {
-			text = is_meiji_japan
-			has_variable = meiji_restoration_complete
 		}
 	}
 	
@@ -124,10 +116,6 @@ company_mitsubishi = {
 			}
 		}
 		has_technology_researched = ironclad_tech
-		custom_tooltip = {
-			text = is_meiji_japan
-			has_variable = meiji_restoration_complete
-		}
 	}
 	
 	prosperity_modifier = {
