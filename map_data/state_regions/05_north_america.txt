@@ -412,7 +412,7 @@ STATE_MASGIRLAND = {
     capped_resources = {
         bg_logging = 12
         bg_whaling = 6
-        bg_fishing = 12
+        bg_fishing = 21
     }
     naval_exit_id = 3045
 }
