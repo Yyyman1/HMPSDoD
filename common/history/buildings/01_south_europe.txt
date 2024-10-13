@@ -1205,7 +1205,7 @@
 				add_ownership={
 					country={
 						country="c:VEN"
-						levels=5
+						levels=10
 					}
 				}
 				reserves=1
