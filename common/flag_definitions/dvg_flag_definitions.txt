@@ -3464,13 +3464,13 @@ XIB = { #Xibei
 			# 		is_initiator = yes
 			# 	}
 			# }
-			c:SHU = {
-				has_diplomatic_pact = {
-					who = c:XIB
-					type = vassal
-					is_initiator = yes
-				}
-			}
+			# c:SHU = {
+			# 	has_diplomatic_pact = {
+			# 		who = c:XIB
+			# 		type = vassal
+			# 		is_initiator = yes
+			# 	}
+			# }
 		}
 		}
 	}
