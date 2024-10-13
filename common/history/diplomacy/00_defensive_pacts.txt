@@ -17,12 +17,6 @@
 			type = defensive_pact
 		}	
 	}
-	c:AUS = {
-		create_diplomatic_pact = {
-			country = c:BAV
-			type = defensive_pact
-		}	
-	}
 	c:ARN = {
 		create_diplomatic_pact = {
 			country = c:PAP
