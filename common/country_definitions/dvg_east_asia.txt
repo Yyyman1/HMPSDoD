@@ -523,7 +523,7 @@ SVB = { #Survarnabhumi
 	
 	tier = hegemony
 	
-	cultures = { burmese lao khmer thai shan karen mon }
+	cultures = { burmese lao khmer thai shan karen mon vietnamese }
 	capital = STATE_NAKHON_RATCHASIMA
 }
 
