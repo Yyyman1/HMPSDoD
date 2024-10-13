@@ -27,7 +27,7 @@ dvg_embrace_persian = {
 		
 		country_rank > rank_value:insignificant_power
 		
-		has_law = law_type:law_cultural_exclusion
+		#has_law = law_type:law_cultural_exclusion
 
 		has_law = law_type:law_monarchy
 		
