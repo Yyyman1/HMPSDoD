@@ -165,7 +165,7 @@
 			type = dominion
 		}
 		create_diplomatic_pact = {
-			country = c:RHI
+			country = c:BAE
 			type = protectorate
 		}
 	}
