@@ -37,7 +37,20 @@
 				count = 30
 			}
 
-			save_scope_as = dua_home_fleet
+			save_scope_as = jap_home_fleet
+		}
+		create_character = { ### Kazushige Yamamoto 
+			is_admiral = yes
+			historical = yes
+			first_name = Kazushige
+			last_name = Yamamoto
+			commander_rank = commander_rank_2
+			age = 33
+		
+			save_scope_as = kazushige_yamamoto_scope
+		}
+		scope:kazushige_yamamoto_scope = {
+			transfer_to_formation = scope:jap_home_fleet
 		}
 	}
 }

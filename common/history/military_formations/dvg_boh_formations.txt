@@ -146,7 +146,7 @@
 			first_name = Konstantin
 			last_name = Vratislav_z_Mitrovic
 			hq = region_north_germany
-			commander_rank = commander_rank_2
+			commander_rank = commander_rank_3
 			age = 52
 			traits = {
 				persistent
