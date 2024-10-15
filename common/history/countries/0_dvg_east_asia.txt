@@ -489,7 +489,7 @@
 		
 		effect_starting_politics_traditional = yes
 
-		#activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_ethnostate
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
