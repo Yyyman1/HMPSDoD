@@ -739,6 +739,12 @@
 			months = -1
 			is_decaying = no
 		}
+		
+		add_modifier = {
+			name = taiping_land_socialization
+			months = 1200
+			is_decaying = no
+		}
 
 		trigger_event = {
 			id = dvg_china.12
