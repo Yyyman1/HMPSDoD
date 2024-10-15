@@ -76,14 +76,15 @@ chinese_opium_addiction = {
 }
 chinese_economic_stagnation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
-	building_coal_mine_throughput_add = -1
+	building_coal_mine_throughput_add = -0.25
 	building_iron_mine_throughput_add = -0.25
 	building_lead_mine_throughput_add = -0.5
 	building_sulfur_mine_throughput_add = -0.5
 	state_market_access_price_impact = -0.15
-	state_capitalists_investment_pool_efficiency_mult = -0.75
-	state_shopkeepers_investment_pool_efficiency_mult = -0.75
-	country_government_dividends_efficiency_add = -0.10
+	state_capitalists_investment_pool_efficiency_mult = -0.66
+	state_shopkeepers_investment_pool_efficiency_mult = -0.66
+	country_government_dividends_efficiency_add = -0.05
+	building_economy_of_scale_level_cap_add = -100
 }
 eight_banners = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
@@ -134,8 +135,8 @@ modifier_new_army = {
 }
 taiping_tech = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
-	country_tech_spread_mult = -0.75
-	country_tech_research_speed_mult = -0.5
+	country_tech_spread_mult = -0.2
+	state_education_access_wealth_add = -0.003
 }
 modifier_taiping_occupation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
