@@ -359,7 +359,7 @@
 	}
 
 	
-	c:BRU = {
+	c:FRS = {
 		create_diplomatic_pact = {
 			country = c:LAN
 			type =  vassal
