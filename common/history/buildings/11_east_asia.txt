@@ -2872,7 +2872,7 @@
 				add_ownership={
 					country={
 						country="c:TPG"
-						levels=3
+						levels=1
 					}
 				}
 				reserves=1
