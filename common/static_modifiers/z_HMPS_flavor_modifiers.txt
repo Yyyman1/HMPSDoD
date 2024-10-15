@@ -137,6 +137,7 @@ taiping_tech = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_negative.dds
 	country_tech_spread_mult = -0.2
 	state_education_access_wealth_add = -0.003
+	country_bureaucrats_pol_str_mult = -0.33
 }
 modifier_taiping_occupation = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
