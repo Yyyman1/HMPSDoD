@@ -526,22 +526,9 @@
 			months = -1
 			is_decaying = no
 		}
-		
-		add_journal_entry = { type = je_chinese_industry }
 
 		trigger_event = {
 			id = dvg_china.12
-		}
-		
-		add_modifier = {
-			name = chinese_economic_stagnation
-			is_decaying = no
-			years = -1
-		}
-		
-		set_global_variable = { #rn, all Chinese work together to fix the broken eco, I don't like this but will fix later
-			name = chinese_rail_expansion
-			value = 0
 		}
 		
 	#	add_journal_entry = {
@@ -594,8 +581,7 @@
 		
 		add_journal_entry = {
 			type = je_china_reunification
-		}	
-		add_journal_entry = { type = je_chinese_industry }
+		}
 		set_variable = warlord_state
 
 		trigger_event = {
@@ -606,17 +592,6 @@
 			name = china_radicalism
 			months = -1
 			is_decaying = no
-		}
-		
-		add_modifier = {
-			name = chinese_economic_stagnation
-			is_decaying = no
-			years = -1
-		}
-		
-		set_global_variable = { #rn, all Chinese work together to fix the broken eco, I don't like this but will fix later
-			name = chinese_rail_expansion
-			value = 0
 		}
 	}
 	
@@ -665,17 +640,7 @@
 			months = -1
 			is_decaying = no
 		}
-		add_journal_entry = { type = je_chinese_industry }
-		add_modifier = {
-			name = chinese_economic_stagnation
-			is_decaying = no
-			years = -1
-		}
 		
-		set_global_variable = { #rn, all Chinese work together to fix the broken eco, I don't like this but will fix later
-			name = chinese_rail_expansion
-			value = 0
-		}
 	}
 	
 	#c:YUN = { #Yunnan
@@ -763,16 +728,10 @@
 		add_journal_entry = {
 			type = je_china_reunification
 		}
-		
-		add_journal_entry = { type = je_chinese_industry }
-		add_modifier = {
-			name = chinese_economic_stagnation
-			is_decaying = no
-			years = -1
-		}
+
 		add_modifier = {
 			name = taiping_conversion_malus
-			months = 1000
+			months = 1200
 			is_decaying = no
 		}
 		add_modifier = {
@@ -780,24 +739,9 @@
 			months = -1
 			is_decaying = no
 		}
-		add_modifier = {
-			name = taiping_tech
-			months = 480
-			is_decaying = no
-		}
-		add_modifier = {
-			name = taiping_land_socialization
-			months = 1000
-			is_decaying = no
-		}
 
 		trigger_event = {
 			id = dvg_china.12
-		}
-		
-		set_global_variable = { #rn, all Chinese work together to fix the broken eco, I don't like this but will fix later
-			name = chinese_rail_expansion
-			value = 0
 		}
 	}
 	
