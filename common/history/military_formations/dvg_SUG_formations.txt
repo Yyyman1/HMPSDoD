@@ -5,12 +5,18 @@
 		create_military_formation = { ### Home Army 
 			type = army
 			hq_region = sr:region_indonesia
-			name = "Home Army"
+			name = "Liberation Army"
 
 			combat_unit = {
-				type = unit_type:combat_unit_type_line_infantry
+				type = unit_type:combat_unit_type_irregular_infantry
 				state_region = s:STATE_VISAYAS
-				count = 6
+				count = 12
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_hussars
+				state_region = s:STATE_VISAYAS
+				count = 8
 			}
 
 			save_scope_as = SUG_main_army

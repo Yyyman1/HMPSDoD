@@ -35,13 +35,32 @@ dvg_tungning.1 = {
 			type = je_tungning_start
 		
 		}
-
+		c:SUG = {
+			trigger_event = {
+				id = dvg_sugbo.1 days = 40
+			}
+		}
 		create_diplomatic_play = {
-			type = dp_unify_china
-
-			war = yes
-
+			escalation = 80
+			type = dp_return_state
+				
 			target_country = c:NAN
+			
+			add_war_goal = {
+				holder = c:FRS
+				type = return_state
+				target_state = s:STATE_SUZHOU.region_state:NAN
+			}
+			add_war_goal = {
+				holder = c:FRS
+				type = return_state
+				target_state = s:STATE_SOUTHERN_ANHUI.region_state:NAN
+			}
+			add_war_goal = {
+				holder = c:FRS
+				type = return_state
+				target_state = s:STATE_ZHEJIANG.region_state:NAN
+			}
 
 			add_war_goal = {
 				holder = c:NAN
@@ -58,11 +77,9 @@ dvg_tungning.1 = {
 				type = return_state
 				target_state = s:STATE_SHAOZHOU.region_state:FRS
 			}
-
-			
 		}
 		ai_chance = {
-			base = 99
+			base = 100
 		}
 	}
 	option = {
@@ -74,10 +91,10 @@ dvg_tungning.1 = {
 		
 		}
 		add_radicals = {
-			value = 0.3
+			value = 0.2
 		}
 		ai_chance = {
-			base = 01
+			base = 0
 		}
 		
 	}
@@ -160,7 +177,7 @@ dvg_tungning.3 = {
 	option = {
 		name = dvg_tungning.3.a
 
-		
+		add_primary_culture = cu:yuanzhumin
 		add_radicals = {
 			value = 0.3
 		}
@@ -168,45 +185,45 @@ dvg_tungning.3 = {
 			base = 01
 		}
 	}
-	option = {
-		name = dvg_tungning.3.b
-		trigger = {
-			any_scope_state = {
-				state_region = {
-						is_homeland = cu:tagalog
-						
-					
-				}
-			}
-		}
-		
-		
-		default_option = yes
-
-		add_primary_culture = cu:tagalog
-		
-		change_tag = TDO
-		ai_chance = {
-			base = 99
-		}
-	}
-	option = {
-		name = dvg_tungning.3.c
-		trigger = {
-			any_scope_state = {
-				state_region = {
-						is_homeland = cu:yuanzhumin
-						
-					
-				}
-			}
-		}
-		add_primary_culture = cu:yuanzhumin
-		ai_chance = {
-			base = 1
-		}
-		change_tag = YUZ
-	}
+#	option = {
+#		name = dvg_tungning.3.b
+#		trigger = {
+#			any_scope_state = {
+#				state_region = {
+#						is_homeland = cu:tagalog
+#						
+#					
+#				}
+#			}
+#		}
+#		
+#		
+#		default_option = yes
+#
+#		add_primary_culture = cu:tagalog
+#		
+#		change_tag = TDO
+#		ai_chance = {
+#			base = 99
+#		}
+#	}
+#	option = {
+#		name = dvg_tungning.3.c
+#		trigger = {
+#			any_scope_state = {
+#				state_region = {
+#						is_homeland = cu:yuanzhumin
+#						
+#					
+#				}
+#			}
+#		}
+#		add_primary_culture = cu:yuanzhumin
+#		ai_chance = {
+#			base = 1
+#		}
+#		change_tag = YUZ
+#	}
 }
 # Nanjing wins Phoenix Invasion
 dvg_tungning.4 = {

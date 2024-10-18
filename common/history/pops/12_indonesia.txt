@@ -356,14 +356,8 @@
 			}
 			create_pop = {
 				culture = min
-				size = 8675
+				size = 86750
 			}
-			create_pop = {
-				culture = japanese
-				size = 6506
-			}
-		}
-		region_state:SUG = {
 			create_pop = {
 				culture = visayan
 				size = 36415
@@ -386,7 +380,7 @@
 		region_state:SUG = {
 			create_pop = {
 				culture = visayan
-				size = 887109
+				size = 1687109
 				split_religion = {
 					visayan = {
 						mahayana = 0.25
