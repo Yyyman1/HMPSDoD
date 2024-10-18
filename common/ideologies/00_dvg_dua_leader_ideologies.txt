@@ -27,8 +27,7 @@
 		law_peasant_levies = approve
 		law_mass_conscription = neutral
 		law_professional_army = approve
-		law_national_militia = disapprove
-		law_peasant_levies = approve
+		law_national_militia = neutral
 	}
 	
 	lawgroup_economic_system = {	

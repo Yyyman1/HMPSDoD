@@ -227,7 +227,7 @@
 			limit = {
 				owner = {
 					NOR = {
-						has_law = law_type:law_professional_army
+						has_law = law_type:law_national_militia
 						has_law = law_type:law_mass_conscription
 					}
 				}

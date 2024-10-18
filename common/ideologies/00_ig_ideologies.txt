@@ -172,6 +172,13 @@ ideology_individualist = {
 		law_migration_controls = disapprove
 		law_closed_borders = strongly_disapprove
 	}
+	
+	lawgroup_army_model = {
+		law_peasant_levies = disapprove
+		law_mass_conscription = strongly_disapprove
+		law_professional_army = approve
+		law_national_militia = disapprove
+	}
 }
 
 ideology_stratocratic = {
@@ -180,7 +187,7 @@ ideology_stratocratic = {
 	lawgroup_army_model = {
 		law_peasant_levies = strongly_approve
 		law_professional_army = neutral
-		law_national_militia = neutral
+		law_national_militia = approve
 		law_mass_conscription = approve
 	}
 	
@@ -347,8 +354,8 @@ ideology_particularist = {
 	}		
 
 	lawgroup_army_model = {
-		law_national_militia = strongly_approve
-		law_professional_army = neutral
+		law_national_militia = disapprove
+		law_professional_army = approve
 		law_mass_conscription = strongly_disapprove
 		law_peasant_levies = strongly_disapprove
 	}
@@ -593,7 +600,7 @@ ideology_jingoist = {
 	lawgroup_army_model = {
 		law_professional_army = neutral
 		law_mass_conscription = strongly_approve
-		law_national_militia = disapprove
+		law_national_militia = approve
 		law_peasant_levies = disapprove
 	}
 	
