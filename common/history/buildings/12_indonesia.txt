@@ -1639,17 +1639,17 @@
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" }
 			}
 			create_building={
-				building="building_arms_industry"
+				building="building_tooling_workshops"
 				add_ownership={
 					building={
-						type="building_arms_industry"
+						type="building_tooling_workshops"
 						country="c:SUG"
 						levels=1
 						region="STATE_VISAYAS"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_muskets" }
+				activate_production_methods={ "pm_pig_iron" "pm_automation_disabled" }
 			}
 			create_building={
 				building="building_paper_mills"

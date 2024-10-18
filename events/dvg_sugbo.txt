@@ -28,7 +28,7 @@ dvg_sugbo.1 = {
 	}
 
 	option = {
-		name = dvg_tungning.1.a
+		name = dvg_sugbo.1.a
 		default_option = yes
 		
 		create_diplomatic_play = {
@@ -49,7 +49,7 @@ dvg_sugbo.1 = {
 		}
 	}
 	option = {
-		name = dvg_tungning.1.b
+		name = dvg_sugbo.1.b
 		default_option = yes
 		
 		add_radicals = {

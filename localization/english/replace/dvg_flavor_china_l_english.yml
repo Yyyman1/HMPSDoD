@@ -369,6 +369,12 @@
  dvg_shun.10.d:0 "Despite the efforts to stop him, the Pillager Prince was able to break through the gates of the Forbidden City and take the throne for himself."
  dvg_shun.10.f:0 "Most of the residents of the Forbidden City have fled or went into hiding as the Pillager Prince was not known to show mercy to anyone- as no mercy did he show. Upon seeing him, the Pillager Prince immediately slaughtered [ROOT.GetCountry.GetRuler.GetFullName] and brought his head outside the palace complex's walls for the public to see and dropped it into the moat below."
  dvg_shun.10.a:0 "A new age for the Shun has begun."
+ 
+ dvg_sugbo.1.t:0 "Strike North"
+ dvg_sugbo.1.d:0 "Our islands face invaders from the North and South. Times look bleak, however, the Chinese invaders in the North are distracted with a war against their counterparts. This is our chance to strike against them."
+ dvg_sugbo.1.f:0 "Our forces are ready to strike, and we should win, but many of our top advisors are concerned about striking such a powerful foe. They might not let us exist if we lose the war."
+ dvg_sugbo.1.a:0 "Launch the offensive!"
+ dvg_sugbo.1.b:0 "Let's be patient."
 
  #Ideologies
  ideology_xijiao_leader:0 "Xijiaoist"
