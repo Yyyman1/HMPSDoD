@@ -1,17 +1,21 @@
-﻿# CHARACTERS = {
-	# c:EGY = {
-		# create_character = {
-			# historical = yes
-			#first_name = Mehmet
-			# last_name = Alawiyya
-			# ruler = yes
-			# noble = yes
-			# birth_date = 1765.8.21
-			# interest_group = ig_petty_bourgeoisie
-			# ideology = ideology_royalist
-			# traits = {
-				# romantic
-			# }
-		# }
-	# }
-# }
+﻿CHARACTERS = {
+	 c:EGY = {
+		 create_character = {
+			 Muhammad Ali
+			first_name = "Muhammad_Ali"
+			last_name = "al-_Alawi"
+			historical = yes
+			ruler = yes
+			culture = cu:albanian
+			birth_date = 1779.3.4
+			dna = dna_muhammad_ali
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				ambitious
+				persistent
+				innovative
+			}
+		 }
+	 }
+ }
