@@ -323,7 +323,7 @@ je_washkars_conquests = {
 		trigger_event = { id = dvg_inca_path_washkar.12 }
 	}
 
-	timeout = 7300
+	timeout = 36500
 	on_timeout = {
 		trigger_event = { id = dvg_inca_path_washkar.9 }
 	}
