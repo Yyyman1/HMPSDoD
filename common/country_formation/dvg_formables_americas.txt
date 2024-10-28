@@ -142,7 +142,6 @@ TIS = { #Turtle Island
 		any_country = {		
 			has_technology_researched = pan-nationalism
 		}
-		is_subject = no
 	}
 	
 	ai_will_do = { always = yes }
