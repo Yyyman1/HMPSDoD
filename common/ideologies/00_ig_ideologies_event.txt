@@ -19,9 +19,9 @@
 }
 
 ideology_feminist_ig = {
-	icon = "gfx/interface/icons/ideology_icons/ideology_leader/ideology_leader_womens_liberation.dds"
+	icon = "gfx/interface/icons/ideology_icons/womens_liberation.dds"
 	
-	priority = 100 # Overrides other non-leader ideologies with a lower prio
+	priority = 250 # Overrides other non-leader ideologies with a lower prio
 	
 	lawgroup_rights_of_women = {
 		law_womens_suffrage = strongly_approve
@@ -50,9 +50,9 @@ ideology_modernizer = {
 	}
 
 	lawgroup_economic_system = {
+		law_extraction_economy = strongly_disapprove
 		law_cooperative_ownership = disapprove
 		law_command_economy = neutral
-		#law_state_capitalism = approve
 		law_interventionism = approve
 		law_agrarianism = disapprove
 		law_traditionalism = strongly_disapprove
@@ -75,10 +75,10 @@ ideology_liberal_modern = {
 	}
 	
 	lawgroup_army_model = {
-		law_peasant_levies = disapprove
+		law_peasant_levies = strongly_disapprove
 		law_professional_army = approve
 		law_national_militia = neutral
-		law_mass_conscription = strongly_disapprove
+		law_mass_conscription = disapprove
 	}
 	
 	lawgroup_policing = {
@@ -104,7 +104,7 @@ ideology_liberal_modern = {
 	
 	lawgroup_rights_of_women = {
 		law_no_womens_rights = disapprove
-		law_women_own_property = neutral
+		law_women_own_property = approve
 		law_women_in_the_workplace = approve
 		law_womens_suffrage = strongly_approve
 	}
@@ -119,7 +119,7 @@ ideology_liberal_modern = {
 		law_laissez_faire = strongly_approve
 		law_interventionism = approve
 		law_agrarianism = disapprove
-		#law_industry_banned = strongly_disapprove
+		#law_extraction_economy = strongly_disapprove
 		law_traditionalism = strongly_disapprove	
 		#law_state_capitalism = strongly_disapprove	
 		law_command_economy = strongly_disapprove
@@ -169,6 +169,12 @@ ideology_egalitarian_modern = {
 		law_compulsory_primary_school = strongly_approve
 		law_restricted_child_labor = approve	
 		law_child_labor_allowed = disapprove
+	}
+	
+	lawgroup_labor_rights = {		
+		law_worker_protections = strongly_approve
+		law_regulatory_bodies = approve
+		law_no_workers_rights = neutral
 	}
 	
 	lawgroup_minimum_wage = {

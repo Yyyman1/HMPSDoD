@@ -1,7 +1,7 @@
 ﻿officers = {
 	texture = "gfx/interface/icons/pops_icons/officers.dds"
 	color = hsv{ 0.12 0.51 0.36 }
-	strata = middle
+	military = yes
 	start_quality_of_life = 10
 	wage_weight = 5
 	paid_private_wage = yes
@@ -20,13 +20,18 @@
 			desc = "POP_STARVATION"	
 			
 			if = {
-				limit = { 
-					standard_of_living < 5
+				limit = {
+					is_in_mild_starvation = yes
 				}
-				value = 1
-			}		
-		}	
-		
+				value = 0.5
+			}
+			else_if = {
+				limit = {
+					is_in_severe_starvation = yes
+				}
+				value = 1.5
+			}
+		}
 	}
 	
 	qualifications_growth_desc = "OFFICERS_QUALIFICATIONS_DESC"
@@ -35,17 +40,21 @@
 			limit = {
 				is_peasant_under_serfdom = no
 				OR = {
-					culture_accepted = yes
+					state = {
+						state_cultural_acceptance = {
+							target = PREV.culture
+						   	value > acceptance_status_4
+					   	}
+					}
 					is_pop_type = soldiers
-					is_pop_type = aristocrats
 				}
 			}
 			# baseline: ( literacy - 0.2 ) * 10, norm 2 for Soldiers with Literacy 30%
 			add = {
 				value = literacy_rate
 				subtract = 0.2
-				min = 0.05
-				multiply = 30
+				min = 0.1
+				multiply = 10
 				desc = "QUALIFICATIONS_LITERACY_FACTOR"
 			}
 			if = {
@@ -53,7 +62,7 @@
 					is_pop_type = aristocrats
 				}
 				multiply = {
-					value = 10
+					value = 5
 					desc = "QUALIFICATIONS_FAVORED_TYPE"
 				}
 			}
@@ -83,15 +92,6 @@
 				multiply = {
 					value = 0.5
 					desc = "QUALIFICATIONS_OFFICERS_PEASANT_LEVIES"
-				}
-			}
-			if = {
-				limit = {
-					culture_accepted = no
-				}
-				multiply = {
-					value = 0.1
-					desc = "QUALIFICATIONS_CULTURAL_DISCRIMINATION"
 				}
 			}
 		}

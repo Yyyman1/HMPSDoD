@@ -13,6 +13,10 @@ law_no_income_taxes = {
 		always = yes
 	}
 	
+	modifier = {
+		country_legitimacy_base_add = 10
+	}
+	
 	ai_will_do = {
 		always = no
 	}
@@ -31,7 +35,7 @@ law_low_income_tax = {
 	
 	modifier = {
 		state_tax_capacity_mult = -0.02
-		state_radicals_from_sol_change_mult = 0.05
+		country_legitimacy_base_add = 5
 	}
 
 	tax_modifier_very_low = {
@@ -70,9 +74,12 @@ law_moderate_income_tax = {
 		always = yes
 	}
 	
+	unlocking_technologies = {
+		central_banking
+	}
+	
 	modifier = {
 		state_tax_capacity_mult = -0.05
-		state_radicals_from_sol_change_mult = 0.15
 	}
 	
 	tax_modifier_very_low = {
@@ -107,9 +114,13 @@ law_high_income_tax = {
 		always = yes
 	}
 	
+	unlocking_technologies = {
+		identification_documents
+	}
+	
 	modifier = {
 		state_tax_capacity_mult = -0.1
-		state_radicals_from_sol_change_mult = 0.25
+		country_legitimacy_base_add = -5
 	}
 
 	tax_modifier_very_low = {

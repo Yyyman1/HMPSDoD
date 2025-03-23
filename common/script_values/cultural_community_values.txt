@@ -7,13 +7,19 @@
 cultural_community_creation_weight = {
 
 	# Conditions that block
+	
 
 	if = {
 		limit = {
 			OR = {
-				devastation >= 50
-				turmoil >= 60
+				devastation >= 0.5
+				turmoil >= 0.6
 				is_isolated_from_market = yes
+				
+				#HMPS region lock to prevent the big FUNNY from happening. pops cant create new cultural communities
+				#outside of their home region UNLESS they are accepted at least at lvl 3
+				#note this does not stop pops from migrating outside of their region if they start with a cultural community outside it at
+				#game start!!!!
 				
 				#Begin region specific community limits
 				
@@ -22,7 +28,9 @@ cultural_community_creation_weight = {
 					state_is_in_europe = yes
 					scope:culture = {
 						NOT = { has_discrimination_trait = european_heritage }
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 					}
 				}
 				
@@ -31,7 +39,9 @@ cultural_community_creation_weight = {
 					state_is_in_middle_east = yes
 					scope:culture = {
 						NOT = { has_discrimination_trait = middle_eastern_heritage }
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 					}
 				}
 				
@@ -40,7 +50,9 @@ cultural_community_creation_weight = {
 					state_is_in_central_asia = yes
 					scope:culture = {
 						NOT = { has_discrimination_trait = central_asian_heritage }
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 					}
 				}
 				
@@ -49,7 +61,9 @@ cultural_community_creation_weight = {
 					state_is_in_africa = yes
 					scope:culture = {
 						NOT = { has_discrimination_trait = african_heritage }
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 					}
 				}
 				
@@ -65,7 +79,9 @@ cultural_community_creation_weight = {
 					state_is_in_india = yes
 					scope:culture = {
 						NOT = { has_discrimination_trait = south_asian_heritage }
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 					}
 				}
 				
@@ -75,7 +91,9 @@ cultural_community_creation_weight = {
 					state_is_in_southeast_asia = yes
 					scope:culture = {
 						NOT = { has_discrimination_trait = southeast_asian_heritage }
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 					}
 				}
 				
@@ -84,7 +102,9 @@ cultural_community_creation_weight = {
 					state_is_in_east_asia = yes
 					scope:culture = {
 						NOT = { has_discrimination_trait = east_asian_heritage }
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 					}
 				}
 				
@@ -96,7 +116,9 @@ cultural_community_creation_weight = {
 						region = sr:region_east_siberia
 					}
 					scope:culture = {
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 						OR = {
 							this = cu:tibetan
 							this = cu:han
@@ -125,7 +147,9 @@ cultural_community_creation_weight = {
 						region = sr:region_east_siberia
 					}
 					scope:culture = {
-						culture_is_discriminated_in = root.owner
+						root.owner = {
+							cultural_acceptance_base = { target = prev value <= acceptance_status_2 }
+						}
 					}
 				}
 			}
@@ -232,14 +256,14 @@ cultural_community_creation_weight = {
 		
 		if = {
 			limit = {
-				devastation >= 20
+				devastation >= 0.2
 			}
 			multiply = 0.5
 		}
 	
 		if = {
 			limit = {
-				turmoil >= 30
+				turmoil >= 0.3
 			}
 			multiply = 0.5
 		}
@@ -312,11 +336,35 @@ cultural_community_creation_weight = {
 
 		if = {
 			limit = {
-				scope:culture = {
-					culture_is_discriminated_in = root.owner
+				root.owner = {
+					cultural_acceptance_base = { target = scope:culture value < acceptance_status_2 }
+				}
+			}
+			multiply = 0.1
+		}
+		else_if = {
+			limit = {
+				root.owner = {
+					cultural_acceptance_base = { target = scope:culture value < acceptance_status_3 }
 				}
 			}
 			multiply = 0.3
+		}
+		else_if = {
+			limit = {
+				root.owner = {
+					cultural_acceptance_base = { target = scope:culture value < acceptance_status_4 }
+				}
+			}
+			multiply = 0.5
+		}
+		else_if = {
+			limit = {
+				root.owner = {
+					cultural_acceptance_base = { target = scope:culture value < acceptance_status_5 }
+				}
+			}
+			multiply = 0.7
 		}
 
 		if = {

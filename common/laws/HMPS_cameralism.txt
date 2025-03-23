@@ -21,10 +21,6 @@ law_no_legislature = {
 		country_authority_add = 100
 	}
 	
-	pop_support = {
-		value = 0
-	}
-	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		
@@ -53,16 +49,30 @@ law_unicameralism = {
 		country_law_enactment_time_mult = 0.05
 	}
 	
-	pop_support = {
-		value = 0
-	}
-	
 	ai_enact_weight_modifier = { #Petitions
 		value = 0
 		
 		if = {
 			limit = { ai_has_enact_weight_modifier_journal_entries = yes }
 			add = 750
+		}
+	}
+	
+	on_activate = {
+		if = {
+			limit = {
+				OR = {
+					has_journal_entry = je_napoleons_legacy
+					overlord = {
+						has_journal_entry = je_napoleons_legacy
+					}
+				}
+				has_global_variable = global_1848_progress
+			}
+			change_global_variable = {
+				name = global_1848_progress
+				add = 3
+			}
 		}
 	}
 }
@@ -84,10 +94,6 @@ law_asymmetric_bicameralism = {
 	modifier = {
 		country_law_enactment_time_mult = 0.1
 		country_legitimacy_ideological_incoherence_mult = -0.1
-	}
-	
-	pop_support = {
-		value = 0
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
@@ -117,10 +123,6 @@ law_symmetric_bicameralism = {
 	modifier = {
 		country_law_enactment_time_mult = 0.25
 		country_legitimacy_ideological_incoherence_mult = -0.2
-	}
-	
-	pop_support = {
-		value = 0
 	}
 	
 	ai_enact_weight_modifier = { #Petitions
