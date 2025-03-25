@@ -83,3 +83,4 @@ dev_test_modifier2 = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	regime_change_allowed = 1
 }
+
