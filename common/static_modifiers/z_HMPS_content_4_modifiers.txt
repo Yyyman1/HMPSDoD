@@ -5,6 +5,6 @@
 	country_aristocrats_pol_str_mult = -0.50
 	country_capitalists_pol_str_mult = -0.33
 	state_aristocrats_mortality_mult = 100
-	state_capitalists_investment_pool_efficiency_mult = -0.33
-	state_aristocrats_investment_pool_efficiency_mult = -0.75
+	state_capitalists_investment_pool_contribution_add = -0.1
+	state_aristocrats_investment_pool_contribution_add = -0.2
 }
