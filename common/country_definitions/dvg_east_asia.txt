@@ -109,7 +109,7 @@ TPG = { #Taiping
 	
 	tier = kingdom
 	
-	cultures = { han }
+	cultures = { hakka }
 	religion = taiping
 	capital = STATE_JIANGXI
 }

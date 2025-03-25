@@ -17,7 +17,8 @@
 				ambitious
 				firebrand
 				basic_offensive_planner
-
+				persistent
+				celebrity_commander
 			}
 		}
 		create_character = {
@@ -34,6 +35,20 @@
 				convoy_raider_commander
 			}
 		}
-		
+		create_character = {
+			historical = yes
+			first_name = Zhan
+			last_name = Zemin
+			is_general = yes
+			noble = yes
+			birth_date = 1799.12.25
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			traits = {
+				surveyor
+				stalwart_defender
+				expert_defensive_strategist
+			}
+		}
 	}
 }

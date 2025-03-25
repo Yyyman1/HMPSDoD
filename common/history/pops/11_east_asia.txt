@@ -121,6 +121,10 @@
 				size = 111500
 				religion = sunni
 			}
+			create_pop = {
+				culture = manchu
+				size = 10381
+			}
 		}
 	}
 	s:STATE_ALXA = {
@@ -157,7 +161,7 @@
 			}
 			create_pop = {
 				culture = manchu
-				size = 7933
+				size = 14933
 			}
 			create_pop = {
 				culture = siberian
@@ -325,21 +329,21 @@
 		region_state:MCH = {
 			create_pop = {
 				culture = han # nanfaren
-				size = 14597600
+				size = 14397600
 			}
 			create_pop = {
 				culture = han # nanfaren
 				religion = sunni
 				size = 348400
 			}
-			create_pop = {
-				culture = manchu
-				size = 81994
-			}
-			# create_pop = {
-				# culture = manchu
-				# size = 587880
-			# }
+			#create_pop = {
+			#	culture = manchu
+			#	size = 81994
+			#}
+			 create_pop = {
+				 culture = manchu
+				 size = 587880
+			 }
 			# create_pop = {
 				# culture = han
 				# size = 15303000
@@ -359,7 +363,7 @@
 			}
 			create_pop = {
 				culture = manchu
-				size = 1613
+				size = 11613
 			}
 			create_pop = {
 				culture = han # nanfaren
@@ -383,10 +387,10 @@
 				culture = han # nanfaren
 				size = 15088000
 			}
-			# create_pop = {
-				# culture = manchu
-				# size = 13280
-			# }
+			 create_pop = {
+				 culture = manchu
+				 size = 19286
+			 }
 			# create_pop = {
 				# culture = han
 				# size = 28206080
@@ -402,7 +406,7 @@
 		region_state:MCH = {
 			create_pop = {
 				culture = han
-				size = 13170107
+				size = 13160107
 			}
 			create_pop = {
 				culture = han
@@ -413,6 +417,10 @@
 				culture = han
 				size = 11680
 				religion = jewish
+			}
+			create_pop = {
+				culture = manchu
+				size = 7823
 			}
 		}
 	}
@@ -427,6 +435,10 @@
 				size = 347217
 				religion = sunni
 			}
+			create_pop = {
+				culture = manchu
+				size = 7226
+			}
 		}
 	}
 	s:STATE_JIANGSU = {
@@ -434,6 +446,10 @@
 			create_pop = {
 				culture = han
 				size = 8482000
+			}
+			create_pop = {
+				culture = manchu
+				size = 2823
 			}
 		}
 	}
@@ -470,6 +486,10 @@
 				size = 492057
 				religion = sunni
 			}
+			create_pop = {
+				culture = manchu
+				size = 21419
+			}
 		}
 	}
 	s:STATE_NINGXIA = {
@@ -480,12 +500,16 @@
 			}
 			create_pop = {
 				culture = han
-				size = 5973793
+				size = 5972793
 			}
 			create_pop = {
 				culture = han
 				size = 237136
 				religion = sunni
+			}
+			create_pop = {
+				culture = manchu
+				size = 2513
 			}
 		}
 	}

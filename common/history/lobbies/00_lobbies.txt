@@ -64,6 +64,68 @@
 		}
 	}
 	
+	#Chinese Thunderdome
+	
+	c:TPG = {
+		create_political_lobby = {  #Taiping Hates Qing
+			type = lobby_anti_country  
+			target = c:MCH
+			add_interest_group = ig:ig_armed_forces
+			add_interest_group = ig:ig_devout
+			add_interest_group = ig:ig_industrialists
+			add_interest_group = ig:ig_intelligentsia
+			add_interest_group = ig:ig_landowners
+			add_interest_group = ig:ig_petty_bourgeoisie
+			add_interest_group = ig:ig_rural_folk
+			add_interest_group = ig:ig_trade_unions
+		}
+	}
+	
+	c:MCH = {
+		create_political_lobby = {  #Qing Hates Taiping
+			type = lobby_anti_country  
+			target = c:TPG
+			add_interest_group = ig:ig_armed_forces
+			add_interest_group = ig:ig_devout
+			add_interest_group = ig:ig_industrialists
+			add_interest_group = ig:ig_intelligentsia
+			add_interest_group = ig:ig_landowners
+			add_interest_group = ig:ig_petty_bourgeoisie
+			add_interest_group = ig:ig_rural_folk
+			add_interest_group = ig:ig_trade_unions
+		}
+	}
+	
+	c:FRS = {
+		create_political_lobby = {  #Ming Hates Nanjing
+			type = lobby_anti_country  
+			target = c:NAN
+			add_interest_group = ig:ig_armed_forces
+			add_interest_group = ig:ig_devout
+			add_interest_group = ig:ig_industrialists
+			add_interest_group = ig:ig_intelligentsia
+			add_interest_group = ig:ig_landowners
+			add_interest_group = ig:ig_petty_bourgeoisie
+			add_interest_group = ig:ig_rural_folk
+			add_interest_group = ig:ig_trade_unions
+		}
+	}
+	
+	c:NAN = {
+		create_political_lobby = {  #Nanjing Hates Ming
+			type = lobby_anti_country  
+			target = c:FRS
+			add_interest_group = ig:ig_armed_forces
+			add_interest_group = ig:ig_devout
+			add_interest_group = ig:ig_industrialists
+			add_interest_group = ig:ig_intelligentsia
+			add_interest_group = ig:ig_landowners
+			add_interest_group = ig:ig_petty_bourgeoisie
+			add_interest_group = ig:ig_rural_folk
+			add_interest_group = ig:ig_trade_unions
+		}
+	}
+	
     #Zhourao
 #    c:ZSA = {
 #		create_political_lobby = {  

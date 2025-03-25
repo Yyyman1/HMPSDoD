@@ -149,13 +149,10 @@
 	s:STATE_LUZON = {
 		create_state = {
 			country = c:FRS
-			owned_provinces = { "x0D8236" "x1C8BCF" "x2291B3" "x31F0E0" "x33B5F8" "x51BC8C" "x5C0D4C" "x5ED347" "x63FA56" "x6D44B5" "x707061" "x795BD8" "x95102A" "x97B9E0" "xB08546" "xB0F0E0" "xCDE626" "xD2AEEB" "xE173C4" "xEB310E" "xECF5E9" "xF4CD9C" }
+			owned_provinces = { "x0D8236" "x1C8BCF" "x2291B3" "x31F0E0" "x33B5F8" "x51BC8C" "x5C0D4C" "x5ED347" "x63FA56" "x6D44B5" "x707061" "x795BD8" "x95102A" "x97B9E0" "xB08546" "xB0F0E0" "xCDE626" "xD2AEEB" "xE173C4" "xEB310E" "xECF5E9" "xF4CD9C"
+			"x1B9953" "x946A22" "xB0F0B0" }
 		}
-		create_state = {
-			country = c:SUG
-			owned_provinces = { "x1B9953" "x946A22" "xB0F0B0" }
-		}
-		
+		add_claim = c:SUG
 		add_homeland = cu:filipino
 		add_homeland = cu:visayan
 		add_homeland = cu:tagalog

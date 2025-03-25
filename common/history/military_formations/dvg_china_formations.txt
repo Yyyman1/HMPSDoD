@@ -11,12 +11,12 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_FORMOSA
-				count = 25
+				count = 28
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_cannon_artillery
 				state_region = s:STATE_FORMOSA
-				count = 10
+				count = 18
 			}
 			combat_unit = {
 				type = unit_type:combat_unit_type_hussars
@@ -27,6 +27,46 @@
 		}
 
 	}
+	
+	c:FRS = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_indonesia
+			name = "Lusong Guard"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_LUZON
+				count = 2
+			}
+
+		}
+
+	}
+	
+	### Fleets
+	c:FRS = {
+		create_military_formation = { ### Home Fleet 10/10
+			type = fleet
+			hq_region = sr:region_south_china
+			name = "Xiafan Guanjun"
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_FORMOSA
+				count = 10
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_FORMOSA
+				count = 10
+			}
+
+			save_scope_as = ming_home_fleet
+		}
+	}
+	
 	c:NAN = {
 		create_military_formation = {
 			type = army

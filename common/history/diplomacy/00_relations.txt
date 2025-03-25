@@ -159,12 +159,18 @@
 		set_relations = { country = c:GCO value = 30 }	
 	}
 	c:FRS = {
-		set_relations = { country = c:NAN value = -50 }
-		set_relations = { country = c:MCH value = -50 }
+		set_relations = { country = c:NAN value = -100 }
+		set_relations = { country = c:MCH value = -100 }
+		set_relations = { country = c:TPG value = -100 }
 	}
 	
 	c:NAN = {
-		set_relations = { country = c:MCH value = -50 }
+		set_relations = { country = c:MCH value = -100 }
+		set_relations = { country = c:TPG value = -100 }
+	}
+	
+	c:MCH = {
+		set_relations = { country = c:TPG value = -100 }
 	}
 	c:JAP = {
 		set_relations = { country = c:KOR value = -50 }
