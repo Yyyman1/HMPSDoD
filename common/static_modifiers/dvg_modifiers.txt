@@ -201,6 +201,7 @@ dvg_fragile_country = {
 	state_turmoil_effects_mult = 0.2
 	state_radicals_from_sol_change_mult = 0.3
 	state_radicals_from_discrimination_mult = 0.1
+	state_conscription_rate_add = -1
 }
 
 dvg_mid_way = {
