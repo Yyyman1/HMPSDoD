@@ -530,10 +530,6 @@
 			months = -1
 			is_decaying = no
 		}
-
-		trigger_event = {
-			id = dvg_china.12
-		}
 		
 	#	add_journal_entry = {
 	#		type = je_china_reunification
@@ -588,10 +584,6 @@
 		}
 		set_variable = warlord_state
 
-		trigger_event = {
-			id = dvg_china.12
-		}
-
 		add_modifier = {
 			name = china_radicalism
 			months = -1
@@ -634,9 +626,6 @@
 		}
 		trigger_event = {
 			id = dvg_xijiao.1 days = 40
-		}
-		trigger_event = {
-			id = dvg_china.12
 		}
 
 		add_modifier = {
@@ -754,9 +743,6 @@
 			is_decaying = no
 		}
 
-		trigger_event = {
-			id = dvg_china.12
-		}
 	}
 	
 	c:DAI = { #Vietnam
