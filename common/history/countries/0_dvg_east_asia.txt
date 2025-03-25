@@ -693,6 +693,7 @@
 		activate_law = law_type:law_theocracy
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_no_home_affairs
+		activate_law = law_type:law_clerical_voting
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_national_supremacy
 		#activate_law = law_type:law_religious_schools
@@ -701,14 +702,13 @@
 		activate_law = law_type:law_women_in_the_workplace
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_low_income_tax	
+		activate_law = law_type:law_low_corporation_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_debtors_prisons
-		activate_law = law_type:law_tenant_farmers
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
+		activate_law = law_type:law_high_minimum_wage
+		activate_law = law_type:law_12_hour_limit
+		activate_law = law_type:law_tenant_farmers #Should be collective ag but broken rn
 		
 		set_ruling_interest_groups = {
 			ig_devout
@@ -741,6 +741,13 @@
 			months = 1200
 			is_decaying = no
 		}
+		
+		add_modifier = {
+			name = taiping_land_socialization
+			months = 1200
+			is_decaying = yes
+		}
+		
 		add_modifier = {
 			name = china_radicalism
 			months = -1
