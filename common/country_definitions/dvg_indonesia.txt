@@ -397,7 +397,7 @@ CHR = { #Scandinavian East Indies
 	
 	tier = principality
 	
-	cultures = { scandinavian filipino }
+	cultures = { scandinavian }
 	capital = STATE_MINDANAO
 }
 
