@@ -295,36 +295,25 @@
 
 dvg_embrace_afro_amerigans = {
 	is_shown = {
-
-		#any_primary_culture = {
-		#	has_discrimination_trait = {
-		#		trait = cu:amerigan
-		#	}
-		#}
-
-		OR = {
-			this = c:AMA
-			# this = c:AME
-			this = c:LOT
+		
+		any_primary_culture = {
+			has_discrimination_trait = amerigan_group
 		}
-	
+		country_is_in_south_america = yes
+		
 		NOT = {
 			country_has_primary_culture = cu:afro_amerigan
 		}
-		
+
 	}
 
     possible = {
-		
 		has_law = law_type:law_slavery_banned
 		has_technology_researched = political_agitation
 		has_technology_researched = pan-nationalism
-
-
 	}
 
     when_taken = {
-		
 		activate_law = law_type:law_cultural_exclusion
     }
 

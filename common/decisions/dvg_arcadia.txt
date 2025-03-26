@@ -252,10 +252,7 @@ dvg_embrace_afro_arcadian = {
 		
 
     when_taken = {
-		
 		activate_law = law_type:law_cultural_exclusion
-
-		
     }
 
 	ai_chance = {
