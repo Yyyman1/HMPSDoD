@@ -70,7 +70,11 @@ dvg_spain.2 = {
 		name = dvg_spain.2.a
 		default_option = yes
 		
+		
+
 		c:SPA = {
+			
+
 			create_diplomatic_play = {
 				name = colombian_war_of_independence
 				target_country = c:GCO
@@ -83,6 +87,13 @@ dvg_spain.2 = {
 					target_state = s:STATE_CUBA.region_state:CUB
 					target_country = c:GCO
 				}
+
+				#add_war_goal = {
+				#	holder = c:SPA
+				#	type = dp_make_protectorate
+				#	target_state = s:STATE_MEXICO
+				#	target_country =  c:GCO
+				#}
 
 				add_war_goal = {
 					holder = c:GCO
@@ -99,13 +110,15 @@ dvg_spain.2 = {
 				}
 			}
 
-
 			#trigger_event = { id = dvg_spain.3 }
-			change_infamy = -50
+			change_infamy = -14.9
 		}
+
+
+
 		c:GCO = { 
 			trigger_event = { id = dvg_gran_colombia.2 }
-			change_infamy = -50
+			change_infamy = 50
 			add_journal_entry = {
 				type = je_colombian_war_of_independence_GCO
 			}
@@ -118,9 +131,9 @@ dvg_spain.2 = {
 		add_journal_entry = {
 			type = je_colombian_war_of_independence_SPA
 		}
-		add_radicals = {
-			value = 0.1
-		}
+		#add_radicals = {
+		#	value = 0.1
+		#}
 		ai_chance = {
 			base = 1
 		}

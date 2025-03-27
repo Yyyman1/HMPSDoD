@@ -70,7 +70,7 @@ dvg_gran_colombia.2 = {
 		}
 		add_modifier = {
 			name = dvg_spanish_independence_fighters
-			days = 912
+			days = 1092
 			is_decaying = yes
 		}
 		
