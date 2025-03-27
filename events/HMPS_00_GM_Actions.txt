@@ -140,6 +140,17 @@ gm_actions.1 = {
 	
 	#Modifiers
 	
+	#Give tax waste
+	option = {
+		name = gm_actions.1.k
+		scope:recipient = { 
+			add_modifier = {
+				name = modifier_GM_tax_waste
+				years = 1
+			}
+		}
+	}
+	
 	#Radicals/Loyalists
 	
 	#Disable GM decision
@@ -452,26 +463,4 @@ gm_actions.17 = {
 		remove_global_variable = GM_taking_action
 	}
 	
-}
-
-gm_actions.20 = {
-	type = country_event
-	placement = ROOT
-	title = gm_actions.20.t
-	desc = gm_actions.20.d
-	#flavor = gm_actions.20.f
-
-	event_image = {
-		video = "unspecific_signed_contract"
-	}
-
-	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
-
-	icon = "gfx/interface/icons/event_icons/event_portrait.dds"
-
-	duration = 1
-	
-	option = {
-		name = gm_actions.20.a
-	}
 }
