@@ -1,45 +1,45 @@
-﻿# # Də Afḡān Nasājī Šerkat
-# company_da_afghan_nassaji_sherkat = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/da_afghan_nassaji_sherkat.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+﻿# Də Afḡān Nasājī Šerkat
+company_da_afghan_nassaji_sherkat = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/da_afghan_nassaji_sherkat.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
-# 	building_types = {
-# 		building_textile_mills
-# 	}
+	building_types = {
+		building_textile_mills
+	}
 
-# 	potential = {
-# 
-# 		has_interest_marker_in_region = region_persia
-# 	}
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_persia
+	}
 
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_BALKH
-# 			}
-# 		}
-# 	}
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BALKH
+			}
+		}
+	}
 
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_BALKH
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_textile_mills
-# 				level >= 5
-# 			}
-# 		}
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BALKH
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 5
+			}
+		}
+	}
 
-# 	prosperity_modifier = {
-# 		market_land_trade_capacity_add = 5
-# 		building_cotton_plantation_throughput_add = 0.1
-# 	}
+	prosperity_modifier = {
+		market_land_trade_capacity_add = 200
+		building_cotton_plantation_throughput_add = 0.1
+	}
 
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-#}
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # Iranian State Railway
 company_iranian_state_railway = {
@@ -75,7 +75,7 @@ company_iranian_state_railway = {
 	}
 
 	prosperity_modifier = {
-		state_assimilation_mult = 0.1
+		market_land_trade_capacity_add = 400
 	}
 
 	ai_weight = {
@@ -84,130 +84,130 @@ company_iranian_state_railway = {
 }
 
 # Tashkent Railroad
-# company_tashkent_railroad = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/tashkent_railroad.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+company_tashkent_railroad = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/tashkent_railroad.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 
-# 	building_types = {
-# 		building_railway
-# 	}
+	building_types = {
+		building_railway
+	}
 
-# 	potential = {
-# 
-# 		has_interest_marker_in_region = region_central_asia
-# 	}
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_central_asia
+	}
 
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_FERGANA
-# 			}
-# 		}
-# 	}
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_FERGANA
+			}
+		}
+	}
 
-# 	possible = {
-# 		any_scope_state = {
-# 			region = sr:region_central_asia
-# 			is_incorporated = yes
-# 			has_building = building_railway
-# 			count >= 6
-# 		}
-# 	}
+	possible = {
+		any_scope_state = {
+			region = sr:region_central_asia
+			is_incorporated = yes
+			has_building = building_railway
+			count >= 6
+		}
+	}
 
-# 	prosperity_modifier = {
-# 		building_cotton_plantation_throughput_add = 0.1
-# 	}
+	prosperity_modifier = {
+		building_cotton_plantation_throughput_add = 0.1
+	}
 
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # West Ural Petroleum Company, Limited
-# company_west_ural_petroleum = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_west_ural_petroleum_company_limited.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
+company_west_ural_petroleum = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_west_ural_petroleum_company_limited.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_oil_drills.dds"
 
-# 	flavored_company = yes
+	flavored_company = yes
 
-# 	building_types = {
-# 		building_oil_rig
-# 	}
+	building_types = {
+		building_oil_rig
+	}
 
-# 	potential = {
-# 
-# 		has_interest_marker_in_region = region_central_asia
-# 	}
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_central_asia
+	}
 
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_URALSK
-# 			}
-# 		}
-# 	}
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_URALSK
+			}
+		}
+	}
 
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_URALSK
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_oil_rig
-# 				level >= 5
-# 			}
-# 		}
-# 		has_technology_researched = pumpjacks
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_URALSK
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_oil_rig
+				level >= 5
+			}
+		}
+		has_technology_researched = pumpjacks
+	}
 
-# 	prosperity_modifier = {
-# 		state_colony_growth_speed_mult = 0.1
-# 	}
+	prosperity_modifier = {
+		state_colony_growth_speed_mult = 0.1
+	}
 
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
-# # Šerkat-e Etteḥādīya-ye Welāyat-e Šemālī
-# # company_sherkat_shemali = {
-# # 	icon = "gfx/interface/icons/company_icons/basic_colonial_plantations_2.dds"
-# # 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+# Šerkat-e Etteḥādīya-ye Welāyat-e Šemālī
+company_sherkat_shemali = {
+	icon = "gfx/interface/icons/company_icons/basic_colonial_plantations_2.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
-# # 	building_types = {
-# # 		building_cotton_plantation
-# # 	}
+	building_types = {
+		building_cotton_plantation
+	}
 
-# # 	potential = {
-# # 		has_interest_marker_in_region = region_persia
-# # 	}
+	potential = {
+		has_interest_marker_in_region = region_persia
+	}
 
-# # 	attainable = {
-# # 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# # 			any_scope_state = {
-# # 				state_region = s:STATE_BALKH
-# # 			}
-# # 		}
-# # 	}
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BALKH
+			}
+		}
+	}
 
-# # 	possible = {
-# # 		any_scope_state = {
-# # 			state_region = s:STATE_BALKH
-# # 			is_incorporated = yes
-# # 			any_scope_building = {
-# # 				is_building_type = building_cotton_plantation
-# # 				level >= 5
-# # 			}
-# # 		}
-# # 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BALKH
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_cotton_plantation
+				level >= 5
+			}
+		}
+	}
 
-# # 	prosperity_modifier = {
-# # 		building_opium_plantation_throughput_add = 0.2
-# # 	}
+	prosperity_modifier = {
+		building_opium_plantation_throughput_add = 0.2
+	}
 
-# # 	ai_weight = {
-# # 		value = 3 # Higher base value for flavored companies
-# # 	}
-# # }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # Bongāh-e Enḥeṣār-e Ṣāderāt-e Taryāk
 company_opium_export_monopoly = {
@@ -245,7 +245,7 @@ company_opium_export_monopoly = {
 	}
 
 	prosperity_modifier = {
-		state_radicals_from_sol_change_mult = -0.1
+		state_radicals_from_political_movements_mult = -0.1
 		unit_morale_recovery_mult = 0.1
 	}
 
@@ -255,46 +255,46 @@ company_opium_export_monopoly = {
 }
 
 # Šerkat-e Eslāmiya
-# company_sherkate_eslamiya = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_serkat_e_eslamiya.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
+company_sherkate_eslamiya = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_serkat_e_eslamiya.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
 
-# 	building_types = {
-# 		building_textile_mills
-# 	}
+	building_types = {
+		building_textile_mills
+	}
 
-# 	potential = {
-# 
-# 		has_interest_marker_in_region = region_persia
-# 	}
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_persia
+	}
 
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_ISFAHAN
-# 			}
-# 		}
-# 	}
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_ISFAHAN
+			}
+		}
+	}
 
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_ISFAHAN
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_textile_mills
-# 				level >= 5
-# 			}
-# 		}
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ISFAHAN
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_textile_mills
+				level >= 5
+			}
+		}
+	}
 
-# 	prosperity_modifier = {
-# 		state_loyalists_from_sol_change_accepted_religion_mult = 0.3
-# 	}
+	prosperity_modifier = {
+		country_state_religion_wages_mult = 0.3 #SUSSY!!!
+	}
 
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # MM. Nicolas Portalis et Cie.
 company_nicolas_portalis = {
@@ -306,21 +306,21 @@ company_nicolas_portalis = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_arabic
 	}
 
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_LEBANON
+				state_region = s:STATE_GREATER_SYRIA
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_LEBANON
+			state_region = s:STATE_GREATER_SYRIA
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_silk_plantation
@@ -331,7 +331,9 @@ company_nicolas_portalis = {
 
 	prosperity_modifier = {
 		country_prestige_mult = 0.1
-		state_radicals_from_discrimination_mult = -0.05
+		state_radicalism_increases_violent_hostility_mult = -0.05
+		state_radicalism_increases_cultural_erasure_mult = -0.05
+		state_radicalism_increases_open_prejudice_mult = -0.05
 	}
 
 	ai_weight = {
@@ -349,7 +351,7 @@ company_hanseong_jeongi_hoesa = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_manchuria
 	}
 
@@ -373,8 +375,9 @@ company_hanseong_jeongi_hoesa = {
 	}
 
 	prosperity_modifier = {
-		building_arts_academy_throughput_add = 0.05
-		building_railway_throughput_add = 0.05
+		country_government_dividends_efficiency_add = 0.05 #HMPS
+		#building_arts_academy_throughput_add = 0.05
+		building_railway_throughput_add = 0.1
 	}
 
 	ai_weight = {
@@ -383,50 +386,50 @@ company_hanseong_jeongi_hoesa = {
 }
 
 # Kirgizian Mining Joint Stock Company
-# company_kirgizian_mining_company= {
-# 	icon = "gfx/interface/icons/company_icons/basic_metal_mining.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
+company_kirgizian_mining_company= {
+	icon = "gfx/interface/icons/company_icons/basic_metal_mining.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
-# 	flavored_company = yes
+	flavored_company = yes
 
-# 	building_types = {
-# 		building_coal_mine
-# 	}
+	building_types = {
+		building_coal_mine
+	}
 
-# 	potential = {
-# 
-# 		has_interest_marker_in_region = region_central_asia
-# 	}
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_central_asia
+	}
 
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_SEMIRECHE
-# 			}
-# 		}
-# 	}
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_SEMIRECHE
+			}
+		}
+	}
 
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_SEMIRECHE
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_coal_mine
-# 				level >= 10
-# 			}
-# 		}
-# 		has_technology_researched = steam_donkey
-# 		has_technology_researched = railways
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_SEMIRECHE
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_coal_mine
+				level >= 10
+			}
+		}
+		has_technology_researched = steam_donkey
+		has_technology_researched = railways
+	}
 
-# 	prosperity_modifier = {
-# 		building_power_plant_throughput_add = 0.1
-# 	}
+	prosperity_modifier = {
+		building_power_plant_throughput_add = 0.1
+	}
 
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # Persshelk
 company_persshelk = {
@@ -438,7 +441,7 @@ company_persshelk = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_persia
 	}
 
@@ -467,6 +470,11 @@ company_persshelk = {
 			any_scope_ally = {
 				country_has_primary_culture = cu:russian
 			}
+			power_bloc ?= {
+				any_power_bloc_member = {
+					country_has_primary_culture = cu:russian
+				}
+			}
 		}
 	}
 
@@ -490,7 +498,7 @@ company_perskhlopok = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_persia
 	}
 
@@ -519,6 +527,11 @@ company_perskhlopok = {
 			any_scope_ally = {
 				country_has_primary_culture = cu:russian
 			}
+			power_bloc ?= {
+				any_power_bloc_member = {
+					country_has_primary_culture = cu:russian
+				}
+			}
 		}
 	}
 
@@ -533,65 +546,70 @@ company_perskhlopok = {
 }
 
 # Moscow Irrigation Company
-# company_moscow_irrigation_company = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_moscow_irrigation_company.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
+company_moscow_irrigation_company = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/historical_moscow_irrigation_company.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_plantation.dds"
 
-# 	building_types = {
-# 		building_cotton_plantation
-# 		building_rice_farm
-# 	}
+	building_types = {
+		building_cotton_plantation
+		building_rice_farm
+	}
 
-# 	potential = {
-# 
-# 		has_interest_marker_in_region = region_persia
-# 	}
+	potential = {
+		has_dlc_feature = ep1_content
+		has_interest_marker_in_region = region_persia
+	}
 
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_FERGANA
-# 			}
-# 			any_scope_state = {
-# 				state_region = s:STATE_MOSCOW
-# 			}
-# 		}
-# 	}
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_FERGANA
+			}
+			any_scope_state = {
+				state_region = s:STATE_MOSCOW
+			}
+		}
+	}
 
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_FERGANA
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_cotton_plantation
-# 				level >= 8
-# 			}
-# 		}
-# 		OR = {
-# 			any_scope_state = {
-# 				state_region = s:STATE_MOSCOW
-# 				any_scope_building = {
-# 					is_building_type = building_university
-# 					level >= 2
-# 				}
-# 			}
-# 			any_scope_ally = {
-# 				any_scope_state = {
-# 					state_region = s:STATE_MOSCOW
-# 				}
-# 			}
-# 		}
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_FERGANA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_cotton_plantation
+				level >= 8
+			}
+		}
+		OR = {
+			any_scope_state = {
+				state_region = s:STATE_MOSCOW
+				any_scope_building = {
+					is_building_type = building_university
+					level >= 2
+				}
+			}
+			any_scope_ally = {
+				any_scope_state = {
+					state_region = s:STATE_MOSCOW
+				}
+			}
+			power_bloc ?= {
+				any_power_bloc_member = {
+					country_has_primary_culture = cu:russian
+				}
+			}
+		}
+	}
 
-# 	prosperity_modifier = {
-# 		building_cotton_plantation_throughput_add = 0.2
-# 		interest_group_ig_industrialists_pop_attraction_mult = 0.05
-# 	}
+	prosperity_modifier = {
+		building_cotton_plantation_throughput_add = 0.2
+		interest_group_ig_industrialists_pop_attraction_mult = 0.05
+	}
 
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # Arthur Guinness Son & Co. Ltd
 company_guinness = {
@@ -629,8 +647,10 @@ company_guinness = {
 	}
 
 	prosperity_modifier = {
-		state_radicals_from_sol_change_mult = -0.1
-		state_radicals_from_discrimination_mult = -0.1
+		state_radicals_from_political_movements_mult = -0.1
+		state_radicalism_increases_violent_hostility_mult = -0.05
+		state_radicalism_increases_cultural_erasure_mult = -0.05
+		state_radicalism_increases_open_prejudice_mult = -0.05
 	}
 
 	ai_weight = {
@@ -736,7 +756,7 @@ company_turkish_petroleum = {
 	}
 
 	prosperity_modifier = {
-		market_land_trade_capacity_add = 5
+		market_land_trade_capacity_add = 200
 		building_railway_throughput_add = 0.05
 	}
 
@@ -757,7 +777,7 @@ company_anglo_persian_oil = {
 	}
 
 	potential = {
-
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_persia
 		OR = {
 			country_has_primary_culture = cu:british
@@ -812,6 +832,7 @@ company_national_iranian_oil = {
 	}
 
 	potential = {
+		has_dlc_feature = ep1_content
 		has_interest_marker_in_region = region_persia
 		country_has_primary_culture = cu:persian
 	}

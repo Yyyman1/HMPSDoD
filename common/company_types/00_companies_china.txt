@@ -1,4 +1,4 @@
-﻿# Kaiping Mining Company
+﻿# Kaiping Mining Company THIS IS BROUGHT OVER TO FIX A REFERENCE TO RIFLES, NOTHING ELSE YET
 company_kaiping_mining = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chinese_kaiping_mining_company.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
@@ -84,11 +84,11 @@ company_hanyang_arsenal = {
 				level >= 3
 			}
 		}
-		has_technology_researched = breech_loading_artillery
+		has_technology_researched = shell_gun
 	}
 	
 	prosperity_modifier = {
-		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.2
+		unit_combat_unit_type_shrapnel_artillery_offense_mult = 0.1
 		unit_morale_recovery_mult = 0.15
 	}	
 	

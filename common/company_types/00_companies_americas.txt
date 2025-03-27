@@ -1,4 +1,4 @@
-﻿# Fundidora de Fierro y Acero de Monterrey, S.A.
+﻿	# Fundidora de Fierro y Acero de Monterrey, S.A.
 company_fundidora_monterrey = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/fundidora_monterrey.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
@@ -91,50 +91,50 @@ company_el_aguila = {
 }
 
 # Compañía de Salitres y Ferrocarril de Antofagasta
-# company_csfa = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/bolivia_csfa.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
+company_csfa = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/bolivia_csfa.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_railways.dds"
 	
-# 	flavored_company = yes
+	flavored_company = yes
 	
-# 	building_types = {
-# 		building_sulfur_mine
-# 		building_railway
-# 	}
+	building_types = {
+		building_sulfur_mine
+		building_railway
+	}
 	
-# 	potential = {
-# 		has_interest_marker_in_region = region_andes
-# 	}
+	potential = {
+		has_interest_marker_in_region = region_andes
+	}
 	
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_ANTOFAGASTA
-# 			}
-# 		}
-# 	}		
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_ANTOFAGASTA
+			}
+		}
+	}		
 	
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_ANTOFAGASTA
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_sulfur_mine
-# 				level >= 5
-# 			}
-# 		}
-# 		has_technology_researched = railways
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_ANTOFAGASTA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_sulfur_mine
+				level >= 5
+			}
+		}
+		has_technology_researched = railways
+	}
 	
-# 	prosperity_modifier = {
-# 		state_infrastructure_mult = 0.05
-# 		interest_group_ig_industrialists_approval_add = 3
-# 	}
+	prosperity_modifier = {
+		state_infrastructure_mult = 0.05
+		interest_group_ig_industrialists_approval_add = 3
+	}
 	
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # Caribbean Petroleum Company
 company_caribbean_petroleum = {
@@ -238,98 +238,98 @@ company_bunge_born = {
 }
 
 # La Rosada
-# company_la_rosada = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/paraguay_la_rosada.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+company_la_rosada = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/paraguay_la_rosada.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
-# 	flavored_company = yes
+	flavored_company = yes
 	
-# 	building_types = {
-# 		building_steel_mills
-# 		building_arms_industry
-# 		building_artillery_foundries
-# 	}
+	building_types = {
+		building_steel_mills
+		building_arms_industry
+		building_artillery_foundries
+	}
 	
-# 	potential = {
-# 		has_interest_marker_in_region = region_la_plata
-# 	}
+	potential = {
+		has_interest_marker_in_region = region_la_plata
+	}
 		
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_BAJO_PARAGUAY
-# 			}
-# 		}
-# 	}		
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_BAJO_PARAGUAY
+			}
+		}
+	}		
 	
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_BAJO_PARAGUAY
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_arms_industry
-# 				level >= 3
-# 			}
-# 		}
-# 		has_technology_researched = shell_gun
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_BAJO_PARAGUAY
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_arms_industry
+				level >= 3
+			}
+		}
+		has_technology_researched = shell_gun
+	}
 	
-# 	prosperity_modifier = {
-# 		unit_defense_mult = 0.05
-# 		building_iron_mine_throughput_add = 0.1
-# 	}
+	prosperity_modifier = {
+		unit_defense_mult = 0.05
+		building_iron_mine_throughput_add = 0.1
+	}
 	
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
-# # Fábrica de Armas de la Nación
-# company_famae = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/chile_fabrica_de_armas_de_la_nacion.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
+# Fábrica de Armas de la Nación
+company_famae = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/chile_fabrica_de_armas_de_la_nacion.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_heavy.dds"
 	
-# 	flavored_company = yes
+	flavored_company = yes
 	
-# 	building_types = {
-# 		building_arms_industry
-# 		building_artillery_foundries
-# 		building_munition_plants
-# 	}
+	building_types = {
+		building_arms_industry
+		building_artillery_foundries
+		building_munition_plants
+	}
 	
-# 	potential = {
-# 		has_interest_marker_in_region = region_la_plata
-# 	}
+	potential = {
+		has_interest_marker_in_region = region_la_plata
+	}
 	
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_SANTIAGO
-# 			}
-# 		}
-# 	}			
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_SANTIAGO
+			}
+		}
+	}			
 	
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_SANTIAGO
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_arms_industry
-# 				level >= 3
-# 			}
-# 		}
-# 		has_technology_researched = gunsmithing
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_SANTIAGO
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_arms_industry
+				level >= 3
+			}
+		}
+		has_technology_researched = gunsmithing
+	}
 	
-# 	prosperity_modifier = {
-# 		unit_offense_mult = 0.1
-# 		building_steel_mills_throughput_add = 0.05
-# 	}
+	prosperity_modifier = {
+		unit_offense_mult = 0.1
+		building_steel_mills_throughput_add = 0.05
+	}
 	
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # Peruvian Amazon Company
 company_peruvian_amazon = {
@@ -366,7 +366,7 @@ company_peruvian_amazon = {
 	}
 	
 	prosperity_modifier = {
-		state_loyalists_from_sol_change_mult = 0.1
+		state_loyalists_from_political_movements_mult = 0.1
 		building_group_bg_rubber_mortality_mult = 0.1
 	}
 	
@@ -385,6 +385,7 @@ company_kablin = {
 	building_types = {
 		building_paper_mills
 		building_logging_camp
+		building_hardwood_forestry
 	}
 	
 	potential = {
@@ -422,47 +423,47 @@ company_kablin = {
 }
 
 # Hudson Bay Company
-# company_hbc = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/hbc.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
+company_hbc = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/hbc.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufacturing_light.dds"
 	
-# 	flavored_company = yes
+	flavored_company = yes
 	
-# 	building_types = {
-# 		building_food_industry # loose fit
-# 	}
+	building_types = {
+		building_food_industry # loose fit
+	}
 	
-# 	potential = {
-# 		has_interest_marker_in_region = region_canada
-# 	}
+	potential = {
+		has_interest_marker_in_region = region_canada
+	}
 	
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_MANITOBA
-# 			}
-# 		}
-# 	}		
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_MANITOBA
+			}
+		}
+	}		
 	
-# 	possible = {
-# 		any_scope_state = {
-# 			state_region = s:STATE_MANITOBA
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_food_industry
-# 			}
-# 		}
-# 	}
+	possible = {
+		any_scope_state = {
+			state_region = s:STATE_MANITOBA
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_food_industry
+			}
+		}
+	}
 	
-# 	prosperity_modifier = {
-# 		state_colony_growth_creation_mult = 0.1
-# 		building_textile_mills_throughput_add = 0.05
-# 	}
+	prosperity_modifier = {
+		state_colony_growth_creation_factor = 0.1
+		building_textile_mills_throughput_add = 0.05
+	}
 	
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
 
 # Panama Canal Company
 company_panama_company = {
@@ -494,14 +495,13 @@ company_panama_company = {
 			state_region = s:STATE_PANAMA
 			any_scope_building = {
 				is_building_type = building_panama_canal
-				occupancy >= 0.5
 			}
 		}
 	}
 	
 	prosperity_modifier = {
-		country_trade_route_competitiveness_mult = 0.25
-		country_tax_income_add = 50000
+		country_trade_route_cost_mult = -0.05
+		unit_convoy_requirements_mult = -0.1
 	}
 	
 	ai_weight = {

@@ -139,7 +139,7 @@ company_basic_colonial_plantations_1 = {
 	}
 	
 	prosperity_modifier = {
-		state_radicals_from_sol_change_mult = -0.05
+		state_radicals_from_political_movements_mult  = -0.05
 	}	
 }
 
@@ -310,6 +310,7 @@ company_basic_forestry = {
 	
 	building_types = {
 		building_logging_camp
+		building_hardwood_forestry
 		building_rubber_plantation
 	}
 
@@ -318,6 +319,7 @@ company_basic_forestry = {
 			any_scope_building = {
 				OR = {
 					is_building_type = building_logging_camp
+					is_building_type = building_hardwood_forestry
 					is_building_type = building_rubber_plantation
 				}
 				level >= 3
@@ -393,7 +395,7 @@ company_basic_gold_mining = {
 	
 	prosperity_modifier = {
 		country_minting_mult = 0.05
-		state_loyalists_from_sol_change_mult = 0.05
+		state_loyalists_from_political_movements_mult = 0.05
 	}
 }
 
@@ -575,7 +577,7 @@ company_basic_home_goods = {
 	}
 	
 	prosperity_modifier = {
-		state_loyalists_from_sol_change_mult = 0.1
+		state_loyalists_from_political_movements_mult = 0.1
 	}
 }
 
@@ -609,7 +611,8 @@ company_basic_textiles = {
 	}
 	
 	prosperity_modifier = {
-		state_radicals_from_sol_change_mult = -0.1
+		state_radicals_from_political_movements_mult  = -0.05
+		building_textile_mills_throughput_add = 0.05
 	}
 }
 
@@ -905,5 +908,5 @@ company_construction_power_bloc = {
 	
 	prosperity_modifier = { 
 		building_construction_sector_throughput_add = 0.2
-	}	
+	}
 }

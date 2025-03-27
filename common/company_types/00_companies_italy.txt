@@ -131,7 +131,7 @@ company_ricordi = {
 	
 	prosperity_modifier = {
 		country_prestige_mult = 0.15
-		state_loyalists_from_sol_change_mult = 0.05
+		state_loyalists_from_political_movements_mult = 0.05
 	}
 	
 	ai_weight = {
@@ -175,7 +175,7 @@ company_fiat = {
 				level >= 3
 			}
 		}
-		has_technology_researched = combustion_engine
+		has_technology_researched = steel_railway_cars
 	}
 	
 	prosperity_modifier = {

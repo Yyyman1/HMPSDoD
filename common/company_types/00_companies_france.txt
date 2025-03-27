@@ -1,4 +1,4 @@
-﻿# Société Mokta El Hadid
+﻿# Société Mokta El Hadid THIS IS BROUGHT OVER TO FIX A REFERENCE TO BOLT ACTION RIFLES
 company_societe_mokta_el_hadid = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_société_mokta_el_hadid.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
@@ -126,8 +126,10 @@ company_dmc = {
 	}
 	
 	prosperity_modifier = {
-		state_assimilation_mult = 0.1
-	}	
+		country_radicalism_increases_cultural_erasure_mult = -0.15
+		country_radicalism_increases_open_prejudice_mult = -0.15
+		building_textile_mills_throughput_add = 0.05
+	}
 	
 	ai_weight = {
 		value = 3 # Higher base value for flavored companies
@@ -209,7 +211,7 @@ company_saint_etienne = {
 				level >= 3
 			}
 		}
-		has_technology_researched = shell_gun
+		has_technology_researched = automatic_machine_guns
 	}
 	
 	prosperity_modifier = {
@@ -274,45 +276,45 @@ company_fcm = {
 }
 
 # Compagnie des mines d'Anzin
-# company_mines_anzin = {
-# 	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_compagnie_des_mines_danzin.dds"
-# 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
+company_mines_anzin = {
+	icon = "gfx/interface/icons/company_icons/historical_company_icons/france_compagnie_des_mines_danzin.dds"
+	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_mining.dds"
 
-# 	flavored_company = yes
+	flavored_company = yes
 	
-# 	building_types = {  
-# 		building_coal_mine
-# 	}
+	building_types = {  
+		building_coal_mine
+	}
 	
-# 	potential = {
-# 		has_interest_marker_in_region = region_france
-# 	}
+	potential = {
+		has_interest_marker_in_region = region_france
+	}
 	
-# 	attainable = {
-# 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
-# 			any_scope_state = {
-# 				state_region = s:STATE_FRENCH_LOW_COUNTRIES
-# 			}
-# 		}
-# 	}			
+	attainable = {
+		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
+			any_scope_state = {
+				state_region = s:STATE_FRENCH_LOW_COUNTRIES
+			}
+		}
+	}			
 	
-# 	possible = { 
-# 		any_scope_state = {
-# 			state_region = s:STATE_FRENCH_LOW_COUNTRIES
-# 			is_incorporated = yes
-# 			any_scope_building = {
-# 				is_building_type = building_coal_mine
-# 				level >= 3
-# 			}
-# 		}
-# 	}
+	possible = { 
+		any_scope_state = {
+			state_region = s:STATE_FRENCH_LOW_COUNTRIES
+			is_incorporated = yes
+			any_scope_building = {
+				is_building_type = building_coal_mine
+				level >= 3
+			}
+		}
+	}
 	
-# 	prosperity_modifier = {
-# 		building_steel_mills_throughput_add = 0.05
-# 		building_railway_throughput_add = 0.1
-# 	}	
+	prosperity_modifier = {
+		building_steel_mills_throughput_add = 0.05
+		building_railway_throughput_add = 0.1
+	}	
 	
-# 	ai_weight = {
-# 		value = 3 # Higher base value for flavored companies
-# 	}
-# }
+	ai_weight = {
+		value = 3 # Higher base value for flavored companies
+	}
+}
