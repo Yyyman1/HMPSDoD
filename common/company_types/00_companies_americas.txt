@@ -257,14 +257,14 @@ company_la_rosada = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_BAJO_PARAGUAY
+				state_region = s:STATE_MARCHES_OUEST
 			}
 		}
 	}		
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_BAJO_PARAGUAY
+			state_region = s:STATE_MARCHES_OUEST
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_arms_industry
@@ -304,14 +304,14 @@ company_famae = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_SANTIAGO
+				state_region = s:STATE_ATACAMA
 			}
 		}
 	}			
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_SANTIAGO
+			state_region = s:STATE_ATACAMA
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_arms_industry

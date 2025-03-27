@@ -320,20 +320,20 @@ company_sudamericana_de_vapores = {
 	
 	potential = {
 		has_dlc_feature = rp1_content
-		has_interest_marker_in_region = region_la_plata
+		has_interest_marker_in_region = region_andes
 	}
 	
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_SANTIAGO
+				state_region = s:STATE_ATACAMA
 			}
 		}
 	}		
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_SANTIAGO
+			state_region = s:STATE_ATACAMA
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_shipyards
@@ -413,14 +413,14 @@ company_cordoba_railway = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_LA_PAMPA
+				state_region = s:STATE_AVALON
 			}
 		}
 	}		
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_LA_PAMPA
+			state_region = s:STATE_AVALON
 			is_incorporated = yes
 			has_building = building_railway
 		}
