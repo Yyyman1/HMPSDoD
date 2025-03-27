@@ -677,15 +677,15 @@ je_pla_slavery = {
 					id = dvg_plantagenia.19
 				}
 			}
-			if = {
-				limit = {
-					this = { var:liberien_var >= 100 }
-					
-				}
-				trigger_event = {
-					id = dvg_plantagenia.34
-				}
-			}
+			#if = {
+			#	limit = {
+			#		this = { var:liberien_var >= 100 }
+			#		
+			#	}
+			#	trigger_event = {
+			#		id = dvg_plantagenia.34
+			#	}
+			#}
 			if = {
 				limit = {
 					this = { var:liberien_var >= 150 }

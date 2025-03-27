@@ -385,9 +385,9 @@ dvg_spain.6 = {
 		#add_journal_entry = {
 		#	type = je_reconquer_new_spain
 		#}
-		add_journal_entry = {
-			type = je_army_reform_spain
-		}
+		#add_journal_entry = {
+		#	type = je_army_reform_spain
+		#}
 		trigger_event = { id = dvg_spain.19 days = 365 }
 		ai_chance = {
 			base = 1
