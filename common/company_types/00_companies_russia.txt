@@ -56,14 +56,14 @@ company_putilov_company = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_INGRIA
+				state_region = s:STATE_DVG_INGRIA
 			}
 		}
 	}		
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_INGRIA
+			state_region = s:STATE_DVG_INGRIA
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
@@ -195,14 +195,14 @@ company_savva_morozov = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_MOSCOW
+				state_region = s:STATE_DVG_MOSCOW
 			}
 		}
 	}		
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_MOSCOW
+			state_region = s:STATE_DVG_MOSCOW
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_textile_mills
