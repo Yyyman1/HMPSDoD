@@ -15,14 +15,14 @@ company_sao_paulo_railway = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_SAO_PAULO
+				state_region = s:STATE_NOUVELLE_ALSACE
 			}
 		}
 	}		
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_SAO_PAULO
+			state_region = s:STATE_NOUVELLE_ALSACE
 			is_incorporated = yes
 			has_building = building_railway
 			any_scope_building = {
@@ -66,14 +66,14 @@ company_estaleiro_maua = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_RIO_DE_JANEIRO
+				state_region = s:STATE_COTE_DU_CAFE
 			}
 		}
 	}		
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_RIO_DE_JANEIRO
+			state_region = s:STATE_COTE_DU_CAFE
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
@@ -112,14 +112,14 @@ company_pernambuco_textiles = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_PERNAMBUCO
+				state_region = s:STATE_COTE_DU_SUCRE
 			}
 		}
 	}
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_PERNAMBUCO
+			state_region = s:STATE_COTE_DU_SUCRE
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_textile_mills
@@ -156,14 +156,14 @@ company_fundicao_ipanema = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_SAO_PAULO
+				state_region = s:STATE_NOUVELLE_ALSACE
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_SAO_PAULO
+			state_region = s:STATE_NOUVELLE_ALSACE
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {

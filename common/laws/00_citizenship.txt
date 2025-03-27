@@ -97,11 +97,7 @@ law_national_supremacy = {
 	progressiveness = -50
 	
 	unlocking_technologies = {
-<<<<<<< Updated upstream
-		nationalism
-=======
 		multiculturalism
->>>>>>> Stashed changes
 	}
 	
 	on_enact = {
@@ -188,11 +184,7 @@ law_racial_segregation = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-<<<<<<< Updated upstream
-		political_agitation
-=======
 		multiculturalism
->>>>>>> Stashed changes
 	}
 	
 	on_enact = {

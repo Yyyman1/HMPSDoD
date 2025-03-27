@@ -346,8 +346,6 @@
 				culture = zhourao
 				size = 72640
 			}
-		}
-		region_state:YAL = {
 			create_pop = {
 				culture = aborigine
 				religion = animist
