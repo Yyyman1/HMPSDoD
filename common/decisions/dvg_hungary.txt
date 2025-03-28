@@ -1,0 +1,38 @@
+﻿
+dvg_hun_acceptcroats = {
+	is_shown = {
+		exists = c:HUN
+		root = c:HUN
+		NOT = {
+			c:HUN = {
+				country_has_primary_culture = cu:croat
+			}
+		}
+	}
+
+	possible = {
+		root = {
+			is_at_war = no
+		}
+		calc_true_if = {
+			amount >= 4
+			owns_entire_state_region = STATE_CROATIA
+			owns_entire_state_region = STATE_BOSNIA
+			owns_entire_state_region = STATE_VOJVODINA
+			owns_entire_state_region = STATE_ISTRIA
+			owns_entire_state_region = STATE_DALMATIA
+		}
+
+		has_technology_researched = nationalism
+	}
+	
+    when_taken = {
+		c:HUN = {
+			add_primary_culture = cu:croat
+		}
+    }
+
+	ai_chance = {
+		base = 50
+	}
+}
