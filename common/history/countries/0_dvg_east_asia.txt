@@ -801,7 +801,7 @@
 		add_technology_researched = cotton_gin
 
 		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_ethnostate
 	#	activate_law = law_type:law_freedom_of_conscience
 	#	Shinto can't be a thing without State Relgion. Shinto and Buddhism were inseparable until nationalist slip them up.
 		#activate_law = law_type:law_interventionism
