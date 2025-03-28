@@ -59,7 +59,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_total_separation
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_professional_army
+		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_protectionism
 		activate_law = law_type:law_per_capita_based_taxation
@@ -256,7 +256,7 @@
 		activate_law = law_type:law_racial_segregation
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_elected_bureaucrats
-		activate_law = law_type:law_national_militia
+		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_frontier_colonization
@@ -534,9 +534,9 @@
 			country = c:QUI
 			value = 50
 		}
-		add_journal_entry = {
-			type = je_building_the_colombian_identity
-		}
+		#add_journal_entry = {
+		#	type = je_building_the_colombian_identity
+		#}
 		
 	}
 	

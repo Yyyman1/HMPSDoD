@@ -292,27 +292,27 @@
 	c:CNF = {
 		create_diplomatic_pact = {
 			country = c:CCA
-			type = dominion
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:CPH
-			type = dominion
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:CFS
-			type = dominion
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:CHV
-			type = dominion
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:CNL
-			type = dominion
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:CBV
-			type = dominion
+			type = puppet
 		}
 	}
 	c:MUG = {
