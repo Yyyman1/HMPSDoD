@@ -1915,15 +1915,15 @@
 		}
 	}
 	s:STATE_AMAZONIE_PROFONDE={
-		region_state:AMA={
+		region_state:MUR={
 		}
 	}
 	s:STATE_AMAZONIE_INFERIEURE={
-		region_state:AMA={
+		region_state:TUP={
 		}
 	}
 	s:STATE_PROCHE_AMAZONIE={
-		region_state:AMA={
+		region_state:TUP={
 		}
 	}
 	s:STATE_LORRAINE_ATLANTIQUE={
