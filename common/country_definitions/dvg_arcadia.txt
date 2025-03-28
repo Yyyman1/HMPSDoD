@@ -101,7 +101,7 @@ BLC = { #Belgian Confederation
 CPH = { #Filippine Republic
 	color = { 50 65 190 }
 	
-	country_type = colonial
+	country_type = recognised
 	
 	tier = principality
 	
@@ -112,7 +112,7 @@ CPH = { #Filippine Republic
 CCA = { #Caroline Republic
 	color = { 50 195 65 }
 	
-	country_type = colonial
+	country_type = recognised
 	
 	tier = principality
 	
@@ -124,7 +124,7 @@ CCA = { #Caroline Republic
 CFS = { #Republic of Flandre Supérieure
 	color = { 175 130 0 }
 	
-	country_type = colonial
+	country_type = recognised
 	
 	tier = principality
 	
@@ -135,7 +135,7 @@ CFS = { #Republic of Flandre Supérieure
 CHV = { #Republic of Haute Valoisie
 	color = { 108 75 75 }
 	
-	country_type = colonial
+	country_type = recognised
 	
 	tier = principality
 	
@@ -146,7 +146,7 @@ CHV = { #Republic of Haute Valoisie
 CBV = { #Republic Basse Valoisie
 	color = { 50 64 128 }
 	
-	country_type = colonial
+	country_type = recognised
 	
 	tier = principality
 	
@@ -157,7 +157,7 @@ CBV = { #Republic Basse Valoisie
 CNL = { #Republic of Nouvelle Lorraine
 	color = { 180 5 5 }
 	
-	country_type = colonial
+	country_type = recognised
 	
 	tier = principality
 	
@@ -167,7 +167,7 @@ CNL = { #Republic of Nouvelle Lorraine
 CNF = { #Republic of Nouvelle Flandre
 	color = { 111  88  87 }
 	
-	country_type = colonial
+	country_type = recognised
 	
 	tier = grand_principality
 	
