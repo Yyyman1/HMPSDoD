@@ -146,6 +146,7 @@ je_french_integration = {
 
 	on_complete = {
 		trigger_event = { id = dvg_dua.4 }
+		activate_law = law_type:law_national_supremacy
 	}
 
 	scripted_button = dua_integration_french_button
@@ -241,6 +242,7 @@ je_english_integration = {
 
 	on_complete = {
 		trigger_event = { id = dvg_dua.6 }
+		activate_law = law_type:law_nation_supremacy
 	}
 
 	scripted_button = dua_integration_english_button
