@@ -1,0 +1,167 @@
+﻿protectorate_provence_decision = {
+	is_shown = {
+		exists = c:PRO
+		this = c:ARN
+		game_date < 1836.7.1
+		c:PRO = {
+			is_ai = yes
+		}
+		NOT = {
+			c:PRO = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	possible = {
+		this = C:ARN
+		c:PRO = {
+			is_ai = yes
+		}
+		game_date < 1836.7.1
+		NOT = {
+			c:PRO = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	when_taken = {
+		C:ARN = {
+			create_diplomatic_pact = {
+				country = c:PRO
+				type = protectorate
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}
+	
+protectorate_macedonia_decision = {
+	is_shown = {
+		exists = c:MCD
+		this = c:ARN
+		game_date < 1836.7.1
+		c:MCD = {
+			is_ai = yes
+		}
+		NOT = {
+			c:MCD = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	possible = {
+		this = C:ARN
+		c:MCD = {
+			is_ai = yes
+		}
+		game_date < 1836.7.1
+		NOT = {
+			c:MCD = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	when_taken = {
+		C:ARN = {
+			create_diplomatic_pact = {
+				country = c:MCD
+				type = protectorate
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}	
+
+protectorate_crimea_decision = {
+	is_shown = {
+		exists = c:CRI
+		this = c:TUR
+		game_date < 1836.7.1
+		c:CRI = {
+			is_ai = yes
+		}
+		NOT = {
+			c:CRI = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	possible = {
+		this = C:TUR
+		c:CRI = {
+			is_ai = yes
+		}
+		game_date < 1836.7.1
+		NOT = {
+			c:CRI = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	when_taken = {
+		C:TUR = {
+			create_diplomatic_pact = {
+				country = c:CRI
+				type = protectorate
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}
+
+protectorate_rhenishunion_decision = {
+	is_shown = {
+		exists = c:CFR
+		this = c:BRG
+		game_date < 1836.7.1
+		c:CFR = {
+			is_ai = yes
+		}
+		NOT = {
+			c:CFR = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	possible = {
+		this = C:BRG
+		c:CFR = {
+			is_ai = yes
+		}
+		game_date < 1836.7.1
+		NOT = {
+			c:CFR = {
+				is_subject = yes
+			}
+		}
+	}
+	
+	when_taken = {
+		C:BRG = {
+			create_diplomatic_pact = {
+				country = c:CFR
+				type = protectorate
+			}
+		}
+	}
+	
+	ai_chance = {
+		base = 0
+	}
+}
