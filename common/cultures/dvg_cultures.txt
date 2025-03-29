@@ -119,9 +119,11 @@ burgundian={
 	religion = protestant
 	traits = { francophone beneluxian_culture_group european_heritage }
 	
+	
 	obsessions = {
-		sugar
+		wine
 	}
+	
 	
 	male_common_first_names={
 		Albert
@@ -650,6 +652,12 @@ vinlander={
 	color= hsv{ 0.964 0.45 0.64 }
 	religion = protestant
 	traits = { scandinavian_culture_group arcadian european_heritage }
+	
+	obsessions = {
+		fish
+		sugar
+	}
+	
 	male_common_first_names={
 		Aasmund
 		Aage
@@ -921,6 +929,11 @@ septiman={
 	color= hsv{ 0.069 0.45 0.75 }
 	religion = protestant
 	traits = { francophone arcadian european_heritage }
+	
+	obsessions = {
+		wine
+	}
+	
 	male_common_first_names={
 		Abraham
 		Albert
@@ -1163,6 +1176,11 @@ cadien={
 	religion = catholic
 	traits = { francophone arcadian european_heritage }
 	
+	obsessions = {
+		wine
+	}
+	
+	
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
 		Bertrand Bernardin Bernard Barthelemy
@@ -1270,6 +1288,9 @@ lusitanian={
 	color= hsv{ 0.432 0.5 0.44 }
 	religion = catholic
 	traits = { lusophone gran_colombian european_heritage }
+	obsessions = {
+		coffee
+	}
 	male_common_first_names={
 		Abel
 		Adriano
@@ -1673,6 +1694,9 @@ granadan ={ #Granadan
 	color= hsv{ 0.208 0.13 0.61 }
 	religion = catholic
 	traits = { hispanophone gran_colombian european_heritage }
+	obsessions = {
+		coffee
+	}
 	male_common_first_names={
 		Antonio
 		Camilo
@@ -1810,6 +1834,11 @@ rheinish={
 	color= { 171 146 115 }
 	religion = protestant
 	traits = { german_speaking european_heritage rheinlander }
+	
+	obsessions = {
+		liquor
+	}
+	
 	male_common_first_names={
 		Adelbert
 		Adolf
@@ -3185,6 +3214,9 @@ atlantian={
         color= hsv{ 0.667 0.40 0.39 }
 	religion = protestant
 	traits = { lusophone amerigan_group european_heritage }
+	obsessions = {
+		coffee
+	}
 	
 	male_common_first_names={
 		Achille Adolphe Adrien Aimable Alphonse Amedee Antoine Armand Auguste Augustin Alcide Andre Alexandre Athanase Abel Ambroise Aristide AlbE_ric Archambaud
@@ -3529,6 +3561,9 @@ qingqiuan={
 	color= hsv{ 0.588 0.25 0.92 }
 	religion = confucian
 	traits = { han_chinese sinosphere east_asian_heritage }
+	obsessions = {
+		opium
+	}
 	
 	male_common_first_names={
 		Chen
@@ -3625,6 +3660,9 @@ zhourao={
 	religion = mahayana
 	traits = { han_chinese sinosphere east_asian_heritage }
 	
+	obsessions = {
+		opium
+	}
 	male_common_first_names={
 		Chen
 		Cheng
@@ -3931,6 +3969,13 @@ rohnnst={
 	color= hsv{ 0.617 0.46 0.75 }
 	religion = protestant
 	traits = { indigenous_american_heritage scandinavian_culture_group sinosphere north_american_group }
+	
+	obsessions = {
+		sugar
+		meat
+		opium
+	}
+	
 	male_common_first_names={
 		Aasmund
 		Aage
@@ -4858,6 +4903,11 @@ north_russian={
 	color= { 186 216 140 }
 	religion = orthodox
 	traits = { east_slavic european_heritage }
+	
+	obsessions = {
+		liquor
+	}
+	
 	male_common_first_names={
 		Aleksandr Alexei Andrei Anton
 		Boris
@@ -4964,6 +5014,7 @@ scandinavian={
 	traits = { scandinavian_culture_group european_heritage }
 	obsessions = {
 		sugar
+		fish
 	}
 	male_common_first_names={
 		Aasmund

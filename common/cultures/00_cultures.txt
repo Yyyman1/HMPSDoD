@@ -2,6 +2,10 @@
 	color= rgb{ 62 77 100 }
 	religion = protestant
 	traits = { german_speaking european_heritage }
+	
+	obsessions = {
+		liquor
+	}
 	male_common_first_names={
 		Adelbert Adolf Albrecht Alexander Alfred 
 		Bernhard Burkhard Bruno		
@@ -122,6 +126,11 @@ south_german={ #Danubian
 	color= hsv{ 0.50 0.43 0.45 }
 	religion = catholic
 	traits = { german_speaking european_heritage }
+	
+	obsessions = {
+		liquor
+	}
+	
 	male_common_first_names={
 		Adolf Albrecht Alexander Alfons Alois Anton Arthur Albert Arnulf
 		Bernhard Benignus
@@ -338,6 +347,11 @@ dutch={
 	color= hsv{ 0.07 0.49 0.93 }
 	religion = protestant
 	traits = { beneluxian_culture_group european_heritage rheinlander }
+	
+	obsessions = {
+		fish
+	}
+	
 	male_common_first_names={
 		Abraham
 		Adolf
@@ -645,6 +659,11 @@ boer={
 	color= hsv{ 0.10 0.80 0.86 }
 	religion = catholic
 	traits = { beneluxian_culture_group african_settler european_heritage }
+	
+	obsessions = {
+		 meat
+	}
+	
 	male_common_first_names={
 		Abraham
 		Adrianus
@@ -769,6 +788,11 @@ alemannic={
 	color= hsv{ 0.0 0.47 0.70 }
 	religion = protestant
 	traits = { german_speaking swiss european_heritage }
+	
+	obsessions = {
+		liquor
+	}
+	
 	male_common_first_names={
 		Adolf Alexander Anton Augustus Albert Andreas Ambros Alois
 		Benedicht
@@ -1650,6 +1674,11 @@ irish={
 	color= hsv{ 0.35 0.58 0.54 }
 	religion = catholic
 	traits = { celtic_people european_heritage }
+	
+	obsessions = {
+		liquor
+	}
+	
 	# could have anglophone but would make them non-discriminated in Britain
 	male_common_first_names={
 		Alexander
@@ -2333,6 +2362,11 @@ spanish={ #Castillian
 	color= hsv{ 0.16 0.56 0.86 }
 	religion = catholic
 	traits = { iberian_culture_group hispanophone european_heritage }
+	
+	obsessions = {
+		coffee
+	}
+	
 	male_common_first_names={
 		Agustin
 		Alberto
@@ -2540,6 +2574,11 @@ catalan={
 	color= hsv{ 0.07 0.56 0.86 }
 	religion = catholic
 	traits = { iberian_culture_group european_heritage }
+	
+	obsessions = {
+		coffee
+	}
+	
 	male_common_first_names={
 		Albert
 		Alexandre
@@ -4057,6 +4096,11 @@ romanian={
 	color= hsv{ 0.12 0.41 0.54 }
 	religion = orthodox
 	traits = { romanian_culture_group european_heritage }
+	
+	obsessions = {
+		grain
+	}
+	
 	male_common_first_names={
 		Adrian
 		Alexandru
@@ -4208,6 +4252,11 @@ hungarian={
 	color= hsv{ 0.25 0.22 0.99 }
 	religion = protestant
 	traits = { hungarian_culture_group european_heritage }
+	
+	obsessions = {
+		liquor
+	}
+	
 	male_common_first_names={
 		Alajos
 		Albert
@@ -4350,6 +4399,12 @@ polish={
 	color= hsv{ 0 0.22 0.5 }
 	religion = catholic
 	traits = { west_slavic european_heritage }
+	
+	obsessions = {
+		liquor
+		grain
+	}
+	
 	male_common_first_names={
 		Adam
 		Aleksander
@@ -4652,6 +4707,9 @@ czech={
 	color= hsv{ 0.66 0.32 0.99 }
 	religion = catholic #DVG
 	traits = { german_speaking european_heritage }
+	obsessions = {
+		liquor
+	}
 	male_common_first_names={
 		Abraham
 		Alexander
@@ -4948,6 +5006,9 @@ russian={
 	color= hsv{ 0.35 0.40 0.37 }
 	religion = orthodox
 	traits = { east_slavic european_heritage }
+	obsessions = {
+		liquor
+	}
 	male_common_first_names={
 		Aleksandr Alexei Andrei Anton
 		Boris
@@ -5055,6 +5116,11 @@ ruthenian={
 	color= rgb{ 99 163 206 }
 	religion = catholic
 	traits = { east_slavic west_slavic european_heritage }
+	
+	obsessions = {
+		liquor
+	}
+	
 	male_common_first_names={
 		Alexei
 		Andrei
@@ -5258,6 +5324,9 @@ cossack={
 	color= rgb{ 99 77 122 }
 	religion = orthodox
 	traits = { east_slavic european_heritage }
+	obsessions = {
+		liquor
+	}
 	male_common_first_names={
 		Alexei
 		Andrei
@@ -7836,6 +7905,9 @@ bengali={
 	color= hsv{ 0.79 0.37 0.36 }
 	religion = sunni
 	traits = { south_asian_heritage hindustani }
+	obsessions = {
+		tea
+	}
 	male_common_first_names={
 		Ahmad
 		Alauddin
@@ -7896,6 +7968,9 @@ bihari={
 	color= hsv{ 0.91 0.28 0.70 }
 	religion = hindu
 	traits = { south_asian_heritage hindustani }
+	obsessions = {
+		tea
+	}
 	male_common_first_names={
 		Ashoka
 		Ashtravakra
@@ -8121,6 +8196,9 @@ avadhi={
 	color= hsv{ 0.10 0.44 0.35 }
 	religion = sunni
 	traits = { south_asian_heritage hindustani }
+	obsessions = {
+		tea
+	}
 	male_common_first_names={
 		Ishvari
 		Jugal
@@ -8161,6 +8239,9 @@ kanauji={
 	color= hsv{ 0.27 0.48 0.74 }
 	religion = hindu
 	traits = { south_asian_heritage hindustani }
+	obsessions = {
+		tea
+	}
 	male_common_first_names={
 		Ishvari
 		Jugal
@@ -8345,6 +8426,9 @@ marathi={
 	color= hsv{ 0.19 0.55 0.86 }
 	religion = hindu
 	traits = { south_asian_heritage hindustani }
+	obsessions = {
+		tea
+	}
 	male_common_first_names={
 		Bajirao
 		Balaji
@@ -8600,6 +8684,9 @@ tamil={
 	color= hsv{ 0.94 0.57 0.70 }
 	religion = hindu
 	traits = { south_asian_heritage dravidian }
+	obsessions = {
+		tea
+	}
 	male_common_first_names={
 		Champakaraman
 		Chidambaram
@@ -9591,6 +9678,10 @@ japanese={
 	color= hsv{ 0 0 90 }
 	religion = shinto
 	traits = { yamato east_asian_heritage }
+	obsessions = {
+		opium
+		fish
+	}
 	male_common_first_names={
 		Aritomo
 		Gentaro
@@ -9775,6 +9866,9 @@ manchu={
 	color= rgb{ 233 207 84 }
 	religion = mahayana
 	traits = { sinosphere north_asian_heritage }
+	obsessions = {
+		opium
+	}
 	male_common_first_names={
 		Changlin
 		Deng
@@ -9857,6 +9951,9 @@ han={
 	# obsessions = { #DVG
 		# opium
 	# }
+	obsessions = {
+		opium
+	}
 	male_common_first_names={
 		Chen
 		Cheng
@@ -9938,6 +10035,9 @@ korean={
 	color= hsv{ 0.17 0.41 0.34 }
 	religion = confucian
 	traits = { korean_language east_asian_heritage }
+	obsessions = {
+		opium
+	}
 	male_common_first_names={
 		Bak Bong-haek
 		Chwa-chin
@@ -10402,6 +10502,11 @@ yue={
 	color= hsv{ 0.80 0.36 0.39 }
 	religion = confucian
 	traits = { han_chinese east_asian_heritage}
+	
+	obsessions = {
+		opium
+	}
+	
 	male_common_first_names={
 		Chen
 		Cheng
@@ -11969,6 +12074,9 @@ dakota={
 	color= hsv{ 0.63 0.30 0.52 }
 	religion = animist
 	traits = { indigenous_american_heritage north_american_group }
+	obsessions = {
+		meat
+	}
 	male_common_first_names={
 		Hehaka
 		Inkpaduta
@@ -12258,6 +12366,9 @@ cree={
 	color= hsv{ 0.30 0.39 0.95 }
 	religion = animist
 	traits = { indigenous_american_heritage north_american_group }
+	obsessions = {
+		meat
+	}
 	male_common_first_names={
 		Alexis
 		Baptiste
@@ -12308,6 +12419,9 @@ navajo={
 	color= hsv{ 0.62 0.26 0.74 }
 	traits = { indigenous_american_heritage north_american_group }
 	religion = animist
+	obsessions = {
+		meat
+	}
 	male_common_first_names={
 		Barboncito
 		Digul_Chee
@@ -12357,6 +12471,9 @@ athabaskan={
 	color= rgb{ 96 108 64 }
 	religion = animist
 	traits = { indigenous_american_heritage north_american_group }
+	obsessions = {
+		meat
+	}
 	male_common_first_names={
 		Caubvick
 		David
@@ -12503,6 +12620,9 @@ siouan={
 	color= hsv{ 0.14 0.35 0.99 }
 	religion = animist
 	traits = { indigenous_american_heritage north_american_group }
+	obsessions = {
+		meat
+	}
 	male_common_first_names={
 		Hehaka
 		Inkpaduta
@@ -12554,6 +12674,9 @@ comanche={
 	color= hsv{ 0.08 0.5 0.37 }
 	religion = animist
 	traits = { indigenous_american_heritage north_american_group }
+	obsessions = {
+		meat
+	}
 	male_common_first_names={
 		Esihabit
 		Huupi-pahati Hitetetsi
@@ -12851,6 +12974,9 @@ apache={
 	color= hsv{ 0.11 0.58 0.94 }
 	religion = animist
 	traits = { indigenous_american_heritage north_american_group }
+	obsessions = {
+		meat
+	}
 	male_common_first_names={
 		Klaesh
 		Lomayumtewa
@@ -13262,6 +13388,10 @@ mexican={
 	color=hsv{ 0.99 0.50 0.65 }
 	religion = catholic
 	traits = { lusophone gran_colombian european_heritage } #dvg lusophone
+	obsessions = {
+		meat
+		coffee
+	}
 	male_common_first_names={
 		Adrian_2
 		Agustin
@@ -18844,6 +18974,11 @@ francoprovencal = {
     color= rgb{ 158 41 12 }
     religion = catholic
     traits = { francophone swiss european_heritage }
+	
+	obsessions = {
+		wine
+	}
+	
 
     male_common_first_names = {
         AmE_dE_ AntouE_no Anjo Adrien Armand Andre
