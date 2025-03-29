@@ -1,4 +1,4 @@
-﻿protectorate_provence_decision = {
+protectorate_provence_decision = {
 	is_shown = {
 		exists = c:PRO
 		this = c:ARN
@@ -14,7 +14,7 @@
 	}
 	
 	possible = {
-		this = C:ARN
+		this = c:ARN
 		c:PRO = {
 			is_ai = yes
 		}
@@ -27,10 +27,30 @@
 	}
 	
 	when_taken = {
-		C:ARN = {
+		c:ARN = {
 			create_diplomatic_pact = {
 				country = c:PRO
 				type = protectorate
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_modifier = the_price_of_free_stuff_arn
+					}
+				}
+				add_modifier = {
+					name = the_price_of_free_stuff_arn
+					is_decaying = yes
+					years = 15
+				}
+			}	
+		}
+		create_unidirectional_truce = { country = c:PRO months = 120 }
+		c:PRO = {
+			add_modifier = {
+				name = the_cost_of_protection_bapd
+				is_decaying = yes
+				years = 15
 			}
 		}
 	}
@@ -69,10 +89,30 @@ protectorate_macedonia_decision = {
 	}
 	
 	when_taken = {
-		C:ARN = {
+		c:ARN = {
 			create_diplomatic_pact = {
 				country = c:MCD
 				type = protectorate
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_modifier = the_price_of_free_stuff_arn
+					}
+				}
+				add_modifier = {
+					name = the_price_of_free_stuff_arn
+					is_decaying = yes
+					years = 15
+				}
+			}
+		}
+		create_unidirectional_truce = { country = c:MCD months = 120 }
+		c:MCD = {
+			add_modifier = {
+				name = the_cost_of_protection_bapd
+				is_decaying = yes
+				years = 15
 			}
 		}
 	}
@@ -98,7 +138,7 @@ protectorate_crimea_decision = {
 	}
 	
 	possible = {
-		this = C:TUR
+		this = c:TUR
 		c:CRI = {
 			is_ai = yes
 		}
@@ -111,10 +151,23 @@ protectorate_crimea_decision = {
 	}
 	
 	when_taken = {
-		C:TUR = {
+		c:TUR = {
 			create_diplomatic_pact = {
 				country = c:CRI
 				type = protectorate
+			}
+			add_modifier = {
+				name = the_price_of_free_stuff_tur
+				is_decaying = yes
+				months = 180
+			}
+		}
+		create_unidirectional_truce = { country = c:CRI months = 120 }
+		c:CRI = {
+			add_modifier = {
+				name = the_cost_of_protection_bapd
+				is_decaying = yes
+				years = 15
 			}
 		}
 	}
@@ -140,7 +193,7 @@ protectorate_rhenishunion_decision = {
 	}
 	
 	possible = {
-		this = C:BRG
+		this = c:BRG
 		c:CFR = {
 			is_ai = yes
 		}
@@ -153,10 +206,23 @@ protectorate_rhenishunion_decision = {
 	}
 	
 	when_taken = {
-		C:BRG = {
+		c:BRG = {
 			create_diplomatic_pact = {
 				country = c:CFR
 				type = protectorate
+			}
+			add_modifier = {
+				name = the_price_of_free_stuff_brg
+				is_decaying = yes
+				years = 15
+			}
+		}
+		create_unidirectional_truce = { country = c:CFR months = 120 }
+		c:CFR = {
+			add_modifier = {
+				name = the_cost_of_protection_bapd
+				is_decaying = yes
+				years = 15
 			}
 		}
 	}
