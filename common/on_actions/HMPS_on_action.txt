@@ -519,8 +519,13 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 1
-				has_law = law_type:law_colonial_resettlement
+				AND = {
+					institution_investment_level = {
+						institution = institution_colonial_affairs
+						value = 1
+					}
+					has_law = law_type:law_colonial_resettlement
+				}
 			}
 			every_scope_state = {
 				limit = {
@@ -533,8 +538,13 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 2
-				has_law = law_type:law_colonial_resettlement
+				AND = {
+					institution_investment_level = {
+						institution = institution_colonial_affairs
+						value = 2
+					}
+					has_law = law_type:law_colonial_resettlement
+				}
 			}
 			every_scope_state = {
 				limit = {
@@ -548,8 +558,13 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 3
-				has_law = law_type:law_colonial_resettlement
+				AND = {
+					institution_investment_level = {
+						institution = institution_colonial_affairs
+						value = 3
+					}
+					has_law = law_type:law_colonial_resettlement
+				}
 			}
 			every_scope_state = {
 				limit = {
@@ -563,8 +578,13 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 4
-				has_law = law_type:law_colonial_resettlement
+				AND = {
+					institution_investment_level = {
+						institution = institution_colonial_affairs
+						value = 4
+					}
+					has_law = law_type:law_colonial_resettlement
+				}
 			}
 			every_scope_state = {
 				limit = {
@@ -578,8 +598,13 @@ HMPS_Institution_Modifier = {
 		}
 		if = {
 			limit = {
-				institution:institution_colonial_affairs.investment = 5
-				has_law = law_type:law_colonial_resettlement
+				AND = {
+					institution_investment_level = {
+						institution = institution_colonial_affairs
+						value = 5
+					}
+					has_law = law_type:law_colonial_resettlement
+				}
 			}
 			every_scope_state = {
 				limit = {
@@ -591,80 +616,105 @@ HMPS_Institution_Modifier = {
 				}
 			}
 		}
-		if = {
-			limit = {
-				institution:institution_colonial_affairs.investment = 1
-				has_law = law_type:law_colonial_exploitation
-			}
-			every_scope_state = {
-				limit = {
-					is_incorporated = no
-				}
-				add_modifier = {
-					name = colonial_institution_exploitation
-				}
-			}
-		}
-		if = {
-			limit = {
-				institution:institution_colonial_affairs.investment = 2
-				has_law = law_type:law_colonial_exploitation
-			}
-			every_scope_state = {
-				limit = {
-					is_incorporated = no
-				}
-				add_modifier = {
-					name = colonial_institution_exploitation
-					multiplier = 2
-				}
-			}
-		}
-		if = {
-			limit = {
-				institution:institution_colonial_affairs.investment = 3
-				has_law = law_type:law_colonial_exploitation
-			}
-			every_scope_state = {
-				limit = {
-					is_incorporated = no
-				}
-				add_modifier = {
-					name = colonial_institution_exploitation
-					multiplier = 3
-				}
-			}
-		}
-		if = {
-			limit = {
-				institution:institution_colonial_affairs.investment = 4
-				has_law = law_type:law_colonial_exploitation
-			}
-			every_scope_state = {
-				limit = {
-					is_incorporated = no
-				}
-				add_modifier = {
-					name = colonial_institution_exploitation
-					multiplier = 4
-				}
-			}
-		}
-		if = {
-			limit = {
-				institution:institution_colonial_affairs.investment = 5
-				has_law = law_type:law_colonial_exploitation
-			}
-			every_scope_state = {
-				limit = {
-					is_incorporated = no
-				}
-				add_modifier = {
-					name = colonial_institution_exploitation
-					multiplier = 5
-				}
-			}
-		}
+		#if = {
+		#	limit = {
+		#		AND = {
+		#			institution_investment_level = {
+		#				institution = institution_colonial_affairs
+		#				level = 1
+		#			}
+		#			has_law = law_type:law_colonial_exploitation
+		#		}
+		#	}
+		#	every_scope_state = {
+		#		limit = {
+		#			is_incorporated = no
+		#		}
+		#		add_modifier = {
+		#			name = colonial_institution_exploitation
+		#		}
+		#	}
+		#}
+		#if = {
+		#	limit = {
+		#		AND = {
+		#			institution_investment_level = {
+		#				institution = institution_colonial_affairs
+		#				level = 2
+		#			}
+		#			has_law = law_type:law_colonial_exploitation
+		#		}
+		#	}
+		#	every_scope_state = {
+		#		limit = {
+		#			is_incorporated = no
+		#		}
+		#		add_modifier = {
+		#			name = colonial_institution_exploitation
+		#			multiplier = 2
+		#		}
+		#	}
+		#}
+		#if = {
+		#	limit = {
+		#		AND = {
+		#			institution_investment_level = {
+		#				institution = institution_colonial_affairs
+		#				level = 3
+		#			}
+		#			has_law = law_type:law_colonial_exploitation
+		#		}
+		#	}
+		#	every_scope_state = {
+		#		limit = {
+		#			is_incorporated = no
+		#		}
+		#		add_modifier = {
+		#			name = colonial_institution_exploitation
+		#			multiplier = 3
+		#		}
+		#	}
+		#}
+		#if = {
+		#	limit = {
+		#		AND = {
+		#			institution_investment_level = {
+		#				institution = institution_colonial_affairs
+		#				level = 4
+		#			}
+		#			has_law = law_type:law_colonial_exploitation
+		#		}
+		#	}
+		#	every_scope_state = {
+		#		limit = {
+		#			is_incorporated = no
+		#		}
+		#		add_modifier = {
+		#			name = colonial_institution_exploitation
+		#			multiplier = 4
+		#		}
+		#	}
+		#}
+		#if = {
+		#	limit = {
+		#		AND = {
+		#			institution_investment_level = {
+		#				institution = institution_colonial_affairs
+		#				level = 5
+		#			}
+		#			has_law = law_type:law_colonial_exploitation
+		#		}
+		#	}
+		#	every_scope_state = {
+		#		limit = {
+		#			is_incorporated = no
+		#		}
+		#		add_modifier = {
+		#			name = colonial_institution_exploitation
+		#			multiplier = 5
+		#		}
+		#	}
+		#}
 	}
 }
 
