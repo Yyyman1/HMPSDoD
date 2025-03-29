@@ -546,3 +546,9 @@
  dvg_gco_accept_granadan_desc:0 "With Granada in our hands, it is time to integrate our fellow brothers into Colombia."
  dvg_gco_accept_caladeran:0 "Integration of the Toledans"
  dvg_gco_accept_caladeran_desc:0 "With New Toledo in our hands, it is time to integrate our fellow brothers into Colombia."
+
+ #HMPS
+ dvg_gran_colombia.77.t:0 "[ROOT.GetCountry.GetName] shall prevail!"
+ dvg_gran_colombia.77.d:0 "The cowards in madrid cannot bear to face us"
+ dvg_gran_colombia.77.f:0 "A spanish envoy arrived this morning recognising the legitimacy of [ROOT.GetCountry.GetName]"
+ dvg_gran_colombia.77.a:0 "liberation from Spain, but not for all her subjects..."

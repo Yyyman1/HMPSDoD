@@ -177,7 +177,7 @@ dvg_spain.2 = {
 		}
 		
 		c:GCO = { 
-			trigger_event = { id = dvg_gran_colombia.3 }
+			trigger_event = { id = dvg_gran_colombia.77 }
 		}
 		#c:QUI = {
 		#	trigger_event = { id = dvg_caladero.8 }
