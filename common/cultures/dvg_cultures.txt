@@ -6744,7 +6744,7 @@ kirim = {
 	color = rgb{ 37 115 155 }
 
 	religion = sunni
-	traits = { kipchak european_heritage }
+	traits = { kipchak central_asian_heritage }
 	male_common_first_names={
 		Abdal
 		Abdulkarim
