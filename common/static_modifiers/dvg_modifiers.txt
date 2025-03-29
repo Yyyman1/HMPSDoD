@@ -818,6 +818,19 @@ lore_accurate_tonga = {
 	state_construction_mult = 10
 }
 
+the_price_of_free_stuff_arn = {
+	country_subject_income_transfer_mult = -0.80
+}
+the_price_of_free_stuff_tur = {
+	country_subject_income_transfer_mult = -0.50
+}
+the_price_of_free_stuff_brg = {
+	country_subject_income_transfer_mult = -0.50
+}
+the_cost_of_protection_bapd = {
+	country_liberty_desire_add = 0.4
+}
+
 #HMPSDOD
 
 taiping_conversion_malus = {
