@@ -1,4 +1,4 @@
-﻿# Də Afḡān Nasājī Šerkat
+# Də Afḡān Nasājī Šerkat
 company_da_afghan_nassaji_sherkat = {
 	icon = "gfx/interface/icons/company_icons/historical_company_icons/da_afghan_nassaji_sherkat.dds"
 	background = "gfx/interface/icons/company_icons/company_backgrounds/comp_illu_manufactering_light.dds"
@@ -15,14 +15,14 @@ company_da_afghan_nassaji_sherkat = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_BALKH
+				state_region = s:STATE_EASTERN_AFGHANISTAN
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_BALKH
+			state_region = s:STATE_EASTERN_AFGHANISTAN
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_textile_mills
@@ -100,7 +100,7 @@ company_tashkent_railroad = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_FERGANA
+				region = sr:region_central_asia
 			}
 		}
 	}
@@ -142,14 +142,14 @@ company_west_ural_petroleum = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_URALSK
+				state_region = s:STATE_DVG_URALSK
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_URALSK
+			state_region = s:STATE_DVG_URALSK
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_oil_rig
@@ -184,14 +184,14 @@ company_sherkat_shemali = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_BALKH
+				state_region = s:STATE_EASTERN_AFGHANISTAN
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_BALKH
+			state_region = s:STATE_EASTERN_AFGHANISTAN
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_cotton_plantation
@@ -404,14 +404,14 @@ company_kirgizian_mining_company= {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_SEMIRECHE
+				state_region = s:STATE_DVG_SEMIRECHE
 			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_SEMIRECHE
+			state_region = s:STATE_DVG_SEMIRECHE
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_coal_mine
@@ -563,7 +563,7 @@ company_moscow_irrigation_company = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_FERGANA
+				state_region = s:STATE_TURKMENIA
 			}
 			any_scope_state = {
 				state_region = s:STATE_MOSCOW
@@ -573,7 +573,7 @@ company_moscow_irrigation_company = {
 
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_FERGANA
+			state_region = s:STATE_TURKMENIA
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_cotton_plantation
