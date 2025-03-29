@@ -1,12 +1,27 @@
 ﻿
 dvg_hun_acceptcroats = {
 	is_shown = {
-		exists = c:HUN
-		root = c:HUN
-		NOT = {
-			c:HUN = {
-				country_has_primary_culture = cu:croat
+		OR = {
+			AND = {
+				exists = c:HUN
+				root = c:HUN
 			}
+			AND = {
+				exists = c:CPT
+				root = c:CPT
+			}
+		}
+
+		NOT = {
+			OR = {
+				c:HUN = {
+					country_has_primary_culture = cu:croat
+				}
+				c:CPT = {
+					country_has_primary_culture = cu:croat
+				}
+			}
+
 		}
 	}
 
@@ -28,6 +43,9 @@ dvg_hun_acceptcroats = {
 	
     when_taken = {
 		c:HUN = {
+			add_primary_culture = cu:croat
+		}
+		c:CPT = {
 			add_primary_culture = cu:croat
 		}
     }

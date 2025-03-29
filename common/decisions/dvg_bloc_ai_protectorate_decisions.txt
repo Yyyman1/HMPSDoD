@@ -43,7 +43,8 @@ protectorate_provence_decision = {
 					is_decaying = yes
 					years = 15
 				}
-			}	
+			}
+			change_infamy = 15	
 		}
 		create_unidirectional_truce = { country = c:PRO months = 120 }
 		c:PRO = {
@@ -106,6 +107,7 @@ protectorate_macedonia_decision = {
 					years = 15
 				}
 			}
+			change_infamy = 15	
 		}
 		create_unidirectional_truce = { country = c:MCD months = 120 }
 		c:MCD = {
@@ -114,7 +116,7 @@ protectorate_macedonia_decision = {
 				is_decaying = yes
 				years = 15
 			}
-		}
+		}	
 	}
 	
 	ai_chance = {
@@ -161,6 +163,7 @@ protectorate_crimea_decision = {
 				is_decaying = yes
 				months = 180
 			}
+			change_infamy = 15	
 		}
 		create_unidirectional_truce = { country = c:CRI months = 120 }
 		c:CRI = {
@@ -216,6 +219,7 @@ protectorate_rhenishunion_decision = {
 				is_decaying = yes
 				years = 15
 			}
+			change_infamy = 20	
 		}
 		create_unidirectional_truce = { country = c:CFR months = 120 }
 		c:CFR = {
