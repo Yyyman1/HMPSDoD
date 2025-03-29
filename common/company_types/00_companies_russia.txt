@@ -150,14 +150,14 @@ company_izhevsk_arms_plant = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_PERM
+				state_region = s:STATE_DVG_PERM
 			}
 		}
 	}			
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_PERM
+			state_region = s:STATE_DVG_PERM
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_arms_industry
