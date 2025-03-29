@@ -35,7 +35,7 @@ HAW = { #Hawaii
 PLA = { #Plantagenia
 	color = { 121  99  62 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = kingdom
 	
@@ -46,7 +46,7 @@ PLA = { #Plantagenia
 OUM = { #Oumessourita
 	color = { 212  108  73 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = grand_principality
 	
@@ -57,7 +57,7 @@ OUM = { #Oumessourita
 LIB = { #Liberie
 	color = { 182  62  22 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
@@ -68,7 +68,7 @@ LIB = { #Liberie
 LOU = { #Louisiane
 	color = { 77  147  147 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = grand_principality
 	
@@ -90,7 +90,7 @@ CHE = { #Tsalagihi Ayeli
 BLC = { #Belgian Confederation
 	color = { 111  88  87 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = kingdom
 	
@@ -178,7 +178,7 @@ CNF = { #Republic of Nouvelle Flandre
 VIN = { #Vinland
 	color = { 220  70  66 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = kingdom
 	
@@ -189,7 +189,7 @@ VIN = { #Vinland
 MSG = { #Masgirland
 	color = { 2 108 61 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = grand_principality
 	
@@ -211,7 +211,7 @@ SKR = { #Skraeling Territory
 ARC = { #Arcadia
 	color = { 86 165 125 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = empire
 	
@@ -222,7 +222,7 @@ ARC = { #Arcadia
 QIN = { #Qingqiu
 	color = { 121  175  235 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = kingdom
 	
@@ -244,7 +244,7 @@ GCO = { #Gran Colombia
 MEX = { #Mexico
 	color = { 56 143 53 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	#173  242  175
 
@@ -258,7 +258,7 @@ MEX = { #Mexico
 LUS = { #Lusitania
 	color = { 57  160  101 }
 	
-	country_type = colonial
+	country_type = recognized
 
 	tier = kingdom
 	
@@ -270,7 +270,7 @@ LUS = { #Lusitania
 JLS = { #Jalisco
 	color = { 111  148  188 }
 	
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 	
@@ -281,7 +281,7 @@ JLS = { #Jalisco
 UCA = { #United Provinces of Salvador
 	color = { 90 175 255 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
@@ -292,7 +292,7 @@ UCA = { #United Provinces of Salvador
 ELS = { #San Salvador
 	color = { 0 47 94 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
@@ -304,7 +304,7 @@ ELS = { #San Salvador
 NIC = { #Matacalpa
 	color = { 34 88 186 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
@@ -316,7 +316,7 @@ NIC = { #Matacalpa
 PNM = { #Andagoya
 	color = { 150  85  61 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
@@ -350,7 +350,7 @@ KKN = { #Kita Kaigan
 ATH = { #Athesia
 	color = { 166  72  57 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 	
@@ -361,7 +361,7 @@ ATH = { #Athesia
 SFJ = { #Sudurhafeyjar
 	color = { 139  179  207 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = grand_principality
 	
@@ -372,7 +372,7 @@ SFJ = { #Sudurhafeyjar
 CUB = { #Kuba
 	color = { 87  192  204 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
@@ -384,7 +384,7 @@ CUB = { #Kuba
 JAM = { #Eendrachtsland
 	color = hsv360{ 88  87  33 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	
@@ -395,7 +395,7 @@ JAM = { #Eendrachtsland
 WIN = { #West Indies
 	color = { 50  150  50 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = kingdom
 	
@@ -699,7 +699,7 @@ ABS = { #Absaroka
 QXI = { #Xiazhou
 	color = { 140  210  255 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 	
@@ -710,7 +710,7 @@ QXI = { #Xiazhou
 QHA = { #Haikou
 	color = { 90  160  215 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 	
@@ -721,7 +721,7 @@ QHA = { #Haikou
 QDA = { #Dayan
 	color = { 130  180  240 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 	
@@ -732,7 +732,7 @@ QDA = { #Dayan
 QYO = { #Yongle
 	color = { 60  140  210 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 	
@@ -743,7 +743,7 @@ QYO = { #Yongle
 QDJ = { #Dongji
 	color = { 90  135  250 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 	
@@ -754,7 +754,7 @@ QDJ = { #Dongji
 QGQ = { #Qingqiu state
 	color = { 90 105  230 }
 
-	country_type = colonial
+	country_type = recognized
 
 	tier = principality
 	
@@ -810,7 +810,7 @@ MKT = {
 AGQ = { #Southwest Alqonguian
 	color = { 91 55 88 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = principality
 	religion = catholic
@@ -822,7 +822,7 @@ AGQ = { #Southwest Alqonguian
 CUV = { #Republic of United Valoisie
 	color = { 108 75 75 }
 	
-	country_type = colonial
+	country_type = recognized
 	
 	tier = grand_principality
 	

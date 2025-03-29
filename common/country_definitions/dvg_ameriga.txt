@@ -4,7 +4,7 @@ AME = { #Ameriga, united Euro-Amerigan tag
 	
 	tier = empire
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { antarctican atlantian lotharian equinoxien }
 	
@@ -28,7 +28,7 @@ AMA = { #Amazonie
 	
 	tier = kingdom
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { equinoxien antarctican }
 	
@@ -52,7 +52,7 @@ ANT = { #Antarctica
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { antarctican }
 	
@@ -66,7 +66,7 @@ GOU = { #Gouas
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { equinoxien antarctican atlantian }
 	
@@ -135,7 +135,7 @@ ATL = { #Atlantia
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { atlantian }
 	
@@ -147,7 +147,7 @@ LOT = { #Lotharingia
 	
 	tier = kingdom
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { lotharian }
 	
@@ -159,7 +159,7 @@ BEO = { #Beornia
 	
 	tier = kingdom
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { beornian british }
 	
@@ -171,7 +171,7 @@ NEA = { #New Alasce
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { atlantian burgundian }
 	
@@ -183,7 +183,7 @@ ODO = { #Odonia
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { lotharian beornian }
 	
@@ -217,7 +217,7 @@ BLT = { #Beornia-Lotharingia
 	
 	tier = empire
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { beornian lotharian }
 	
@@ -231,7 +231,7 @@ HBE = { #Holy Britannian Empire
 	
 	tier = empire
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { beornian british }
 	
@@ -309,7 +309,7 @@ PTG = { #Scandinavian Kingdom of Patagonia
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { scandinavian patagonian }
 	
@@ -336,7 +336,7 @@ QUI = { #Quito
 	
 	tier = kingdom
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { caladeran }
 	
@@ -414,7 +414,7 @@ ARQ = { #Arequipa
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { caladeran }
 	
@@ -426,7 +426,7 @@ NME = { #New Mercia
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { beornian }
 	
@@ -452,7 +452,7 @@ GRA = { #Granada
 	
 	tier = empire
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { granadan }
 	
@@ -464,7 +464,7 @@ SAN = { #Herreria
 	
 	tier = kingdom
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { granadan }
 	
@@ -476,7 +476,7 @@ CST = { #Aureliana
 	
 	tier = kingdom
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { granadan }
 	
@@ -488,7 +488,7 @@ ESQ = { #Essequibo
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { guianan }
 	
@@ -535,7 +535,7 @@ NVG = { #Nova Gana
 	
 	tier = principality
 	
-	country_type = colonial
+	country_type = recognized
 	
 	cultures = { afro_latino }
 	

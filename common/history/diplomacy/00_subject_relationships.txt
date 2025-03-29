@@ -13,7 +13,7 @@
 	c:VEN = {
 		create_diplomatic_pact = {
 			country = c:ATH
-			type = colony
+			type = puppet
 		}
 	}
 #	c:PAP = {
@@ -35,7 +35,7 @@
 	c:SPA = {
 		create_diplomatic_pact = {
 			country = c:CUB
-			type = colony
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:MOR
@@ -43,15 +43,15 @@
 		}
 		create_diplomatic_pact = {
 			country = c:ATL
-			type = dominion
+			type = protectorate
 		}
 		create_diplomatic_pact = {
 			country = c:GRA
-			type = colony
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:QUI
-			type = colony
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:OMA
@@ -61,7 +61,7 @@
 	c:SCA = {
 		create_diplomatic_pact = {
 			country = c:SFJ
-			type = colony
+			type = puppet
 		}
 		create_diplomatic_pact = {
 			country = c:CRL
