@@ -312,7 +312,7 @@ ETH = { #Ethiopia
 	tier = empire
 	
 	religion = catholic
-	cultures = { amhara oromo tigray }
+	cultures = { amhara oromo tigray sidama afar }
 	capital = STATE_OROMIA
 }
 
