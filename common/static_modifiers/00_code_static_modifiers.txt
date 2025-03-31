@@ -135,9 +135,19 @@ working_conditions = {
 	building_group_bg_fishing_engineers_mortality_mult = 0.02
 }
 
-malnourishment = {
+# starvation_penalty scales by the Starvation value and will never reach 100% effect as it will be substituted by the severe_starvation_penalty instead
+# At most this will reach (FOOD_SECURITY_STARVATION_THRESHOLD - FOOD_SECURITY_SEVERE_STARVATION_THRESHOLD) * STARVATION_EFFECTS_SCALING_FACTOR
+# E.g. (40% - 20%) * 2.5 = 50% effect max
+starvation_penalty = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-	state_birth_rate_mult = -0.04	# per level below equilibrium
+	state_birth_rate_mult = -0.7
+	state_mortality_mult = 0.6
+}
+
+severe_starvation_penalty = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_birth_rate_mult = -0.9
+	state_mortality_mult = 1.0
 }
 
 literacy_penalty = {
