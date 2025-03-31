@@ -14,7 +14,7 @@ building_port = {
 		pmg_base_building_port
 	}
 
-	required_construction = construction_cost_very_low
+	required_construction = construction_cost_medium
 
 	terrain_manipulator = urban_port
 	
