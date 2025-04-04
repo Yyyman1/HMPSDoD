@@ -32,9 +32,9 @@ base_values = {
 	state_infrastructure_add = 3
 	state_infrastructure_from_automobiles_consumption_add = 0.25
 	
-	state_poor_expected_sol = 5
-	state_middle_expected_sol = 10
-	state_rich_expected_sol = 15
+	state_lower_strata_expected_sol_add = 5
+	state_middle_strata_expected_sol_add = 10
+	state_upper_strata_expected_sol_add = 15
 	state_expected_sol_from_literacy = 5
 	
 	state_farmers_investment_pool_contribution_add = 0.05
@@ -135,9 +135,19 @@ working_conditions = {
 	building_group_bg_fishing_engineers_mortality_mult = 0.02
 }
 
-malnourishment = {
+# starvation_penalty scales by the Starvation value and will never reach 100% effect as it will be substituted by the severe_starvation_penalty instead
+# At most this will reach (FOOD_SECURITY_STARVATION_THRESHOLD - FOOD_SECURITY_SEVERE_STARVATION_THRESHOLD) * STARVATION_EFFECTS_SCALING_FACTOR
+# E.g. (40% - 20%) * 2.5 = 50% effect max
+starvation_penalty = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-	state_birth_rate_mult = -0.04	# per level below equilibrium
+	state_birth_rate_mult = -0.7
+	state_mortality_mult = 0.6
+}
+
+severe_starvation_penalty = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+	state_birth_rate_mult = -0.9
+	state_mortality_mult = 1.0
 }
 
 literacy_penalty = {
@@ -236,12 +246,18 @@ tax_modifier_very_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_legitimacy_base_add = 5
 	state_radicals_from_political_movements_mult = -0.2
+	state_lower_strata_expected_sol_add = -1
+	state_middle_strata_expected_sol_add = -2
+	state_upper_strata_expected_sol_add = -3
 }
 
 tax_modifier_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
 	country_legitimacy_base_add = 2
 	state_radicals_from_political_movements_mult = -0.1
+	state_lower_strata_expected_sol_add = -0.5
+	state_middle_strata_expected_sol_add = -1
+	state_upper_strata_expected_sol_add = -1.5
 }	
 
 tax_modifier_medium = {
@@ -250,13 +266,19 @@ tax_modifier_medium = {
 tax_modifier_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	country_legitimacy_base_add = -5
-	state_radicals_from_political_movements_mult = 0.3
+	state_radicals_from_political_movements_mult = 0.5
+	state_lower_strata_expected_sol_add = 1.5
+	state_middle_strata_expected_sol_add = 2.5
+	state_upper_strata_expected_sol_add = 3.5
 }	
 
 tax_modifier_very_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	country_legitimacy_base_add = -10
-	state_radicals_from_political_movements_mult = 0.6
+	state_radicals_from_political_movements_mult = 1.0
+	state_lower_strata_expected_sol_add = 3
+	state_middle_strata_expected_sol_add = 5
+	state_upper_strata_expected_sol_add = 7
 }
 
 government_wages_very_low = {
@@ -600,15 +622,21 @@ state_region_devastation = {
 # Effect = state_region_pollution_health * impact
 state_region_pollution_health = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	state_mortality_mult = 0.5
-	state_standard_of_living_add = -3
+	state_mortality_mult = 0.20
+	state_birth_rate_mult = -0.10
+	state_standard_of_living_add = -5
+	state_migration_pull_mult = -0.50
+	state_harvest_condition_drought_impact_mult = 0.5
+	state_harvest_condition_flood_impact_mult = 0.5
+	state_harvest_condition_wildfire_impact_mult = 0.5
+	state_harvest_condition_heatwave_impact_mult = 0.5
 }
 
 # Effect = state_region_pollution_health * impact
-state_region_pollution_general = {
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
-	state_migration_pull_mult = -0.1
-}
+#state_region_pollution_general = {
+#	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+#	state_migration_pull_mult = -0.1
+#}
 
 # Scales with deficiency in tax capacity
 insufficient_tax_capacity = {
