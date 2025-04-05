@@ -30,7 +30,7 @@ ig_trait_restoration = {
 	min_approval = loyal
 
 	modifier = {
-		country_authority_add = 100
+		country_authority_mult = 1
 	}
 }
 
@@ -66,6 +66,39 @@ ig_trait_bachareis = {
 	min_approval = happy
 
 	modifier = {
-		state_radicals_from_sol_change_mult = -0.1
+		state_radicals_from_political_movements_mult = -0.1
+	}
+}
+
+ig_trait_swaraj = {
+	icon = "gfx/interface/icons/ig_trait_icons/social_criticism.dds"
+	max_approval = unhappy
+	
+	modifier = {
+		state_radicalism_increases_violent_hostility_mult = 0.05
+		state_radicalism_increases_cultural_erasure_mult = 0.05
+		state_radicalism_increases_open_prejudice_mult = 0.05
+		political_movement_radicalism_add = 0.10
+	}
+}
+ig_trait_westernisation = {
+	icon = "gfx/interface/icons/ig_trait_icons/be_fruitful_and_multiply.dds"
+	min_approval = loyal
+	
+	modifier = {
+		state_radicalism_increases_violent_hostility_mult = -0.05
+		state_radicalism_increases_cultural_erasure_mult = -0.05
+		state_radicalism_increases_open_prejudice_mult = -0.05
+	}
+}
+
+#China
+ite_ig_trait_imperial_examinations = {
+	icon = "gfx/interface/icons/ig_trait_icons/imperial_examinations.dds"
+	min_approval = happy
+	
+	modifier = {
+		state_pop_qualifications_mult = 0.10
+		state_assimilation_mult = 0.10
 	}
 }
