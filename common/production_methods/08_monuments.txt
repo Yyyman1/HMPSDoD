@@ -306,8 +306,8 @@ pm_base_building_medina = {
 
 	country_modifiers = {
 		throughput_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.05
-			interest_group_ig_devout_approval_add = 1
+			interest_group_ig_devout_pol_str_mult = 0.10
+			interest_group_ig_devout_approval_add = 2
 			country_prestige_add = 25
 		}
 	}
@@ -331,8 +331,8 @@ pm_base_building_mecca = {
 
 	country_modifiers = {
 		throughput_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.05
-			interest_group_ig_devout_approval_add = 1
+			interest_group_ig_devout_pol_str_mult = 0.10
+			interest_group_ig_devout_approval_add = 2
 			country_prestige_add = 25
 		}
 	}
