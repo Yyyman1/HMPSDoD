@@ -26,10 +26,13 @@ pm_default_building_angkor_wat = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
+	
+	unlocking_religions = { theravada }
 
 	country_modifiers = {
-		workforce_scaled = {
+		throughput_scaled = {
 			interest_group_ig_devout_pol_str_mult = 0.25
+			interest_group_ig_devout_approval_add = 5
 			country_prestige_add = 25
 		}
 	}
@@ -100,9 +103,12 @@ pm_default_building_hagia_sophia = {
 
 	is_hidden_when_unavailable = yes
 
+	unlocking_religions = { orthodox sunni }
+
 	country_modifiers = {
-		workforce_scaled = {
+		throughput_scaled = {
 			interest_group_ig_devout_pop_attraction_mult = 0.1
+			interest_group_ig_devout_approval_add = 2
 			country_prestige_add = 25
 		}
 	}
@@ -122,12 +128,15 @@ pm_default_building_mosque_of_djenne = {
 
 	is_hidden_when_unavailable = yes
 
+	unlocking_religions = { sunni }
+
 	country_modifiers = {
-		workforce_scaled = {
+		throughput_scaled = {
 			interest_group_ig_devout_pol_str_mult = 0.1
-			state_education_access_add = 0.2
+			interest_group_ig_devout_approval_add = 2
 		}
 	}
+
 
 	building_modifiers = {
 		#workforce_scaled = {
@@ -144,9 +153,12 @@ pm_default_building_saint_basils_cathedral = {
 
 	is_hidden_when_unavailable = yes
 	
+	unlocking_religions = { orthodox }
+
 	country_modifiers = {
-		workforce_scaled = {
+		throughput_scaled = {
 			interest_group_ig_devout_pol_str_mult = 0.1
+			interest_group_ig_devout_approval_add = 2
 			country_prestige_add = 25
 		}
 	}
@@ -188,8 +200,12 @@ pm_default_building_taj_mahal = {
 
 	is_hidden_when_unavailable = yes
 
+	unlocking_religions = { sunni }
+
 	country_modifiers = {
-		workforce_scaled = {
+		throughput_scaled = {
+			interest_group_ig_devout_pol_str_mult = 0.25
+			interest_group_ig_devout_approval_add = 5
 			country_prestige_add = 25
 		}
 	}
@@ -212,8 +228,9 @@ pm_default_building_vatican_city = {
 	unlocking_religions = { catholic }
 
 	country_modifiers = {
-		workforce_scaled = {
+		throughput_scaled = {
 			interest_group_ig_devout_pol_str_mult = 0.25
+			interest_group_ig_devout_approval_add = 5
 			country_influence_add = 100
 			country_authority_add = 100
 		}
