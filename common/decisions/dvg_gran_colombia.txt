@@ -1560,7 +1560,7 @@ dvg_gco_afro_latinos_citizens = {
 	}
 	
 	when_taken = {
-		active_law = law_type:law_cultural_exclusion
+		activate_law = law_type:law_cultural_exclusion
 	}
 }
 dvg_gco_accept_caribeno = {
