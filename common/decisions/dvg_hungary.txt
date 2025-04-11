@@ -13,15 +13,9 @@ dvg_hun_acceptcroats = {
 		}
 
 		NOT = {
-			OR = {
-				c:HUN = {
-					country_has_primary_culture = cu:croat
-				}
-				c:CPT = {
-					country_has_primary_culture = cu:croat
-				}
+			this = {
+				country_has_primary_culture = cu:croat
 			}
-
 		}
 	}
 
@@ -42,12 +36,24 @@ dvg_hun_acceptcroats = {
 	}
 	
     when_taken = {
-		c:HUN = {
-			add_primary_culture = cu:croat
+		if = {
+			limit = {
+				this = c:CPT
+			}
+			c:CPT = {
+				add_primary_culture = cu:croat
+			}
 		}
-		c:CPT = {
-			add_primary_culture = cu:croat
+		else_if = {
+			limit = {
+				this = c:HUN
+			}
+			c:HUN = {
+				add_primary_culture = cu:croat
+			}
 		}
+
+
     }
 
 	ai_chance = {
