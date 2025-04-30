@@ -797,7 +797,7 @@ GER = { #Germany
 
 	tier = empire
 	
-	cultures = { north_german south_german rheinish }
+	cultures = { north_german south_german rheinish balters }
 	capital = STATE_HESSE
 }
 
