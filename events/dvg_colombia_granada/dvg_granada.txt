@@ -69,20 +69,6 @@ dvg_granada.2 = {
 		add_loyalists = {
 			value = 0.1
 		}
-		hidden_effect = {
-			c:SPA = {
-				remove_diplomatic_pact = {
-					country = c:GRA
-					type = puppet
-				}
-			}
-		}
-		c:SPA = {
-			create_diplomatic_pact = {
-				country = c:GRA
-				type = dominion
-			}
-		}
 		ai_chance = {
 			base = 1
 		}
