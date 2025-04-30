@@ -1,0 +1,50 @@
+je_dominum_maris_baltici = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_foreign_affairs
+
+	possible = {
+        exists ?= c:SCA
+        THIS ?= c:SCA
+	}
+
+	complete = {
+		calc_true_if = {
+			amount >= 16
+			owns_entire_state_region = STATE_ZEALAND
+			owns_entire_state_region = STATE_SVEALAND
+			owns_entire_state_region = STATE_GOTALAND
+			owns_entire_state_region = STATE_GOTLAND
+			owns_entire_state_region = STATE_SVEALAND
+			owns_entire_state_region = STATE_NORRLAND
+			owns_entire_state_region = STATE_DVG_OSTROBOTHNIA
+			owns_entire_state_region = STATE_SOUTHERN_FINLAND
+			owns_entire_state_region = STATE_DVG_WEST_KARELIA
+			owns_entire_state_region = STATE_DVG_INGRIA
+			owns_entire_state_region = STATE_ESTONIA
+			owns_entire_state_region = STATE_LATVIA
+			owns_entire_state_region = STATE_LITHUANIA
+			owns_entire_state_region = STATE_EAST_PRUSSIA
+			owns_entire_state_region = STATE_WEST_PRUSSIA
+			owns_entire_state_region = STATE_POMERANIA
+			owns_entire_state_region = STATE_MECKLENBURG
+			owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+		}
+		root = {
+			is_at_war = no
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = dominum_baltici
+			years = 50
+			is_decaying = yes
+		}
+
+
+	}
+	
+	should_be_pinned_by_default = yes
+
+}
