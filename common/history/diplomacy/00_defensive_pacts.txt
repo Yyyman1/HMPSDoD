@@ -35,4 +35,14 @@
 			type = defensive_pact
 		}
 	}
+	c:VEN = {
+		create_diplomatic_pact = {
+			country = c:EGY
+			type = defensive_pact
+		}
+		create_diplomatic_pact = {
+			country = c:MCD
+			type = defensive_pact
+		}
+	}
 }
