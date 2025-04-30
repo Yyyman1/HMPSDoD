@@ -280,38 +280,37 @@ law_language_discrimination = {
 	}
 	
 	acceptance_modifier = {
-		country_allow_voting_violent_hostility_bool = no
-		country_allow_voting_cultural_erasure_bool = no
-		country_allow_voting_open_prejudice_bool = yes
-		country_voting_power_open_prejudice_mult = -0.25
-		country_allow_voting_second_rate_citizen_bool = yes
-		country_allow_voting_full_acceptance_bool = yes
-
 		country_allow_assimilation_cultural_erasure_bool = yes
 		country_allow_assimilation_open_prejudice_bool = yes
 		country_allow_assimilation_second_rate_citizen_bool = yes
 
 		country_assimilation_cultural_erasure_mult = 0.05
 		country_assimilation_open_prejudice_mult = 0.15
+		
+		country_allow_voting_violent_hostility_bool = no
+		country_voting_power_cultural_erasure_mult = -0.25
+		country_allow_voting_cultural_erasure_bool = yes
+		country_allow_voting_open_prejudice_bool = yes
+		country_allow_voting_second_rate_citizen_bool = yes
+		country_allow_voting_full_acceptance_bool = yes
 
 		country_political_strength_violent_hostility_mult = -0.3
 		country_political_strength_cultural_erasure_mult = -0.2
 		country_political_strength_open_prejudice_mult = -0.1
-		country_political_strength_second_rate_citizen_mult = 0.1
+		#country_political_strength_second_rate_citizen_mult = 0.1
 		country_political_strength_full_acceptance_mult = 0.1
 
 		country_wage_violent_hostility_mult = -0.3
 		country_wage_cultural_erasure_mult = -0.2
 		country_wage_open_prejudice_mult = -0.1
-		country_wage_second_rate_citizen_mult = 0.05
-		country_wage_full_acceptance_mult = 0.15
+		country_wage_full_acceptance_mult = 0.05
 
 		country_qualification_growth_violent_hostility_mult = -0.95
 		country_qualification_growth_cultural_erasure_mult = -0.9
-		country_qualification_growth_open_prejudice_mult = -0.75
+		country_qualification_growth_open_prejudice_mult = -0.6
 		country_qualification_growth_second_rate_citizen_mult = -0.33
 
-		country_disallow_military_work_violent_hostility_bool = yes
+		country_disallow_military_work_violent_hostility_bool = no
 		country_disallow_military_work_cultural_erasure_bool = no
  		country_disallow_military_work_open_prejudice_bool = no
 		country_disallow_military_work_second_rate_citizen_bool = no
