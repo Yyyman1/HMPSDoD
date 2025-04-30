@@ -4,8 +4,7 @@ je_dominum_maris_baltici = {
 	group = je_group_foreign_affairs
 
 	possible = {
-        exists ?= c:SCA
-        THIS ?= c:SCA
+
 	}
 
 	complete = {
@@ -48,5 +47,7 @@ je_dominum_maris_baltici = {
 	}
 	
 	should_be_pinned_by_default = yes
+	inheritable = yes
+
 
 }

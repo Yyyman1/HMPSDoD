@@ -272,6 +272,10 @@
 			set_interest_group_name = ig_catholic_church
 		}
 
+		add_journal_entry = {
+			type = je_dominum_maris_nostrum
+		}
+
 		trigger_event = {
 			id = dvg_spain.2
 		}
@@ -330,6 +334,9 @@
 		set_secret_goal = {
 			country = c:TUN
 			secret_goal = conquer
+		}
+		add_journal_entry = {
+			type = je_dominum_maris_nostrum
 		}
 	}
 	
@@ -408,6 +415,9 @@
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 2
+		}
+		add_journal_entry = {
+			type = je_dominum_maris_nostrum
 		}
 		
 		set_ruling_interest_groups = {
@@ -1188,6 +1198,9 @@
 			set_interest_group_name = ig_bolognese_school
 			#set_ig_suppression = yes
 		}
+		add_journal_entry = {
+			type = je_dominum_maris_nostrum
+		}
 	}
 	
 	c:GEN = { #Genoa
@@ -1307,6 +1320,9 @@
 		}
 		trigger_event = {
 			id = dvg_ven.1
+		}
+		add_journal_entry = {
+			type = je_dominum_maris_nostrum
 		}
 	}
 	
@@ -1600,6 +1616,10 @@
 
 		add_journal_entry = {
 			type = je_disquiet_army
+		}
+
+		add_journal_entry = {
+			type = je_dominum_maris_nostrum
 		}
 
 		trigger_event = {
