@@ -843,3 +843,12 @@ china_radicalism = {
 	country_radicals_from_conquest_mult = 0.33
 	interest_group_approval_add = -3
 }
+
+dominum_baltici = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_trade_route_competitiveness_mult = 0.2
+	country_influence_mult = 0.1
+	country_prestige_add = 100
+	country_convoys_capacity_mult = 0.1
+	country_minting_add = 2000
+}

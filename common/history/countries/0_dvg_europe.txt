@@ -183,6 +183,9 @@
 			level = 3
 		}
 		
+		add_journal_entry = {
+			type = je_dominum_maris_baltici
+		}
 		#add_journal_entry = { type = je_sca_establish_control_over_ny_sjaelland }
 		set_ruling_interest_groups = {
 			ig_petty_bourgeoisie
