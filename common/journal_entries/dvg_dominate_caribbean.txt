@@ -1,0 +1,99 @@
+je_dominate_caribbean = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_foreign_affairs
+
+	is_shown_when_inactive = {
+		OR = {
+			AND = {
+				exists = capital
+				capital = {
+					OR = {
+						region = sr:region_mexico
+						region = sr:region_central_america
+						region = sr:region_caribbean
+						region = sr:region_gran_colombia
+						region = sr:region_great_plains
+						region = sr:region_dixie
+
+					}
+				}
+			}
+			AND = {
+				exists ?= c:ARC
+				this ?= c:ARC
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			or = {
+				region = sr:region_mexico
+				region = sr:region_central_america
+				region = sr:region_caribbean
+				region = sr:region_gran_colombia
+				region = sr:region_dixie
+			}
+		}
+		
+	}
+
+	complete = {
+		root = {
+			is_at_war = no
+			has_state_in_state_region = STATE_PANAMA
+		}
+		calc_true_if = {
+			amount >= 17
+			#arcadia 7
+			owns_entire_state_region = STATE_ATHESIA
+			owns_entire_state_region = STATE_CHARLESIE
+			owns_entire_state_region = STATE_ALIBAMON
+			owns_entire_state_region = STATE_NOUVELLE_FRANCE
+			owns_entire_state_region = STATE_NOUVELLE_ANGLETERRE
+			owns_entire_state_region = STATE_APACHERIA # inland but want to add
+			owns_entire_state_region = STATE_BAHIA
+
+			#centralamerica 7
+			owns_entire_state_region = STATE_RIO_GRANDE
+			owns_entire_state_region = STATE_VERACRUZ
+			owns_entire_state_region = STATE_YUCATAN
+			owns_entire_state_region = STATE_GUATEMALA
+			owns_entire_state_region = STATE_SAN_SALVADOR
+			owns_entire_state_region = STATE_MANAGUA
+			owns_entire_state_region = STATE_COSTA_RICA
+
+
+			#southamerica 5
+			owns_entire_state_region = STATE_ANTIOQUIA
+			owns_entire_state_region = STATE_ZULIA
+			owns_entire_state_region = STATE_MIRANDA
+			owns_entire_state_region = STATE_BOLIVAR
+			owns_entire_state_region = STATE_GUAYANA
+
+			#islands 6
+			owns_entire_state_region = STATE_EENDRACHTSLAND
+			owns_entire_state_region = STATE_CUBA
+			owns_entire_state_region = STATE_ELEUTHERA
+			owns_entire_state_region = STATE_SUDURHAFEYJAR
+			owns_entire_state_region = STATE_RIGHAVN
+			owns_entire_state_region = STATE_WEST_INDIES
+		}
+	}
+
+	on_complete = {
+		add_modifier = {
+			name = dominum_baltici
+			years = 50
+			is_decaying = yes
+		}
+
+
+	}
+	
+	should_be_pinned_by_default = yes
+	inheritable = yes
+
+
+}
