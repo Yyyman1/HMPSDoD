@@ -183,9 +183,7 @@
 			level = 3
 		}
 		
-		add_journal_entry = {
-			type = je_dominum_maris_baltici
-		}
+
 		#add_journal_entry = { type = je_sca_establish_control_over_ny_sjaelland }
 		set_ruling_interest_groups = {
 			ig_petty_bourgeoisie
@@ -272,10 +270,6 @@
 			set_interest_group_name = ig_catholic_church
 		}
 
-		add_journal_entry = {
-			type = je_dominum_maris_nostrum
-		}
-
 		trigger_event = {
 			id = dvg_spain.2
 		}
@@ -335,9 +329,7 @@
 			country = c:TUN
 			secret_goal = conquer
 		}
-		add_journal_entry = {
-			type = je_dominum_maris_nostrum
-		}
+
 	}
 	
 	c:NAV = { #Navarra
@@ -416,9 +408,7 @@
 			institution = institution_schools
 			level = 2
 		}
-		add_journal_entry = {
-			type = je_dominum_maris_nostrum
-		}
+
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1198,9 +1188,7 @@
 			set_interest_group_name = ig_bolognese_school
 			#set_ig_suppression = yes
 		}
-		add_journal_entry = {
-			type = je_dominum_maris_nostrum
-		}
+
 	}
 	
 	c:GEN = { #Genoa
@@ -1321,9 +1309,7 @@
 		trigger_event = {
 			id = dvg_ven.1
 		}
-		add_journal_entry = {
-			type = je_dominum_maris_nostrum
-		}
+
 	}
 	
 	c:PAR = { #Parma
@@ -1616,10 +1602,6 @@
 
 		add_journal_entry = {
 			type = je_disquiet_army
-		}
-
-		add_journal_entry = {
-			type = je_dominum_maris_nostrum
 		}
 
 		trigger_event = {

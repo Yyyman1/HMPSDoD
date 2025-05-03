@@ -160,9 +160,7 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
-		add_journal_entry = {
-			type = je_dominum_maris_nostrum
-		}
+
 	}
 	
 	c:DFR = { #Darfur
@@ -275,8 +273,5 @@
 		#trigger_event = {
 		#	id = dvg_morocco.1
 		#}
-		add_journal_entry = {
-			type = je_dominum_maris_nostrum
-		}
 	}
 }

@@ -39,58 +39,124 @@ je_dominate_caribbean = {
 		
 	}
 
-	complete = {
-		root = {
-			is_at_war = no
-			has_state_in_state_region = STATE_PANAMA
-		}
-		calc_true_if = {
-			amount >= 17
-			#arcadia 7
-			owns_entire_state_region = STATE_ATHESIA
-			owns_entire_state_region = STATE_CHARLESIE
-			owns_entire_state_region = STATE_ALIBAMON
-			owns_entire_state_region = STATE_NOUVELLE_FRANCE
-			owns_entire_state_region = STATE_NOUVELLE_ANGLETERRE
-			owns_entire_state_region = STATE_APACHERIA # inland but want to add
-			owns_entire_state_region = STATE_BAHIA
-
-			#centralamerica 7
-			owns_entire_state_region = STATE_RIO_GRANDE
-			owns_entire_state_region = STATE_VERACRUZ
-			owns_entire_state_region = STATE_YUCATAN
-			owns_entire_state_region = STATE_GUATEMALA
-			owns_entire_state_region = STATE_SAN_SALVADOR
-			owns_entire_state_region = STATE_MANAGUA
-			owns_entire_state_region = STATE_COSTA_RICA
-
-
-			#southamerica 5
-			owns_entire_state_region = STATE_ANTIOQUIA
-			owns_entire_state_region = STATE_ZULIA
-			owns_entire_state_region = STATE_MIRANDA
-			owns_entire_state_region = STATE_BOLIVAR
-			owns_entire_state_region = STATE_GUAYANA
-
-			#islands 6
-			owns_entire_state_region = STATE_EENDRACHTSLAND
-			owns_entire_state_region = STATE_CUBA
-			owns_entire_state_region = STATE_ELEUTHERA
-			owns_entire_state_region = STATE_SUDURHAFEYJAR
-			owns_entire_state_region = STATE_RIGHAVN
-			owns_entire_state_region = STATE_WEST_INDIES
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					root = {
+						has_state_in_state_region = STATE_PANAMA
+						NOT ={
+							has_modifier = dominated_caribbean
+						}
+					}
+					calc_true_if = {
+						amount >= 17
+						#arcadia 7
+						owns_entire_state_region = STATE_ATHESIA
+						owns_entire_state_region = STATE_CHARLESIE
+						owns_entire_state_region = STATE_ALIBAMON
+						owns_entire_state_region = STATE_NOUVELLE_FRANCE
+						owns_entire_state_region = STATE_NOUVELLE_ANGLETERRE
+						owns_entire_state_region = STATE_APACHERIA # inland but want to add
+						owns_entire_state_region = STATE_BAHIA
+			
+						#centralamerica 7
+						owns_entire_state_region = STATE_RIO_GRANDE
+						owns_entire_state_region = STATE_VERACRUZ
+						owns_entire_state_region = STATE_YUCATAN
+						owns_entire_state_region = STATE_GUATEMALA
+						owns_entire_state_region = STATE_SAN_SALVADOR
+						owns_entire_state_region = STATE_MANAGUA
+						owns_entire_state_region = STATE_COSTA_RICA
+			
+			
+						#southamerica 5
+						owns_entire_state_region = STATE_ANTIOQUIA
+						owns_entire_state_region = STATE_ZULIA
+						owns_entire_state_region = STATE_MIRANDA
+						owns_entire_state_region = STATE_BOLIVAR
+						owns_entire_state_region = STATE_GUAYANA
+			
+						#islands 6
+						owns_entire_state_region = STATE_EENDRACHTSLAND
+						owns_entire_state_region = STATE_CUBA
+						owns_entire_state_region = STATE_ELEUTHERA
+						owns_entire_state_region = STATE_SUDURHAFEYJAR
+						owns_entire_state_region = STATE_RIGHAVN
+						owns_entire_state_region = STATE_WEST_INDIES
+					}
+				}
+				add_modifier = {
+					name = dominated_caribbean
+					months = -1
+					is_decaying = no
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						has_modifier = dominated_caribbean
+					}
+					NOT = {
+						root = {
+							has_state_in_state_region = STATE_PANAMA
+						}
+						calc_true_if = {
+							amount >= 17
+							#arcadia 7
+							owns_entire_state_region = STATE_ATHESIA
+							owns_entire_state_region = STATE_CHARLESIE
+							owns_entire_state_region = STATE_ALIBAMON
+							owns_entire_state_region = STATE_NOUVELLE_FRANCE
+							owns_entire_state_region = STATE_NOUVELLE_ANGLETERRE
+							owns_entire_state_region = STATE_APACHERIA # inland but want to add
+							owns_entire_state_region = STATE_BAHIA
+				
+							#centralamerica 7
+							owns_entire_state_region = STATE_RIO_GRANDE
+							owns_entire_state_region = STATE_VERACRUZ
+							owns_entire_state_region = STATE_YUCATAN
+							owns_entire_state_region = STATE_GUATEMALA
+							owns_entire_state_region = STATE_SAN_SALVADOR
+							owns_entire_state_region = STATE_MANAGUA
+							owns_entire_state_region = STATE_COSTA_RICA
+				
+				
+							#southamerica 5
+							owns_entire_state_region = STATE_ANTIOQUIA
+							owns_entire_state_region = STATE_ZULIA
+							owns_entire_state_region = STATE_MIRANDA
+							owns_entire_state_region = STATE_BOLIVAR
+							owns_entire_state_region = STATE_GUAYANA
+				
+							#islands 6
+							owns_entire_state_region = STATE_EENDRACHTSLAND
+							owns_entire_state_region = STATE_CUBA
+							owns_entire_state_region = STATE_ELEUTHERA
+							owns_entire_state_region = STATE_SUDURHAFEYJAR
+							owns_entire_state_region = STATE_RIGHAVN
+							owns_entire_state_region = STATE_WEST_INDIES
+						}
+					}
+				}
+				remove_modifier = dominated_caribbean
+			}
 		}
 	}
 
-	on_complete = {
-		add_modifier = {
-			name = dominum_baltici
-			years = 50
-			is_decaying = yes
-		}
-
-
-	}
+#	complete = {
+#		
+#	}
+#
+#	on_complete = {
+#		add_modifier = {
+#			name = dominum_baltici
+#			years = 50
+#			is_decaying = yes
+#		}
+#
+#
+#	}
 	
 	should_be_pinned_by_default = yes
 	inheritable = yes

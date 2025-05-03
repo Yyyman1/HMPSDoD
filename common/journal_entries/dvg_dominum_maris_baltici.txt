@@ -3,49 +3,149 @@ je_dominum_maris_baltici = {
 
 	group = je_group_foreign_affairs
 
+	is_shown_when_inactive = {
+		OR = {
+			AND = {
+				exists = capital
+				capital = {
+					OR = {
+						region = sr:region_north_germany
+						region = sr:region_baltic
+						region = sr:region_poland
+						region = sr:region_russia
+					}
+				}
+			}
+		}
+	}
+
 	possible = {
-
+		any_scope_state = {
+			or = {
+				region = sr:region_north_germany
+				region = sr:region_baltic
+				region = sr:region_poland
+				region = sr:region_russia
+			}
+		}
 	}
 
-	complete = {
-		root = {
-			is_at_war = no
-			owns_entire_state_region = STATE_DVG_INGRIA
-			owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
-			owns_entire_state_region = STATE_ZEALAND
-			owns_entire_state_region = STATE_SCANIA
-
-		}
-		calc_true_if = {
-			amount >= 12
-			owns_entire_state_region = STATE_GOTALAND
-			owns_entire_state_region = STATE_GOTLAND
-			owns_entire_state_region = STATE_SVEALAND
-			owns_entire_state_region = STATE_NORRLAND
-			owns_entire_state_region = STATE_DVG_OSTROBOTHNIA
-			owns_entire_state_region = STATE_SOUTHERN_FINLAND
-			owns_entire_state_region = STATE_DVG_WEST_KARELIA
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					root = {
+						NOT = {
+							has_modifier = dominum_baltici
+						}
+						owns_entire_state_region = STATE_DVG_INGRIA
+						owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+						owns_entire_state_region = STATE_ZEALAND
+						owns_entire_state_region = STATE_SCANIA
 			
-			owns_entire_state_region = STATE_ESTONIA
-			owns_entire_state_region = STATE_LATVIA
-			owns_entire_state_region = STATE_LITHUANIA
-			owns_entire_state_region = STATE_EAST_PRUSSIA
-			owns_entire_state_region = STATE_WEST_PRUSSIA
-			owns_entire_state_region = STATE_POMERANIA
-			owns_entire_state_region = STATE_MECKLENBURG
+					}
+					calc_true_if = {
+						amount >= 12
+						owns_entire_state_region = STATE_GOTALAND
+						owns_entire_state_region = STATE_GOTLAND
+						owns_entire_state_region = STATE_SVEALAND
+						owns_entire_state_region = STATE_NORRLAND
+						owns_entire_state_region = STATE_DVG_OSTROBOTHNIA
+						owns_entire_state_region = STATE_SOUTHERN_FINLAND
+						owns_entire_state_region = STATE_DVG_WEST_KARELIA
+						
+						owns_entire_state_region = STATE_ESTONIA
+						owns_entire_state_region = STATE_LATVIA
+						owns_entire_state_region = STATE_LITHUANIA
+						owns_entire_state_region = STATE_EAST_PRUSSIA
+						owns_entire_state_region = STATE_WEST_PRUSSIA
+						owns_entire_state_region = STATE_POMERANIA
+						owns_entire_state_region = STATE_MECKLENBURG
+					}
+				}
+				add_modifier = {
+					name = dominum_baltici
+					months = -1
+					is_decaying = no
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						has_modifier = dominum_baltici
+					}
+					NOT = {
+						root = {
+							owns_entire_state_region = STATE_DVG_INGRIA
+							owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+							owns_entire_state_region = STATE_ZEALAND
+							owns_entire_state_region = STATE_SCANIA
+				
+						}
+						calc_true_if = {
+							amount >= 12
+							owns_entire_state_region = STATE_GOTALAND
+							owns_entire_state_region = STATE_GOTLAND
+							owns_entire_state_region = STATE_SVEALAND
+							owns_entire_state_region = STATE_NORRLAND
+							owns_entire_state_region = STATE_DVG_OSTROBOTHNIA
+							owns_entire_state_region = STATE_SOUTHERN_FINLAND
+							owns_entire_state_region = STATE_DVG_WEST_KARELIA
+							
+							owns_entire_state_region = STATE_ESTONIA
+							owns_entire_state_region = STATE_LATVIA
+							owns_entire_state_region = STATE_LITHUANIA
+							owns_entire_state_region = STATE_EAST_PRUSSIA
+							owns_entire_state_region = STATE_WEST_PRUSSIA
+							owns_entire_state_region = STATE_POMERANIA
+							owns_entire_state_region = STATE_MECKLENBURG
+						}
+					}
+				}
+				remove_modifier = dominum_baltici
+			}
 		}
 	}
 
-	on_complete = {
-		add_modifier = {
-			name = dominum_baltici
-			years = 50
-			is_decaying = yes
-		}
-
-
-	}
-	
+#	complete = {
+#		root = {
+#			is_at_war = no
+#			owns_entire_state_region = STATE_DVG_INGRIA
+#			owns_entire_state_region = STATE_SCHLESWIG_HOLSTEIN
+#			owns_entire_state_region = STATE_ZEALAND
+#			owns_entire_state_region = STATE_SCANIA
+#
+#		}
+#		calc_true_if = {
+#			amount >= 12
+#			owns_entire_state_region = STATE_GOTALAND
+#			owns_entire_state_region = STATE_GOTLAND
+#			owns_entire_state_region = STATE_SVEALAND
+#			owns_entire_state_region = STATE_NORRLAND
+#			owns_entire_state_region = STATE_DVG_OSTROBOTHNIA
+#			owns_entire_state_region = STATE_SOUTHERN_FINLAND
+#			owns_entire_state_region = STATE_DVG_WEST_KARELIA
+#			
+#			owns_entire_state_region = STATE_ESTONIA
+#			owns_entire_state_region = STATE_LATVIA
+#			owns_entire_state_region = STATE_LITHUANIA
+#			owns_entire_state_region = STATE_EAST_PRUSSIA
+#			owns_entire_state_region = STATE_WEST_PRUSSIA
+#			owns_entire_state_region = STATE_POMERANIA
+#			owns_entire_state_region = STATE_MECKLENBURG
+#		}
+#	}
+#
+#	on_complete = {
+#		add_modifier = {
+#			name = dominum_baltici
+#			years = 50
+#			is_decaying = yes
+#		}
+#
+#
+#	}
+#	
 	should_be_pinned_by_default = yes
 	inheritable = yes
 
