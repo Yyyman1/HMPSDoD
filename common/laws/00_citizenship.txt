@@ -29,12 +29,18 @@ law_ethnostate = {
 	}
 	
 	acceptance_modifier = {
+		country_standard_of_living_violent_hostility_add = 0
+		country_standard_of_living_cultural_erasure_add = 0
+		country_standard_of_living_open_prejudice_add = 0
+		country_standard_of_living_second_rate_citizen_add = 0
+		country_standard_of_living_full_acceptance_add = 2
+		
 		country_radicalism_increases_violent_hostility_mult = 0.33
 		country_radicalism_increases_cultural_erasure_mult = 0.2
 		country_loyalism_increases_second_rate_citizen_mult = 0.2
 		country_radicalism_increases_second_rate_citizen_mult = -0.1
-		country_loyalism_increases_full_acceptance_mult = 0.35
-		country_radicalism_increases_full_acceptance_mult = -0.35
+		country_loyalism_increases_full_acceptance_mult = 0.33
+		country_radicalism_increases_full_acceptance_mult = -0.2
 
 		country_allow_voting_violent_hostility_bool = no
 		country_allow_voting_cultural_erasure_bool = no
@@ -68,14 +74,14 @@ law_ethnostate = {
 		country_qualification_growth_open_prejudice_mult = -0.55
 		country_qualification_growth_second_rate_citizen_mult = -0.40
 
-		country_disallow_military_work_violent_hostility_bool = yes
+		country_disallow_military_work_violent_hostility_bool = no
 		country_disallow_military_work_cultural_erasure_bool = no
  		country_disallow_military_work_open_prejudice_bool = no
 		country_disallow_military_work_second_rate_citizen_bool = no
 		country_disallow_military_work_full_acceptance_bool = no
 
 		country_disallow_government_work_violent_hostility_bool = yes
-		country_disallow_government_work_cultural_erasure_bool = yes
+		country_disallow_government_work_cultural_erasure_bool = no
 		country_disallow_government_work_open_prejudice_bool = no
 		country_disallow_government_work_second_rate_citizen_bool = no
 		country_disallow_government_work_full_acceptance_bool = no
@@ -156,7 +162,7 @@ law_national_supremacy = {
 		country_qualification_growth_open_prejudice_mult = -0.55
 		country_qualification_growth_second_rate_citizen_mult = -0.40
 
-		country_disallow_military_work_violent_hostility_bool = yes
+		country_disallow_military_work_violent_hostility_bool = no
 		country_disallow_military_work_cultural_erasure_bool = no
  		country_disallow_military_work_open_prejudice_bool = no
 		country_disallow_military_work_second_rate_citizen_bool = no
@@ -235,7 +241,7 @@ law_racial_segregation = {
 		country_qualification_growth_open_prejudice_mult = -0.55
 		country_qualification_growth_second_rate_citizen_mult = -0.40
 
-		country_disallow_military_work_violent_hostility_bool = yes
+		country_disallow_military_work_violent_hostility_bool = no
 		country_disallow_military_work_cultural_erasure_bool = no
  		country_disallow_military_work_open_prejudice_bool = no
 		country_disallow_military_work_second_rate_citizen_bool = no
