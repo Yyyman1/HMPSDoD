@@ -681,6 +681,7 @@ movement_pro_slavery = {
 			limit = { 
 				owner.army_size > 0 
 				owner = { NOT = { has_law = law_type:law_slavery_banned } }
+				political_movement_support >= 0.03
 			}
 			
 			add = {
@@ -711,6 +712,7 @@ movement_pro_slavery = {
 			limit = { 
 				owner.navy_size > 0
 				owner = { NOT = { has_law = law_type:law_slavery_banned } }
+				political_movement_support >= 0.03
 			}		
 
 			add = {
