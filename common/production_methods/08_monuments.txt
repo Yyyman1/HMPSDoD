@@ -11,6 +11,14 @@ pm_default_building_eiffel_tower = {
 			country_prestige_add = 100
 		}
 	}
+	
+	state_modifiers = {
+		workforce_scaled = {
+			state_radicals_from_political_movements_mult = -0.05
+			state_loyalists_from_political_movements_mult = 0.05
+		}
+	}
+
 
 	building_modifiers = {
 		#workforce_scaled = {
