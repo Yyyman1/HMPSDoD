@@ -688,7 +688,7 @@
 		#activate_law = law_type:law_religious_schools
 		#activate_law = law_type:law_charitable_health_system
 		activate_law = law_type:law_slavery_banned
-		activate_law = law_type:law_women_in_the_workplace
+		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_low_corporation_tax	
