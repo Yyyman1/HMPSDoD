@@ -361,7 +361,7 @@ pm_base_building_jerusalem = {
 
 	is_hidden_when_unavailable = yes
 	
-	unlocking_religions = { jewish }
+	unlocking_religions = { jewish catholic protestant sunni orthodox oriental_orthodox shiite }
 
 	country_modifiers = {
 		throughput_scaled = {
