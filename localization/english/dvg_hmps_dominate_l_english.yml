@@ -1,12 +1,12 @@
 ﻿l_english:
   je_dominum_maris_baltici:0 "Dominari Maris Baltici!"
-  je_dominum_maris_baltici_reason:0 ""
-  dominum_baltici:0 ""
+  je_dominum_maris_baltici_reason:0 "In order to dominate the Baltic we require control over at least 16 of the costal states on the Baltic Sea. \n \nThis must include control of the states #gold Ingria#!, #gold Scania#!, #gold Zealand#! and #gold Schleswig-Holstein#!. \n \nIf we lose control of the requirements we will lose the fruits of our dominion."
+  dominum_baltici:0 "Dominum Baltici"
 
   je_dominum_maris_nostrum:0 "Dominari Nostri Maris!"
-  je_dominum_maris_nostrum_reason:0 ""
-  dominum_nostrum:0 ""
+  je_dominum_maris_nostrum_reason:0 "In order to dominate the Mediterrainian we require control of at least 27 of the costal states on the Med. \n \nThis must include partial control of the state #gold Sinai#!. \n \nIf we lose control of the requirements we will lose the fruits of our dominion."
+  dominum_nostrum:0 "Dominum Nostrum"
 
   je_dominate_caribbean:0 "Dominate The Caribbean!"
-  je_dominate_caribbean_reason:0 ""
-  dominated_caribbean:0 ""
+  je_dominate_caribbean_reason:0 "In order to dominate the Caribbean we require control over at least 18 out of a combinatioun of eastern coastal states of the americas between #gold Charlesie#! in the north and #gold Guyana#! in the south and the Carribbean Islands. \n \nThis must include partial control of the state of #gold Andagoya#!. \n \nIf we lose control of the requirements we will lose the fruits of our dominion."
+  dominated_caribbean:0 "Dominated the Caribbean"

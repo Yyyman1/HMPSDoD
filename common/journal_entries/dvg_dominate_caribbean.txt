@@ -57,7 +57,7 @@ je_dominate_caribbean = {
 						owns_entire_state_region = STATE_ALIBAMON
 						owns_entire_state_region = STATE_NOUVELLE_FRANCE
 						owns_entire_state_region = STATE_NOUVELLE_ANGLETERRE
-						owns_entire_state_region = STATE_APACHERIA # inland but want to add
+						#owns_entire_state_region = STATE_APACHERIA # inland but want to add
 						owns_entire_state_region = STATE_BAHIA
 			
 						#centralamerica 7
