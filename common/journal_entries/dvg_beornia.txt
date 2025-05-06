@@ -426,397 +426,397 @@ je_anglo_summit = {
 	should_be_pinned_by_default = yes
 }
 
-je_cattle_barons_wrath = {
-	icon = "gfx/interface/icons/invention_icons/realism.dds"
-
-	group = je_group_historical_content	
-
-	possible = {
-		
-	}
-
-	immediate = {
-		set_variable = {
-			name = cattle_barons_var
-			value = 0
-		}
-	}
-
-	on_monthly_pulse = {
-		
-		effect = {
-			if = {
-				limit = {
-					any_civil_war = {
-						civil_war_progress > 0.5
-					}
-					NOT = { has_variable = je_edward_civilwar_point }
-				}
-				change_variable = { name = cattle_barons_var add = 1 }
-				set_variable = { name = je_edward_civilwar_point years = 3 }
-			}
-			if = {
-				limit = {
-					OR = {
-						in_default = yes
-						has_modifier = declared_bankruptcy
-					}
-					NOT = { has_variable = je_edward_default_point }
-				}
-				change_variable = { name = cattle_barons_var add = 1 }
-				set_variable = { name = je_edward_default_point }
-			}
-			if = {
-				limit = {
-					country_rank >= rank_value:great_power
-					NOT = { has_variable = je_edward_gp_point }
-				}
-				change_variable = { name = cattle_barons_var subtract = 1 }
-				set_variable = { name = je_edward_gp_point }
-			}
-			if = {
-				limit = {
-					NOT = { has_variable = avalon_polluted }
-					any_scope_state = { 
-						is_capital = yes
-						state_region = {
-						pollution_amount > 150
-						}
-						
-					}
-				}
-				set_variable = { name = avalon_polluted }
-				change_variable = { name = cattle_barons_var add = 1 }
-				
-			}
-			if = {
-				limit = {
-					ig:ig_landowners = {
-						is_powerful = no
-						is_in_government = yes
-					}
-				}
-				change_variable = {
-					name = cattle_barons_var
-					add = -1
-				}
-			}
-			if = {
-				limit = {
-					ig:ig_landowners = {
-						is_powerful = no
-						is_in_government =  no
-					}
-				}
-				change_variable = {
-					name = cattle_barons_var
-					add = -2
-				}
-			}
-			if = {
-				limit = {
-					root.average_sol > 10
-				}
-				change_variable = {
-					name = cattle_barons_var
-					add = -1
-				}
-			}
-		}
-	}
-
-	
-
-	complete = {
-		# If-else clause to avoid errors because of missing variable before JE activates
-		custom_tooltip = {
-		text = je_edward_special_tooltip_advance
-	
-		trigger_if = {
-			
-
-			
-			
-			limit = { exists = var:cattle_barons_var }
-			
-			
-		  OR = {
-			scope:journal_entry = { is_goal_complete = yes }
-			
-			}
-			
-		}
-		
-		
-		
-	}
-	}
-	
-	on_complete = {
-		set_variable = beornia_complete
-		trigger_event = {
-			id = dvg_beornia.9
-		}
-	}
-	
-	fail = {
-		
-		OR = {
-			AND = {
-				
-				ig:ig_landowners = {
-					is_powerful = no
-				}
-				ig:ig_industrialists = {
-					is_powerful = yes
-				}
-			}
-			AND = {
-				custom_tooltip = {
-					text = je_edward_special_tooltip_deplete
-					var:cattle_barons_var < 6
-				}
-				custom_tooltip = {
-					text = edward_dead
-					ruler = {
-						NOT = {
-							has_variable = is_edward
-						}
-					}
-				}
-			}
-		}
-	}
-	
-	on_fail = {
-		set_variable = beornia_complete
-		trigger_event = {
-			id = dvg_beornia.10
-		}
-	}
-	invalid = {
-		any_country = {
-			is_revolutionary = yes
-			country_definition = root.country_definition
-			ig:ig_landowners = {
-				is_in_government = yes
-			}				
-		}
-	}
-	on_invalid = {
-		set_variable = beornia_complete
-		trigger_event = {
-			id = dvg_beornia.20
-		}
-	}
-	
-
-	
-
-	current_value = {
-		value = root.var:cattle_barons_var
-	}
-
-	goal_add_value = {
-		value = 7
-	}
-
-	progressbar = yes
-	
-	on_weekly_pulse = {
-		effect = {
-			if = {
-				limit = {
-					NOT = { has_variable = cattle_barons_var_subject }
-					is_subject = yes
-				}
-				change_variable = {
-					name = cattle_barons_var
-					add = 1
-				}
-				set_variable = cattle_barons_var_subject
-			}
-			if = {
-				limit = {
-					NOT = { has_variable = cattle_barons_var_loans }
-					taking_loans = yes
-				}
-				change_variable = {
-					name = cattle_barons_var
-					add = 1
-				}
-				set_variable = cattle_barons_var_loans
-			}
-			if = {
-				limit = {
-					has_law = law_type:law_religious_schools
-					NOT = { has_variable = beo_religious_schools }
-				}
-				change_variable = {
-					name = cattle_barons_var
-					subtract = 1
-				}
-				set_variable = beo_religious_schools
-			}
-			if = {
-				limit = {
-					has_law = law_type:law_racial_segregation
-					NOT = { has_variable = beo_racial_segregation }
-				}
-				change_variable = {
-					name = cattle_barons_var
-					add = 1
-				}
-				set_variable = beo_racial_segregation
-
-			}
-		
-		if = {
-			limit = {
-				has_law = law_type:law_cultural_exclusion
-				NOT = { has_variable = beo_multicultural }
-			}
-			change_variable = {
-				name = cattle_barons_var
-				add = 2
-			}
-			set_variable = beo_multicultural
-		}
-		if = {
-			limit = {
-				has_law = law_type:law_multicultural
-				NOT = { has_variable = beo_multicultural }
-			}
-			change_variable = {
-				name = cattle_barons_var
-				add = 2
-			}
-			set_variable = beo_multicultural
-		}
-		if = {
-			limit = {
-				has_law = law_type:law_no_migration_controls
-				NOT = { has_variable = beo_open_borders }
-			}
-			change_variable = {
-				name = cattle_barons_var
-				add = 1
-			}
-			set_variable = beo_open_borders
-		}
-		if = {
-			limit = {
-				has_law = law_type:law_autocracy
-				NOT = { has_variable = beo_autocracy }
-			}
-			change_variable = {
-				name = cattle_barons_var
-				add = 1
-			}
-			set_variable = beo_autocracy
-		}
-		if = {
-			limit = {
-				NOT = {has_law = law_type:law_landed_voting}
-				NOT = {has_law = law_type:law_oligarchy}
-				NOT = { has_variable = beo_democracy }
-				
-			}
-			change_variable = {
-				name = cattle_barons_var
-				add = 1 
-			}
-			set_variable = beo_democracy
-		}
-		
-		if = {
-			limit = {
-				has_law = law_type:law_serfdom
-				NOT = { has_variable = beo_serfdom }
-			}
-			change_variable = {
-				name = cattle_barons_var
-				subtract = 2
-			}
-			set_variable = beo_serfdom
-		}
-		if = {
-			limit = {
-				OR = {
-				has_law = law_type:law_oligarchy
-				has_law = law_type:law_landed_voting
-				}
-				NOT = { has_variable = beo_oligarchy }
-			}
-			change_variable = {
-				name = cattle_barons_var
-				subtract = 2
-			}
-			set_variable = beo_oligarchy
-		}
-		if = {
-			limit = {
-				has_law = law_type:law_ethnostate
-				NOT = { has_variable = beo_national_supremacy }
-			}
-			change_variable = {
-				name = cattle_barons_var
-				subtract = 2
-			}
-			set_variable = beo_national_supremacy
-		}
-		if = {
-			limit = {
-				NOT = { has_law = law_type:law_no_health_system}
-				NOT = { has_variable = beo_national_supremacy }
-			}
-			change_variable = {
-				name = cattle_barons_var
-				subtract = 2
-			}
-			set_variable = beo_hospitals
-		}
-		if = {
-			limit = {
-				NOT = { has_variable = beo_war_loser }
-				OR = {
-					has_variable = recently_lost_war
-					AND = {
-						has_variable = recently_had_war
-						NOT = {
-							has_variable = recently_won_war
-						}
-					}
-				} 
-			}
-			change_variable = {
-				name = cattle_barons_var
-				add = 1
-			}
-			set_variable = beo_war_loser
-		}
-		
-		}
-			
-			
-	}
-	
-	
-	timeout = 10125
-	
-	on_timeout = {
-		trigger_event = {
-			
-			id = dvg_beornia.12
-
-		}
-		}
-	
-
-	weight = 10000
-	should_be_pinned_by_default = yes
-}
-
+#je_cattle_barons_wrath = {
+#	icon = "gfx/interface/icons/invention_icons/realism.dds"
+#
+#	group = je_group_historical_content	
+#
+#	possible = {
+#		
+#	}
+#
+#	immediate = {
+#		set_variable = {
+#			name = cattle_barons_var
+#			value = 0
+#		}
+#	}
+#
+#	on_monthly_pulse = {
+#		
+#		effect = {
+#			if = {
+#				limit = {
+#					any_civil_war = {
+#						civil_war_progress > 0.5
+#					}
+#					NOT = { has_variable = je_edward_civilwar_point }
+#				}
+#				change_variable = { name = cattle_barons_var add = 1 }
+#				set_variable = { name = je_edward_civilwar_point years = 3 }
+#			}
+#			if = {
+#				limit = {
+#					OR = {
+#						in_default = yes
+#						has_modifier = declared_bankruptcy
+#					}
+#					NOT = { has_variable = je_edward_default_point }
+#				}
+#				change_variable = { name = cattle_barons_var add = 1 }
+#				set_variable = { name = je_edward_default_point }
+#			}
+#			if = {
+#				limit = {
+#					country_rank >= rank_value:great_power
+#					NOT = { has_variable = je_edward_gp_point }
+#				}
+#				change_variable = { name = cattle_barons_var subtract = 1 }
+#				set_variable = { name = je_edward_gp_point }
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_variable = avalon_polluted }
+#					any_scope_state = { 
+#						is_capital = yes
+#						state_region = {
+#						pollution_amount > 150
+#						}
+#						
+#					}
+#				}
+#				set_variable = { name = avalon_polluted }
+#				change_variable = { name = cattle_barons_var add = 1 }
+#				
+#			}
+#			if = {
+#				limit = {
+#					ig:ig_landowners = {
+#						is_powerful = no
+#						is_in_government = yes
+#					}
+#				}
+#				change_variable = {
+#					name = cattle_barons_var
+#					add = -1
+#				}
+#			}
+#			if = {
+#				limit = {
+#					ig:ig_landowners = {
+#						is_powerful = no
+#						is_in_government =  no
+#					}
+#				}
+#				change_variable = {
+#					name = cattle_barons_var
+#					add = -2
+#				}
+#			}
+#			if = {
+#				limit = {
+#					root.average_sol > 10
+#				}
+#				change_variable = {
+#					name = cattle_barons_var
+#					add = -1
+#				}
+#			}
+#		}
+#	}
+#
+#	
+#
+#	complete = {
+#		# If-else clause to avoid errors because of missing variable before JE activates
+#		custom_tooltip = {
+#		text = je_edward_special_tooltip_advance
+#	
+#		trigger_if = {
+#			
+#
+#			
+#			
+#			limit = { exists = var:cattle_barons_var }
+#			
+#			
+#		  OR = {
+#			scope:journal_entry = { is_goal_complete = yes }
+#			
+#			}
+#			
+#		}
+#		
+#		
+#		
+#	}
+#	}
+#	
+#	on_complete = {
+#		set_variable = beornia_complete
+#		trigger_event = {
+#			id = dvg_beornia.9
+#		}
+#	}
+#	
+#	fail = {
+#		
+#		OR = {
+#			AND = {
+#				
+#				ig:ig_landowners = {
+#					is_powerful = no
+#				}
+#				ig:ig_industrialists = {
+#					is_powerful = yes
+#				}
+#			}
+#			AND = {
+#				custom_tooltip = {
+#					text = je_edward_special_tooltip_deplete
+#					var:cattle_barons_var < 6
+#				}
+#				custom_tooltip = {
+#					text = edward_dead
+#					ruler = {
+#						NOT = {
+#							has_variable = is_edward
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#	
+#	on_fail = {
+#		set_variable = beornia_complete
+#		trigger_event = {
+#			id = dvg_beornia.10
+#		}
+#	}
+#	invalid = {
+#		any_country = {
+#			is_revolutionary = yes
+#			country_definition = root.country_definition
+#			ig:ig_landowners = {
+#				is_in_government = yes
+#			}				
+#		}
+#	}
+#	on_invalid = {
+#		set_variable = beornia_complete
+#		trigger_event = {
+#			id = dvg_beornia.20
+#		}
+#	}
+#	
+#
+#	
+#
+#	current_value = {
+#		value = root.var:cattle_barons_var
+#	}
+#
+#	goal_add_value = {
+#		value = 7
+#	}
+#
+#	progressbar = yes
+#	
+#	on_weekly_pulse = {
+#		effect = {
+#			if = {
+#				limit = {
+#					NOT = { has_variable = cattle_barons_var_subject }
+#					is_subject = yes
+#				}
+#				change_variable = {
+#					name = cattle_barons_var
+#					add = 1
+#				}
+#				set_variable = cattle_barons_var_subject
+#			}
+#			if = {
+#				limit = {
+#					NOT = { has_variable = cattle_barons_var_loans }
+#					taking_loans = yes
+#				}
+#				change_variable = {
+#					name = cattle_barons_var
+#					add = 1
+#				}
+#				set_variable = cattle_barons_var_loans
+#			}
+#			if = {
+#				limit = {
+#					has_law = law_type:law_religious_schools
+#					NOT = { has_variable = beo_religious_schools }
+#				}
+#				change_variable = {
+#					name = cattle_barons_var
+#					subtract = 1
+#				}
+#				set_variable = beo_religious_schools
+#			}
+#			if = {
+#				limit = {
+#					has_law = law_type:law_racial_segregation
+#					NOT = { has_variable = beo_racial_segregation }
+#				}
+#				change_variable = {
+#					name = cattle_barons_var
+#					add = 1
+#				}
+#				set_variable = beo_racial_segregation
+#
+#			}
+#		
+#		if = {
+#			limit = {
+#				has_law = law_type:law_cultural_exclusion
+#				NOT = { has_variable = beo_multicultural }
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				add = 2
+#			}
+#			set_variable = beo_multicultural
+#		}
+#		if = {
+#			limit = {
+#				has_law = law_type:law_multicultural
+#				NOT = { has_variable = beo_multicultural }
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				add = 2
+#			}
+#			set_variable = beo_multicultural
+#		}
+#		if = {
+#			limit = {
+#				has_law = law_type:law_no_migration_controls
+#				NOT = { has_variable = beo_open_borders }
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				add = 1
+#			}
+#			set_variable = beo_open_borders
+#		}
+#		if = {
+#			limit = {
+#				has_law = law_type:law_autocracy
+#				NOT = { has_variable = beo_autocracy }
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				add = 1
+#			}
+#			set_variable = beo_autocracy
+#		}
+#		if = {
+#			limit = {
+#				NOT = {has_law = law_type:law_landed_voting}
+#				NOT = {has_law = law_type:law_oligarchy}
+#				NOT = { has_variable = beo_democracy }
+#				
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				add = 1 
+#			}
+#			set_variable = beo_democracy
+#		}
+#		
+#		if = {
+#			limit = {
+#				has_law = law_type:law_serfdom
+#				NOT = { has_variable = beo_serfdom }
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				subtract = 2
+#			}
+#			set_variable = beo_serfdom
+#		}
+#		if = {
+#			limit = {
+#				OR = {
+#				has_law = law_type:law_oligarchy
+#				has_law = law_type:law_landed_voting
+#				}
+#				NOT = { has_variable = beo_oligarchy }
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				subtract = 2
+#			}
+#			set_variable = beo_oligarchy
+#		}
+#		if = {
+#			limit = {
+#				has_law = law_type:law_ethnostate
+#				NOT = { has_variable = beo_national_supremacy }
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				subtract = 2
+#			}
+#			set_variable = beo_national_supremacy
+#		}
+#		if = {
+#			limit = {
+#				NOT = { has_law = law_type:law_no_health_system}
+#				NOT = { has_variable = beo_national_supremacy }
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				subtract = 2
+#			}
+#			set_variable = beo_hospitals
+#		}
+#		if = {
+#			limit = {
+#				NOT = { has_variable = beo_war_loser }
+#				OR = {
+#					has_variable = recently_lost_war
+#					AND = {
+#						has_variable = recently_had_war
+#						NOT = {
+#							has_variable = recently_won_war
+#						}
+#					}
+#				} 
+#			}
+#			change_variable = {
+#				name = cattle_barons_var
+#				add = 1
+#			}
+#			set_variable = beo_war_loser
+#		}
+#		
+#		}
+#			
+#			
+#	}
+#	
+#	
+#	timeout = 10125
+#	
+#	on_timeout = {
+#		trigger_event = {
+#			
+#			id = dvg_beornia.12
+#
+#		}
+#		}
+#	
+#
+#	weight = 10000
+#	should_be_pinned_by_default = yes
+#}
+#
 je_england_conquer = {
 	icon = "gfx/interface/icons/event_icons/event_map.dds"
 
