@@ -16,7 +16,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 76530
+				size = 101784
 			}
 			create_pop = {
 				culture = north_russian
@@ -52,7 +52,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 49315
+				size = 65589
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -66,7 +66,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 117648
+				size = 156471
 			}
 			create_pop = {
 				culture = latvian
@@ -768,7 +768,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 25074
+				size = 37074
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -789,7 +789,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 29472
+				size = 42472
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -821,7 +821,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 354084
+				size = 470931
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -837,7 +837,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 438886
+				size = 583718
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -847,7 +847,7 @@
 		region_state:PRU = {
 			create_pop = {
 				culture = balters
-				size = 82585
+				size = 109838
 			}
 			create_pop = {
 				culture = polish
@@ -868,13 +868,13 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 41294
+				size = 54921
 			}
 		}
 		region_state:PRU = {
 			create_pop = {
 				culture = balters
-				size = 621322
+				size = 826358
 			}
 			create_pop = {
 				culture = polish
@@ -1152,7 +1152,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 27388
+				size = 41388
 			}
 			create_pop = {
 				culture = ashkenazi
@@ -1172,7 +1172,7 @@
 			}
 			create_pop = {
 				culture = balters
-				size = 44094
+				size = 66094
 			}
 			create_pop = {
 				culture = byelorussian
@@ -1190,7 +1190,7 @@
 		region_state:PRU = {
 			create_pop = {
 				culture = balters
-				size = 88343
+				size = 106343
 			}
 			create_pop = {
 				culture = lithuanian
