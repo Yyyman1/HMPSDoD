@@ -1482,11 +1482,9 @@
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					building={
-						type="building_tooling_workshops"
+					country={
 						country="c:BEO"
-						levels=1
-						region="STATE_AVALON"
+						levels=3
 					}
 				}
 				reserves=1
