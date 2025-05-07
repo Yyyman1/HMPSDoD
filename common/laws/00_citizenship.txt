@@ -37,7 +37,7 @@ law_ethnostate = {
 		country_standard_of_living_cultural_erasure_add = 0
 		country_standard_of_living_open_prejudice_add = 0
 		country_standard_of_living_second_rate_citizen_add = 0
-		country_standard_of_living_full_acceptance_add = 2
+		country_standard_of_living_full_acceptance_add = 0
 		
 		country_radicalism_increases_violent_hostility_mult = 0.33
 		country_radicalism_increases_cultural_erasure_mult = 0.2
