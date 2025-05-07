@@ -41,6 +41,19 @@
 			target = c:LOT
 			add_interest_group = ig:ig_landowners
 		}
+		create_political_lobby = {  
+			type = lobby_anti_country  
+			target = c:TWT
+			add_interest_group = ig:ig_landowners
+			add_interest_group = ig:ig_rural_folk
+		}
+		create_political_lobby = {  
+			type = lobby_anti_country  
+			target = c:DUA
+			add_interest_group = ig:ig_armed_forces
+			add_interest_group = ig:ig_devout
+			add_interest_group = ig:ig_petty_bourgeoisie
+		}
 	}
 	c:LOT = {
 		create_political_lobby = {  
