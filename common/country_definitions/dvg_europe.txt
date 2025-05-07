@@ -18,7 +18,7 @@ PRO = { #Provence
 	
 	cultures = { occitan french romand }
 
-	religion = protestant
+	religion = catholic
 
 	capital = STATE_PROVENCE
 	is_named_from_capital = yes
