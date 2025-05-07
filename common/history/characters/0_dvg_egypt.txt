@@ -15,6 +15,7 @@
 				ambitious
 				persistent
 				innovative
+				meticulous
 			}
 		 }
 	 }
