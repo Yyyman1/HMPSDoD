@@ -285,7 +285,7 @@ GEN = { #Genoa
 
 	tier = principality
 	
-	cultures = { north_italian }
+	cultures = { north_italian central_italian }
 	capital = STATE_PIEDMONT
 }
 
