@@ -8,6 +8,8 @@
 			ruler = yes
 			noble = yes
 			birth_date = 1775.8.21
+			culture = cu:french
+			religion = catholic
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_legitimist
 			traits = {
@@ -26,6 +28,8 @@
 			noble = yes
 			heir = yes
 			birth_date = 1815.9.21
+			culture = cu:french
+			religion = catholic
 			interest_group = ig_petty_bourgeoisie
 			ideology = ideology_legitimist
 			traits = {
