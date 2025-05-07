@@ -290,6 +290,7 @@
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_oligarchy
+		activate_law = law_type:law_protectionism
 		
 		set_institution_investment_level = {
 			institution = institution_schools
