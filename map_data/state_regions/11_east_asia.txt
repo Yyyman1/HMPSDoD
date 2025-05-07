@@ -6,7 +6,7 @@
     farm = xF536A6
     mine = x51EEA9
     wood = x23E045
-    arable_land = 30
+    arable_land = 40
     arable_resources = { bg_vineyard_plantations bg_wheat_farms bg_livestock_ranches }
     capped_resources = {
         bg_iron_mining = 24
@@ -128,7 +128,7 @@ STATE_HINGGAN = {
     farm = xE61212
     mine = x7D03D7
     wood = x356F29
-    arable_land = 25
+    arable_land = 30
     arable_resources = { bg_livestock_ranches }
     capped_resources = {
         bg_iron_mining = 36
