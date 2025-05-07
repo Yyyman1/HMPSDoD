@@ -101,6 +101,9 @@ dvg_reclaim_france = {
 			type = je_valois_claim
 		}
 		
+		add_loyalists = {
+			value = 0.1
+		}
 		
 		create_incident = {
 			country = c:PRO
