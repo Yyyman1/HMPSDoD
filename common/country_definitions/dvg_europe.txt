@@ -16,9 +16,9 @@ PRO = { #Provence
 
 	tier = principality
 	
-	cultures = { occitan  }
+	cultures = { occitan french romand }
 
-	religion = catholic
+	religion = protestant
 
 	capital = STATE_PROVENCE
 	is_named_from_capital = yes
@@ -264,7 +264,7 @@ ARI = { #Aragon-Italy
 
 	tier = empire
 	
-	cultures = { catalan north_italian south_italian central_italian venetian sardinian maltese}
+	cultures = { catalan north_italian south_italian central_italian sardinian maltese}
 	capital = STATE_LAZIO
 }
 
