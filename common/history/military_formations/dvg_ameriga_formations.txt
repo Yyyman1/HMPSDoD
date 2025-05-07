@@ -163,6 +163,25 @@
 
 			save_scope_as = dvg_beo_main_army
 		}
+		
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_la_plata
+			name = "Path to Home"
+			save_scope_as = dvg_beo_main_navy
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_frigate
+				state_region = s:STATE_AVALON
+				count = 5
+			}
+			
+			combat_unit = {
+				type = unit_type:combat_unit_type_man_o_war
+				state_region = s:STATE_AVALON
+				count = 1
+			}
+		}
 	}
 
 }
