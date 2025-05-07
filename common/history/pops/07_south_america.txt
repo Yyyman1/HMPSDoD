@@ -730,7 +730,7 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 110824
+				size = 260824
 			}
 			create_pop = {
 				culture = british
