@@ -841,10 +841,6 @@ movement_cultural_minority = {
 	}
 	
 	additional_radicalism_factors = {
-		add = {
-			value = -10 #Removing Cultural movements ability to ever revolt. (ideally this is only a tempoary fix)
-		}
-		
 		if = {
 			limit = { 
 				owner = { has_journal_entry = je_springtime_of_the_peoples } 
