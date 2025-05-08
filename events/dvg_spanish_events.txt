@@ -271,7 +271,7 @@ dvg_spain.4 = {
 		c:SPA = {
 			create_bidirectional_truce = {
 				country = c:GCO
-				months = 48
+				months = 60
 			}
 			change_infamy = -50
 		}
