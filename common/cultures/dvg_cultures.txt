@@ -5,6 +5,7 @@
 	
 	obsessions = {
 		wine
+		tea
 	}
 	
 	male_common_first_names={
