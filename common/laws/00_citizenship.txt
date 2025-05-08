@@ -337,7 +337,7 @@ law_language_discrimination = {
 		country_qualification_growth_open_prejudice_mult = -0.55
 		country_qualification_growth_second_rate_citizen_mult = -0.30
 
-		country_disallow_military_work_violent_hostility_bool = no
+		country_disallow_military_work_violent_hostility_bool = yes
 		country_disallow_military_work_cultural_erasure_bool = no
  		country_disallow_military_work_open_prejudice_bool = no
 		country_disallow_military_work_second_rate_citizen_bool = no
@@ -428,7 +428,7 @@ law_cultural_exclusion = {
 		country_qualification_growth_open_prejudice_mult = -0.55
 		country_qualification_growth_second_rate_citizen_mult = -0.30
 
-		country_disallow_military_work_violent_hostility_bool = no
+		country_disallow_military_work_violent_hostility_bool = yes
 		country_disallow_military_work_cultural_erasure_bool = no
  		country_disallow_military_work_open_prejudice_bool = no
 		country_disallow_military_work_second_rate_citizen_bool = no
