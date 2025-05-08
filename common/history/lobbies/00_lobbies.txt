@@ -77,6 +77,38 @@
 		}
 	}
 	
+	c:SPA = {
+		create_political_lobby = {  
+			type = lobby_pro_country
+			target = c:DUA
+			add_interest_group = ig:ig_landowners
+		}
+	}
+	
+	c:SPA = {
+		create_political_lobby = {  
+			type = lobby_anti_country
+			target = c:DUA
+			add_interest_group = ig:ig_intelligentsia
+		}
+	}
+	
+	c:SPA = {
+		create_political_lobby = {  
+			type = lobby_anti_country
+			target = c:TUR
+			add_interest_group = ig:ig_devout
+		}
+	}
+	
+	c:ARN = {
+		create_political_lobby = {  
+			type = lobby_anti_country
+			target = c:TUR
+			add_interest_group = ig:ig_devout
+		}
+	}
+	
 	#Chinese Thunderdome
 	
 	c:TPG = {
