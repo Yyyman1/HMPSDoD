@@ -757,15 +757,15 @@
 				culture = ashkenazi
 				size = 4274
 			}
-		}
-		create_pop = {
-			culture = south_german
-			size = 261954
-			religion = protestant
-		}
-		create_pop = {
-			culture = ashkenazi
-			size = 5346
+			create_pop = {
+				culture = south_german
+				size = 261954
+				religion = protestant
+			}
+			create_pop = {
+				culture = ashkenazi
+				size = 5346
+			}
 		}
 	}
 	s:STATE_FRANCONIA = {
