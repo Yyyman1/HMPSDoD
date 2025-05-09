@@ -1743,6 +1743,8 @@
 		
 		add_homeland = cu:kirim
 		add_homeland = cu:ashkenazi
+		
+		add_claim = c:GEN
 	}
 
 	#Pskov
