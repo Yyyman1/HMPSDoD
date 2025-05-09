@@ -63,23 +63,6 @@ sgf_formation = {
 		}
 		if = {
 			limit = {
-				c:AGR = {
-					is_subject = no
-					#country_is_in_different_power_bloc = no
-				}
-			}
-			annex_with_incorporation = c:AGR
-		}
-		else_if = {
-			limit = {
-				c:AGR = {
-					is_subject_of = c:BAV
-				}
-			}
-			annex_with_incorporation = c:AGR
-		}
-		if = {
-			limit = {
 				c:SLZ = {
 					is_subject = no
 					#country_is_in_different_power_bloc = no
