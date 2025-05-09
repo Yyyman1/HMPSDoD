@@ -199,10 +199,6 @@
 	}
 	c:BAV = {
 		create_diplomatic_pact = {
-			country = c:AGR
-			type = puppet
-		}
-		create_diplomatic_pact = {
 			country = c:SLZ
 			type = puppet
 		}

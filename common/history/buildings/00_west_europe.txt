@@ -6649,14 +6649,12 @@
 				reserves=1
 				activate_production_methods={ "pm_cannons" "pm_automation_disabled" }
 			}
-		}
-		region_state:AGR={
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
 					building={
 						type="building_logging_camp"
-						country="c:AGR"
+						country="c:BAV"
 						levels=1
 						region="STATE_BAVARIA"
 					}
