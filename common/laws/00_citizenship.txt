@@ -63,11 +63,11 @@ law_ethnostate = {
 		country_loyalism_increases_full_acceptance_mult = 0.2
 
 			# Political Strength - Ethnostate
-		country_political_strength_violent_hostility_mult = -0.5
-		country_political_strength_cultural_erasure_mult = -0.4
-		country_political_strength_open_prejudice_mult = -0.3
+		country_political_strength_violent_hostility_mult = -0.60
+		country_political_strength_cultural_erasure_mult = -0.45
+		country_political_strength_open_prejudice_mult = -0.30
 		country_political_strength_second_rate_citizen_mult = -0.15
-		country_political_strength_full_acceptance_mult = 0.25
+		country_political_strength_full_acceptance_mult = 0.0
 		
 			# Voting - Ethnostate
 		country_allow_voting_violent_hostility_bool = no
@@ -185,11 +185,11 @@ law_national_supremacy = {
 		country_loyalism_increases_full_acceptance_mult = 0.1
 
 			# Political Strength - NatSup
-		country_political_strength_violent_hostility_mult = -0.4
-		country_political_strength_cultural_erasure_mult = -0.3
-		country_political_strength_open_prejudice_mult = -0.2
-		country_political_strength_second_rate_citizen_mult = -0.1
-		country_political_strength_full_acceptance_mult = 0.2
+		country_political_strength_violent_hostility_mult = -0.60
+		country_political_strength_cultural_erasure_mult = -0.45
+		country_political_strength_open_prejudice_mult = -0.30
+		country_political_strength_second_rate_citizen_mult = -0.15
+		country_political_strength_full_acceptance_mult = 0.0
 		
 			# Voting - NatSup
 		country_allow_voting_violent_hostility_bool = no
@@ -306,11 +306,11 @@ law_racial_segregation = {
 		country_loyalism_increases_full_acceptance_mult = 0.0
 
 			# Political Strength - Racial Segregation
-		country_political_strength_violent_hostility_mult = -0.3
-		country_political_strength_cultural_erasure_mult = -0.2
-		country_political_strength_open_prejudice_mult = -0.1
-		country_political_strength_second_rate_citizen_mult = 0.0
-		country_political_strength_full_acceptance_mult = 0.1
+		country_political_strength_violent_hostility_mult = -0.60
+		country_political_strength_cultural_erasure_mult = -0.45
+		country_political_strength_open_prejudice_mult = -0.30
+		country_political_strength_second_rate_citizen_mult = -0.15
+		country_political_strength_full_acceptance_mult = 0.0
 		
 			# Voting - Racial Segregation
 		country_allow_voting_violent_hostility_bool = no
@@ -427,11 +427,11 @@ law_language_discrimination = {
 		country_loyalism_increases_full_acceptance_mult = 0.0
 
 			# Political Strength - Language Discrimination
-		country_political_strength_violent_hostility_mult = -0.3
-		country_political_strength_cultural_erasure_mult = -0.2
-		country_political_strength_open_prejudice_mult = -0.1
-		country_political_strength_second_rate_citizen_mult = 0.0
-		country_political_strength_full_acceptance_mult = 0.1
+		country_political_strength_violent_hostility_mult = -0.60
+		country_political_strength_cultural_erasure_mult = -0.45
+		country_political_strength_open_prejudice_mult = -0.30
+		country_political_strength_second_rate_citizen_mult = -0.15
+		country_political_strength_full_acceptance_mult = 0.0
 		
 			# Voting - Language Discrimination
 		country_allow_voting_violent_hostility_bool = no
@@ -555,11 +555,11 @@ law_cultural_exclusion = {
 		country_loyalism_increases_full_acceptance_mult = 0.0
 
 			# Political Strength - Cultural Exclusion
-		country_political_strength_violent_hostility_mult = -0.3
-		country_political_strength_cultural_erasure_mult = -0.2
-		country_political_strength_open_prejudice_mult = -0.1
-		country_political_strength_second_rate_citizen_mult = 0.0
-		country_political_strength_full_acceptance_mult = 0.1
+		country_political_strength_violent_hostility_mult = -0.60
+		country_political_strength_cultural_erasure_mult = -0.45
+		country_political_strength_open_prejudice_mult = -0.30
+		country_political_strength_second_rate_citizen_mult = -0.15
+		country_political_strength_full_acceptance_mult = 0.0
 		
 			# Voting - Cultural Exclusion
 		country_allow_voting_violent_hostility_bool = no
