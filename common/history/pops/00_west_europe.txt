@@ -851,6 +851,10 @@
 				culture = south_german
 				size = 281490
 			}
+			create_pop = {
+				culture = south_german
+				size = 267300
+			}
 		}
 		region_state:TRT = {
 			create_pop = {
@@ -866,12 +870,6 @@
 			create_pop = {
 				culture = south_german
 				size = 143560
-			}
-		}
-		region_state:BAV = {
-			create_pop = {
-				culture = south_german
-				size = 267300
 			}
 		}
 		region_state:AUS = {
