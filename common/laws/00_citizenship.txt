@@ -49,11 +49,11 @@ law_ethnostate = {
 		country_wage_full_acceptance_mult = 0.00
 		
 			# Radicalism - Ethnostate
-		country_radicalism_increases_violent_hostility_mult = 0.35
-		country_radicalism_increases_cultural_erasure_mult = 0.3
-		country_radicalism_increases_open_prejudice_mult = 0.1
-		country_radicalism_increases_second_rate_citizen_mult = 0.0
-		country_radicalism_increases_full_acceptance_mult = -0.1
+		country_radicalism_increases_violent_hostility_mult = 0.20
+		country_radicalism_increases_cultural_erasure_mult = 0.15
+		country_radicalism_increases_open_prejudice_mult = 0.10
+		country_radicalism_increases_second_rate_citizen_mult = 0.05
+		country_radicalism_increases_full_acceptance_mult = -0.10
 		
 			# Loyalism - Ethnostate
 		country_loyalism_increases_violent_hostility_mult = 0.0
@@ -171,10 +171,10 @@ law_national_supremacy = {
 		country_wage_full_acceptance_mult = 0.00
 		
 			# Radicalism - NatSup
-		country_radicalism_increases_violent_hostility_mult = 0.25
-		country_radicalism_increases_cultural_erasure_mult = 0.2
-		country_radicalism_increases_open_prejudice_mult = 0.0
-		country_radicalism_increases_second_rate_citizen_mult = 0.0
+		country_radicalism_increases_violent_hostility_mult = 0.20
+		country_radicalism_increases_cultural_erasure_mult = 0.15
+		country_radicalism_increases_open_prejudice_mult = 0.10
+		country_radicalism_increases_second_rate_citizen_mult = 0.05
 		country_radicalism_increases_full_acceptance_mult = -0.05
 		
 			# Loyalism - NatSup
@@ -292,11 +292,11 @@ law_racial_segregation = {
 		country_wage_full_acceptance_mult = 0.00
 		
 			# Radicalism - Racial Segregation
-		country_radicalism_increases_violent_hostility_mult = 0.2
-		country_radicalism_increases_cultural_erasure_mult = 0.0
-		country_radicalism_increases_open_prejudice_mult = 0.0
-		country_radicalism_increases_second_rate_citizen_mult = 0.0
-		country_radicalism_increases_full_acceptance_mult = 0.0
+		country_radicalism_increases_violent_hostility_mult = 0.20
+		country_radicalism_increases_cultural_erasure_mult = 0.15
+		country_radicalism_increases_open_prejudice_mult = 0.10
+		country_radicalism_increases_second_rate_citizen_mult = 0.05
+		country_radicalism_increases_full_acceptance_mult = 0.00
 		
 			# Loyalism - Racial Segregation
 		country_loyalism_increases_violent_hostility_mult = 0.0
@@ -413,11 +413,11 @@ law_language_discrimination = {
 		country_wage_full_acceptance_mult = 0.00
 		
 			# Radicalism - Language Discrimination
-		country_radicalism_increases_violent_hostility_mult = 0.0
-		country_radicalism_increases_cultural_erasure_mult = 0.0
-		country_radicalism_increases_open_prejudice_mult = 0.0
-		country_radicalism_increases_second_rate_citizen_mult = 0.0
-		country_radicalism_increases_full_acceptance_mult = 0.0
+		country_radicalism_increases_violent_hostility_mult = 0.20
+		country_radicalism_increases_cultural_erasure_mult = 0.15
+		country_radicalism_increases_open_prejudice_mult = 0.10
+		country_radicalism_increases_second_rate_citizen_mult = 0.05
+		country_radicalism_increases_full_acceptance_mult = 0.00
 		
 			# Loyalism - Language Discrimination
 		country_loyalism_increases_violent_hostility_mult = 0.0
@@ -541,11 +541,11 @@ law_cultural_exclusion = {
 		country_wage_full_acceptance_mult = 0.00
 		
 			# Radicalism - Cultural Exclusion
-		country_radicalism_increases_violent_hostility_mult = 0.0
-		country_radicalism_increases_cultural_erasure_mult = 0.0
-		country_radicalism_increases_open_prejudice_mult = 0.0
-		country_radicalism_increases_second_rate_citizen_mult = 0.0
-		country_radicalism_increases_full_acceptance_mult = 0.0
+		country_radicalism_increases_violent_hostility_mult = 0.20
+		country_radicalism_increases_cultural_erasure_mult = 0.15
+		country_radicalism_increases_open_prejudice_mult = 0.10
+		country_radicalism_increases_second_rate_citizen_mult = 0.05
+		country_radicalism_increases_full_acceptance_mult = 0.00
 		
 			# Loyalism - Cultural Exclusion
 		country_loyalism_increases_violent_hostility_mult = 0.0
