@@ -37,38 +37,10 @@ sgf_formation = {
 
 	possible = {
 		has_technology_researched = nationalism
-		has_law = law_type:law_monarchy
-		OR = {
-			country_rank >= rank_value:major_power
-			AND = {
-				country_or_subject_owns_entire_state_region = STATE_AUSTRIA
-				country_or_subject_owns_entire_state_region = STATE_BAVARIA
-			}
-		}
-		OR = {
-			AND = {
-				this = c:BAV
-				c:AUS = {
-					is_ai = yes
-				}
-			}
-			AND = {
-				this = c:AUS
-				c:BAV = {
-					is_ai = yes
-				}
-			}
-			AND = {
-				c:BAV = {
-					is_ai = yes
-				}
-				c:AUS = {
-					is_ai = yes
-				}
-			}
-			
-
-		}
+		country_or_subject_owns_entire_state_region = STATE_AUSTRIA
+		country_or_subject_owns_entire_state_region = STATE_BAVARIA
+		country_or_subject_owns_entire_state_region = STATE_STYRIA
+		
 	}
 
 	when_taken = {
@@ -80,33 +52,6 @@ sgf_formation = {
 				}
 			}
 			annex_with_incorporation = c:TYR
-		}
-		if = {
-			limit = {
-				c:BAD = {
-					is_subject = no
-					#country_is_in_different_power_bloc = no
-				}
-			}
-			annex_with_incorporation = c:BAD
-		}
-		if = {
-			limit = {
-				c:WUR = {
-					is_subject = no
-					#country_is_in_different_power_bloc = no
-				}
-			}
-			annex_with_incorporation = c:WUR
-		}
-		if = {
-			limit = {
-				c:ULM = {
-					is_subject = no
-					#country_is_in_different_power_bloc = no
-				}
-			}
-			annex_with_incorporation = c:ULM
 		}
 		if = {
 			limit = {
