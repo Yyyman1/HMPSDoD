@@ -53,6 +53,14 @@ sgf_formation = {
 			}
 			annex_with_incorporation = c:TYR
 		}
+		else_if = {
+			limit = {
+				c:TYR = {
+					is_subject_of = c:BAV
+				}
+			}
+			annex_with_incorporation = c:TYR
+		}
 		if = {
 			limit = {
 				c:AGR = {
