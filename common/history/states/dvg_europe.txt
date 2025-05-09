@@ -405,13 +405,8 @@
 	s:STATE_BAVARIA = {
 		create_state = {
 			country = c:BAV
-			owned_provinces = { "x010AD7" "x18A2E1" "x3101A0" "x318021" "x565185" "x68CE1C" "x6EA29B" "x82F4B9" "x8C26DD" "xA7094D" "xB00121" "xB08021" "xE75868" "xE76994" "xFE59E7" }
+			owned_provinces = { "x704A5F" "xC347B1" "x010AD7" "x18A2E1" "x3101A0" "x318021" "x565185" "x68CE1C" "x6EA29B" "x82F4B9" "x8C26DD" "xA7094D" "xB00121" "xB08021" "xE75868" "xE76994" "xFE59E7" }
 		}
-		create_state = {
-			country = c:AGR
-			owned_provinces = { "x704A5F" "xC347B1" }
-		}
-		
 		add_homeland = cu:south_german
 	}
 	s:STATE_FRANCONIA = {
@@ -805,15 +800,11 @@
 	s:STATE_TYROL = {
 		create_state = {
 			country = c:TYR
-			owned_provinces = { "x039D0F" "xD040E0" }
+			owned_provinces = { "x039D0F" "xD040E0" "x4A9C68" "xC74CD7" "xEC6873" "x51C0E0" }
 		}
 		create_state = {
 			country = c:SLZ
 			owned_provinces = { "xAB7EB0" "x5D4166" "xF061C0" }
-		}
-		create_state = {
-			country = c:BAV
-			owned_provinces = { "x4A9C68" "xC74CD7" "xEC6873" "x51C0E0" }
 		}
 		create_state = {
 			country = c:AUS
@@ -1708,6 +1699,8 @@
 		
 		add_homeland = cu:kirim
 		add_homeland = cu:krymchak
+		
+		add_claim = c:GEN
 	}
 	s:STATE_YEDISAN = {
 		#create_state = {
@@ -1741,6 +1734,8 @@
 		
 		add_homeland = cu:kirim
 		add_homeland = cu:ashkenazi
+		
+		add_claim = c:GEN
 	}
 
 	#Pskov

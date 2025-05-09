@@ -45,4 +45,11 @@
 			type = defensive_pact
 		}
 	}
+	
+	c:EGY = {
+		create_diplomatic_pact = {
+			country = c:MCD
+			type = defensive_pact
+		}
+	}
 }

@@ -17,7 +17,7 @@
 			combat_unit = {
 				type = unit_type:combat_unit_type_line_infantry
 				state_region = s:STATE_BAVARIA
-				count = 20
+				count = 24
 			}
 
 			combat_unit = {
