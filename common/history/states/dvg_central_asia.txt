@@ -45,6 +45,7 @@
 		}
 		
 		add_homeland = cu:north_caucasian
+		add_claim = c:GEN
 	}
 	
 	#Azerbaijan

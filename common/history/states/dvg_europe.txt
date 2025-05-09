@@ -1708,6 +1708,8 @@
 		
 		add_homeland = cu:kirim
 		add_homeland = cu:krymchak
+		
+		add_claim = c:GEN
 	}
 	s:STATE_YEDISAN = {
 		#create_state = {
