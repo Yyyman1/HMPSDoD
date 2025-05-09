@@ -508,8 +508,6 @@ law_cultural_exclusion = {
 	}
 	
 	unlocking_laws = {
-		law_slavery_banned
-		law_debt_slavery
 		law_anarchy
 	}
 	
@@ -635,7 +633,6 @@ law_multicultural = {
 	}
 
 	unlocking_laws = {
-		law_slavery_banned
 		law_anarchy
 	}
 	
