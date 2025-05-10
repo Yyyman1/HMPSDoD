@@ -676,11 +676,11 @@ dvg_colonial_recruitment = {
 	state_standard_of_living_add = 0.10
 	state_assimilation_mult = 0.25
 }
-dvg_nation_built = {
+dvg_nation_built = { #temp changes
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	country_prestige_mult = 0.25
-	country_loyalists_from_legitimacy_mult = 0.25
-	country_authority_add = 100
+	#country_prestige_mult = 0.25
+	#country_loyalists_from_legitimacy_mult = 0.25
+	#country_authority_add = 100
 }
 dvg_agrarian_reform_castro = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
