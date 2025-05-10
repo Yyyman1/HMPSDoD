@@ -38,7 +38,7 @@ pm_default_building_angkor_wat = {
 	unlocking_religions = { theravada }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.25
 			interest_group_ig_devout_approval_add = 5
 			country_prestige_add = 25
@@ -103,7 +103,7 @@ pm_default_building_forbidden_city = {
 	is_hidden_when_unavailable = yes
 
 	country_modifiers = {
-		workforce_scaled = {
+		unscaled = {
 			country_legitimacy_headofstate_add = 20
 			country_authority_add = 50
 			country_prestige_add = 25
@@ -129,7 +129,7 @@ pm_default_building_hagia_sophia = {
 	unlocking_religions = { orthodox sunni }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			#interest_group_ig_devout_pop_attraction_mult = 0.1
 			interest_group_ig_devout_pol_str_mult = 0.1
 			interest_group_ig_devout_approval_add = 2
@@ -169,7 +169,7 @@ pm_default_building_mosque_of_djenne = {
 	unlocking_religions = { sunni }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.1
 			interest_group_ig_devout_approval_add = 2
 		}
@@ -208,7 +208,7 @@ pm_default_building_saint_basils_cathedral = {
 	unlocking_religions = { orthodox }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.1
 			interest_group_ig_devout_approval_add = 2
 			country_prestige_add = 25
@@ -269,7 +269,7 @@ pm_default_building_taj_mahal = {
 	unlocking_religions = { sunni }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.25
 			interest_group_ig_devout_approval_add = 5
 			country_prestige_add = 25
@@ -310,7 +310,7 @@ pm_default_building_vatican_city = {
 	unlocking_religions = { catholic }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.25
 			interest_group_ig_devout_approval_add = 5
 			country_influence_add = 200
@@ -387,7 +387,7 @@ pm_base_building_medina = {
 	unlocking_religions = { sunni }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.10
 			interest_group_ig_devout_approval_add = 2
 			country_prestige_add = 25
@@ -426,7 +426,7 @@ pm_base_building_mecca = {
 	unlocking_religions = { sunni }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.10
 			interest_group_ig_devout_approval_add = 2
 			country_prestige_add = 25
@@ -465,16 +465,21 @@ pm_base_building_jerusalem_jewish = {
 	unlocking_religions = { jewish }
 
 	country_modifiers = {
-		throughput_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.75
+		unscaled = {
+			interest_group_ig_devout_pol_str_mult = 0.25
 			interest_group_ig_devout_approval_add = 5
 			country_influence_add = 200
 			country_authority_add = 100
 			country_prestige_add = 25
-			state_birth_rate_mult = 0.35
 			country_minting_add = 10000
-			state_migration_pull_mult = 1.00
+		}
+	}
+	state_modifiers = {
+		unscaled = {
+			state_birth_rate_mult = 0.35
 			state_conversion_mult = 1.00
+			state_assimilation_mult = 1.00
+			state_migration_pull_mult = 0.50
 		}
 	}
 
@@ -496,7 +501,7 @@ pm_base_building_jerusalem = {
 	unlocking_religions = { catholic protestant sunni orthodox oriental_orthodox shiite }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.05
 			interest_group_ig_devout_approval_add = 1
 			country_prestige_add = 25
@@ -535,7 +540,7 @@ pm_base_building_shia = {
 	unlocking_religions = { shite }
 
 	country_modifiers = {
-		throughput_scaled = {
+		unscaled = {
 			interest_group_ig_devout_pol_str_mult = 0.25
 			interest_group_ig_devout_approval_add = 5
 			country_prestige_add = 25
