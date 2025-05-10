@@ -55,6 +55,21 @@ pm_default_building_angkor_wat = {
 	}
 }
 
+pm_monument_prestige_only_angkor_wat = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	disallowing_religions = { theravada }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
+		}
+	}
+}
+
+
 pm_default_building_big_ben = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 	
@@ -132,6 +147,20 @@ pm_default_building_hagia_sophia = {
 	}
 }
 
+pm_monument_prestige_only_hagia_sophia = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	disallowing_religions = { orthodox sunni }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
+		}
+	}
+}
+
 pm_default_building_mosque_of_djenne = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
@@ -157,6 +186,20 @@ pm_default_building_mosque_of_djenne = {
 	}
 }
 
+pm_monument_prestige_only_mosque_of_djenne = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = mosque_of_djenne
+
+	disallowing_religions = { sunni }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
+		}
+	}
+}
+
 pm_default_building_saint_basils_cathedral = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
@@ -178,6 +221,20 @@ pm_default_building_saint_basils_cathedral = {
 
 		level_scaled = {
 			building_employment_clergymen_add = 200
+		}
+	}
+}
+
+pm_monument_prestige_only_basils_cathedral = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	disallowing_religions = { orthodox }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
 		}
 	}
 }
@@ -228,6 +285,22 @@ pm_default_building_taj_mahal = {
 		}
 	}
 }
+
+
+pm_monument_prestige_only_taj_mahal = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	disallowing_religions = { sunni }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
+		}
+	}
+}
+
 
 pm_default_building_vatican_city = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
@@ -331,6 +404,20 @@ pm_base_building_medina = {
 	}
 }
 
+pm_monument_prestige_only_medina = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	disallowing_religions = { sunni }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
+		}
+	}
+}
+
 pm_base_building_mecca = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
@@ -356,21 +443,38 @@ pm_base_building_mecca = {
 	}
 }
 
-pm_base_building_jerusalem = {
+pm_monument_prestige_only_mecca = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	disallowing_religions = { sunni }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
+		}
+	}
+}
+
+pm_base_building_jerusalem_jewish = {
 	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
 
 	is_hidden_when_unavailable = yes
 	
-	unlocking_religions = { jewish catholic protestant sunni orthodox oriental_orthodox shiite }
+	unlocking_religions = { jewish }
 
 	country_modifiers = {
 		throughput_scaled = {
-			interest_group_ig_devout_pol_str_mult = 0.25#0.75
+			interest_group_ig_devout_pol_str_mult = 0.75
 			interest_group_ig_devout_approval_add = 5
 			country_influence_add = 200
 			country_authority_add = 100
 			country_prestige_add = 25
-			country_minting_add = 5000
+			state_birth_rate_mult = 0.35
+			country_minting_add = 10000
+			state_migration_pull_mult = 1.00
+			state_conversion_mult = 1.00
 		}
 	}
 
@@ -379,7 +483,46 @@ pm_base_building_jerusalem = {
 		#}
 
 		level_scaled = {
+			building_employment_clergymen_add = 1000
+		}
+	}
+}
+
+pm_base_building_jerusalem = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	unlocking_religions = { catholic protestant sunni orthodox oriental_orthodox shiite }
+
+	country_modifiers = {
+		throughput_scaled = {
+			interest_group_ig_devout_pol_str_mult = 0.05
+			interest_group_ig_devout_approval_add = 1
+			country_prestige_add = 25
+		}
+	}
+	
+	building_modifiers = {
+		#workforce_scaled = {
+		#}
+
+		level_scaled = {
 			building_employment_clergymen_add = 200
+		}
+	}
+}
+
+pm_monument_prestige_only_jerusalem = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	disallowing_religions = { jewish catholic protestant sunni orthodox oriental_orthodox shiite }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
 		}
 	}
 }
@@ -406,6 +549,20 @@ pm_base_building_shia = {
 
 		level_scaled = {
 			building_employment_clergymen_add = 200
+		}
+	}
+}
+
+pm_monument_prestige_only_shia = {
+	texture = "gfx/interface/icons/production_method_icons/wonders.dds"
+
+	is_hidden_when_unavailable = yes
+
+	disallowing_religions = { shite }
+
+	country_modifiers = {
+		throughput_scaled = {
+			country_prestige_add = 25
 		}
 	}
 }
