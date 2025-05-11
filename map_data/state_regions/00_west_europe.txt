@@ -617,6 +617,7 @@ STATE_GELRE = {
     capped_resources = {
         bg_coal_mining = 40
         bg_logging = 9
+		bg_fishing = 4
     }
     naval_exit_id = 3028
 }

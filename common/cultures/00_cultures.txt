@@ -2737,6 +2737,11 @@ portuguese={ #Spanish
 	color= hsv{ 0.21 0.56 0.86 }
 	religion = catholic
 	traits = { iberian_culture_group lusophone european_heritage }
+	
+	obsessions = {
+		coffee
+	}
+	
 	male_common_first_names={
 		Abel
 		Adriano

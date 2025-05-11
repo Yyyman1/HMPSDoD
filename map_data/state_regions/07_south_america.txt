@@ -917,6 +917,7 @@ STATE_GOUAS = {
         bg_lead_mining = 30
         bg_logging = 22
         bg_gold_mining = 2
+		bg_fishing = 7
     }
     resource = {
         type = bg_gold_fields
@@ -1013,7 +1014,6 @@ STATE_VAURA = {
     capped_resources = {
         bg_iron_mining = 39
         bg_logging = 16
-        bg_fishing = 7
     }
     resource = {
         type = bg_rubber
