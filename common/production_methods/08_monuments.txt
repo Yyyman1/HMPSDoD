@@ -270,7 +270,7 @@ pm_default_building_taj_mahal = {
 
 	country_modifiers = {
 		unscaled = {
-			interest_group_ig_devout_pol_str_mult = 0.25
+			interest_group_ig_devout_pol_str_mult = 0.15
 			interest_group_ig_devout_approval_add = 3
 			country_prestige_add = 25
 		}
@@ -311,7 +311,7 @@ pm_default_building_vatican_city = {
 
 	country_modifiers = {
 		unscaled = {
-			interest_group_ig_devout_pol_str_mult = 0.25
+			interest_group_ig_devout_pol_str_mult = 0.15
 			interest_group_ig_devout_approval_add = 3
 			country_influence_add = 200
 			#country_authority_add = 100
@@ -502,7 +502,7 @@ pm_base_building_jerusalem = {
 
 	country_modifiers = {
 		unscaled = {
-			interest_group_ig_devout_pol_str_mult = 0.05
+			interest_group_ig_devout_pol_str_mult = 0.15
 			interest_group_ig_devout_approval_add = 3
 			country_prestige_add = 25
 		}
@@ -548,7 +548,7 @@ pm_base_building_shia = {
 
 	country_modifiers = {
 		unscaled = {
-			interest_group_ig_devout_pol_str_mult = 0.25
+			interest_group_ig_devout_pol_str_mult = 0.15
 			interest_group_ig_devout_approval_add = 3
 			country_prestige_add = 25
 			country_minting_add = 2000
