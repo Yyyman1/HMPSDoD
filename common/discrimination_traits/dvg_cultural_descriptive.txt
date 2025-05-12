@@ -34,3 +34,5 @@ sango = {
 }
 rheinlander = {
 }
+hindustani = {
+}
