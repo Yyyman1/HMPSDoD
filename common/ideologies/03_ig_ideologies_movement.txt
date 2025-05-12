@@ -325,6 +325,13 @@ ideology_pluralist_movement_1 = { # National Supremacy
 		law_cultural_exclusion = neutral
 		law_multicultural = neutral
 	}
+	
+	lawgroup_colonization = {
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = strongly_approve
+		law_colonial_resettlement = neutral
+		law_colonial_exploitation = neutral
+	}
 }
 
 ideology_pluralist_movement_2 = { # Racial Segregation
@@ -336,6 +343,12 @@ ideology_pluralist_movement_2 = { # Racial Segregation
 		law_racial_segregation = approve
 		law_cultural_exclusion = neutral
 		law_multicultural = neutral
+	}
+	lawgroup_colonization = {
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = strongly_approve
+		law_colonial_resettlement = neutral
+		law_colonial_exploitation = neutral
 	}
 }
 
@@ -349,6 +362,12 @@ ideology_pluralist_movement_3 = { # Cultural Exclusion
 		law_cultural_exclusion = approve
 		law_multicultural = neutral
 	}
+	lawgroup_colonization = {
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = strongly_approve
+		law_colonial_resettlement = neutral
+		law_colonial_exploitation = neutral
+	}
 }
 
 ideology_pluralist_movement_4 = { # Multicultural
@@ -360,5 +379,11 @@ ideology_pluralist_movement_4 = { # Multicultural
 		law_racial_segregation = disapprove
 		law_cultural_exclusion = disapprove
 		law_multicultural = approve
+	}
+	lawgroup_colonization = {
+		law_frontier_colonization = neutral
+		law_no_colonial_affairs = strongly_approve
+		law_colonial_resettlement = neutral
+		law_colonial_exploitation = neutral
 	}
 }
