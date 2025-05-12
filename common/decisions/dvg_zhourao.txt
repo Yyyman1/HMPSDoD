@@ -1463,7 +1463,7 @@ dvg_populating_zhourao_add_je = {
 		has_technology_researched = civilizing_mission
 		custom_tooltip = {
 			text = dvg_southern_attack_again_tt
-			NOT = { has_variable = dvg_southern_attack_again_var }
+			#NOT = { has_variable = dvg_southern_attack_again_var }
 		}
 	}
 
