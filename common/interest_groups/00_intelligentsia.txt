@@ -24,9 +24,54 @@
 
 	on_enable = {
 		ig:ig_intelligentsia = {
-			set_ig_trait = ig_trait:ig_trait_social_criticism
-			set_ig_trait = ig_trait:ig_trait_avant_garde
-			set_ig_trait = ig_trait:ig_trait_propagandists
+			if = {
+			#	limit = {
+			#		owner = {
+			#			any_primary_culture = {
+			#				has_discrimination_trait = han_chinese
+			#			}
+			#		}
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_social_criticism
+			#	set_ig_trait = ig_trait:ite_ig_trait_imperial_examinations
+			#	set_ig_trait = ig_trait:ig_trait_restoration
+			#}
+			#elif = {
+				limit = {
+					owner = { 
+						OR = { 
+							c:TUR ?= this
+			#				c:RUS ?= this
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_crisis_of_identity
+				set_ig_trait = ig_trait:ig_trait_avant_garde
+				set_ig_trait = ig_trait:ig_trait_propagandists
+			}
+			#else_if = {
+			#	limit = {
+			#		has_dlc_feature = voice_of_the_people_content
+			#		owner = { c:FRA ?= this }
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_social_criticism
+			#	set_ig_trait = ig_trait:ig_trait_avant_garde
+			#	set_ig_trait = ig_trait:ig_trait_les_beaux_arts
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_dlc_feature = ip2_content
+			#		owner = { c:BIC ?= this }
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_swaraj
+			#	set_ig_trait = ig_trait:ig_trait_civil_service
+			#	set_ig_trait = ig_trait:ig_trait_westernisation
+			#}
+			else = {
+				set_ig_trait = ig_trait:ig_trait_social_criticism
+				set_ig_trait = ig_trait:ig_trait_avant_garde
+				set_ig_trait = ig_trait:ig_trait_propagandists
+			}
 		}
 		
 		# Papal Intellegentsia
