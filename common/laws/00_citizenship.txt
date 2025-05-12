@@ -10,11 +10,15 @@ law_ethnostate = {
 	progressiveness = -100
 	
 	unlocking_technologies = {
-		multiculturalism
+		nationalism
 	}
 	
+	can_enact = {
+		game_date >= 1850.1.1
+	}
+
 	unlocking_laws = {
-		law_anarchy
+
 	}
 
 	on_enact = {
@@ -133,11 +137,15 @@ law_national_supremacy = {
 	progressiveness = -50
 	
 	unlocking_technologies = {
-		multiculturalism
+		political_agitation
+	}
+
+	can_enact = {
+		game_date >= 1900.1.1
 	}
 
 	unlocking_laws = {
-		law_anarchy
+		
 	}
 	
 	on_enact = {
@@ -256,11 +264,15 @@ law_racial_segregation = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-		multiculturalism
+		civil_rights
+	}
+
+	can_enact = {
+		game_date >= 1910.1.1
 	}
 
 	unlocking_laws = {
-		law_anarchy
+		
 	}
 	
 	on_enact = {
@@ -383,11 +395,15 @@ law_language_discrimination = {
 	progressiveness = 0
 	
 	unlocking_technologies = {
-		multiculturalism
+		civil_rights
+	}
+
+	can_enact = {
+		game_date >= 1910.1.1
 	}
 	
 	unlocking_laws = {
-		law_anarchy
+		
 	}
 
 	on_enact = {
@@ -505,19 +521,20 @@ law_cultural_exclusion = {
 	
 	progressiveness = 50
 	
-	#can_enact = {
-	#	OR = {
-	#		has_law = law_type:law_frontier_colonization
-	#		has_law = law_type:law_no_colonial_affairs
-	#	}
-	#}
+	can_enact = {
+		OR = {
+			has_law = law_type:law_frontier_colonization
+			has_law = law_type:law_no_colonial_affairs
+		}
+		game_date >= 1920.1.1
+	}
 	
 	unlocking_technologies = {
-		multiculturalism
+		civil_rights
 	}
 	
 	unlocking_laws = {
-		law_anarchy
+		
 	}
 	
 	on_enact = {
@@ -640,9 +657,10 @@ law_multicultural = {
 	
 	progressiveness = 100
 	
-	#can_enact = {
-	#	has_law = law_type:law_no_colonial_affairs
-	#}
+	can_enact = {
+		has_law = law_type:law_no_colonial_affairs
+		game_date >= 1930.1.1
+	}
 	
 	unlocking_technologies = {
 		multiculturalism
