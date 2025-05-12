@@ -157,6 +157,11 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_national_militia
 		
+		add_modifier = {
+			name = dvg_muhammad_ali_ambitions
+			months = 96
+		}
+		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
