@@ -1547,6 +1547,7 @@
 		}
 		
 		add_homeland = cu:polish
+		add_homeland = cu:balters
 	}
 	s:STATE_WEST_PRUSSIA = { #Pomerelia in-game
 		create_state = {
