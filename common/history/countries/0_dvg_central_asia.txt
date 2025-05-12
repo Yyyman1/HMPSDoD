@@ -247,9 +247,9 @@
 		ig:ig_intelligentsia = { 
 			set_interest_group_name = ig_ismailis
 		}
-		trigger_event = {
-			id = dvg_persia.16
-		}
+		#trigger_event = {
+		#	id = dvg_persia.16
+		#}
 	}
 
 	c:TDT = { #Turkemenia
@@ -274,10 +274,10 @@
 		ig:ig_devout = { 
 			set_interest_group_name = ig_sunni_madrasahs
 		}
-		trigger_event = {
-			id = dvg_afghanistan.1
-		}
-		trigger_event = {
+		#trigger_event = {
+		#	id = dvg_afghanistan.1
+		#}
+		trigger_event = { #BILLIONS EVENT
 			id = dvg_china.13
 		}
 	}

@@ -236,7 +236,7 @@
 			add_ideology = ideology_liberal
 		}
 		
-		trigger_event = { id = dvg_persia.3}
+		#trigger_event = { id = dvg_persia.3}
 		
 	}
 	
@@ -280,7 +280,7 @@
 			set_interest_group_name = ig_merchants
 			
 		}
-		trigger_event = { id = dvg_persia.5}
+		#trigger_event = { id = dvg_persia.5}
 		
 	}
 	
