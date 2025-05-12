@@ -519,7 +519,7 @@ cruel = {
 		country_authority_mult = 0.1
 		country_consumption_tax_cost_mult = -0.25
 		country_opposition_ig_approval_add = -1
-		state_standard_of_living_add = -1
+		#state_standard_of_living_add = -1
 	}
 
 	agitator_modifier = {
