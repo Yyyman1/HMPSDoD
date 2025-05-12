@@ -376,15 +376,15 @@
 			add_ideology = ideology_ayllu_collectivism
 		}
 
-		add_modifier = { #Imperial provinces are disorganized. Increases decree cost and decreases institution size change speed.
-			name = dvg_inca_province_bad_modifier
-		}
-		add_modifier = { #No unified alphabet. Reduces prestige, trade route efficiency and Intelligentsia clout.
-			name = dvg_inca_language_bad_modifier 
-		}
-		add_modifier = { #Imperial army is outdated. Reduces power projection, military research speed and Armed Forces clout.
-			name = dvg_inca_army_bad_modifier
-		}
+		#add_modifier = { #Imperial provinces are disorganized. Increases decree cost and decreases institution size change speed.
+		#	name = dvg_inca_province_bad_modifier
+		#}
+		#add_modifier = { #No unified alphabet. Reduces prestige, trade route efficiency and Intelligentsia clout.
+		#	name = dvg_inca_language_bad_modifier 
+		#}
+		#add_modifier = { #Imperial army is outdated. Reduces power projection, military research speed and Armed Forces clout.
+		#	name = dvg_inca_army_bad_modifier
+		#}
 		
 		trigger_event = {
 			id = dvg_inca_reconquest.1

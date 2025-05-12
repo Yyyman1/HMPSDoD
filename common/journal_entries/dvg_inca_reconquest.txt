@@ -14,28 +14,33 @@
 
     on_complete = {
 		set_country_type = recognized
-		trigger_event = { id = dvg_inca_reconquest.10 }
+		#trigger_event = { id = dvg_inca_reconquest.10 }
+		add_modifier = {
+			name = dvg_nation_built
+			years = 10
+			is_decaying = yes
+		}
 	}
 
 	fail = {
-		NOT = {owns_entire_state_region = STATE_CUZCO}
+		#NOT = {owns_entire_state_region = STATE_CUZCO}
 	}
 
 	on_fail = {
-		every_scope_character = {
-			limit = { has_variable = amachaq_samiri_var }
-			save_scope_as = scope_amachaq_samiri
-		}
-		ruler = { kill_character = yes }
-		scope:scope_amachaq_samiri = { 
-			set_character_as_ruler = yes
-			hidden_effect = { set_character_immortal = no }
-		}
-		change_tag = QUL
+		#every_scope_character = {
+		#	limit = { has_variable = amachaq_samiri_var }
+		#	save_scope_as = scope_amachaq_samiri
+		#}
+		#ruler = { kill_character = yes }
+		#scope:scope_amachaq_samiri = { 
+		#	set_character_as_ruler = yes
+		#	hidden_effect = { set_character_immortal = no }
+		#}
+		#change_tag = QUL
 	}
 
-	scripted_button = je_inca_reconquer_the_empire_raid_the_border
-	scripted_button = je_inca_reconquer_the_empire_sponsor_separatists
+	#scripted_button = je_inca_reconquer_the_empire_raid_the_border
+	#scripted_button = je_inca_reconquer_the_empire_sponsor_separatists
 
 	invalid = {
 		NOT = { has_law = law_type:law_monarchy }

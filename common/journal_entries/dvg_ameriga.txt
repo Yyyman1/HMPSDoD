@@ -342,6 +342,8 @@ je_amerigan_nation_building = {
 		}
 		add_modifier = {
 			name = dvg_nation_built
+			years = 10
+			is_decaying = yes
 		}
 	}
 
