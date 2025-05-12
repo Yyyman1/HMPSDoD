@@ -870,3 +870,10 @@ dominated_caribbean = {
 	building_group_bg_oil_extraction_throughput_add = 0.1
 	state_migration_pull_mult = 0.05
 }
+
+dvg_muhammad_ali_ambitions = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_diplomatic_play_maneuvers_add = 60
+	state_tax_capacity_mult = 0.10
+	country_infamy_decay_mult = -0.10
+}
