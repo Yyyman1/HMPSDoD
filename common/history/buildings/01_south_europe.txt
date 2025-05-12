@@ -3711,7 +3711,7 @@
 				add_ownership={
 					country={
 						country="c:SPA"
-						levels=1
+						levels=3
 					}
 				}
 				reserves=1
