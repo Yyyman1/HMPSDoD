@@ -23,9 +23,92 @@
 	
 	on_enable = {
 		ig:ig_petty_bourgeoisie = {
-			set_ig_trait = ig_trait:ig_trait_xenophobia
-			set_ig_trait = ig_trait:ig_trait_middle_managers
-			set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			if = {
+				limit = {
+					owner = {
+						any_primary_culture = {
+							has_discrimination_trait = scandinavian_culture_group
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_bergsbrukens_valdistrikten
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			}
+			#else_if = {
+			#	limit = {
+			#		owner = { c:TUR ?= this }
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_xenophobia
+			#	set_ig_trait = ig_trait:ig_trait_effendi
+			#	set_ig_trait = ig_trait:ig_trait_reorganization
+			#}
+			else_if = {
+				limit = {
+					owner = { c:EGY ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_effendi
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			}
+			else_if = {
+				limit = {
+					has_dlc_feature = voice_of_the_people_content
+					owner = { c:DUA ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_haute_finance
+				set_ig_trait = ig_trait:ig_trait_master_of_the_house
+			}
+			else_if = {
+				limit = {
+					owner = { c:BEO ?= this }
+				}
+				set_ig_trait = ig_trait:ig_trait_bah_humbug
+				set_ig_trait = ig_trait:ig_trait_civil_service
+				set_ig_trait = ig_trait:ig_trait_old_lady_of_threadneedle_street
+			}
+			#else_if = {
+			#	limit = {
+			#		owner = { 
+			#			OR = {
+			#				c:BIC ?= this
+			#				any_primary_culture = {
+			#					has_discrimination_trait = south_asian_heritage
+			#				}
+			#			}
+			#		}
+			#	}
+			#	remove_ideology = ideology_reactionary
+			#	add_ideology = ideology_modernizer
+			#	if = {
+			#		limit = {
+			#			owner = {
+			#				c:BIC ?= this
+			#			}
+			#		}
+			#		# Name
+			#		set_interest_group_name = ig_bhadralok
+			#		# Ideologies
+			#		remove_ideology = ideology_patriotic
+			#		add_ideology = ideology_sovereignist
+			#		
+			#		# Traits
+			#		set_ig_trait = ig_trait:ig_trait_swadesh
+			#		set_ig_trait = ig_trait:ig_trait_lines_of_credit
+			#		set_ig_trait = ig_trait:ig_trait_cooperative_agencies
+			#	}
+			#	else = {
+			#		set_ig_trait = ig_trait:ig_trait_xenophobia
+			#		set_ig_trait = ig_trait:ig_trait_middle_managers
+			#		set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			#	}
+			#}
+			else = {
+				set_ig_trait = ig_trait:ig_trait_xenophobia
+				set_ig_trait = ig_trait:ig_trait_middle_managers
+				set_ig_trait = ig_trait:ig_trait_treasury_bonds
+			}
 		}
 
 	### Specific

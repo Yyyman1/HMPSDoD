@@ -78,36 +78,36 @@ principle_internal_trade_1 = {
 
 ### MARKET UNIFICATION
 
-principle_market_unification_1 = {
-	icon = "gfx/interface/icons/principles_icons/market_unification.dds"
-	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
-	
-	visible = {
-		has_dlc_feature = power_bloc_features
-	}
-
-	leader_modifier = {
-		country_leverage_generation_mult = -0.25
-	}
-
-	member_modifier = {
-		country_influence_mult = -0.1
-	}
-
-	power_bloc_modifier = {
-		# Members are permanently part of the same Customs Union
-		power_bloc_customs_union_bool = yes
-	}
-	
-	ai_weight = {
-		value = 200 # Generally a good group for a PB to have
-		
-		if = {
-			limit = { has_strategy = ai_strategy_economic_imperialism }
-			multiply = 2.0
-		}
-	}
-}
+#principle_market_unification_1 = {
+#	icon = "gfx/interface/icons/principles_icons/market_unification.dds"
+#	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+#	
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+#
+#	leader_modifier = {
+#		country_leverage_generation_mult = -0.25
+#	}
+#
+#	member_modifier = {
+#		country_influence_mult = -0.1
+#	}
+#
+#	power_bloc_modifier = {
+#		# Members are permanently part of the same Customs Union
+#		power_bloc_customs_union_bool = yes
+#	}
+#	
+#	ai_weight = {
+#		value = 200 # Generally a good group for a PB to have
+#		
+#		if = {
+#			limit = { has_strategy = ai_strategy_economic_imperialism }
+#			multiply = 2.0
+#		}
+#	}
+#}
 
 ### SOVEREIGN EMPIRE
 ### Vassal Subjects

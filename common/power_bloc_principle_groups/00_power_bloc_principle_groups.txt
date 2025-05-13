@@ -15,13 +15,13 @@ principle_group_internal_trade = {
 	}
 }
 
-principle_group_market_unification = {
-	blocking_identity = identity_trade_league
-	
-	levels = {
-		principle_market_unification_1
-	}
-}
+#principle_group_market_unification = {
+#	blocking_identity = identity_trade_league
+#	
+#	levels = {
+#		principle_market_unification_1
+#	}
+#}
 
 principle_group_vassalization = {
 	primary_for_identity = identity_sovereign_empire
