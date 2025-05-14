@@ -102,6 +102,8 @@
  ig_honorary_britannians_desc: "The Sovereign Order of Albion, also known as 'Honorary Britannians', consists of those who were part of the former 'Knights of the Round Table' alongside others from less privileged or disenfranchised backgrounds who hope to find a place within the social hierarchy through service to the state." 
  ig_britannian_church: "Church of Britannia"
  ig_britannian_church_desc: "The Church of Britannia believes in the prophecy that the Holy Britannian Emperor has written about. It explicitly espouses the cultural supremacy of the Britannians, prohibits any non-Anglophone sermon, and Empire itself with its borders is the Promised Land that must expand to encompass as much of the world as possible. Outside of Britannia, this church is widely viewed as a cult or terrorist organization."ig_cattle_barons:0 "Cattle Barons"
+
+  
  
  #Andes Groups
  ##Tawantinsuyu
@@ -125,3 +127,6 @@
  
  ig_yakuza: "Yakuza Clans"
  ig_yakuza_desc: "The term "yakuza" is a broad term used to describe international crime syndicates with connections to the Japanese homeland and their colonies abroad."
+ ##Rohnnst
+ ig_mormon_church: "Mormon Church"
+ ig_mormon_church_desc: "While young, the Mormon Church has already grown to become very influencial within Røhnnst society."

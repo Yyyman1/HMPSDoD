@@ -19,3 +19,27 @@ immortal = {
 	
 	value = 0
 }
+
+polygamous = {
+	type = personality
+	texture = "gfx/interface/icons/character_trait_icons/romantic.dds"
+
+	character_modifier = {
+		character_popularity_add = -15
+	}
+	
+	country_modifier = {
+		state_birth_rate_mult = 0.05
+	}
+
+	possible = {
+		always = no
+	}
+	
+	weight = 1
+	
+	replace = {																
+	}
+	
+	value = 0
+}

@@ -1,0 +1,22 @@
+﻿CHARACTERS = {
+	c:RHN = {
+		create_character = {
+			historical = yes
+			first_name = zhoushi
+			last_name = smidt
+			culture = cu:rohnnst
+			ig_leader = yes
+			birth_date = 1805.12.05
+			interest_group = ig_devout
+			ideology = ideology_theocrat
+			traits = {
+				charismatic
+				pious
+				cautious
+				persistent
+				polygamous
+			}
+		}
+		
+	}
+}
