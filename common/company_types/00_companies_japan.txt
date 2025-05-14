@@ -33,13 +33,13 @@ company_mitsui = {
 			}
 		}
 		has_technology_researched = cotton_gin
-		OR = {
-			custom_tooltip = {
-				text = is_meiji_japan
-				has_variable = meiji_restoration_complete
-			}
-			has_law = law_type:law_republic
-		}
+		#OR = {
+		#	custom_tooltip = {
+		#		text = is_meiji_japan
+		#		has_variable = meiji_restoration_complete
+		#	}
+		#	has_law = law_type:law_republic
+		#}
 	}
 	
 	prosperity_modifier = {
@@ -80,13 +80,13 @@ company_mantetsu = {
 			has_building = building_railway
 			count >= 4
 		}
-		OR = {
-			custom_tooltip = {
-				text = is_meiji_japan
-				has_variable = meiji_restoration_complete
-			}
-			has_law = law_type:law_republic
-		}
+		#OR = {
+		#	custom_tooltip = {
+		#		text = is_meiji_japan
+		#		has_variable = meiji_restoration_complete
+		#	}
+		#	has_law = law_type:law_republic
+		#}
 	}
 	
 	prosperity_modifier = {
@@ -130,13 +130,13 @@ company_mitsubishi = {
 			}
 		}
 		has_technology_researched = ironclad_tech
-		OR = {
-			custom_tooltip = {
-				text = is_meiji_japan
-				has_variable = meiji_restoration_complete
-			}
-			has_law = law_type:law_republic
-		}
+		#OR = {
+		#	custom_tooltip = {
+		#		text = is_meiji_japan
+		#		has_variable = meiji_restoration_complete
+		#	}
+		#	has_law = law_type:law_republic
+		#}
 	}
 	
 	prosperity_modifier = {

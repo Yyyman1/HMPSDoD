@@ -109,7 +109,7 @@ dvg_dua.1 = {
 
 	option = { #English
 		name = dvg_dua.1.b
-
+		set_capital = STATE_YORKSHIRE
 		set_variable = english_path
 		set_variable = supporting_english_var
 

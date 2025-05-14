@@ -45,13 +45,19 @@
 				limit = {
 					owner = { has_journal_entry = je_south_america_migration }
 				}
-				custom_tooltip = {
-					text = is_in_sa_tt
-					state_region = {
-						is_homeland = cu:lotharian
-						is_incorporated = yes
-					}
+				OR = {
+					region = sr:region_la_plata
+					region = sr:region_brazil
+					region = sr:region_andes
+					region = sr:region_gran_colombia
 				}
+				#custom_tooltip = {
+				#	text = is_in_sa_tt
+				#	state_region = {
+				#		is_homeland = cu:lotharian
+				#		is_incorporated = yes
+				#	}
+				#}
 			}
 			trigger_else_if = {
 				limit = {

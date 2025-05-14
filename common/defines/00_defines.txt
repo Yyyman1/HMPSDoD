@@ -115,9 +115,9 @@ NPolitics = {
 	BASE_IG_APPROVAL = 0				# Baseline IG approval
 	MIN_IG_APPROVAL = -20				# Minimum IG approval
 	MAX_IG_APPROVAL = 20				# Maximum IG approval
-	MIN_IG_APPROVAL_FROM_LAWS = -5		# IG cannot have approval lower than this as a total from laws 'on the book'
-	MAX_IG_APPROVAL_FROM_LAWS = 5		# IG cannot have approval higher than this as a total from laws 'on the book'
-	IG_APPROVAL_FROM_LOYALISTS = 15		# If 100% of the political strength of the IG is loyalist, change approval by this amount
+	MIN_IG_APPROVAL_FROM_LAWS = -7		# IG cannot have approval lower than this as a total from laws 'on the book'
+	MAX_IG_APPROVAL_FROM_LAWS = 7		# IG cannot have approval higher than this as a total from laws 'on the book'
+	IG_APPROVAL_FROM_LOYALISTS = 10		# If 100% of the political strength of the IG is loyalist, change approval by this amount
 	IG_APPROVAL_FROM_RADICALS = -15		# If 100% of the political strength of the IG is radical, change approval by this amount
 	IG_LAW_DESIRE_RADICAL_CHANGE_THRESHOLD = 2 # A difference in positions this or higher is considered radical
 	IG_LAW_DESIRE_EXTREME_CHANGE_THRESHOLD = 3 # A difference in positions this or higher is considered extreme
@@ -311,7 +311,7 @@ NEconomy = {
 	COUNTRY_GDP_MODIFIER_DIVISOR = 1000					# Scale the country_gdp static modifier by this divisor
 	COUNTRY_GDP_MODIFIER_MAX_MULTIPLIER = 200000		# The country_gdp modifier multiplier cannot be higher than this
 	
-	ECONOMY_OF_SCALE_START_LEVEL = 20					# Level at which buildings start getting economy of scale bonuses. Levels lower than this value provide no bonus [>=1]
+	ECONOMY_OF_SCALE_START_LEVEL = 1					# Level at which buildings start getting economy of scale bonuses. Levels lower than this value provide no bonus [>=1]
 	ECONOMY_OF_SCALE_NATIONALIZED_FRACTION_MULT = 0.75	# Non-government building economy of scale modifier if multiplied by (1 - the fraction of nationalized levels * this)
 
 	IN_DEFAULT_MINIMUM_PENALTY_SCALE = 0.1				# This amount of the 'in default' throughput penalty is applied right away
@@ -1077,14 +1077,14 @@ NPops = {
 	RADICALS_MAX_FROM_STARVATION_MILD = 0.5 # Food Security = Severe Threshold
 	RADICALS_MAX_FROM_STARVATION_SEVERE = 0.75 # Food Security = 0
 	
-	ALLOW_ASSIMILATION_IN_HOMELANDS = no		# Can pops assimilate when living in their homelands?
-	ALLOW_ASSIMILATION_ACROSS_HERITAGES = yes 	# Can pops assimilate into pops of a different heritage?
+	ALLOW_ASSIMILATION_IN_HOMELANDS = yes		# Can pops assimilate when living in their homelands?
+	ALLOW_ASSIMILATION_ACROSS_HERITAGES = no 	# Can pops assimilate into pops of a different heritage?
 
-	ASSIMILATION_RATE = 0.004					# Percentage of pops who will Assimilate into a different Culture each month, if eligible
+	ASSIMILATION_RATE = 0.0005					# Percentage of pops who will Assimilate into a different Culture each month, if eligible
 	MIN_ASSIMILATION = 1						# If there is any assmiliation at least this many people will assimilate
 
-	CONVERSION_RATE = 0.002						# Percentage of pops who will Convert into a different Religion each month, if eligible
-	CONVERSION_UNINCORPORATED_MULT = 0.1 		# CONVERSION_RATE is multiplied by this in unincorporated states
+	CONVERSION_RATE = 0.001						# Percentage of pops who will Convert into a different Religion each month, if eligible
+	CONVERSION_UNINCORPORATED_MULT = 0.3 		# CONVERSION_RATE is multiplied by this in unincorporated states
 	MIN_CONVERSION = 1							# If there is any conversion at least this many people will convert
 
 	OBSESSION_DEMAND_MIN = 1.0					# The minimum relative demand of an obsession (overrides min demand in buy package goods categories)

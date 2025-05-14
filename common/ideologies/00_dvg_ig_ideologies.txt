@@ -22,6 +22,7 @@
 		law_state_atheism = strongly_disapprove
 	}
 	lawgroup_colonization = {
+		law_frontier_colonization = neutral
 		law_no_colonial_affairs = neutral
 		law_colonial_resettlement = neutral
 		law_colonial_exploitation = disapprove
@@ -79,6 +80,7 @@ ideology_britannian_paternalistic = {
 		law_no_police = disapprove
 	}
 	lawgroup_colonization = {
+		law_frontier_colonization = strongly_approve
 		law_no_colonial_affairs = disapprove
 		law_colonial_resettlement = strongly_approve
 		law_colonial_exploitation = strongly_approve

@@ -384,6 +384,7 @@ dp_annex_subject = {
 #	on_war_end = {}
 #}
 
+
 dp_revolution = {
 	requires_interest_marker = no
 	enable_switch_sides = yes
@@ -392,7 +393,7 @@ dp_revolution = {
 	initiator_can_add_war_goals = yes
 	target_can_add_war_goals = yes
 	add_infamy_for_starting_initiator_wargoals = no
-
+	
 	war_goal = annex_country
 	
 	texture = "gfx/interface/icons/war_goals/annex_country.dds"
@@ -447,7 +448,7 @@ dp_secession = {
 	target_can_add_war_goals = no
 	backing_down_always_ends_play = no
 	add_infamy_for_starting_initiator_wargoals = no
-
+	
 	war_goal = secession
 	
 	texture = "gfx/interface/icons/war_goals/secession.dds"

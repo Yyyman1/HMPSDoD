@@ -33,3 +33,30 @@
 #		base = 50
 #	}
 #}
+
+dvg_old_burgundy = {
+	is_shown = {
+		exists = c:BRG
+		root = c:BRG
+		NOT = {
+			c:BRG = {
+				country_has_primary_culture = cu:romand
+			}
+		}
+	}
+	
+    possible = {
+		owns_entire_state_region = STATE_BURGUNDY
+		owns_entire_state_region = STATE_SAVOY
+		owns_entire_state_region = STATE_RHONE
+		has_technology_researched = pan-nationalism
+	}
+
+    when_taken = {
+		add_primary_culture = cu:romand
+    }
+
+	ai_chance = {
+		base = 100
+	}
+}

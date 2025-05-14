@@ -457,6 +457,8 @@ modern_sewerage = {
 		state_building_construction_sector_max_level_add = 5
 		country_max_weekly_construction_progress_add = 5
 		state_pollution_reduction_health_mult = -0.1
+		state_urbanization_per_level_mult = -0.1
+		state_harvest_condition_flood_impact_mult = -0.1
 	}
 	
 	unlocking_technologies = {
@@ -876,8 +878,10 @@ steel_frame_buildings = {
 	modifier = {
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
-		state_building_construction_sector_max_level_add = 5
+		state_building_construction_sector_max_level_add = 10
 		country_max_weekly_construction_progress_add = 5
+		state_urbanization_per_level_mult = -0.1
+		state_harvest_condition_flood_impact_mult = -0.05
 	}
 	
 	unlocking_technologies = {
@@ -1233,8 +1237,9 @@ elevator = {
 	modifier = {
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
-		state_building_construction_sector_max_level_add = 5
+		state_building_construction_sector_max_level_add = 20
 		country_max_weekly_construction_progress_add = 5
+		state_urbanization_per_level_mult = -0.1
 	}	
 	
 	unlocking_technologies = {

@@ -74,7 +74,7 @@
 		activate_law = law_type:law_debtors_prisons
 		activate_law = law_type:law_dedicated_police
 		activate_law = law_type:law_legacy_slavery
-		
+		activate_law = law_type:law_no_migration_controls
 
 		ig:ig_devout = {
 			add_ruling_interest_group = yes
@@ -116,7 +116,7 @@
 		activate_law = law_type:law_dedicated_police
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_tenant_farmers
@@ -164,7 +164,7 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
 		activate_law = law_type:law_women_own_property
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls		
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_moderate_income_tax	
@@ -183,6 +183,7 @@
 			level = 3
 		}
 		
+
 		#add_journal_entry = { type = je_sca_establish_control_over_ny_sjaelland }
 		set_ruling_interest_groups = {
 			ig_petty_bourgeoisie
@@ -202,7 +203,7 @@
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_oligarchy
         activate_law = law_type:law_tenant_farmers
@@ -261,6 +262,7 @@
 		activate_law = law_type:law_legacy_slavery
 		activate_law = law_type:law_tenant_farmers
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -297,7 +299,7 @@
 		activate_law = law_type:law_private_schools
 		activate_law = law_type:law_no_health_system
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_low_income_tax
 		activate_law = law_type:law_ethnostate
 		activate_law = law_type:law_moderate_consumption_tax
@@ -328,6 +330,7 @@
 			country = c:TUN
 			secret_goal = conquer
 		}
+
 	}
 	
 	c:NAV = { #Navarra
@@ -340,7 +343,7 @@
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_local_police
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_peasant_levies
@@ -389,23 +392,25 @@
 		effect_starting_politics_conservative = yes
 
 		activate_law = law_type:law_landed_voting
-		activate_law = law_type:law_national_supremacy
+		activate_law = law_type:law_ethnostate
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_appointed_bureaucrats
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_local_police
-		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_public_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
 
 		set_institution_investment_level = {
 			institution = institution_schools
 			level = 2
 		}
+
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -704,30 +709,6 @@
 			set_interest_group_name = ig_evangelical_church
 		}
 	}
-	
-	c:AGR = { #Augsburg
-		effect_starting_technology_tier_2_tech = yes
-		
-		effect_starting_politics_conservative = yes
-		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_theocracy
-		activate_law = law_type:law_religious_schools
-		activate_law = law_type:law_low_income_tax	
-		activate_law = law_type:law_moderate_consumption_tax
-		activate_law = law_type:law_ethnostate
-
-		set_institution_investment_level = {
-			institution = institution_schools
-			level = 2
-		}
-		
-		set_ruling_interest_groups = {
-			ig_devout
-		}
-		ig:ig_devout = {
-			set_interest_group_name = ig_catholic_church
-		}
-	}
 
 	c:ASB = { #Ansbach
 		effect_starting_technology_tier_2_tech = yes
@@ -946,6 +927,7 @@
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_no_migration_controls
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1100,6 +1082,12 @@
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_religious_schools
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1118,6 +1106,12 @@
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_religious_schools
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 2
+		}
 
 		set_ruling_interest_groups = {
 			ig_devout
@@ -1137,6 +1131,7 @@
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
 
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1168,6 +1163,7 @@
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_national_militia
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_migration_controls
 
 
 		set_institution_investment_level = {
@@ -1185,6 +1181,7 @@
 			set_interest_group_name = ig_bolognese_school
 			#set_ig_suppression = yes
 		}
+
 	}
 	
 	c:GEN = { #Genoa
@@ -1240,6 +1237,7 @@
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_religious_schools
+		activate_law = law_type:law_no_migration_controls
 		
 		set_institution_investment_level = {
 			institution = institution_schools
@@ -1275,6 +1273,7 @@
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		#activate_law = law_type:law_commercialized_agriculture
+		activate_law = law_type:law_no_migration_controls
 		
 		set_ruling_interest_groups = {
 			ig_landowners
@@ -1305,6 +1304,7 @@
 		trigger_event = {
 			id = dvg_ven.1
 		}
+
 	}
 	
 	c:PAR = { #Parma
@@ -1442,7 +1442,7 @@
 		activate_law = law_type:law_per_capita_based_taxation
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_women_own_property
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
@@ -1561,7 +1561,6 @@
 		effect_starting_technology_tier_3_tech = yes
 		
 		add_technology_researched = academia
-		add_technology_researched = law_enforcement
 		add_technology_researched = mandatory_service
 		add_technology_researched = urban_planning
 		add_technology_researched = line_infantry
@@ -1577,6 +1576,7 @@
 		activate_law = law_type:law_slave_trade
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
+		activate_law = law_type:law_no_migration_controls
 		
 		ig:ig_landowners = {
 			add_ruling_interest_group = yes
@@ -1721,13 +1721,20 @@
 		activate_law = law_type:law_national_supremacy
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_land_based_taxation
+		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_high_consumption_tax
-
+		activate_law = law_type:law_no_colonial_affairs
+		
+		set_institution_investment_level = {
+			institution = institution_schools
+			level = 1
+		}
+		
 		set_ruling_interest_groups = {
 			ig_landowners
 		}
@@ -1773,7 +1780,7 @@
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_serfdom
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_peasant_levies
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
@@ -1796,6 +1803,7 @@
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
 		activate_law = law_type:law_ethnostate
+		activate_law = law_type:law_no_migration_controls
 
 		set_institution_investment_level = {
 			institution = institution_schools

@@ -14,7 +14,7 @@ janissary_revolt = {
 	unit_army_offense_mult = -0.1
 	interest_group_ig_armed_forces_pop_attraction_mult = 0.2
 	country_authority_mult = -0.2
-	state_radicals_from_discrimination_mult = 0.1
+	country_leverage_generation_mult = -0.25
 }
 
 neutrality = {
@@ -676,12 +676,13 @@ dvg_colonial_recruitment = {
 	state_standard_of_living_add = 0.10
 	state_assimilation_mult = 0.25
 }
-dvg_nation_built = { #temp changes
-	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
-	#country_prestige_mult = 0.25
-	#country_loyalists_from_legitimacy_mult = 0.25
-	#country_authority_add = 100
-}
+
+dvg_nation_built = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds 
+	country_prestige_mult = 0.25 
+	country_loyalists_from_legitimacy_mult = 0.25 
+	country_authority_add = 100 
+} 
 dvg_agrarian_reform_castro = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	tax_income_add = 0.1
@@ -842,4 +843,38 @@ china_radicalism = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
 	country_radicals_from_conquest_mult = 0.33
 	interest_group_approval_add = -3
+}
+
+dominum_baltici = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_trade_route_competitiveness_mult = 0.2
+	country_influence_mult = 0.1
+	country_prestige_add = 100
+	country_convoys_capacity_mult = 0.1
+	country_minting_add = 2000
+}
+
+dominum_nostrum = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_trade_route_competitiveness_mult = 0.2
+	country_influence_mult = 0.1
+	country_prestige_add = 100
+	unit_navy_defense_mult = 0.1
+	unit_navy_offense_mult = 0.1
+}
+
+dominated_caribbean = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	country_trade_route_competitiveness_mult = 0.2
+	country_influence_mult = 0.1
+	country_prestige_add = 100
+	building_group_bg_oil_extraction_throughput_add = 0.1
+	state_migration_pull_mult = 0.05
+}
+
+dvg_muhammad_ali_ambitions = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_diplomatic_play_maneuvers_add = 60
+	state_tax_capacity_mult = 0.10
+	country_infamy_decay_mult = -0.10
 }

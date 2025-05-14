@@ -16,7 +16,7 @@ PRO = { #Provence
 
 	tier = principality
 	
-	cultures = { occitan  }
+	cultures = { occitan french romand }
 
 	religion = catholic
 
@@ -218,7 +218,7 @@ SPA = { #Spain
 
 	tier = kingdom
 	
-	cultures = { portuguese }
+	cultures = { portuguese spanish }
 	capital = STATE_ESTREMADURA
 }
 
@@ -264,7 +264,7 @@ ARI = { #Aragon-Italy
 
 	tier = empire
 	
-	cultures = { catalan north_italian south_italian central_italian venetian sardinian maltese}
+	cultures = { catalan north_italian south_italian central_italian sardinian maltese}
 	capital = STATE_LAZIO
 }
 
@@ -285,7 +285,7 @@ GEN = { #Genoa
 
 	tier = principality
 	
-	cultures = { north_italian }
+	cultures = { north_italian central_italian }
 	capital = STATE_PIEDMONT
 }
 
@@ -797,7 +797,7 @@ GER = { #Germany
 
 	tier = empire
 	
-	cultures = { north_german south_german rheinish }
+	cultures = { north_german south_german rheinish balters }
 	capital = STATE_HESSE
 }
 

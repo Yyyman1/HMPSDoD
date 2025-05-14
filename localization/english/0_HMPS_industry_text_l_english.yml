@@ -126,3 +126,11 @@
  pm_state_capitalism_building_hardwood_forestry:1 "$pm_state_captialism$"
  pm_state_capitalism_building_oil_rig:1 "$pm_state_captialism$"
  
+   #Millitary conversion
+ pmg_military_conversion_steel:0 "Military Conversion"
+ pmg_military_conversion_tools:0 "Military Conversion"
+ pmg_military_conversion_explosives:0 "Military Conversion"
+ pm_military_conversion_disabled:0 "Civilian Use"
+ pm_military_conversion_steel:0 "Total War"
+ pm_military_conversion_tools:0 "Total War"
+ pm_military_conversion_explosives:0 "Total War"

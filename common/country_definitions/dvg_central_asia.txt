@@ -84,7 +84,7 @@ TRC = { # Turkmenia
 TDT = { # Turkmen Desert Tribes
 	color = { 0 204 102 }
 	
-	country_type = decentralized
+	country_type = unrecognized
 	
 	tier = principality
 

@@ -24,9 +24,35 @@
 
 	on_enable = {
 		ig:ig_armed_forces = {
-			set_ig_trait = ig_trait:ig_trait_materiel_waste
-			set_ig_trait = ig_trait:ig_trait_veteran_consultation
-			set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+			if = {
+				limit = {
+					owner = {
+						OR = {
+							c:BEO ?= this
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_materiel_waste
+				set_ig_trait = ig_trait:ig_trait_veteran_consultation
+				set_ig_trait = ig_trait:ig_trait_elan_vital
+			}
+			else_if = {
+				limit = {
+					owner = {
+						any_primary_culture = {
+							has_discrimination_trait = han_chinese
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_newly_created_army
+				set_ig_trait = ig_trait:ig_trait_self_strengthening
+				set_ig_trait = ig_trait:ig_trait_parochial_leadership
+			}
+			else = {
+				set_ig_trait = ig_trait:ig_trait_materiel_waste
+				set_ig_trait = ig_trait:ig_trait_veteran_consultation
+				set_ig_trait = ig_trait:ig_trait_patriotic_fervor
+			}
 		}
 		# Caudillo Ideology
 		if = {
@@ -50,7 +76,7 @@
 				NOT = { has_global_variable = fall_of_the_samurai_global_var }
 			}
 			ig:ig_armed_forces = {
-				add_ideology = ideology_bakufu
+				#add_ideology = ideology_bakufu
 				set_interest_group_name = ig_samurai
 			}
 		}

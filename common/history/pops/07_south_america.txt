@@ -628,7 +628,7 @@
 				size = 125925
 			}
 			
-                        create_pop = {
+            create_pop = {
 				culture = atlantian
 				size = 20606
 			}
@@ -648,7 +648,7 @@
 			}
 			create_pop = {
 				culture = british
-				size = 10768
+				size = 510768
 			}
 		}
 	}
@@ -657,6 +657,10 @@
 			create_pop = {
 				culture = beornian
 				size = 74680
+			}
+			create_pop = {
+				culture = british
+				size = 43802
 			}
 			create_pop = {
 				culture = patagonian
@@ -668,11 +672,15 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 41560
+				size = 71560
+			}
+			create_pop = {
+				culture = british
+				size = 34678
 			}
 			create_pop = {
 				culture = patagonian
-				size = 2900
+				size = 6900
 			}
 		}
 	}
@@ -693,6 +701,10 @@
 				size = 6012
 			}
 			create_pop = {
+				culture = british
+				size = 2481
+			}
+			create_pop = {
 				culture = amazonian
 				size = 8064
 			}
@@ -705,6 +717,10 @@
 				size = 76480
 			}
 			create_pop = {
+				culture = british
+				size = 63802
+			}
+			create_pop = {
 				culture = aimara
 				size = 29800
 			}
@@ -714,7 +730,11 @@
 		region_state:BEO = {
 			create_pop = {
 				culture = beornian
-				size = 70824
+				size = 190824
+			}
+			create_pop = {
+				culture = british
+				size = 123802
 			}
 			create_pop = {
 				culture = patagonian

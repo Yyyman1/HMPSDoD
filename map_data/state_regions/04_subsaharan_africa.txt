@@ -241,6 +241,10 @@ STATE_NIGER_DELTA = {
         type = bg_rubber
         undiscovered_amount = 16
     }
+    resource = {
+        type = bg_oil_extraction
+        undiscovered_amount = 60
+    }
     naval_exit_id = 3091
 }
 STATE_OUTER_HAUSALAND = {

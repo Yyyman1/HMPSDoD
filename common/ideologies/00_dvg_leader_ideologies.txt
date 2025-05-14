@@ -40,6 +40,7 @@ ideology_trekker = {
 	character_ideology = yes
 	
 	lawgroup_colonization = {
+		law_frontier_colonization = approve
 		law_no_colonial_affairs = disapprove
 		law_colonial_resettlement = approve
 		law_colonial_exploitation = disapprove

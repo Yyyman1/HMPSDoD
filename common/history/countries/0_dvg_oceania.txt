@@ -52,7 +52,7 @@
 	#}
 	
 	c:AOT = { #Aotearoa
-		effect_starting_technology_tier_4_tech = yes
+		effect_starting_technology_tier_3_tech = yes
 
 		activate_law = law_type:law_republic
 		activate_law = law_type:law_oligarchy
@@ -267,7 +267,7 @@
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_censorship
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_colonial_exploitation
 		activate_law = law_type:law_right_of_assembly
 		activate_law = law_type:law_low_income_tax	
@@ -390,7 +390,7 @@
 		activate_law = law_type:law_interventionism
 		activate_law = law_type:law_land_based_taxation
 		activate_law = law_type:law_right_of_assembly
-		activate_law = law_type:law_migration_controls
+		activate_law = law_type:law_no_migration_controls
 		activate_law = law_type:law_national_guard
 		activate_law = law_type:law_professional_army
 		activate_law = law_type:law_homesteading
