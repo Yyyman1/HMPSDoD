@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
  #JEs
  je_one_kongsi: "One [concept_dod_kongsi]!"
  je_one_kongsi_reason: "The Country, Long Divided, Must Unite. Tensions between Mianjin and Yaluo have grown great, and mediation between the two has resulted in failure. The time has come for war, and of this war, there may be no winners, for brother will be against brother, and family against family once more."
@@ -231,6 +231,11 @@
  dvg_zhourao.1002.f: "[concept_dod_zhourao] is at once, whole."
  dvg_zhourao.1002.a: "[concept_dod_zhourao] is above religion!"
  dvg_zhourao.1002.b: "We will not compromise on our identity!"
+ 
+ dvg_zhourao.5001.t: "Populating Ruisha and Yongjia"
+ dvg_zhourao.5001.d: " "
+ dvg_zhourao.5001.f: " "
+ dvg_zhourao.5001.a: "Let's Begin"
  #dvg_zhourao.1000.
  #dvg_zhourao.1000.
  
@@ -485,3 +490,41 @@
  Gatjil: "Gatjil"
  
  lushou: "Lushou"
+ 
+ #Zhourao Manifest Destiny
+ je_zho_claim_the_natives: "Secure Our Position"
+ je_zho_claim_the_natives_reason: "With the European nations settling the nearby land, we must take the land owned by the bordering natives to secure our spot on the continent."
+ zho_ctn.1: "Securing the Interior"
+ zho_ctn.1.d: "Taking the Liushadi from the Yalai and Kamilaluoyi tribes will allow our armies to march from Yaluo to Jiangzhou to faster to respond to the many possible threats to our sovereignty."
+ zho_ctn.3: "Secure the Yongjia Coast"
+ zho_ctn.3.d: "Scandinavian movements to our south have led us to believe that they are mapping the Yongjia Coast in hopes to colonize it, we must strike first and claim the land for ourselves."
+ je_zho_manifest_destiny: "Zhourao Manifest Destiny"
+ je_zho_manifest_destiny_reason: "With our position secure, we must now move westwards and push the Western European colonizers off the continent."
+ je_zho_control_australasia_islands: "Dreams of Australasia"
+ je_zho_control_australasia_islands_reason: "With our homeland under our control, we must follow the colonizer's mindset and take control of the nearby, resource rich islands./n/nThe buttons above will change the rewards given by the JE, with them giving the option to give a temporary migration boost to the conquered states and the option to make East and Western New Guinea Zhourao homelands."
+ zhr.cai.1: "Add Migration to Vargo OG Kaenguruholm"
+ zhr.cai.1.d: "Adds 75% migration attraction to Vargo Og Kaenguruholm upon JE completion"
+ zhr.cai.2: "Remove Migration to Vargo Og Kaenguruholm"
+ zhr.cai.2.d: "Removes the 75% migration to Vargo Og Kaenguruholm"
+ zhr.cai.3: "Add Migration to Motu Pari"
+ zhr.cai.3.d: "Adds 75% migration attraction to Motu Pari upon JE completion"
+ zhr.cai.4: "Remove Migration to Motu Pari"
+ zhr.cai.4.d: "Removes the 75% migration to Motu Pari"
+ zhr.cai.5: "Add Migration to Ny Sjaelland"
+ zhr.cai.5.d: "Adds 75% migration attraction to Ny Sjaelland upon JE completion"
+ zhr.cai.6: "Remove Migration to Ny Sjaelland"
+ zhr.cai.6.d: "Removes the 75% migration to Ny Sjaelland"
+ zhr.cai.7: "Make E.N.G. Homeland"
+ zhr.cai.7.d: "Makes Eastern New Guinea a Zhourao homeland and creates a Zhourao cultural community there"
+ zhr.cai.8: "Add Migration to E.N.G."
+ zhr.cai.8.d: "Adds 75% migration attraction to Eastern New Guinea upon JE completion"
+ zhr.cai.9: "Remove Migration to E.N.G."
+ zhr.cai.9.d: "Removes the 75% migration to Eastern New Guinea"
+ zhr.cai.10: "Make W.N.G. Homeland"
+ zhr.cai.10.d: "Makes Weastern New Guinea a Zhourao homeland and creates a Zhourao cultural community there"
+ zhr.cai.11: "Add Migration to W.N.G."
+ zhr.cai.11.d: "Adds 75% migration attraction to Western New Guinea upon JE completion"
+ zhr.cai.12: "Remove Migration to W.N.G."
+ zhr.cai.12.d: "Removes the 75% migration to W.N.G."
+ zhr.cai.complete.je: "Complete the JE"
+ zhr.cai.complete.je.d: "Completes the Journal Entry if all other requirements are met, #bDO NOT press this until you have finished choosing the optional completion bonuses!"
