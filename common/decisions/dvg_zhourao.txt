@@ -1,4 +1,4 @@
-﻿dvg_noongar_colony = {
+dvg_noongar_colony = {
 	is_shown = {
 		has_game_rule = australia_railroaded
 		exists = c:NNG
@@ -206,6 +206,7 @@ dvg_papua_east_colony = {
 		}
 		NOT = {
 
+			root = c:ZHR
 			root = c:PPU
 			owns_entire_state_region = STATE_EASTERN_NEW_GUINEA
 
@@ -549,7 +550,7 @@ dvg_kauri_colony = {
 					}
 				}
 				exists = c:ZHR
-				root = c:ZHR
+				#root = c:ZHR
 			}
 			AND = {
 				has_variable = dvg_yongjia
@@ -557,6 +558,7 @@ dvg_kauri_colony = {
 		}
 		NOT = {
 			OR = {
+				root = c:ZHR
 				root = c:KAU
 				has_variable = dvg_colony_kau
 			}
@@ -707,7 +709,8 @@ dvg_push_southwards = {
 		root = {
 			has_state_in_state_region = STATE_WENCHENG
 		}
-		NOT = {
+		NOR = {
+			root = c:ZHR
 			has_variable = dvg_southern_push_variable
 		}
 	}
@@ -731,8 +734,9 @@ dvg_wiradjuri_war = {
 		root = {
 			has_state_in_state_region = STATE_ZHENG_HE
 		}
-		NOT = {
+		NOR = {
 			has_variable = dvg_wiradjuri_war_variable
+			root = c:ZHR
 		}
 	}
 
