@@ -6505,7 +6505,7 @@
 				add_ownership={
 					country={
 						country="c:BAV"
-						levels=3
+						levels=5
 					}
 				}
 				reserves=1
@@ -6946,6 +6946,19 @@
 			}
 		}
 		region_state:TYR={
+			create_building={
+				building="building_wheat_farm"
+				add_ownership={
+					building={
+						type="building_manor_house"
+						country="c:TYR"
+						levels=3
+						region="STATE_TYROL"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_soil_enriching_farming" "pm_citrus_orchards" "pm_tools_disabled" }
+			}
 			create_building={
 				building="building_iron_mine"
 				add_ownership={
