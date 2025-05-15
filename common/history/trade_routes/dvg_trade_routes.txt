@@ -25,6 +25,36 @@
 			target = c:ARN.market
 		}
 	}
+	C:TUS = {
+		create_trade_route = {
+			goods = clippers
+			level = 3
+			direction = import
+			target = c:SCA.market
+		}
+	}
+	C:VEN = {
+		create_trade_route = {
+			goods = fertilizer
+			level = 6
+			direction = export
+			target = c:BAV.market
+		}
+		create_trade_route = {
+			goods = fertilizer
+			level = 5
+			direction = export
+			target = c:AUS.market
+		}
+	}
+	C:ULM = {
+		create_trade_route = {
+			goods = fertilizer
+			level = 2
+			direction = import
+			target = c:BRG.market
+		}
+	}
 	C:SPA = {
 		create_trade_route = {
 			goods = dye

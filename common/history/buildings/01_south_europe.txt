@@ -325,7 +325,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:SAV"
-						levels=3
+						levels=4
 						region="STATE_PIEDMONT"
 					}
 				}
@@ -1062,12 +1062,12 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:TUS"
-						levels=2
+						levels=3
 						region="STATE_TUSCANY"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_cotton_plantation"
@@ -3279,6 +3279,19 @@
 				activate_production_methods={ "pm_basic_shipbuilding" }
 			}
 			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:SPA"
+						levels=1
+						region="STATE_ANDALUSIA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_unrefrigerated" "pm_simple_fishing" }
+			}	
+			create_building={
 				building="building_military_shipyards"
 				add_ownership={
 					country={
@@ -3615,7 +3628,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -3963,6 +3976,19 @@
 	}
 	s:STATE_AZORES={
 		region_state:SPA={
+			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:SPA"
+						levels=2
+						region="STATE_AZORES"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+			}
 			create_building={
 				building="building_sugar_plantation"
 				add_ownership={
@@ -4822,12 +4848,12 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:TUR"
-						levels=2
+						levels=3
 						region="STATE_WESTERN_THRACE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_tobacco_plantation"

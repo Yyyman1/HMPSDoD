@@ -805,6 +805,8 @@
 	c:ULM = {
 		effect_starting_technology_tier_2_tech = yes
 		
+		add_technology_researched = intensive_agriculture
+		
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_freedom_of_conscience
 		activate_law = law_type:law_religious_schools
@@ -919,6 +921,8 @@
 	
 	c:BAV = { #Bavaria
 		effect_starting_technology_tier_2_tech = yes
+		
+		add_technology_researched = intensive_agriculture
 
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
@@ -1079,6 +1083,8 @@
 	c:TYR = { #Tyrol
 		effect_starting_technology_tier_2_tech = yes
 		
+		add_technology_researched = intensive_agriculture
+		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_state_religion
 		activate_law = law_type:law_ethnostate
@@ -1099,6 +1105,8 @@
 	
 	c:SLZ = { #Salzburg
 		effect_starting_technology_tier_2_tech = yes
+		
+		add_technology_researched = intensive_agriculture
 		
 		effect_starting_politics_reactionary = yes
 		activate_law = law_type:law_theocracy
@@ -1123,6 +1131,8 @@
 	
 	c:AUS = { #Austria
 		effect_starting_technology_tier_2_tech = yes
+		
+		add_technology_researched = intensive_agriculture
 
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_autocracy 
