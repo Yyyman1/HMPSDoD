@@ -816,7 +816,7 @@
 
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 2
+			level = 3
 		}
 		
 		set_ruling_interest_groups = {
@@ -926,7 +926,7 @@
 
 		effect_starting_politics_conservative = yes
 		activate_law = law_type:law_state_religion
-		activate_law = law_type:law_autocracy 
+		activate_law = law_type:law_oligarchy 
 		activate_law = law_type:law_religious_schools
 		activate_law = law_type:law_low_income_tax	
 		activate_law = law_type:law_moderate_consumption_tax
@@ -935,7 +935,7 @@
 		
 		set_institution_investment_level = {
 			institution = institution_schools
-			level = 2
+			level = 3
 		}
 		
 		set_ruling_interest_groups = {
