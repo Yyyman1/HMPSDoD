@@ -216,6 +216,17 @@ state_trait_ebro_river = {
 	}
 }
 
+state_trait_tagus_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_mult = 0.1
+		state_infrastructure_from_population_add = 1
+		state_infrastructure_from_population_max_add = 20
+		state_market_access_price_impact = 0.025
+	}
+}
+
 state_trait_baetic_system = {
 	icon = "gfx/interface/icons/state_trait_icons/mountain.dds"
 		
