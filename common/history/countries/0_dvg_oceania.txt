@@ -400,6 +400,7 @@
 		activate_law = law_type:law_symmetric_bicameralism
 		activate_law = law_type:law_plurality
 		activate_law = law_type:law_total_separation
+		activate_law = law_frontier_colonization
 
 		
 		set_ruling_interest_groups = {
@@ -431,6 +432,11 @@
 		ig:ig_intelligentsia = {
 			add_ideology = ideology_mengzi
 		}
+
+		add_journal_entry = {
+			type = je_zho_claim_the_natives
+		}
+	
 		#set_owes_obligation_to = {
 		#	country = c:KOO
 		#	setting = yes
