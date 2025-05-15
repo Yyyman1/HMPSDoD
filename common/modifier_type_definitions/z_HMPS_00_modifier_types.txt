@@ -1,4 +1,13 @@
-﻿state_pop_pol_str_add = {
+﻿state_market_access_price_impact={
+	decimals=2
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_pop_pol_str_add = {
 	color=neutral
 	decimals = 2
 }
