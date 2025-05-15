@@ -225,6 +225,7 @@ STATES = {
 		}
 		
 		add_homeland = cu:maori
+		add_homeland = cu:ny_sjaellander
 		add_homeland = cu:zhourao
 	}
 	
