@@ -400,7 +400,7 @@
 		activate_law = law_type:law_symmetric_bicameralism
 		activate_law = law_type:law_plurality
 		activate_law = law_type:law_total_separation
-		activate_law = law_frontier_colonization
+		activate_law = law_type:law_frontier_colonization
 
 		
 		set_ruling_interest_groups = {
