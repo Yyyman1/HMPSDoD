@@ -381,7 +381,6 @@
 		effect_starting_politics_traditional = yes
 		
 		add_taxed_goods = g:liquor
-		add_taxed_goods = g:fish
 		add_taxed_goods = g:services
 		
 		activate_law = law_type:law_republic
