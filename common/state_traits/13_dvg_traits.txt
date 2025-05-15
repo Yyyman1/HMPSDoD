@@ -10,7 +10,9 @@
 
 state_trait_dvg_australia_locked = {
 	icon = gfx/interface/icons/state_trait_icons/australiabad.dds
-	
+
+	required_techs_for_colonization = { "sahara_colonisation" }
+
 	disabling_technologies = { "dvgaustralia" }
 
 	modifier = {
@@ -68,5 +70,15 @@ state_trait_gran_chaco = {
 		building_group_bg_ranching_throughput_add = 0.1
 		state_non_homeland_colony_growth_speed_mult = -0.9
 		state_non_homeland_mortality_mult = 0.15
+	}
+}
+
+state_trait_pillbaran_iron = {
+	icon = "gfx/interface/icons/state_trait_icons/resources_ore.dds"
+
+	modifier = {
+		building_iron_mine_throughput_add = 0.20
+		state_construction_mult = -0.15
+		state_infrastructure_mult = -0.15
 	}
 }
