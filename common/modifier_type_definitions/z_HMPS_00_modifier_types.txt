@@ -1,6 +1,6 @@
 ﻿state_market_access_price_impact={
 	decimals=2
-	color=good
+	color=neutral
 	percent=yes
 	game_data={
 		ai_value=0
