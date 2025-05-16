@@ -17,14 +17,14 @@ company_fundidora_monterrey = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_RIO_GRANDE
+				state_region = s:STATE_MEXICO
 			}
 		}
 	}
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_RIO_GRANDE
+			state_region = s:STATE_MEXICO
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_steel_mills
