@@ -473,7 +473,6 @@ company_panama_company = {
 	flavored_company = yes
 	
 	building_types = {
-		building_trade_center
 		building_shipyards
 		building_military_shipyards
 	}
@@ -500,8 +499,8 @@ company_panama_company = {
 	}
 	
 	prosperity_modifier = {
-		country_trade_route_cost_mult = -0.05
 		unit_convoy_requirements_mult = -0.1
+		country_company_throughput_bonus_add = 0.1
 	}
 	
 	ai_weight = {
