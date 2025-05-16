@@ -86,7 +86,6 @@ company_suez_company = {
 	flavored_company = yes
 	
 	building_types = {
-		building_trade_center
 		building_shipyards
 		building_military_shipyards
 	}
