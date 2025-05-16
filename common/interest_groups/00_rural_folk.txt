@@ -62,6 +62,20 @@
 			}
 			else_if = {
 				limit = {
+					#has_dlc_feature = rp1_content
+					#owner = { c:BRZ ?= this }
+					owner = {
+						any_primary_culture = {
+							has_discrimination_trait = amerigan_group
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_old_ways
+				set_ig_trait = ig_trait:ig_trait_plantation_work
+				set_ig_trait = ig_trait:ig_trait_nucleos_coloniais
+			}
+			else_if = {
+				limit = {
 					owner = { c:EGY ?= this }
 				}
 				set_interest_group_name = ig_fellahin

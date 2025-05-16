@@ -101,6 +101,9 @@ dvg_reclaim_france = {
 			type = je_valois_claim
 		}
 		
+		add_loyalists = {
+			value = 0.1
+		}
 		
 		create_incident = {
 			country = c:PRO
@@ -187,6 +190,8 @@ dvg_transalpina = {
 		add_primary_culture = cu:occitan
 		add_primary_culture = cu:north_italian
 		add_primary_culture = cu:romand
+		add_primary_culture = cu:burgundian
+		
 		change_tag = TAP
     }
 

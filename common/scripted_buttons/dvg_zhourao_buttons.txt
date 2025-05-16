@@ -315,3 +315,420 @@ dvg_pillger_prince_button = {
 		
 	}
 }
+
+zho_claim_the_natives_1 = {
+	name = "zho_ctn.1"
+	desc = "zho_ctn.1.d"
+
+	visible = {
+		NOT = {
+			has_variable = dvg_southern_push_variable
+		}
+	}
+	
+	possible = {
+		has_technology_researched = napoleonic_warfare
+		is_at_war = no
+		exists = c:YAL
+		exists = c:WIR
+	}
+
+	effect = {
+		trigger_event = { id = dvg_zhourao.701 popup= yes }
+		trigger_event = { id = dvg_zhourao.501 popup= yes }
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}
+
+#zho_claim_the_natives_2 = {
+#	name = "zho_ctn.2"
+#	desc = "zho_ctn.2.d"
+#
+#	visible = {
+#		NOT = {
+#			has_variable = dvg_wiradjuri_war_variable
+#		}
+#	}
+#	
+#	possible = {
+#		has_technology_researched = napoleonic_warfare
+#		is_at_war = no
+#		exists = c:WIR
+#	}
+#
+#	effect = {
+#		trigger_event = { id = dvg_zhourao.501 popup= yes }
+#	}
+#	
+#	ai_chance = {
+#		base = 100
+#	}
+#}
+
+zho_claim_the_natives_3 = {
+	name = "zho_ctn.3"
+	desc = "zho_ctn.3.d"
+
+	visible = {
+		NOT = {
+			has_variable = dvg_colony_kau
+		}
+	}
+	
+	possible = {
+		has_technology_researched = napoleonic_warfare
+		has_technology_researched = nationalism
+		is_at_war = no
+		exists = c:KAU
+	}
+
+	effect = {
+		trigger_event = { id = dvg_oceania.8 popup= yes }
+		set_variable = dvg_colony_kau
+	}
+	
+	ai_chance = {
+		base = 0
+		modifier = {
+			trigger = { has_technology_researched = general_staff }
+			add = 100
+		}
+	}
+}
+
+#add temp migration attraction to JE completion reward
+zhr_cai_1 = {
+	name = "zhr.cai.1"
+	desc = "zhr.cai.1.d"
+
+	visible = {
+		owns_entire_state_region = STATE_PARLEVAR
+		NOT = {
+			has_variable = zhr_add_migration_parlevar
+		}
+	}
+
+	possible = {
+		NOT = {
+			has_variable = zhr_add_migration_parlevar
+		}
+	}
+
+	effect = {
+		set_variable = zhr_add_migration_parlevar
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#remove temp migration attraction to JE completion reward
+zhr_cai_2 = {
+	name = "zhr.cai.2"
+	desc = "zhr.cai.2.d"
+
+	visible = {
+		has_variable = zhr_add_migration_parlevar
+	}
+
+	possible = {
+		has_variable = zhr_add_migration_parlevar
+	}
+
+	effect = {
+		remove_variable = zhr_add_migration_parlevar
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#add temp migration attraction to JE completion reward
+zhr_cai_3 = {
+	name = "zhr.cai.3"
+	desc = "zhr.cai.3.d"
+
+	visible = {
+		owns_entire_state_region = STATE_MOTU_PARI
+		NOT = {
+			has_variable = zhr_add_migration_motu_pari
+		}
+	}
+
+	possible = {
+		NOT = {
+			has_variable = zhr_add_migration_motu_pari
+		}
+	}
+
+	effect = {
+		set_variable = zhr_add_migration_motu_pari
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#remove temp migration attraction to JE completion reward
+zhr_cai_4 = {
+	name = "zhr.cai.4"
+	desc = "zhr.cai.4.d"
+
+	visible = {
+		has_variable = zhr_add_migration_motu_pari
+	}
+
+	possible = {
+		has_variable = zhr_add_migration_motu_pari
+	}
+
+	effect = {
+		remove_variable = zhr_add_migration_motu_pari
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#add temp migration attraction to JE completion reward
+zhr_cai_5 = {
+	name = "zhr.cai.5"
+	desc = "zhr.cai.5.d"
+
+	visible = {
+		owns_entire_state_region = STATE_MOTU_TIMU
+		NOT = {
+			has_variable = zhr_add_migration_motu_timu
+		}
+	}
+
+	possible = {
+		NOT = {
+			has_variable = zhr_add_migration_motu_timu
+		}
+	}
+
+	effect = {
+		set_variable = zhr_add_migration_motu_timu
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#remove temp migration attraction to JE completion reward
+zhr_cai_6 = {
+	name = "zhr.cai.6"
+	desc = "zhr.cai.6.d"
+
+	visible = {
+		has_variable = zhr_add_migration_motu_timu
+	}
+
+	possible = {
+		has_variable = zhr_add_migration_motu_timu
+	}
+
+	effect = {
+		remove_variable = zhr_add_migration_motu_timu
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+# Make Eastern New Guinea ZHR homeland + add community
+zhr_cai_7 = {
+	name = "zhr.cai.7"
+	desc = "zhr.cai.7.d"
+
+	visible = {
+		NOT = {
+			has_variable = zhr_homeland_eng
+		}
+	}
+
+	possible = {
+		owns_entire_state_region = STATE_EASTERN_NEW_GUINEA
+		NOT = {
+			has_variable = zhr_homeland_eng
+		}
+	}
+
+	effect = {
+		set_variable = zhr_homeland_eng
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#add temp migration attraction to JE completion reward
+zhr_cai_8 = {
+	name = "zhr.cai.8"
+	desc = "zhr.cai.8.d"
+
+	visible = {
+		AND = {
+			has_variable = zhr_homeland_eng
+			NOT = {
+				has_variable = zhr_add_migration_eng
+			}
+		}
+	}
+
+	possible = {
+		NOT = {
+			has_variable = zhr_add_migration_eng
+		}
+	}
+
+	effect = {
+		set_variable = zhr_add_migration_eng
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#remove temp migration attraction to JE completion reward
+zhr_cai_9 = {
+	name = "zhr.cai.9"
+	desc = "zhr.cai.9.d"
+
+	visible = {
+		has_variable = zhr_add_migration_eng
+	}
+
+	possible = {
+		has_variable = zhr_add_migration_eng
+	}
+
+	effect = {
+		remove_variable = zhr_add_migration_eng
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+# Make Western New Guinea ZHR homeland + add community
+zhr_cai_10 = {
+	name = "zhr.cai.10"
+	desc = "zhr.cai.10.d"
+
+	visible = {
+		NOT = {
+			has_variable = zhr_homeland_wng
+		}
+	}
+
+	possible = {
+		owns_entire_state_region = STATE_WESTERN_NEW_GUINEA
+		NOT = {
+			has_variable = zhr_homeland_wng
+		}
+	}
+
+	effect = {
+		set_variable = zhr_homeland_wng
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#add temp migration attraction to JE completion reward
+zhr_cai_11 = {
+	name = "zhr.cai.11"
+	desc = "zhr.cai.11.d"
+
+	visible = {
+		AND = {
+			has_variable = zhr_homeland_wng
+			NOT = {
+				has_variable = zhr_add_migration_wng
+			}
+		}
+	}
+
+	possible = {
+		NOT = {
+			has_variable = zhr_add_migration_wng
+		}
+	}
+
+	effect = {
+		set_variable = zhr_add_migration_wng
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#remove temp migration attraction to JE completion reward
+zhr_cai_12 = {
+	name = "zhr.cai.12"
+	desc = "zhr.cai.12.d"
+
+	visible = {
+		has_variable = zhr_add_migration_wng
+	}
+
+	possible = {
+		has_variable = zhr_add_migration_wng
+	}
+
+	effect = {
+		remove_variable = zhr_add_migration_wng
+	}
+
+	ai_chance = {
+		base = 0
+	}
+}
+
+#complete je_zho_control_australasia_islands
+zhr_cai_complete_je = {
+	name = "zhr.cai.complete.je"
+	desc = "zhr.cai.complete.je.d"
+	
+	visible = {
+		NOT = {
+			has_variable = complete_ZHR_CAI
+		}
+	}
+	
+	possible = {
+		calc_true_if = {
+			amount >= 4
+			owns_entire_state_region = STATE_PARLEVAR
+			owns_entire_state_region = STATE_MOTU_PARI
+			owns_entire_state_region = STATE_MOTU_TIMU
+			owns_entire_state_region = STATE_EASTERN_NEW_GUINEA
+			owns_entire_state_region = STATE_WESTERN_NEW_GUINEA
+		}
+	}
+	
+	effect = {
+		set_variable = complete_ZHR_CAI
+	}
+	
+	ai_chance = {
+		base = 100
+	}
+}

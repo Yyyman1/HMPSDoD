@@ -13,10 +13,10 @@
 			interest_group = ig_landowners
 			ideology = ideology_royalist
 			traits = {
-				romantic
+				brave
 				ambitious
 				firebrand
-				basic_offensive_planner
+				expert_offensive_planner
 				persistent
 				celebrity_commander
 			}

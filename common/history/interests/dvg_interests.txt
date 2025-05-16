@@ -79,6 +79,7 @@
 		add_declared_interest = region_south_germany
 		add_declared_interest = region_iberia
 		add_declared_interest = region_north_africa
+		add_declared_interest = region_nile_basin
 	}
 
 	c:PLA = {
@@ -109,6 +110,8 @@
 	}
 	c:EGY = {
 		add_declared_interest = region_arabic
+		add_declared_interest = region_balkans
+		add_declared_interest = region_anatolia
 	}
 	c:MSO = {
 		add_declared_interest = region_dnieper
@@ -125,6 +128,7 @@
 	}
 	c:BEO = {
 		add_declared_interest = region_andes
+		add_declared_interest = region_england
 	}
 	c:AFG = {
 		add_declared_interest = region_himalayas

@@ -1,4 +1,13 @@
-﻿state_pop_pol_str_add = {
+﻿state_market_access_price_impact={
+	decimals=2
+	color=neutral
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_pop_pol_str_add = {
 	color=neutral
 	decimals = 2
 }
@@ -24,7 +33,27 @@ state_migration_pull_mult = {
 state_education_access_add = {
 	color=good
 	percent = yes
-	decimals = 1
+	decimals = 2
+}
+
+
+state_peasants_education_access_add={
+	decimals=2
+	color=good
+	percent=yes
+	game_data={
+		ai_value=0
+	}
+}
+
+state_education_access_wealth_add={
+	decimals=3
+	color=good
+	suffix="per_wealth"
+	percent=yes
+	game_data={
+		ai_value=0
+	}
 }
 
 state_mortality_turmoil_mult = {

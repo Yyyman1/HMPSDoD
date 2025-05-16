@@ -778,6 +778,19 @@
 	s:STATE_CAJAMARCA={
 		region_state:QUI={
 			create_building={
+				building="building_fishing_wharf"
+				add_ownership={
+					building={
+						type="building_fishing_wharf"
+						country="c:QUI"
+						levels=2
+						region="STATE_CAJAMARCA"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+			}
+			create_building={
 				building="building_government_administration"
 				add_ownership={
 					country={
@@ -897,7 +910,7 @@
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_dye_plantation"
@@ -1377,7 +1390,7 @@
 				add_ownership={
 					country={
 						country="c:BEO"
-						levels=2
+						levels=1
 					}
 				}
 				reserves=1
@@ -1439,7 +1452,7 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:BEO"
-						levels=1
+						levels=2
 						region="STATE_AVALON"
 					}
 				}
@@ -1482,11 +1495,9 @@
 			create_building={
 				building="building_tooling_workshops"
 				add_ownership={
-					building={
-						type="building_tooling_workshops"
+					country={
 						country="c:BEO"
-						levels=1
-						region="STATE_AVALON"
+						levels=3
 					}
 				}
 				reserves=1
@@ -1559,6 +1570,19 @@
 	s:STATE_EOFERWIC={
 		region_state:BEO={
 			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:BEO"
+						levels=3
+						region="STATE_EOFERWIC"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+			}
+			create_building={
 				building="building_furniture_manufacturies"
 				add_ownership={
 					building={
@@ -1601,6 +1625,17 @@
 	}
 	s:STATE_WESSEX={
 		region_state:BEO={
+			create_building={
+				building="building_construction_sector"
+				add_ownership={
+					country={
+						country="c:BEO"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_wooden_buildings" }
+			}
 			create_building={
 				building="building_logging_camp"
 				add_ownership={
@@ -2503,12 +2538,12 @@
 					building={
 						type="building_fishing_wharf"
 						country="c:AMA"
-						levels=4
+						levels=6
 						region="STATE_COTE_DU_SUCRE"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "pm_simple_fishing" "pm_unrefrigerated" }
+				activate_production_methods={ "pm_fishing_trawlers" "pm_unrefrigerated" }
 			}
 			create_building={
 				building="building_port"
@@ -2550,30 +2585,30 @@
 				activate_production_methods={ "default_building_tobacco_plantation" "pm_road_carts" }
 			}
 			create_building={
-				building="building_logging_camp"
+				building="building_food_industry"
 				add_ownership={
 					building={
-						type="building_logging_camp"
-						country="c:AMA"
-						levels=2
-						region="STATE_MONTS_DIAMANTS"
-					}
-				}
-				reserves=1
-				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
-			}
-			create_building={
-				building="building_vineyard_plantation"
-				add_ownership={
-					building={
-						type="building_manor_house"
+						type="building_food_industry"
 						country="c:AMA"
 						levels=1
 						region="STATE_MONTS_DIAMANTS"
 					}
 				}
 				reserves=1
-				activate_production_methods={ "default_building_vineyard_plantation" }
+				activate_production_methods={ "pm_disabled_canning" "pm_manual_dough_processing" }
+			}
+			create_building={
+				building="building_logging_camp"
+				add_ownership={
+					building={
+						type="building_logging_camp"
+						country="c:AMA"
+						levels=1
+						region="STATE_MONTS_DIAMANTS"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_saw_mills" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" }
 			}	
 		}
 	}

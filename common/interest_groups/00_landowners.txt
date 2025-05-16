@@ -24,9 +24,86 @@
 
 	on_enable = {
 		ig:ig_landowners = {
-			set_ig_trait = ig_trait:ig_trait_noble_privileges
-			set_ig_trait = ig_trait:ig_trait_family_ties
-			set_ig_trait = ig_trait:ig_trait_noblesse_oblige
+			#if = {
+			#	limit = {
+			#		owner = { c:RUS ?= this}
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_profitable_estates
+			#	set_ig_trait = ig_trait:ig_trait_the_velvet_book
+			#	set_ig_trait = ig_trait:ig_trait_bad_boyars
+			#}
+			#else_if = {
+			#	limit = {
+			#		has_dlc_feature = rp1_content
+			#		owner = { c:BRZ ?= this}
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_noble_privileges
+			#	set_ig_trait = ig_trait:ig_trait_fazenda_ibicaba
+			#	set_ig_trait = ig_trait:ig_trait_latifundios
+			#}
+			#else_if = {
+			#	limit = {
+			#		OR = {
+			#			owner = { c:PRU ?= this}
+			#			AND = {
+			#				owner = { c:NGF ?= this}
+			#				c:NGF ?= { was_formed_from = PRU }
+			#			}
+			#			AND = {
+			#				owner = { c:GER ?= this }
+			#				c:GER ?= { was_formed_from = PRU }
+			#			}
+			#		}
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_noble_privileges
+			#	set_ig_trait = ig_trait:ig_trait_family_ties
+			#	set_ig_trait = ig_trait:ig_trait_junkerdom
+			#}
+			#else_if = {
+			#	limit = {
+			#		OR = {
+			#			owner = { c:AUS ?= this}
+			#			AND = {
+			#				owner = { c:GER ?= this }
+			#				c:GER ?= { was_formed_from = AUS }
+			#			}
+			#		}
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_noble_privileges
+			#	set_ig_trait = ig_trait:ig_trait_family_ties
+			#	set_ig_trait = ig_trait:ig_trait_wiener_walzer
+			#}
+			#else_if = {
+			#	limit = {
+			#		owner = {
+			#			OR = {
+			#				country_has_primary_culture = cu:yankee
+			#				country_has_primary_culture = cu:dixie
+			#			}
+			#		}
+			#	}
+			#	set_ig_trait = ig_trait:ig_trait_noble_privileges
+			#	set_ig_trait = ig_trait:ig_trait_family_ties
+			#	set_ig_trait = ig_trait:ig_trait_patrician_philanthropy
+			#}
+			#else_if = {
+			#	limit = {
+			#		owner = {
+			#			OR = {
+			#				country_has_primary_culture = cu:han
+			#				country_has_primary_culture = cu:manchu
+			#			}
+			#		}
+			#	}
+			#	set_ig_trait = ig_trait:ite_ig_trait_palace_intrigue
+			#	set_ig_trait = ig_trait:ite_ig_trait_scholar_bureaucrats
+			#	set_ig_trait = ig_trait:ite_ig_trait_junzi
+			#}
+			#else = {
+				set_ig_trait = ig_trait:ig_trait_noble_privileges
+				set_ig_trait = ig_trait:ig_trait_family_ties
+				set_ig_trait = ig_trait:ig_trait_noblesse_oblige
+			#}
 		}
 		
 		# Squattocracy

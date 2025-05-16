@@ -16,6 +16,16 @@
 			type = puppet
 		}
 	}
+	c:AUS = {
+		create_diplomatic_pact = {
+			country = c:MOD
+			type = puppet
+		}
+		create_diplomatic_pact = {
+			country = c:MOD
+			type = grant_own_market
+		}
+	}
 #	c:PAP = {
 #		create_diplomatic_pact = {
 #			country = c:AVN
@@ -189,11 +199,11 @@
 	}
 	c:BAV = {
 		create_diplomatic_pact = {
-			country = c:AGR
+			country = c:SLZ
 			type = puppet
 		}
 		create_diplomatic_pact = {
-			country = c:SLZ
+			country = c:TYR
 			type = puppet
 		}
 	}

@@ -1,0 +1,276 @@
+﻿je_zho_claim_the_natives = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_historical_content
+
+	should_be_pinned_by_default = yes
+
+	complete = {
+		owns_entire_state_region = STATE_WENCHENG
+		owns_entire_state_region = STATE_TAITUNG
+		owns_entire_state_region = STATE_YONGJIA
+	}
+
+	on_complete = {
+		add_journal_entry = { 
+			type = je_zho_manifest_destiny
+		}
+		add_journal_entry = {
+			type = je_zho_control_australasia_islands
+		}
+		s:STATE_TAITUNG = {
+			region_state:ZHR ?= {
+				add_modifier = {
+					name = zhr_temp_int_migration
+					months = 60
+				}
+			}
+		}
+		s:STATE_YONGJIA = {
+			add_homeland = cu:zhourao
+			region_state:ZHR ?= {
+				create_pop = {
+					culture = zhourao
+					size = 100
+				}
+				add_modifier = {
+					name = zhr_temp_int_migration
+					months = 60
+				}
+			}
+		}
+		hidden_effect = {
+			s:STATE_MOTU_TIMU = {
+				add_claim = c:ZHR
+			}
+		}
+	}
+
+	scripted_button = zho_claim_the_natives_1
+	scripted_button = zho_claim_the_natives_2
+	scripted_button = zho_claim_the_natives_3
+
+}
+
+je_zho_manifest_destiny = {
+	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	
+	group = je_group_historical_content
+
+	should_be_pinned_by_default = yes
+
+	complete = {
+		owns_entire_state_region = STATE_YOLNGU
+		owns_entire_state_region = STATE_OODNATTA
+		owns_entire_state_region = STATE_PITJANTJAJARA
+		owns_entire_state_region = STATE_COOMALONG
+		owns_entire_state_region = STATE_NOONGAR
+	}
+
+	on_complete = {
+		s:STATE_COOMALONG = {
+			add_homeland = cu:zhourao
+			region_state:ZHR ?= {
+				add_homeland = cu:zhourao
+				create_pop = {
+					culture = zhourao
+					size = 100
+				}
+				add_modifier = {
+					name = zhr_temp_int_migration
+					months = 60
+				}
+			}
+		}
+		s:STATE_NOONGAR = {
+			add_homeland = cu:zhourao
+			region_state:ZHR ?= {
+
+				create_pop = {
+					culture = zhourao
+					size = 100
+				}
+				add_modifier = {
+					name = zhr_temp_int_migration
+					months = 60
+				}
+			}
+		}
+		s:STATE_YOLNGU = {
+			add_homeland = cu:zhourao
+			region_state:ZHR ?= {
+				create_pop = {
+					culture = zhourao
+					size = 100
+				}
+			}
+		}
+		s:STATE_OODNATTA = {
+			add_homeland = cu:zhourao
+			region_state:ZHR ?= {
+				create_pop = {
+					culture = zhourao
+					size = 100
+				}
+			}
+		}
+		s:STATE_PITJANTJAJARA = {
+			add_homeland = cu:zhourao
+			region_state:ZHR ?= {
+				create_pop = {
+					culture = zhourao
+					size = 100
+				}
+			}
+		}
+	}
+}
+
+je_zho_control_australasia_islands = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	group = je_group_historical_content
+
+	should_be_pinned_by_default = yes
+
+	complete = {
+		calc_true_if = {
+			amount >= 4
+			owns_entire_state_region = STATE_PARLEVAR
+			owns_entire_state_region = STATE_MOTU_PARI
+			owns_entire_state_region = STATE_MOTU_TIMU
+			owns_entire_state_region = STATE_EASTERN_NEW_GUINEA
+			owns_entire_state_region = STATE_WESTERN_NEW_GUINEA
+		}
+		has_variable = complete_ZHR_CAI
+	}
+
+	on_complete = {
+		s:STATE_PARLEVAR = {
+			add_homeland = cu:zhourao
+			region_state:ZHR ?= {
+				create_pop = {
+					culture = zhourao
+					size = 100
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_variable = zhr_add_migration_parlevar
+			}
+			s:STATE_PARLEVAR = {
+				region_state:ZHR ?= {
+					add_modifier = {
+						name = zhr_temp_int_migration
+						months = 60
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_variable = zhr_add_migration_motu_pari
+			}
+			s:STATE_MOTU_PARI = {
+				region_state:ZHR ?= {
+					add_modifier = {
+						name = zhr_temp_int_migration
+						months = 60
+					}
+				}
+			}
+		}
+		s:STATE_MOTU_TIMU = {
+			add_homeland = cu:zhourao
+			region_state:ZHR ?= {
+				create_pop = {
+					culture = zhourao
+					size = 100
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_variable = zhr_add_migration_motu_timu
+			}
+			s:STATE_MOTU_TIMU = {
+				region_state:ZHR ?= {
+					add_modifier = {
+						name = zhr_temp_int_migration
+						months = 60
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_variable = zhr_homeland_eng
+			}
+			s:STATE_EASTERN_NEW_GUINEA = {
+				add_homeland = cu:zhourao
+				region_state:ZHR ?= {
+					create_pop = {
+						culture = zhourao
+						size = 100
+					}
+				}	
+			}
+		}
+		if = {
+			limit = {
+				has_variable = zhr_add_migration_eng
+			}
+			s:STATE_EASTERN_NEW_GUINEA = {
+				region_state:ZHR ?= {
+					add_modifier = {
+						name = zhr_temp_int_migration
+						months = 60
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				has_variable = zhr_homeland_wng
+			}
+			s:STATE_WESTERN_NEW_GUINEA = {
+				add_homeland = cu:zhourao
+				region_state:ZHR ?= {
+					create_pop = {
+						culture = zhourao
+						size = 100
+					}
+				}	
+			}
+		}
+		if = {
+			limit = {
+				has_variable = zhr_add_migration_wng
+			}
+			s:STATE_WESTERN_NEW_GUINEA = {
+				region_state:ZHR ?= {
+					add_modifier = {
+						name = zhr_temp_int_migration
+						months = 60
+					}
+				}
+			}
+		}
+	}
+
+	scripted_button = zhr_cai_1
+	scripted_button = zhr_cai_2
+	scripted_button = zhr_cai_3
+	scripted_button = zhr_cai_4
+	scripted_button = zhr_cai_5
+	scripted_button = zhr_cai_6
+	scripted_button = zhr_cai_7
+	scripted_button = zhr_cai_8
+	scripted_button = zhr_cai_9
+	scripted_button = zhr_cai_10
+	scripted_button = zhr_cai_11
+	scripted_button = zhr_cai_12
+	scripted_button = zhr_cai_complete_je
+
+}

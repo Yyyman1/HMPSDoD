@@ -48,6 +48,7 @@ state_trait_drava_river = {
 		state_infrastructure_mult = 0.1
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
+		state_market_access_price_impact = 0.025
 	}
 }
 
@@ -129,6 +130,7 @@ state_trait_saronic_gulf = {
 		building_military_shipyards_throughput_add = 0.1
 		#state_building_naval_base_max_level_add = 10	
 		state_building_port_max_level_add = 3
+		state_market_access_price_impact = 0.025
 	}
 }
 
@@ -145,7 +147,7 @@ state_trait_don_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	modifier = {
 		state_infrastructure_add = 20
-		state_market_access_price_impact = 0.05
+		state_market_access_price_impact = 0.025
 	}
 }
 
@@ -153,7 +155,7 @@ state_trait_irtysh_river = {
 	icon = "gfx/interface/icons/state_trait_icons/river.dds"
 	modifier = {
 		state_infrastructure_add = 20
-		state_market_access_price_impact = 0.05
+		state_market_access_price_impact = 0.025
 	}
 }
 
@@ -167,6 +169,7 @@ state_trait_don_river = {
 		state_infrastructure_mult = 0.1
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
+		state_market_access_price_impact = 0.025
 	}
 }
 
@@ -177,5 +180,18 @@ state_trait_vistula_river = {
 		state_infrastructure_mult = 0.1
 		state_infrastructure_from_population_add = 1
 		state_infrastructure_from_population_max_add = 20
+		state_market_access_price_impact = 0.025
 	}
 }
+
+state_trait_volkhov_river = {
+	icon = "gfx/interface/icons/state_trait_icons/river.dds"
+	
+	modifier = {
+		state_infrastructure_mult = 0.1
+		state_infrastructure_from_population_add = 1
+		state_infrastructure_from_population_max_add = 20
+		state_market_access_price_impact = 0.025
+	}
+}
+

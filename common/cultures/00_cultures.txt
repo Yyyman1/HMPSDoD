@@ -2737,6 +2737,11 @@ portuguese={ #Spanish
 	color= hsv{ 0.21 0.56 0.86 }
 	religion = catholic
 	traits = { iberian_culture_group lusophone european_heritage }
+	
+	obsessions = {
+		coffee
+	}
+	
 	male_common_first_names={
 		Abel
 		Adriano
@@ -4706,7 +4711,7 @@ lithuanian={
 czech={
 	color= hsv{ 0.66 0.32 0.99 }
 	religion = catholic #DVG
-	traits = { german_speaking european_heritage }
+	traits = { german_speaking west_slavic european_heritage }
 	obsessions = {
 		liquor
 	}
@@ -10037,6 +10042,7 @@ korean={
 	traits = { korean_language east_asian_heritage }
 	obsessions = {
 		opium
+		porcelain
 	}
 	male_common_first_names={
 		Bak Bong-haek

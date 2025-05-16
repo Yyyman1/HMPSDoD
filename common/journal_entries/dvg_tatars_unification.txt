@@ -12,6 +12,9 @@
 			country_has_primary_culture = cu:sibir
 			country_has_primary_culture = cu:kazak
 		}
+		this = {
+			NOT = c:DZU
+		}
 	}
 
 	immediate = {

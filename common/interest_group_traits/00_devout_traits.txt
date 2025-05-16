@@ -31,6 +31,7 @@ ig_trait_work_ethic = {
 
 	modifier = {
 		country_company_throughput_bonus_add = 0.10
+		state_birth_rate_mult = 0.025
 	}
 }
 
@@ -39,7 +40,8 @@ ig_trait_asceticism = {
 	min_approval = loyal
 
 	modifier = {
-		state_radicals_from_political_movements_mult = -0.15
+		state_radicals_from_political_movements_mult = -0.10
+		state_birth_rate_mult = 0.025
 	}
 }
 
@@ -75,7 +77,8 @@ ig_trait_the_best_revenge = {
 	min_approval = loyal
 
 	modifier = {
-		state_mortality_mult = -0.025
+		state_mortality_mult = -0.05
+		state_birth_rate_mult = 0.05
 	}
 }
 
@@ -102,7 +105,8 @@ ig_trait_heavenly_sovereign = {
 	min_approval = loyal
 
 	modifier = {
-		country_authority_mult = 0.25
+		country_authority_mult = 0.15
+		state_birth_rate_mult = 0.025
 	}
 }
 
@@ -131,7 +135,8 @@ ig_trait_da_wat = {
 	min_approval = loyal
 
 	modifier = {
-		state_conversion_mult = 0.30
+		state_conversion_mult = 0.20
+		state_birth_rate_mult = 0.025
 	}
 }
 

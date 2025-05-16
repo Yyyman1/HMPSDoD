@@ -24,9 +24,61 @@
 	
 	on_enable = {
 		ig:ig_industrialists = {
-			set_ig_trait = ig_trait:ig_trait_tax_avoidance
-			set_ig_trait = ig_trait:ig_trait_engines_of_progress
-			set_ig_trait = ig_trait:ig_trait_job_creators
+			if = {
+				limit = {
+					owner = {
+						any_primary_culture = {
+							has_discrimination_trait = yamato
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_zaibatsu_withdrawal
+				set_ig_trait = ig_trait:ig_trait_engines_of_progress
+				set_ig_trait = ig_trait:ig_trait_zaibatsu_cooperation
+			}
+			else_if = {
+				limit = {
+					owner = {
+						any_primary_culture = {
+							has_discrimination_trait = scandinavian_culture_group
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_tax_avoidance
+				set_ig_trait = ig_trait:ig_trait_engines_of_progress
+				set_ig_trait = ig_trait:ig_trait_kommerskollegium
+			}
+			else_if = {
+				limit = {
+					#has_dlc_feature = rp1_content
+					owner = {
+						any_primary_culture = {
+							has_discrimination_trait = amerigan_group
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_tax_avoidance
+				set_ig_trait = ig_trait:ig_trait_the_goods_must_flow
+				set_ig_trait = ig_trait:ig_trait_job_creators
+			}
+			else_if = {
+				limit = {
+					has_dlc_feature = voice_of_the_people_content
+					owner = {
+						any_primary_culture = {
+							has_discrimination_trait = francophone
+						}
+					}
+				}
+				set_ig_trait = ig_trait:ig_trait_tax_avoidance
+				set_ig_trait = ig_trait:ig_trait_engines_of_progress
+				set_ig_trait = ig_trait:ig_trait_ventilate_unify_beautify
+			}
+			else = {
+				set_ig_trait = ig_trait:ig_trait_tax_avoidance
+				set_ig_trait = ig_trait:ig_trait_engines_of_progress
+				set_ig_trait = ig_trait:ig_trait_job_creators
+			}
 		}
 	}
 

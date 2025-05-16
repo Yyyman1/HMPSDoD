@@ -25,7 +25,7 @@
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_ILE_DE_FRANCE
 	}
 	
@@ -56,7 +56,7 @@ building_angkor_wat = {
 		pmg_base_building_angkor_wat
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_CAMBODIA
 	}
 	
@@ -88,7 +88,7 @@ building_big_ben = {
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_HOME_COUNTIES
 	}
 	
@@ -119,7 +119,7 @@ building_forbidden_city = {
 		pmg_base_building_forbidden_city
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_BEIJING
 	}
 	
@@ -150,7 +150,7 @@ building_hagia_sophia = {
 		pmg_base_building_hagia_sophia
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_WESTERN_THRACE
 	}
 	
@@ -182,7 +182,7 @@ building_mosque_of_djenne = {
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_EASTERN_MALI
 	}
 	
@@ -213,7 +213,7 @@ building_saint_basils_cathedral = {
 		pmg_base_building_saint_basils_cathedral
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_DVG_MOSCOW
 	}
 	
@@ -249,7 +249,7 @@ building_statue_of_liberty = {
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_COTE_DU_CAFE
 	}
 	
@@ -280,7 +280,7 @@ building_taj_mahal = {
 		pmg_base_building_taj_mahal
 	}
 
-	possible = {
+	potential = {
 		state_region = s:STATE_JAIPUR
 	}
 	
@@ -312,7 +312,7 @@ building_vatican_city = {
 		pmg_base_building_vatican_city
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_LAZIO
 	}
 	
@@ -343,7 +343,7 @@ building_white_house = {
 		pmg_base_building_white_house
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_NOUVELLE_FLANDRE
 	}
 	
@@ -620,7 +620,7 @@ building_medina = {
 		pmg_base_building_medina
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_HEDJAZ
 	}
 	
@@ -652,7 +652,7 @@ building_mecca = {
 		pmg_base_building_mecca
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_HEDJAZ
 	}
 	
@@ -684,7 +684,7 @@ building_jerusalem = {
 		pmg_base_building_jerusalem
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_PALESTINE
 	}
 	
@@ -716,7 +716,7 @@ building_shia = {
 		pmg_base_building_shia
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_BAGHDAD
 	}
 	
@@ -747,7 +747,7 @@ building_lanfang_temple = {
 		pmg_base_building_angkor_wat
 	}
 	
-	possible = {
+	potential = {
 		NOT = { has_global_variable = dvg_lanfang_temple_built}
 		owner = {
 			country_has_state_religion = rel:mahayana
@@ -781,7 +781,7 @@ building_borobudur = {
 		pmg_base_building_angkor_wat
 	}
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_CENTRAL_JAVA
 	}
 	
@@ -916,7 +916,7 @@ building_cristo_redentor = {
 	
 	required_construction = construction_cost_monument
 	
-	possible = {
+	potential = {
 		state_region = s:STATE_NOUVELLE_FRANCE
 		owner = {
 			NOT = {
@@ -958,7 +958,7 @@ building_power_bloc_statue = {
 		always = no
 	}	
 	
-	possible = {
+	potential = {
 		owner = {
 			is_in_power_bloc = yes
 		}

@@ -1,7 +1,7 @@
 ﻿CHARACTERS = {
 	 c:EGY = {
 		 create_character = {
-			 Muhammad Ali
+			#Muhammad Ali
 			first_name = "Muhammad_Ali"
 			last_name = "al-_Alawi"
 			historical = yes
@@ -15,7 +15,30 @@
 				ambitious
 				persistent
 				innovative
+				ruthless
 			}
 		 }
+		 
+		create_character = {
+			# Ibrahim Pasha of Egypt
+			first_name = Ibrahim
+			last_name = "al-_Alawi"
+			historical = yes
+			heir = yes
+			dna = dna_ibrahim_pasha
+			culture = cu:albanian
+			is_general = yes
+			age = 37
+			interest_group = ig_armed_forces
+			ideology = ideology_jingoist_leader
+			hq = region_nile_basin
+			traits = {
+				ambitious
+				basic_offensive_planner
+				brave
+				direct
+				pillager
+			}
+		}
 	 }
  }

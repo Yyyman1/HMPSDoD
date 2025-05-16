@@ -1,0 +1,298 @@
+je_dominum_maris_nostrum = {
+	icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+	group = je_group_foreign_affairs
+
+	is_shown_when_inactive = {
+		OR = {
+			AND = {
+				exists = capital
+				capital = {
+					OR = {
+						region = sr:region_north_africa
+						region = sr:region_nile_basin
+						region = sr:region_iberia
+						region = sr:region_occitania
+						region = sr:region_italy
+						region = sr:region_balkans
+						region = sr:region_anatolia
+						region = sr:region_arabic
+					}
+				}
+			}
+		}
+	}
+
+	possible = {
+		any_scope_state = {
+			or = {
+				region = sr:region_north_africa
+				region = sr:region_nile_basin
+				region = sr:region_iberia
+				region = sr:region_occitania
+				region = sr:region_italy
+				region = sr:region_balkans
+				region = sr:region_anatolia
+				region = sr:region_arabic
+			}
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = {
+					root = {
+						has_state_in_state_region = STATE_SINAI
+						NOT = {
+							has_modifier = dominum_nostrum
+						}
+					}
+					calc_true_if = {
+						amount >= 27
+						#IBERIA
+						owns_entire_state_region = STATE_GRANADA
+						owns_entire_state_region = STATE_CARTAGENA
+						owns_entire_state_region = STATE_VALENCIA
+						owns_entire_state_region = STATE_CATALONIA
+			
+						#FRANCE
+						owns_entire_state_region = STATE_LANGUEDOC
+						owns_entire_state_region = STATE_PROVENCE
+			
+						#ITALY
+						owns_entire_state_region = STATE_PIEDMONT
+						owns_entire_state_region = STATE_EMILIA
+						owns_entire_state_region = STATE_TUSCANY
+						owns_entire_state_region = STATE_LAZIO
+						owns_entire_state_region = STATE_CAMPANIA
+						owns_entire_state_region = STATE_APULIA
+						owns_entire_state_region = STATE_ABRUZZO
+						owns_entire_state_region = STATE_UMBRIA
+						owns_entire_state_region = STATE_ROMAGNA
+						owns_entire_state_region = STATE_VENICE
+						owns_entire_state_region = STATE_ISTRIA
+			
+						#YUGO
+						owns_entire_state_region = STATE_CROATIA
+						owns_entire_state_region = STATE_DALMATIA
+						owns_entire_state_region = STATE_MONTENEGRO
+			
+						#GREECE
+						owns_entire_state_region = STATE_ALBANIA
+						owns_entire_state_region = STATE_IONIAN_ISLANDS
+						owns_entire_state_region = STATE_PELOPONNESE
+						owns_entire_state_region = STATE_ATTICA
+						owns_entire_state_region = STATE_THESSALIA
+						owns_entire_state_region = STATE_MACEDONIA
+						owns_entire_state_region = STATE_NORTHERN_THRACE
+			
+						#OTTOMANS
+						owns_entire_state_region = STATE_EASTERN_THRACE
+						owns_entire_state_region = STATE_WESTERN_THRACE
+						owns_entire_state_region = STATE_AYDIN
+						owns_entire_state_region = STATE_HUDAVENDIGAR
+						owns_entire_state_region = STATE_KONYA
+						owns_entire_state_region = STATE_ADANA
+						owns_entire_state_region = STATE_ALEPPO
+						owns_entire_state_region = STATE_LEBANON
+						owns_entire_state_region = STATE_PALESTINE
+			
+						#NORTH AFRICA
+						owns_entire_state_region = STATE_LOWER_EGYPT
+						owns_entire_state_region = STATE_MATRUH
+						owns_entire_state_region = STATE_TRIPOLI
+						owns_entire_state_region = STATE_LIBYA
+						owns_entire_state_region = STATE_TUNISIA
+						owns_entire_state_region = STATE_ALGIERS
+						owns_entire_state_region = STATE_TLEMCEN
+						owns_entire_state_region = STATE_AL_RIF
+			
+						#ISLANDS
+						owns_entire_state_region = STATE_BALEARES
+						owns_entire_state_region = STATE_SARDINIA
+						owns_entire_state_region = STATE_CORSICA
+						owns_entire_state_region = STATE_MALTA
+						owns_entire_state_region = STATE_CYPRUS
+						owns_entire_state_region = STATE_CRETE
+					}
+				}
+				add_modifier = {
+					name = dominum_nostrum
+					months = -1
+					is_decaying = no
+				}
+			}
+			else_if = {
+				limit = {
+					root = {
+						has_modifier = dominum_nostrum
+						NOT = {
+							has_state_in_state_region = STATE_SINAI
+						}
+					}
+					NOT = {
+						calc_true_if = {
+							amount >= 27
+							#IBERIA
+							owns_entire_state_region = STATE_GRANADA
+							owns_entire_state_region = STATE_CARTAGENA
+							owns_entire_state_region = STATE_VALENCIA
+							owns_entire_state_region = STATE_CATALONIA
+				
+							#FRANCE
+							owns_entire_state_region = STATE_LANGUEDOC
+							owns_entire_state_region = STATE_PROVENCE
+				
+							#ITALY
+							owns_entire_state_region = STATE_PIEDMONT
+							owns_entire_state_region = STATE_EMILIA
+							owns_entire_state_region = STATE_TUSCANY
+							owns_entire_state_region = STATE_LAZIO
+							owns_entire_state_region = STATE_CAMPANIA
+							owns_entire_state_region = STATE_APULIA
+							owns_entire_state_region = STATE_ABRUZZO
+							owns_entire_state_region = STATE_UMBRIA
+							owns_entire_state_region = STATE_ROMAGNA
+							owns_entire_state_region = STATE_VENICE
+							owns_entire_state_region = STATE_ISTRIA
+				
+							#YUGO
+							owns_entire_state_region = STATE_CROATIA
+							owns_entire_state_region = STATE_DALMATIA
+							owns_entire_state_region = STATE_MONTENEGRO
+				
+							#GREECE
+							owns_entire_state_region = STATE_ALBANIA
+							owns_entire_state_region = STATE_IONIAN_ISLANDS
+							owns_entire_state_region = STATE_PELOPONNESE
+							owns_entire_state_region = STATE_ATTICA
+							owns_entire_state_region = STATE_THESSALIA
+							owns_entire_state_region = STATE_MACEDONIA
+							owns_entire_state_region = STATE_NORTHERN_THRACE
+				
+							#OTTOMANS
+							owns_entire_state_region = STATE_EASTERN_THRACE
+							owns_entire_state_region = STATE_WESTERN_THRACE
+							owns_entire_state_region = STATE_AYDIN
+							owns_entire_state_region = STATE_HUDAVENDIGAR
+							owns_entire_state_region = STATE_KONYA
+							owns_entire_state_region = STATE_ADANA
+							owns_entire_state_region = STATE_ALEPPO
+							owns_entire_state_region = STATE_LEBANON
+							owns_entire_state_region = STATE_PALESTINE
+							
+							#NORTH AFRICA
+							owns_entire_state_region = STATE_LOWER_EGYPT
+							owns_entire_state_region = STATE_MATRUH
+							owns_entire_state_region = STATE_TRIPOLI
+							owns_entire_state_region = STATE_LIBYA
+							owns_entire_state_region = STATE_TUNISIA
+							owns_entire_state_region = STATE_ALGIERS
+							owns_entire_state_region = STATE_TLEMCEN
+							owns_entire_state_region = STATE_AL_RIF
+				
+							#ISLANDS
+							owns_entire_state_region = STATE_BALEARES
+							owns_entire_state_region = STATE_SARDINIA
+							owns_entire_state_region = STATE_CORSICA
+							owns_entire_state_region = STATE_MALTA
+							owns_entire_state_region = STATE_CYPRUS
+							owns_entire_state_region = STATE_CRETE
+						}
+					}
+				}
+				remove_modifier = dominum_nostrum
+			}
+		}
+	}
+
+
+
+	#complete = {
+	#	root = {
+	#		is_at_war = no
+	#	}
+	#	calc_true_if = {
+	#		amount >= 27
+	#		#IBERIA
+	#		owns_entire_state_region = STATE_GRANADA
+	#		owns_entire_state_region = STATE_CARTAGENA
+	#		owns_entire_state_region = STATE_VALENCIA
+	#		owns_entire_state_region = STATE_CATALONIA
+#
+	#		#FRANCE
+	#		owns_entire_state_region = STATE_LANGUEDOC
+	#		owns_entire_state_region = STATE_PROVENCE
+#
+	#		#ITALY
+	#		owns_entire_state_region = STATE_PIEDMONT
+	#		owns_entire_state_region = STATE_EMILIA
+	#		owns_entire_state_region = STATE_TUSCANY
+	#		owns_entire_state_region = STATE_LAZIO
+	#		owns_entire_state_region = STATE_CAMPANIA
+	#		owns_entire_state_region = STATE_APULIA
+	#		owns_entire_state_region = STATE_ABRUZZO
+	#		owns_entire_state_region = STATE_UMBRIA
+	#		owns_entire_state_region = STATE_ROMAGNA
+	#		owns_entire_state_region = STATE_VENICE
+	#		owns_entire_state_region = STATE_ISTRIA
+#
+	#		#YUGO
+	#		owns_entire_state_region = STATE_CROATIA
+	#		owns_entire_state_region = STATE_DALMATIA
+	#		owns_entire_state_region = STATE_MONTENEGRO
+#
+	#		#GREECE
+	#		owns_entire_state_region = STATE_ALBANIA
+	#		owns_entire_state_region = STATE_IONIAN_ISLANDS
+	#		owns_entire_state_region = STATE_PELOPONNESE
+	#		owns_entire_state_region = STATE_ATTICA
+	#		owns_entire_state_region = STATE_THESSALIA
+	#		owns_entire_state_region = STATE_MACEDONIA
+	#		owns_entire_state_region = STATE_NORTHERN_THRACE
+#
+	#		#OTTOMANS
+	#		owns_entire_state_region = STATE_EASTERN_THRACE
+	#		owns_entire_state_region = STATE_WESTERN_THRACE
+	#		owns_entire_state_region = STATE_AYDIN
+	#		owns_entire_state_region = STATE_HUDAVENDIGAR
+	#		owns_entire_state_region = STATE_KONYA
+	#		owns_entire_state_region = STATE_ADANA
+	#		owns_entire_state_region = STATE_ALEPPO
+	#		owns_entire_state_region = STATE_LEBANON
+	#		owns_entire_state_region = STATE_PALESTINE
+	#		owns_entire_state_region = STATE_SINAI
+#
+	#		#NORTH AFRICA
+	#		owns_entire_state_region = STATE_LOWER_EGYPT
+	#		owns_entire_state_region = STATE_MATRUH
+	#		owns_entire_state_region = STATE_TRIPOLI
+	#		owns_entire_state_region = STATE_LIBYA
+	#		owns_entire_state_region = STATE_TUNISIA
+	#		owns_entire_state_region = STATE_ALGIERS
+	#		owns_entire_state_region = STATE_TLEMCEN
+	#		owns_entire_state_region = STATE_AL_RIF
+#
+	#		#ISLANDS
+	#		owns_entire_state_region = STATE_BALEARES
+	#		owns_entire_state_region = STATE_SARDINIA
+	#		owns_entire_state_region = STATE_CORSICA
+	#		owns_entire_state_region = STATE_MALTA
+	#		owns_entire_state_region = STATE_CYPRUS
+	#		owns_entire_state_region = STATE_CRETE
+	#	}
+	#}
+#
+	#on_complete = {
+	#	add_modifier = {
+	#		name = dominum_baltici
+	#		years = 50
+	#		is_decaying = yes
+	#	}
+	#}
+	
+	should_be_pinned_by_default = yes
+	inheritable = yes
+
+}

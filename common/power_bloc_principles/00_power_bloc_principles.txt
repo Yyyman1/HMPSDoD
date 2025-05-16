@@ -78,36 +78,36 @@ principle_internal_trade_1 = {
 
 ### MARKET UNIFICATION
 
-principle_market_unification_1 = {
-	icon = "gfx/interface/icons/principles_icons/market_unification.dds"
-	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
-	
-	visible = {
-		has_dlc_feature = power_bloc_features
-	}
-
-	leader_modifier = {
-		country_leverage_generation_mult = -0.25
-	}
-
-	member_modifier = {
-		country_influence_mult = -0.1
-	}
-
-	power_bloc_modifier = {
-		# Members are permanently part of the same Customs Union
-		power_bloc_customs_union_bool = yes
-	}
-	
-	ai_weight = {
-		value = 200 # Generally a good group for a PB to have
-		
-		if = {
-			limit = { has_strategy = ai_strategy_economic_imperialism }
-			multiply = 2.0
-		}
-	}
-}
+#principle_market_unification_1 = {
+#	icon = "gfx/interface/icons/principles_icons/market_unification.dds"
+#	background = "gfx/interface/icons/principles_icons/principle_tier_1.dds"
+#	
+#	visible = {
+#		has_dlc_feature = power_bloc_features
+#	}
+#
+#	leader_modifier = {
+#		country_leverage_generation_mult = -0.25
+#	}
+#
+#	member_modifier = {
+#		country_influence_mult = -0.1
+#	}
+#
+#	power_bloc_modifier = {
+#		# Members are permanently part of the same Customs Union
+#		power_bloc_customs_union_bool = yes
+#	}
+#	
+#	ai_weight = {
+#		value = 200 # Generally a good group for a PB to have
+#		
+#		if = {
+#			limit = { has_strategy = ai_strategy_economic_imperialism }
+#			multiply = 2.0
+#		}
+#	}
+#}
 
 ### SOVEREIGN EMPIRE
 ### Vassal Subjects
@@ -123,7 +123,7 @@ principle_vassalization_1 = {
 	member_modifier = {		
 		# Modifiers from previous level(s)
 		country_authority_per_subject_add = 25
-		country_subject_income_transfer_mult = 0.10
+		country_subject_income_transfer_mult = 0.20
 	
 		# Can use decrees on subjects
 		country_allow_enacting_decrees_in_subject_bool = yes
@@ -174,7 +174,7 @@ principle_advanced_research_1 = {
 	institution = institution_schools
 	institution_modifier = {
 		# School institution gives more tech spread
-		country_tech_spread_mult = 0.05
+		country_tech_spread_mult = 0.02
 	}
 	
 	ai_weight = {
@@ -620,6 +620,12 @@ principle_foreign_investment_1 = {
 
 		# This modifier is just here to generate a tooltip. It doesn't actually do anything on its own
 		country_higher_leverage_from_economic_dependence_bool = yes
+
+		state_shopkeepers_investment_pool_efficiency_mult = 0.07
+		state_capitalists_investment_pool_efficiency_mult = 0.07
+		state_farmers_investment_pool_efficiency_mult = 0.07
+		state_clergymen_investment_pool_efficiency_mult = 0.07	
+		state_aristocrats_investment_pool_efficiency_mult = 0.07	
 	}
 	
 	power_bloc_modifier = {
