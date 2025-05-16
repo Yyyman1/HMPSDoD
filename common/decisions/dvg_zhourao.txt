@@ -550,7 +550,7 @@ dvg_kauri_colony = {
 					}
 				}
 				exists = c:ZHR
-				#root = c:ZHR
+				root = c:ZHR
 			}
 			AND = {
 				has_variable = dvg_yongjia
