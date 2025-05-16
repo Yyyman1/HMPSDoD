@@ -18,14 +18,14 @@ company_skoda = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_BOHEMIA
+				state_region = s:STATE_BAVARIA
 			}
 		}
 	}			
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_BOHEMIA
+			state_region = s:STATE_BAVARIA
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
