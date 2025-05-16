@@ -86,7 +86,6 @@ company_suez_company = {
 	flavored_company = yes
 	
 	building_types = {
-		building_trade_center
 		building_shipyards
 		building_military_shipyards
 	}
@@ -114,7 +113,7 @@ company_suez_company = {
 	
 	prosperity_modifier = {
 		country_trade_route_competitiveness_mult = 0.25
-		country_tax_income_add = 50000
+		country_company_throughput_bonus_add = 0.1
 	}
 	
 	ai_weight = {
