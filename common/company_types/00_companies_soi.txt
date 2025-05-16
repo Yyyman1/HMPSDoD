@@ -465,17 +465,6 @@ company_persshelk = {
 			}
 			count >= 3
 		}
-		OR = {
-			country_has_primary_culture = cu:russian
-			any_scope_ally = {
-				country_has_primary_culture = cu:russian
-			}
-			power_bloc ?= {
-				any_power_bloc_member = {
-					country_has_primary_culture = cu:russian
-				}
-			}
-		}
 	}
 
 	prosperity_modifier = {
