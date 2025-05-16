@@ -237,10 +237,6 @@ company_john_hughes = {
 	
 	potential = {
 		c:RUS ?= this
-		OR = {
-			was_formed_from = NOV
-			was_formed_from = MSO
-		}
 	}
 	
 	attainable = {
