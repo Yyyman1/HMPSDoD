@@ -202,14 +202,14 @@ company_william_cramp = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_new_england
+		has_interest_marker_in_region = region_dixie
 	}
 	
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
 				OR = {
-					state_region = s:STATE_NOUVELLE_LORRAINE
+					state_region = s:STATE_LOUISIANE_ROYALE
 				}
 			}
 		}
@@ -218,7 +218,7 @@ company_william_cramp = {
 	possible = {
 		any_scope_state = {
 			OR = {
-				state_region = s:STATE_NOUVELLE_LORRAINE
+				state_region = s:STATE_LOUISIANE_ROYALE
 			}
 			is_incorporated = yes
 			any_scope_building = {
