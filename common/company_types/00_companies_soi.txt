@@ -554,38 +554,15 @@ company_moscow_irrigation_company = {
 			any_scope_state = {
 				state_region = s:STATE_TURKMENIA
 			}
-			any_scope_state = {
-				state_region = s:STATE_MOSCOW
-			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_TURKMENIA
-			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_cotton_plantation
 				level >= 8
-			}
-		}
-		OR = {
-			any_scope_state = {
-				state_region = s:STATE_MOSCOW
-				any_scope_building = {
-					is_building_type = building_university
-					level >= 2
-				}
-			}
-			any_scope_ally = {
-				any_scope_state = {
-					state_region = s:STATE_MOSCOW
-				}
-			}
-			power_bloc ?= {
-				any_power_bloc_member = {
-					country_has_primary_culture = cu:russian
-				}
 			}
 		}
 	}
