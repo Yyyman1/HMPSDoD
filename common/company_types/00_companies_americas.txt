@@ -322,7 +322,7 @@ company_famae = {
 	}
 	
 	prosperity_modifier = {
-		unit_offense_mult = 0.1
+		unit_army_offense_mult = 0.1
 		building_steel_mills_throughput_add = 0.05
 	}
 	
