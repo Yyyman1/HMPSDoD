@@ -680,7 +680,7 @@ company_mozambique_company = {
 	}
 	
 	potential = {
-		country_has_primary_culture = cu:portuguese
+		has_interest_marker_in_region = region_zanj
 	}
 	
 	possible = {
