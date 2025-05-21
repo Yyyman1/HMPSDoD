@@ -17,14 +17,14 @@ company_fundidora_monterrey = {
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_RIO_GRANDE
+				state_region = s:STATE_MEXICO
 			}
 		}
 	}
 	
 	possible = {
 		any_scope_state = {
-			state_region = s:STATE_RIO_GRANDE
+			state_region = s:STATE_MEXICO
 			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_steel_mills
@@ -322,7 +322,7 @@ company_famae = {
 	}
 	
 	prosperity_modifier = {
-		unit_offense_mult = 0.1
+		unit_army_offense_mult = 0.1
 		building_steel_mills_throughput_add = 0.05
 	}
 	
@@ -473,7 +473,6 @@ company_panama_company = {
 	flavored_company = yes
 	
 	building_types = {
-		building_trade_center
 		building_shipyards
 		building_military_shipyards
 	}
@@ -500,8 +499,8 @@ company_panama_company = {
 	}
 	
 	prosperity_modifier = {
-		country_trade_route_cost_mult = -0.05
 		unit_convoy_requirements_mult = -0.1
+		country_company_throughput_bonus_add = 0.1
 	}
 	
 	ai_weight = {

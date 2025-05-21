@@ -160,7 +160,7 @@ company_west_ural_petroleum = {
 	}
 
 	prosperity_modifier = {
-		state_colony_growth_speed_mult = 0.1
+		building_group_bg_oil_extraction_throughput_add = 0.1
 	}
 
 	ai_weight = {
@@ -465,17 +465,6 @@ company_persshelk = {
 			}
 			count >= 3
 		}
-		OR = {
-			country_has_primary_culture = cu:russian
-			any_scope_ally = {
-				country_has_primary_culture = cu:russian
-			}
-			power_bloc ?= {
-				any_power_bloc_member = {
-					country_has_primary_culture = cu:russian
-				}
-			}
-		}
 	}
 
 	prosperity_modifier = {
@@ -565,38 +554,15 @@ company_moscow_irrigation_company = {
 			any_scope_state = {
 				state_region = s:STATE_TURKMENIA
 			}
-			any_scope_state = {
-				state_region = s:STATE_MOSCOW
-			}
 		}
 	}
 
 	possible = {
 		any_scope_state = {
 			state_region = s:STATE_TURKMENIA
-			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_cotton_plantation
 				level >= 8
-			}
-		}
-		OR = {
-			any_scope_state = {
-				state_region = s:STATE_MOSCOW
-				any_scope_building = {
-					is_building_type = building_university
-					level >= 2
-				}
-			}
-			any_scope_ally = {
-				any_scope_state = {
-					state_region = s:STATE_MOSCOW
-				}
-			}
-			power_bloc ?= {
-				any_power_bloc_member = {
-					country_has_primary_culture = cu:russian
-				}
 			}
 		}
 	}
@@ -782,6 +748,7 @@ company_anglo_persian_oil = {
 		OR = {
 			country_has_primary_culture = cu:british
 			country_has_primary_culture = cu:persian
+			country_has_primary_culture = cu:anglois
 		}
 	}
 
@@ -802,7 +769,6 @@ company_anglo_persian_oil = {
 		}
 		any_scope_state = {
 			state_region = s:STATE_KHUZESTAN
-			is_incorporated = yes
 			any_scope_building = {
 				is_building_type = building_oil_rig
 				level >= 10

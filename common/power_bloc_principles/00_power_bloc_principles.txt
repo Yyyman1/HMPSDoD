@@ -207,7 +207,7 @@ principle_defensive_cooperation_1 = {
 	member_modifier = {
 		# Countries forced to join defensive plays against members
 		country_join_power_bloc_member_in_defensive_plays_bool = yes
-		unit_defense_mult = 0.10
+		unit_defense_mult = 0.05
 	}
 
 	power_bloc_modifier = {
@@ -272,7 +272,7 @@ principle_aggressive_coordination_1 = {
 		# Countries forced to join diplomatic plays of members, other countries are not happy about this threat
 		country_join_power_bloc_member_in_plays_bool = yes
 		
-		unit_offense_mult = 0.10
+		unit_offense_mult = 0.05
 	}
 	
 	ai_weight = {
