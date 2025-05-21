@@ -344,7 +344,7 @@ company_sudamericana_de_vapores = {
 	}
 	
 	prosperity_modifier = {
-		country_trade_route_quantity_mult = 0.1
+		state_colony_growth_speed_mult = 0.1
 		country_convoys_capacity_mult = 0.1
 	}
 	

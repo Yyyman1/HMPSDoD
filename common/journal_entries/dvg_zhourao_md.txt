@@ -1,5 +1,5 @@
 ﻿je_zho_claim_the_natives = {
-	icon = "gfx/interface/icons/event_icons/event_zhourao.dds"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
 	group = je_group_historical_content
 
@@ -127,7 +127,7 @@ je_zho_manifest_destiny = {
 }
 
 je_zho_control_australasia_islands = {
-	icon = "gfx/interface/icons/event_icons/event_map.dds"
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
 	
 	group = je_group_historical_content
 

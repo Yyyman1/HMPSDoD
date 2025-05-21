@@ -38,9 +38,8 @@ company_ccci = {
 	}
 	
 	prosperity_modifier = {
-		country_prestige_mult = 0.10
+		country_prestige_mult = 0.15
 		building_group_bg_rubber_mortality_mult = 0.2
-		building_rubber_plantation_throughput_add = 0.1
 	}	
 	
 	ai_weight = {
@@ -680,7 +679,7 @@ company_mozambique_company = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_zanj
+		country_has_primary_culture = cu:portuguese
 	}
 	
 	possible = {

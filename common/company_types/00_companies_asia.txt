@@ -283,8 +283,9 @@ company_great_indian_railway = {
 				region = sr:region_south_india
 				region = sr:region_north_india
 			}
+			is_incorporated = yes
 			has_building = building_railway
-			count >= 7
+			count >= 6
 		}
 	}
 	
@@ -520,7 +521,7 @@ company_san_miguel = {
 	}
 	
 	prosperity_modifier = {
-		state_radicals_from_political_movements_mult = -0.10
+		state_radicals_from_political_movements_mult = -0.05
 	}	
 	
 	ai_weight = {

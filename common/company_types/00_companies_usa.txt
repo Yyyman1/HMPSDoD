@@ -149,15 +149,15 @@ company_general_electric = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_the_midwest
+		has_interest_marker_in_region = region_new_england
 	}
 	
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
 				OR = {
-					state_region = s:STATE_SKRAELINGMARK
-					state_region = s:STATE_GANIGIALAND
+					state_region = s:STATE_PHILIPPA
+					state_region = s:STATE_NOUVELLE_FLANDRE
 				}
 			}
 		}
@@ -166,8 +166,8 @@ company_general_electric = {
 	possible = {
 		any_scope_state = {
 			OR = {
-					state_region = s:STATE_SKRAELINGMARK
-					state_region = s:STATE_GANIGIALAND
+					state_region = s:STATE_PHILIPPA
+					state_region = s:STATE_NOUVELLE_FLANDRE
 			}
 			is_incorporated = yes
 			any_scope_building = {
@@ -202,14 +202,14 @@ company_william_cramp = {
 	}
 	
 	potential = {
-		has_interest_marker_in_region = region_dixie
+		has_interest_marker_in_region = region_new_england
 	}
 	
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
 				OR = {
-					state_region = s:STATE_LOUISIANE_ROYALE
+					state_region = s:STATE_NOUVELLE_LORRAINE
 				}
 			}
 		}
@@ -218,7 +218,7 @@ company_william_cramp = {
 	possible = {
 		any_scope_state = {
 			OR = {
-				state_region = s:STATE_LOUISIANE_ROYALE
+				state_region = s:STATE_NOUVELLE_LORRAINE
 			}
 			is_incorporated = yes
 			any_scope_building = {

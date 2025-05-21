@@ -12,8 +12,6 @@ company_vodka_monopoly = {
 	
 	potential = {
 		country_has_primary_culture = cu:russian
-		country_has_primary_culture = cu:north_russian
-		country_has_primary_culture = cu:cossack
 	}
 	
 	possible = { 
@@ -238,20 +236,20 @@ company_john_hughes = {
 	}
 	
 	potential = {
-		c:RUS ?= this
+		has_interest_marker_in_region = region_dnieper
 	}
 	
 	attainable = {
 		hidden_trigger = { # Hide attainable if it's always fulfilled by possible
 			any_scope_state = {
-				state_region = s:STATE_DVG_MOSCOW
+				state_region = s:STATE_DANU
 			}
 		}
 	}		
 	
 	possible = { 
 		any_scope_state = {
-			state_region = s:STATE_DVG_MOSCOW
+			state_region = s:STATE_DANU
 			is_incorporated = yes
 			any_scope_building = {
 				OR = {
