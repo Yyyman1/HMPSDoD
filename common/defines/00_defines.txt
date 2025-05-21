@@ -94,7 +94,7 @@ NPolitics = {
 	MOVEMENT_RADICALISM_FROM_ACTIVE_LAW_STANCE = -0.05 # Multiplied by a movement's stance on each active law (positive stance = negative radicalism)
 	MOVEMENT_RADICALISM_FROM_ENACTED_LAW_STANCE = -0.25 # Multiplied by a movement's comparative stance on currently or recently enacted law (positive stance = negative radicalism)
 	MOVEMENT_RADICALISM_FROM_RADICAL_SUPPORTERS = 1.0 # Scales against fraction of radicals among movement supporters
-	MOVEMENT_RADICALISM_FROM_LOYALIST_SUPPORTERS = -0.75 # Scales against fraction of loyalists among movement supporters
+	MOVEMENT_RADICALISM_FROM_LOYALIST_SUPPORTERS = -0.5 # Scales against fraction of loyalists among movement supporters
 	MOVEMENT_RADICALISM_FROM_SUPPRESSION = 0.0 # Suppressed movements become this much more radical 
 	MOVEMENT_RADICALISM_FROM_BOLSTERING = 0.0 # Bolstered movements become this much less radical 
 
@@ -302,7 +302,7 @@ NPolitics = {
 }
 
 NEconomy = {
-	MIN_CONSTRUCTION_EFFICIENCY = 0.25					# Construction efficiency cannot go below this amount
+	MIN_CONSTRUCTION_EFFICIENCY = 0.33					# Construction efficiency cannot go below this amount
 
 	# The number of times the initializewealth function is run during setup
 	# The more times you run this the more accurate setup will be for Pop wealth compared to income
