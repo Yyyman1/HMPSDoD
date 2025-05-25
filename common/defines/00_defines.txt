@@ -960,19 +960,19 @@ NDiplomacy = {
 	TOP_PRESTIGE_RANK_BONUS_SCALE = 1.0 # At prestige rank 1, the prestige_ranking_top modifier is applied with ( 1 + this multiplier ), scaling down to 1x at threshold
 
 	COUNTRY_TIER_CITY_STATE_PRESTIGE = 0
-	COUNTRY_TIER_PRINCIPALITY_PRESTIGE = 5
-	COUNTRY_TIER_GRAND_PRINCIPALITY_PRESTIGE = 10
-	COUNTRY_TIER_KINGDOM_PRESTIGE = 15
-	COUNTRY_TIER_EMPIRE_PRESTIGE = 25
-	COUNTRY_TIER_HEGEMONY_PRESTIGE = 50
+	COUNTRY_TIER_PRINCIPALITY_PRESTIGE = 20
+	COUNTRY_TIER_GRAND_PRINCIPALITY_PRESTIGE = 40
+	COUNTRY_TIER_KINGDOM_PRESTIGE = 60
+	COUNTRY_TIER_EMPIRE_PRESTIGE = 80
+	COUNTRY_TIER_HEGEMONY_PRESTIGE = 200
 
 	PRESTIGE_FROM_COUNTRY_GDP_DIVISOR = 1000000
 	PRESTIGE_FROM_COUNTRY_GDP = 3 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP
 	PRESTIGE_FROM_SUBJECT_GDP = 1.5 # Per PRESTIGE_FROM_COUNTRY_GDP_DIVISOR GDP in subjects
-	PRESTIGE_FROM_ARMY_POWER_PROJECTION = 0.03 # Per point of power projection from army combat power
-	PRESTIGE_FROM_NAVY_POWER_PROJECTION = 0.10 # Per point of power projection from navy combat power
-	PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION = 0.0005 # Per point of power projection from army combat power in subjects
-	PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION = 0.01 # Per point of power projection from navy combat power in subjects
+	PRESTIGE_FROM_ARMY_POWER_PROJECTION = 0.015 # Per point of power projection from army combat power
+	PRESTIGE_FROM_NAVY_POWER_PROJECTION = 0.05 # Per point of power projection from navy combat power
+	PRESTIGE_FROM_SUBJECT_ARMY_POWER_PROJECTION = 0.00025 # Per point of power projection from army combat power in subjects
+	PRESTIGE_FROM_SUBJECT_NAVY_POWER_PROJECTION = 0.005 # Per point of power projection from navy combat power in subjects
 	PRESTIGE_MIN_NUM_COUNTRIES = 100 # If there's less countries using prestige than this in the game, we add some filler countries to adjust average prestige levels
 	FILLER_COUNTRY_PRESTIGE = 15
 
