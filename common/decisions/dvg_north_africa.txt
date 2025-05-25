@@ -202,53 +202,53 @@ dvg_annex_sahara = {
 	}
 	
 }
-dvg_annex_west_sahara = {
-	is_shown = {
-	
-		NOT = { is_country_type = decentralized }
-
-		any_neighbouring_state = {
-			owner = c:SAH
-		}
-
-		
-	}
-
-    possible = {
-
-		OR = {
-			is_player = yes
-			year >= 1910
-			is_country_type = recognized
-		}
-		OR = {
-		has_technology_researched = nationalism
-		is_country_type = recognized
-		}
-		has_technology_researched = colonization
-		NOT = { has_law = law_type:law_no_colonial_affairs }
-		NOT = {
-			has_modifier = decision_cooldown
-		}
-	
-	}
-
-    when_taken = {
-		annex = c:SAH
-		create_incident = {
-			country = ROOT
-			value = 6
-		}
-		add_modifier = {
-			name = decision_cooldown
-			months = 60
-		}
-    }
-	ai_chance = {
-		base = 1
-	}
-	
-}
+#dvg_annex_west_sahara = {
+#	is_shown = {
+#	
+#		NOT = { is_country_type = decentralized }
+#
+#		any_neighbouring_state = {
+#			owner = c:SAH
+#		}
+#
+#		
+#	}
+#
+#   possible = {
+#
+#		OR = {
+#			is_player = yes
+#			year >= 1910
+#			is_country_type = recognized
+#		}
+#		OR = {
+#		has_technology_researched = nationalism
+#		is_country_type = recognized
+#		}
+#		has_technology_researched = colonization
+#		NOT = { has_law = law_type:law_no_colonial_affairs }
+#		NOT = {
+#			has_modifier = decision_cooldown
+#		}
+#	
+#	}
+#
+#    when_taken = {
+#		annex = c:SAH
+#		create_incident = {
+#			country = ROOT
+#			value = 6
+#		}
+#		add_modifier = {
+#			name = decision_cooldown
+#			months = 60
+#		}
+#    }
+#	ai_chance = {
+#		base = 1
+#	}
+#	
+#}
 dvg_maghreb_liberation = {
 	is_shown = {
 		
