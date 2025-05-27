@@ -349,7 +349,6 @@ dutch={
 	traits = { beneluxian_culture_group european_heritage rheinlander }
 	
 	obsessions = {
-		fish
 	}
 	
 	male_common_first_names={
@@ -4103,7 +4102,7 @@ romanian={
 	traits = { romanian_culture_group european_heritage }
 	
 	obsessions = {
-		grain
+		
 	}
 	
 	male_common_first_names={
@@ -4407,7 +4406,6 @@ polish={
 	
 	obsessions = {
 		liquor
-		grain
 	}
 	
 	male_common_first_names={

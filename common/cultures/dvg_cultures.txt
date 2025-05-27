@@ -655,7 +655,6 @@ vinlander={
 	traits = { scandinavian_culture_group arcadian european_heritage }
 	
 	obsessions = {
-		fish
 		sugar
 	}
 	
@@ -5015,7 +5014,6 @@ scandinavian={
 	traits = { scandinavian_culture_group european_heritage }
 	obsessions = {
 		sugar
-		fish
 	}
 	male_common_first_names={
 		Aasmund
