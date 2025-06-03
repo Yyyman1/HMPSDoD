@@ -20,3 +20,25 @@
 		}
 	}
 }
+seed_assimilation_and_conversion = {
+	save_scope_as = new_state
+	owner = {
+		random_primary_culture = {
+			save_scope_as = spawning_culture
+		}
+	}
+	ordered_scope_pop = {
+		order_by = total_size
+		min=0
+		max=50
+		check_range_bounds = no
+		change_pop_culture = { 
+			target = scope:spawning_culture 
+			value = 0.01
+		}
+	}
+	convert_population = {
+		target = owner.religion
+		value = 0.01
+	}
+}
