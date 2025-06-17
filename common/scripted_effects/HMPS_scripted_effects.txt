@@ -28,6 +28,82 @@ seed_assimilation_and_conversion = {
 		}
 	}
 	ordered_scope_pop = {
+		limit = {
+			OR = {
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = european_heritage 
+					}
+					culture = {
+						has_discrimination_trait = european_heritage 
+					}
+				}
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = middle_eastern_heritage  
+					}
+					culture = {
+						has_discrimination_trait = middle_eastern_heritage  
+					}
+				}
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = central_asian_heritage  
+					}
+					culture = {
+						has_discrimination_trait = central_asian_heritage  
+					}
+				}
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = african_heritage  
+					}
+					culture = {
+						has_discrimination_trait = african_heritage  
+					}
+				}
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = south_asian_heritage  
+					}
+					culture = {
+						has_discrimination_trait = south_asian_heritage  
+					}
+				}
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = southeast_asian_heritage  
+					}
+					culture = {
+						has_discrimination_trait = southeast_asian_heritage  
+					}
+				}
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = east_asian_heritage  
+					}
+					culture = {
+						has_discrimination_trait = east_asian_heritage  
+					}
+				}
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = indigenous_american_heritage 
+					}
+					culture = {
+						has_discrimination_trait = indigenous_american_heritage 
+					}
+				}
+				AND = {
+					scope:spawning_culture = {
+						has_discrimination_trait = indigenous_oceanic_heritage  
+					}
+					culture = {
+						has_discrimination_trait = indigenous_oceanic_heritage  
+					}
+				}
+			}
+		}
 		order_by = total_size
 		min=0
 		max=50
