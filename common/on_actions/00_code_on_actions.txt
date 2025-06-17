@@ -731,6 +731,9 @@ on_yearly_pulse_state = {
 	}
 	on_actions = {
 	}
+	effect = {	
+		seed_assimilation_and_conversion_start = yes #HMPS code for ensuring no one is ever blocked from assimilation/conversion because of there being no cultural community
+	}
 }
 on_five_year_pulse_state = {}
 on_decade_pulse_state = {}
